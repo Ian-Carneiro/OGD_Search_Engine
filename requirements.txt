@@ -1,0 +1,6 @@
+pandas
+sqlalchemy
+psycopg2
+requests
+schedule
+ckanapi

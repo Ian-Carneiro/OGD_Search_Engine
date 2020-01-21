@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db_postgres_tcc:
+    build: ./db/
+    ports:
+      - "5433:5432"
+  python_tcc:
+    build: .
+    links: 
+      - db_postgres_tcc
+    volumes:
+      - .:/app/
+      - /etc/localtime:/etc/localtime:ro
