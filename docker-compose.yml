@@ -6,8 +6,15 @@ services:
       - "5433:5432"
   python_tcc:
     build: .
-    links: 
+    links:
       - db_postgres_tcc
     volumes:
       - .:/app/
       - /etc/localtime:/etc/localtime:ro
+  neo4j_tcc:
+    image: neo4j
+    volumes:
+      - ./db/neo4j/csv:/var/lib/neo4j/import
+    ports:
+      - "7474:7474"
+      - "7687:7687"

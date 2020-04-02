@@ -6,8 +6,9 @@ import io
 import _csv
 import csv
 import sys
-import psycopg2
-import re
+import time
+# import psycopg2
+# import re
 from statistics import mode
 # import pandas
 # import zipfile
@@ -19,10 +20,10 @@ engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost:5433/d
 sql = "select url, id from metadata_resources " \
       "where format ilike 'csv' and url ilike 'http%%://%%' and url not ilike '%%.zip' order by created asc"
 resources_urls = engine.execute(sql).fetchall()
-resources_urls = resources_urls[30:]
+quant = 602
+resources_urls = resources_urls[quant:]
 
 # """
-quant = 30
 two_space_sep = []
 urls_timeout = []
 urls_invalid_header_content_type = []
@@ -58,7 +59,8 @@ for url in resources_urls:
         print('requests.exceptions.ReadTimeout:', err, ':', url)
         urls_timeout.append(url[0])
     except UnicodeError as err:
-        print('UnicodeError:', err, ':', url)
+        file_contents = io.StringIO(request.content.decode('ISO-8859-1'))
+        # print('UnicodeError:', err, ':', url)
     except requests.exceptions.MissingSchema as err:
         print('requests.exceptions.MissingSchema:', err, ':', url)
     except requests.exceptions.ChunkedEncodingError as err:
@@ -66,8 +68,9 @@ for url in resources_urls:
 
 # with open('./teste_csv/ponto_e_virgula.csv', 'r', encoding='utf8') as file_contents:
     if 'file_contents' in locals():
+        tic = time.time()
         try:
-            dialect = csv.Sniffer().sniff(file_contents.read(1024))
+            dialect = csv.Sniffer().sniff(file_contents.readline())
             file_contents.seek(0)
             csv_file = csv.reader(file_contents, dialect)
             csv_file = list(csv_file)
@@ -100,25 +103,25 @@ for url in resources_urls:
                 if len(types_in_order_aux) > len(types_in_order) and places_and_types_checked:
                     types_in_order = types_in_order_aux.copy()
                     index_cols = index_cols_aux.copy()
-                if types_in_order and count_row >= 300:
+                if count_row >= 21:
                     break
             count_row = 0
             not_found_place = 0
             print(types_in_order)
-            for row in csv_file:
-                count_row += 1
-                if len(row) == len_row:
-                    cursor.callproc("find_places_and_index", [re.sub(r'[\(\)\/\.]', '', '|'.join(row)),
-                                                              url[1],
-                                                              [row[i] for i in index_cols],
-                                                              types_in_order])
-                    res = cursor.fetchone()
-                    conn.commit()
-                    if not res[0] and not_found_place <= 10:
-                        not_found_place += 1
-                        print(count_row, res)
-                else:
-                    print(count_row)
+            if index_cols:
+                for row in csv_file:
+                    count_row += 1
+                    if len(row) == len_row:
+                        cursor.callproc("find_places_and_index", [url[1],
+                                                                  [row[i] for i in index_cols],
+                                                                  types_in_order])
+                        res = cursor.fetchone()
+                        conn.commit()
+                        if not res[0] and not_found_place < 10:
+                            not_found_place += 1
+                            print(count_row, res)
+                    else:
+                        print(count_row)
             cursor.close()
             conn.close()
             del csv_file
@@ -130,6 +133,9 @@ for url in resources_urls:
             print('TypeError:', err, ':', url)
         # except psycopg2.errors.InvalidRegularExpression as err:
         #     print('InvalidRegularExpression:', err, ':', url)
+        del file_contents
+        tac = time.time()
+        print('tempo de indexação:', (tac-tic))
     quant += 1
     print('--------------------------------------------------------------------------------------------------------')
 print('urls => requests timeout: \n', urls_timeout, 'quant urls: ', len(urls_timeout))
