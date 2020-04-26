@@ -12,3 +12,9 @@ where p1.fk=p2.gid
 create (p2)-[:_CONTAINS]->(p1);
 
 create constraint on (r:Resource) assert r.id is unique;
+
+LOAD CSV WITH HEADERS FROM 'file:///siglas_uf.csv' AS row
+match(p:Place{nome:row.uf, tipo:"UF"})
+set p.sigla=row.sigla
+
+
