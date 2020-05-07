@@ -35,7 +35,7 @@ def types_and_indexes(csv_file: list, quant: int, driver_: GraphDatabase):
             except CypherSyntaxError as err:
                 log.info(
                     "Erro ao verificar se o termo é um local e se possui um tipo.(índice a partir do 0) i={0}, j={1}"
-                        .format(str(), str(j)))
+                        .format(str(quant_rows), str(j)))
             if res:
                 quant_rows_with_place_found += 1
                 if res != "UNDEFINED":
@@ -77,7 +77,11 @@ def count_places_id(index_cols, types_in_order, len_row, csv_file, places_id_dic
         for row in csv_file:
             quant_row += 1
             if len(row) == len_row:
-                res = neo4j_index.find_places_return_id([row[i] for i in index_cols], types_in_order)
+                try:
+                    res = neo4j_index.find_places_return_id([row[i] for i in index_cols], types_in_order)
+                except CypherSyntaxError:
+                    res = None
+                    log.info(f"CypherSyntaxError. Erro na linha {quant_row}")
                 if not res and not_found_place < 10:
                     not_found_place += 1
                     log.info(f"Não foi encontrado 'locais' na linha {quant_row+start_csv}")
@@ -108,38 +112,39 @@ def run_spacial_indexing(csv_file, len_row, resource, quant_process=cpu_count())
     time_f = time()
     log.info(f"Tempo para verificação de tipos: {time_f-time_i}")
 
-    time_i = time()
-    types_in_order = types_and_indexes_[0]
-    index_cols = types_and_indexes_[1]
-    len_csv_file = len(csv_file)
-    csv_file_division = int(len_csv_file / quant_process)
-    with Manager() as manager:
-        places_id_dict = manager.dict()
-        quant_indexed_rows = Value('d', 0.0)
-        lock = Lock()
-        processes = []
-        for i in range(quant_process):
-            start = csv_file_division*i
-            if i != quant_process-1:
-                end = csv_file_division*(1+i)
-                processes.append(Process(
-                    target=count_places_id, args=(index_cols, types_in_order, len_row, csv_file[start:end],
-                                                  places_id_dict, start, lock, quant_indexed_rows)))
-            else:
-                processes.append(Process(target=count_places_id,
-                                         args=(index_cols, types_in_order, len_row, csv_file[start:],
-                                               places_id_dict, start, lock, quant_indexed_rows)))
+    if types_and_indexes_[0]:
+        time_i = time()
+        types_in_order = types_and_indexes_[0]
+        index_cols = types_and_indexes_[1]
+        len_csv_file = len(csv_file)
+        csv_file_division = int(len_csv_file / quant_process)
+        with Manager() as manager:
+            places_id_dict = manager.dict()
+            quant_indexed_rows = Value('d', 0.0)
+            lock = Lock()
+            processes = []
+            for i in range(quant_process):
+                start = csv_file_division*i
+                if i != quant_process-1:
+                    end = csv_file_division*(1+i)
+                    processes.append(Process(
+                        target=count_places_id, args=(index_cols, types_in_order, len_row, csv_file[start:end],
+                                                      places_id_dict, start, lock, quant_indexed_rows)))
+                else:
+                    processes.append(Process(target=count_places_id,
+                                             args=(index_cols, types_in_order, len_row, csv_file[start:],
+                                                   places_id_dict, start, lock, quant_indexed_rows)))
 
-        for process in processes:
-            process.start()
+            for process in processes:
+                process.start()
 
-        for process in processes:
-            process.join()
+            for process in processes:
+                process.join()
 
-        for key in places_id_dict:
-            insert_into_resource_place(key, resource, quant_indexed_rows.value, places_id_dict[key], driver)
-        time_f = time()
-        log.info(f"Quantidades de linha do CSV: {len_csv_file}")
-        log.info(f"Tempo de indexação(em segundos): {time_f-time_i}")
-        log.info(f"Tempo médio de indexação de linha do CSV(em segundos): {(time_f-time_i)/quant_indexed_rows.value}")
+            for key in places_id_dict:
+                insert_into_resource_place(key, resource, quant_indexed_rows.value, places_id_dict[key], driver)
+            time_f = time()
+            log.info(f"Quantidades de linha do CSV: {len_csv_file}")
+            log.info(f"Tempo de indexação(em segundos): {time_f-time_i}")
+            log.info(f"Tempo médio de indexação de linha do CSV(em segundos): {(time_f-time_i)/quant_indexed_rows.value}")
 

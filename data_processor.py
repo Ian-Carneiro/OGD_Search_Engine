@@ -13,7 +13,7 @@ from spatial_indexing.spatial_indexing import run_spacial_indexing
 
 
 resources = get_resources()
-quant = 484
+quant = 556
 resources = resources[quant:]
 
 field_size_limit(maxsize)
