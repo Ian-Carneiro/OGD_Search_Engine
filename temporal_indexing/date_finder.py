@@ -2,9 +2,12 @@ from dateparser.search import search_dates
 import datetime
 import dateparser.conf
 import re
+from index_log import log
 
 
 def search(text):
+    if not text or len(text) == 0:
+        return []
     text = text.upper()
     combination_one = re.findall(r'\b(?:(?:\d{1,2}\/\d{1,2}\/(?:\d{4}|\d{2}))|(?:\d{1,2}-\d{1,2}-(?:\d{4}|\d{2}))|'
                                  r'(?:\d{1,2}(?:\/|-)\d{4}))', text)
@@ -94,13 +97,19 @@ def date_parser(text):
     match = search(text)
     dates = []
     for m in match:
-        dates.append((dateparser.search.search_dates(m[0], languages=['pt'],
-                                                     settings={
-                                                         'RELATIVE_BASE': datetime.datetime(1000, 1, 1)
-                                                     })[0][1], m[1]))
+        # '62.428.073/0001-36' <<< ('0001', 12)
+        try:
+            found = dateparser.search.search_dates(m[0], languages=['pt'],
+                                           settings={
+                                               'RELATIVE_BASE': datetime.datetime(1000, 1, 1)
+                                           })
+        except OverflowError:
+            log.info(f"date OverflowError")
+        if found:
+            dates.append((found[0][1], m[1]))
     return dates
 
 
-while True:
-    date = input("Informe o texto: ")
-    print(date_parser(date))
+# while True:
+#     date = input("Informe o texto: ")
+#     print(date_parser(date))

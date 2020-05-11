@@ -10,7 +10,7 @@ class MetadataDataset(Base):
     __tablename__ = 'metadata_dataset'
     id = Column(String, primary_key=True)
     author = Column(String)
-    name = Column(String)
+    title = Column(String)
     metadata_created = Column(String)
     metadata_modified = Column(String)
     organization_name = Column(String)

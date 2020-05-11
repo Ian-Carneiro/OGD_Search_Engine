@@ -10,14 +10,16 @@ from neobolt.exceptions import CypherSyntaxError
 from index_log import log
 from model import get_resources
 from spatial_indexing.spatial_indexing import run_spacial_indexing
+from temporal_indexing.temporal_indexing import run_temporal_index
 
 
 resources = get_resources()
-quant = 556
+quant = 1290 #556 << espacial
 resources = resources[quant:]
 
 field_size_limit(maxsize)
 for resource in resources:
+    # """
     log.info("------------------------------------------------------------------------------------------------------")
     log.info(str(quant) + ' - ' + resource.id + "  " + resource.url)
     try:
@@ -65,17 +67,25 @@ for resource in resources:
             file_contents.seek(0)
             csv_file = reader(file_contents, dialect, quoting=QUOTE_ALL)
             csv_file = list(csv_file)
-
             # Verifica qual o provável tamanho de cada linha do csv
             len_row = mode([len(x) for x in csv_file[0:1024]])
 
             run_spacial_indexing(csv_file, len_row, resource)
+            run_temporal_index(csv_file, len_row, resource)
 
         except CypherSyntaxError as err:
             log.exception("CypherSyntaxError", exc_info=True)
         except StatisticsError as err:
             log.exception("StatisticsError", exc_info=True)
+        except _csv.Error:
+            log.exception("_csv.Error", exc_info=True)
+            with open('./logs/errors/_csvError.txt', 'a') as _csv_error:
+                _csv_error.write(resource.id)
+        except TypeError:
+            log.exception("TypeError", exc_info=True)
+            with open('./logs/errors/TypeError.txt', 'a') as type_error:
+                type_error.write(resource.id)
         del file_contents
     quant += 1
     # break
-
+    # """
