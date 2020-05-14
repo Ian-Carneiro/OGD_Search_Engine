@@ -1,3 +1,4 @@
+from sqlalchemy import create_engine, text
 from .date_finder import date_parser
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
@@ -5,13 +6,16 @@ from statistics import mode, StatisticsError
 from index_log import log
 
 
-def run_temporal_index(csv_file, len_row, resource):
-    funcs = [lambda: (date_parser(resource.name), "resource.name"),
-             lambda: (date_parser(resource.description), "resource.description"),
-             lambda: (date_parser(resource.package.title), "resource.package.title")]
+engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost:5431/temporal_indexing_module')
+
+
+def run_temporal_index(resource):
+    funcs = [lambda: (date_parser(resource.name), f"resource.name: {resource.name}"),
+             lambda: (date_parser(resource.description), f"resource.description: {resource.description}"),
+             lambda: (date_parser(resource.package.title), f"resource.package.title: {resource.package.title}")]
     for func in funcs:
         dates = func()
-        if dates:
+        if dates[0]:
             break
     # -----------------------------------------------------------------------------------------------------------------
     if dates[0]:
@@ -49,6 +53,10 @@ def run_temporal_index(csv_file, len_row, resource):
 
     if interval:
         interval = [i.date() for i in interval]
+        with engine.connect() as conn:
+            sql = text("insert into temporal_index(id_resource, interval_start, interval_end) "
+                       "values(:id_resource, :interval_start, :interval_end)")
+            conn.execute(sql, id_resource=resource.id, interval_start=interval[0], interval_end=interval[1])
     log.info(f"intervalo encontrado: {interval}")
 
 

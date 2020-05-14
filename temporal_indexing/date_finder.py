@@ -82,9 +82,9 @@ def search(text):
     # ---------------------------------------------------------------------------------------------------------------
 
     text = re.sub(r'|'.join(found), '', text)
-    combination_four = re.findall(r'\d{4}', text)
-    if combination_four:
-        combination_four = [c for c in combination_four if c is not None and int(c) <= 2020]
+    combination_four = re.findall(r'\b\d{4}\b', text)
+    # if combination_four:
+        # combination_four = [c for c in combination_four]
 
     match = [(c, 0) if re.findall(r'(?:\w+º?)\s?(?:de|\/|\\|-|em)\s?(?:\w+)\.?\s?(?:de|\/|\\|-|em)\s?(?:\d{4}|\d{2})',
                                   c, re.I)
@@ -105,11 +105,11 @@ def date_parser(text):
                                            })
         except OverflowError:
             log.info(f"date OverflowError")
-        if found:
+        if found and datetime.datetime(1900, 1, 1) <= found[0][1] <= datetime.datetime.now():
             dates.append((found[0][1], m[1]))
     return dates
 
-
+#
 # while True:
 #     date = input("Informe o texto: ")
 #     print(date_parser(date))

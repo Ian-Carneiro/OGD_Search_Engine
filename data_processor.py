@@ -14,14 +14,14 @@ from temporal_indexing.temporal_indexing import run_temporal_index
 
 
 resources = get_resources()
-quant = 1290 #556 << espacial
+quant = 556
 resources = resources[quant:]
 
 field_size_limit(maxsize)
 for resource in resources:
-    # """
     log.info("------------------------------------------------------------------------------------------------------")
     log.info(str(quant) + ' - ' + resource.id + "  " + resource.url)
+    # """
     try:
         request = get(resource.url, timeout=(30, 3600))  # , stream=True)
         log.info('headers: ' + request.headers.__str__())
@@ -71,7 +71,7 @@ for resource in resources:
             len_row = mode([len(x) for x in csv_file[0:1024]])
 
             run_spacial_indexing(csv_file, len_row, resource)
-            run_temporal_index(csv_file, len_row, resource)
+            run_temporal_index(resource)
 
         except CypherSyntaxError as err:
             log.exception("CypherSyntaxError", exc_info=True)
@@ -86,6 +86,6 @@ for resource in resources:
             with open('./logs/errors/TypeError.txt', 'a') as type_error:
                 type_error.write(resource.id)
         del file_contents
+    # """
     quant += 1
     # break
-    # """
