@@ -14,7 +14,7 @@ from temporal_indexing.temporal_indexing import run_temporal_index
 
 
 resources = get_resources()
-quant = 556
+quant = 742
 resources = resources[quant:]
 
 field_size_limit(maxsize)
@@ -71,7 +71,7 @@ for resource in resources:
             len_row = mode([len(x) for x in csv_file[0:1024]])
 
             run_spacial_indexing(csv_file, len_row, resource)
-            run_temporal_index(resource)
+            # run_temporal_index(resource)
 
         except CypherSyntaxError as err:
             log.exception("CypherSyntaxError", exc_info=True)

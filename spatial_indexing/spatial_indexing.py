@@ -91,7 +91,7 @@ def count_places_id(index_cols, types_in_order, len_row, csv_file, places_id_dic
                         try:
                             places_id_dict_aux[id_] += 1
                         except KeyError:
-                            places_id_dict_aux[id_] = 0
+                            places_id_dict_aux[id_] = 1
             else:
                 log.info(f"Linha do CSV não corresponde ao tamanho encontrado. Num. linha: {quant_row+start_csv}")
 
@@ -145,6 +145,7 @@ def run_spacial_indexing(csv_file, len_row, resource, quant_process=cpu_count())
                 insert_into_resource_place(key, resource, quant_indexed_rows.value, places_id_dict[key], driver)
             time_f = time()
             log.info(f"Quantidades de linha do CSV: {len_csv_file}")
+            log.info(f"Quantidades de linhas indexadas do CSV: {quant_indexed_rows.value}")
             log.info(f"Tempo de indexação(em segundos): {time_f-time_i}")
             log.info(f"Tempo médio de indexação de linha do CSV(em segundos): {(time_f-time_i)/quant_indexed_rows.value}")
 
