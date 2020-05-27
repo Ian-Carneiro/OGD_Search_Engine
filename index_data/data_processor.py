@@ -14,7 +14,7 @@ from temporal_indexing.temporal_indexing import run_temporal_index
 
 
 resources = get_resources()
-quant = 742
+quant = 884
 resources = resources[quant:]
 
 field_size_limit(maxsize)
