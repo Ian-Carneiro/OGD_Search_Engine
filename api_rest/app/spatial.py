@@ -27,11 +27,14 @@ def find_places(name_place):
 def get_resources(gid_place):
     with driver.session() as session:
         result = session.run(f"""
-            match (p:Place {{gid:"{gid_place}"}})<-[ht:HAS_TERM]-(r:Resource) 
-            return r.id, ht.freq
-            union
-            match (p:Place {{gid:"{gid_place}"}})-[:_CONTAINS*]->(p1:Place)<-[ht:HAS_TERM]-(r:Resource) 
-            return distinct r.id, ht.freq
+            match (p:Place {{gid:"{gid_place}"}})
+            optional match(p)<-[ht: HAS_TERM]-(r:Resource)     
+            with collect({{id:r.id, freq:ht.freq+1}}) as rows, p, collect(r.id) as ids
+            optional match (p)-[:`_CONTAINS`*]->(:Place)<-[ht:HAS_TERM]-(r:Resource) 
+            where not r.id in ids
+            with rows+collect({{id:r.id, freq:ht.freq}}) as allRows
+            UNWIND allRows as row
+            return row.id, row.freq
         """).values()
         resources = result
     resources_dict = {}
