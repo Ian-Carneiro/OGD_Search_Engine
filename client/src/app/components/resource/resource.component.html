@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row" *ngIf="moreAndLessSpecificPlaces">
+    <div class="col-sm-8 offset-md-2">
+      <div class="list-group" id="list-tab" role="tablist">
+        <b>
+          Mais de 1 local foi encontrado para esta consulta (selecione o local desejado)
+        </b>
+        <button type="button" class="list-group-item list-group-item-action" role="tab"
+          *ngFor="let item of moreAndLessSpecificPlaces" (click)="assignPlaceIdAndSearch(item.gid)">
+          {{item.name_more_specific}} <b>({{item.type_more_specific}})</b>
+          localizado:
+          {{item.name_less_specific}} <b>({{item.type_less_specific}})</b>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-8 offset-md-2" *ngFor="let r of resources">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{r.name}}</h5>
+          <p class="card-text">{{r.description}}</p>
+          <p class="card-text">Organização: {{r.organization_name}}</p>
+          <a [href]="r.url" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm-8 offset-md-2">
+      <div *ngIf="searching" class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100"
+          aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="resources.length > 0">
+    <div class="col-sm-8 offset-md-2">
+      <pagination [totalItems]="totalResources" [maxSize]="5" [itemsPerPage]="resourcesPerPage" [boundaryLinks]="true"
+        previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"
+        (pageChanged)="pageChanged($event)"></pagination>
+    </div>
+  </div>
+</div>

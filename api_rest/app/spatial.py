@@ -39,7 +39,8 @@ def get_resources(gid_place):
         resources = result
     resources_dict = {}
     for r in resources:
-        resources_dict[r[0]] = r[1]
+        if r[0]:
+            resources_dict[r[0]] = r[1]
     return resources_dict
 
 

@@ -17,31 +17,28 @@ def get_resources_or_dataset_ids_(query_level):
     interval_end = request.args.get("interval_end")
     gid_place = request.args.get('gid_place')
     name_place = request.args.get('name_place')
-
     if query_level not in ['resource', 'dataset'] or (not interval_start or not interval_end) and not gid_place and \
             not name_place:
-        return make_response(jsonify([], 400))
+        return make_response(jsonify({'msgErro': 'Não é possível realizar a consulta sem os parâmetros certos.'}, 400))
     # ----------------------------------------------------------------------------------------------------------------#
     if name_place and not gid_place:
         places = spatial.find_places(name_place)
         if len(places) > 1:
-            return make_response(jsonify(places, 300))
+            return make_response(jsonify(places), 300)
         elif len(places) == 0:
-            return make_response(jsonify(places, 200))
+            return make_response(jsonify(places), 200)
         else:
             gid_place = places[0]['gid']
     # ----------------------------------------------------------------------------------------------------------------#
     if interval_start and interval_end:
         try:
-            interval_start = datetime.strptime(interval_start, "%d/%m/%Y").date()
-            interval_end = datetime.strptime(interval_end, "%d/%m/%Y").date()
+            interval_start = datetime.strptime(interval_start, "%Y-%m-%d").date()
+            interval_end = datetime.strptime(interval_end, "%Y-%m-%d").date()
         except ValueError:
-            return make_response(jsonify([], 400))
+            return make_response(jsonify({'msgErro': 'Formato da(s) data(s) inválidos.'}), 400)
 
         if interval_start > interval_end:
-            return make_response(jsonify([], 400))
-    elif len([interval for interval in [interval_start, interval_end] if interval]) == 1:
-        return make_response(jsonify([], 400))
+            return make_response(jsonify({'msgErro': 'Data inicial maior que data final.'}), 400)
     # ----------------------------------------------------------------------------------------------------------------#
     with Manager() as manager:
         processes = []
@@ -76,7 +73,7 @@ def get_resources_or_dataset_ids_(query_level):
             results_queries[0] = resources_or_dataset_dict
         response = [{"id": key, "freq": results_queries[0][key]} for key in results_queries[0].keys()]
         response.sort(key=lambda elem: elem["freq"], reverse=True)
-        response = make_response(jsonify(response, 200))
+        response = make_response(jsonify(response), 200)
         return response
 
 

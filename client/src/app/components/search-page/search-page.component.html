@@ -1,0 +1,47 @@
+<div class="container mt-md-4">
+	<form [formGroup]="formGroup" (ngSubmit)="search()">
+		<div class="row no-gutters">
+			<div class="col-md-4 offset-md-2 mr-md-3" style="background-color: cadetblue">
+				<img src="https://publicdomainvectors.org/photos/brasil_regioes.png" class="img-fluid" alt="Responsive image">
+			</div>
+			<div class="col-md-4">
+				<div class="form-row">
+					<div class="col-md-12">
+						<label for="validationDefault01">Local</label>
+						<input type="text" class="form-control" id="validationDefault01" placeholder="ex.: Itaporanga" formControlName="name_place">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-12">
+						<label for="validationDefault02">Sobre</label>
+						<input type="text" class="form-control" id="validationDefault02" placeholder="ex.: Saúde" formControlName="topic">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-6">
+						<label for="validationDefault03">Inicio do intervalo</label>
+						<input type="date" class="form-control" id="validationDefault03" formControlName="interval_start" [max]="formGroup.get('interval_end').value">
+					</div>
+					<div class="col-md-6">
+						<label for="validationDefault04">Fim do intervalo</label>
+						<input type="date" class="form-control" id="validationDefault04" formControlName="interval_end" [min]="formGroup.get('interval_start').value">
+					</div>
+				</div>
+				<label>Nivel da consulta:</label>
+				<div class="form-group">
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="customRadioInline1" value="resource" formControlName="queryLevel" class="custom-control-input">
+						<label class="custom-control-label" for="customRadioInline1">Resource</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="customRadioInline2" value="dataset" formControlName="queryLevel" class="custom-control-input">
+						<label class="custom-control-label" for="customRadioInline2">Dataset</label>
+					</div>
+				</div>
+				<button class="btn btn-primary" type="submit">Buscar</button>
+			</div>
+		</div>
+	</form>
+</div>
+<resource></resource>
+<dataset></dataset>

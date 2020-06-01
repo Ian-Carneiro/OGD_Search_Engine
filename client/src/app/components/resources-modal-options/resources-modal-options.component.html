@@ -1,0 +1,21 @@
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Recursos</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row" *ngIf="resources$">
+      <div class="col-sm-12" *ngFor="let r of resources$">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{r.name}} (<b>{{r.format}}</b>)</h5>
+            <p class="card-text">{{r.description}}</p>
+            <a [href]="r.url" class="btn btn-primary">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
