@@ -28,19 +28,21 @@ def get_resources(gid_place):
     with driver.session() as session:
         result = session.run(f"""
             match (p:Place {{gid:"{gid_place}"}})
-            optional match(p)<-[ht: HAS_TERM]-(r:Resource)     
-            with collect({{id:r.id, freq:ht.freq+1}}) as rows, p, collect(r.id) as ids
-            optional match (p)-[:`_CONTAINS`*]->(:Place)<-[ht:HAS_TERM]-(r:Resource) 
-            where not r.id in ids
-            with rows+collect({{id:r.id, freq:ht.freq}}) as allRows
-            UNWIND allRows as row
-            return row.id, row.freq
+            optional match(r1:Resource)-[ht1: HAS_TERM]->(p)
+            with collect({{id:r1.id, freq:ht1.freq+1}}) as rows, p
+            optional match(p)-[:`_CONTAINS`*]->(:Place)<-[ht2:HAS_TERM]-(r2:Resource)
+            with rows+collect({{id:r2.id, freq:ht2.freq}}) as allRows
+            unwind allRows as rows
+            return distinct rows.id, sum(rows.freq)
         """).values()
         resources = result
     resources_dict = {}
+    if not resources[0][0]:
+        resources.pop(0)
+    if not resources[-1][0]:
+        resources.pop()
     for r in resources:
-        if r[0]:
-            resources_dict[r[0]] = r[1]
+        resources_dict[r[0]] = r[1]
     return resources_dict
 
 

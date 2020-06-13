@@ -14,7 +14,7 @@ from temporal_indexing.temporal_indexing import run_temporal_index
 
 
 resources = get_resources()
-quant = 884
+quant = 337 #254
 resources = resources[quant:]
 
 field_size_limit(maxsize)
@@ -23,7 +23,7 @@ for resource in resources:
     log.info(str(quant) + ' - ' + resource.id + "  " + resource.url)
     # """
     try:
-        request = get(resource.url, timeout=(30, 3600))  # , stream=True)
+        request = get(resource.url, timeout=(30, 3600)) # , stream=True)
         log.info('headers: ' + request.headers.__str__())
         if not request.headers['Content-Type'].__contains__('text/html') and \
                 not request.headers['Content-Type'].__contains__('text/css') and \
@@ -37,7 +37,7 @@ for resource in resources:
                 file_contents = StringIO(request.content.decode('utf-8'), newline=None)
             else:
                 file_contents = StringIO(request.text, newline=None)
-
+        del request
     except _csv.Error as err:
         file_contents = StringIO(request.content.decode('utf-16'), newline=None)
         log.info('Ao decodificar o arquivo, uma exceção ocorreu... mudando para UTF-16')
