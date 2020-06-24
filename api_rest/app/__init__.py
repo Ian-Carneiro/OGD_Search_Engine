@@ -4,6 +4,7 @@ from datetime import datetime
 from multiprocessing import Process, Manager
 from app import temporal
 from app import spatial
+from app import thematic
 from app import model
 from time import time
 
@@ -17,8 +18,10 @@ def get_resources_or_dataset_ids_(query_level):
     interval_end = request.args.get("interval_end")
     gid_place = request.args.get('gid_place')
     name_place = request.args.get('name_place')
+    topic = request.args.get('topic')
+
     if query_level not in ['resource', 'dataset'] or (not interval_start or not interval_end) and not gid_place and \
-            not name_place:
+            not name_place and not topic:
         return make_response(jsonify({'msgErro': 'Não é possível realizar a consulta sem os parâmetros certos.'}, 400))
     # ----------------------------------------------------------------------------------------------------------------#
     if name_place and not gid_place:
@@ -51,27 +54,37 @@ def get_resources_or_dataset_ids_(query_level):
             processes.append(Process(target=temporal_query,
                                      args=[interval_start, interval_end, query_level, temporal_query_return]))
 
+        if topic:
+            thematic_query_return = manager.dict()
+            processes.append(Process(target=thematic_query, args=[topic, query_level, thematic_query_return]))
+
         for p in processes:
             p.start()
         for p in processes:
             p.join()
-
+    # ----------------------------------------------------------------------------------------------------------------#
         results_queries = []
         if 'spatial_query_return' in locals():
             results_queries.append(spatial_query_return)
         if 'temporal_query_return' in locals():
             results_queries.append(temporal_query_return)
-        # ----------------------------------------------------------------------------------------------------------------#
+        if 'thematic_query_return' in locals():
+            results_queries.append(thematic_query_return)
         results_queries.sort(key=lambda elem: len(elem))
+    # ----------------------------------------------------------------------------------------------------------------#
         resources_or_dataset_dict = {}
+        lt_dict_freq = results_queries[0]
         for result in results_queries[1:]:
-            for resource_or_dataset_id in results_queries[0]:
+            for resource_or_dataset_id in lt_dict_freq:
                 gt_dict_freq = result.get(resource_or_dataset_id)
                 if gt_dict_freq:
                     resources_or_dataset_dict[resource_or_dataset_id] = \
-                        (gt_dict_freq + results_queries[0][resource_or_dataset_id]) / 2
-            results_queries[0] = resources_or_dataset_dict
-        response = [{"id": key, "freq": results_queries[0][key]} for key in results_queries[0].keys()]
+                        (gt_dict_freq + lt_dict_freq[resource_or_dataset_id]) / 2
+            # print(lt_dict_freq)
+            lt_dict_freq = resources_or_dataset_dict
+            resources_or_dataset_dict = {}
+    # ----------------------------------------------------------------------------------------------------------------#
+        response = [{"id": key, "freq": lt_dict_freq[key]} for key in lt_dict_freq.keys()]
         response.sort(key=lambda elem: elem["freq"], reverse=True)
         response = make_response(jsonify(response), 200)
         return response
@@ -89,6 +102,13 @@ def temporal_query(interval_start, interval_end, query_level, temporal_query_ret
     temporal_query_return.update(temporal.get_resource(interval_start, interval_end)
                                  if query_level == 'resource' else temporal.get_dataset(interval_start, interval_end))
     print('tempo de execução(temporal_query):', time() - time_i)
+
+
+def thematic_query(topic, query_level, thematic_query_return):
+    time_i = time()
+    thematic_query_return.update(thematic.get_resource(topic)
+                                 if query_level == 'resource' else thematic.get_dataset(topic))
+    print('tempo de execução(thematic_query):', time() - time_i)
 
 
 @app.route('/api/v1/ogdse/search/<query_level>', methods=['POST'])

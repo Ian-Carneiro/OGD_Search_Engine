@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, create_engine, select, and_, ForeignKey
+from sqlalchemy import Column, String, create_engine, select, and_, ForeignKey, Integer
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
 
@@ -15,6 +15,9 @@ class MetadataDataset(Base):
     metadata_modified = Column(String)
     organization_name = Column(String)
     organization_id = Column(String)
+    tags = Column(String)
+    notes = Column(String)
+    quant_resources = Column(Integer)
 
 
 class MetadataResources(Base):

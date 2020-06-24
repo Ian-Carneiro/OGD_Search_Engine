@@ -42,13 +42,12 @@ def types_and_indexes(csv_file: list, quant: int, driver_: GraphDatabase):
                     pattern_type = "+".join([pattern_type, res])
                     pattern_index = "+".join([pattern_index, str(j)])
                 else:
-                    # para casos como: ["Itaporanga", "São Paulo"] >>>> "MUNICÍPIO|0"
                     undefined_type = True
                     break
 
         if pattern_type and not undefined_type:
             list_patterns.append("|".join([pattern_type[1:], pattern_index[1:]]))
-        elif pattern_type:
+        elif not pattern_type:
             quant_none_place += 1
 
         if quant_rows == quant:

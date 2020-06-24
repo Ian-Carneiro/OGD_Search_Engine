@@ -54,10 +54,11 @@ def run_temporal_index(resource):
     if interval:
         interval = [i.date() for i in interval]
         with engine.connect() as conn:
-            sql = text("insert into temporal_index(id_resource, interval_start, interval_end, package_id) "
-                       "values(:id_resource, :interval_start, :interval_end, :package_id)")
+            sql = text("insert into temporal_index"
+                       "(id_resource, interval_start, interval_end, package_id, num_resources_package) "
+                       "values(:id_resource, :interval_start, :interval_end, :package_id, :num_resources_package)")
             conn.execute(sql, id_resource=resource.id, interval_start=interval[0], interval_end=interval[1],
-                         package_id=resource.package_id)
+                         package_id=resource.package_id, num_resources_package=resource.package.quant_resources)
     log.info(f"intervalo encontrado: {interval}")
 
 

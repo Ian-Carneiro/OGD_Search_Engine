@@ -11,10 +11,11 @@ from index_log import log
 from model import get_resources
 from spatial_indexing.spatial_indexing import run_spacial_indexing
 from temporal_indexing.temporal_indexing import run_temporal_index
+from thematic_indexing.thematic_indexing import run_thematic_indexing
 
 
 resources = get_resources()
-quant = 337 #254
+quant = 0 # 550 #254
 resources = resources[quant:]
 
 field_size_limit(maxsize)
@@ -23,7 +24,7 @@ for resource in resources:
     log.info(str(quant) + ' - ' + resource.id + "  " + resource.url)
     # """
     try:
-        request = get(resource.url, timeout=(30, 3600)) # , stream=True)
+        request = get(resource.url, timeout=(5, 36)) # , stream=True)
         log.info('headers: ' + request.headers.__str__())
         if not request.headers['Content-Type'].__contains__('text/html') and \
                 not request.headers['Content-Type'].__contains__('text/css') and \
@@ -44,22 +45,22 @@ for resource in resources:
     except ConnectionError as err:
         log.info('Erro de Conexão, ConnectionError')
         with open('./logs/errors/ConnectionError.txt', 'a') as connection_error:
-            connection_error.write(resource.id)
+            connection_error.write(resource.id+'\n')
     except ReadTimeout as err:
         log.info('Erro de Conexão, ReadTimeout')
         with open('./logs/errors/ReadTimeout.txt', 'a') as read_timeout:
-            read_timeout.write(resource.id)
+            read_timeout.write(resource.id+'\n')
     except UnicodeError as err:
         file_contents = StringIO(request.content.decode('ISO-8859-1'), newline=None)
         log.info('Ao decodificar o arquivo, uma exceção ocorreu... mudando para ISO-8859-1')
     except MissingSchema as err:
         log.exception('requests.exceptions.MissingSchema', exc_info=True)
         with open('./logs/errors/MissingSchema.txt', 'a') as missing_schema:
-            missing_schema.write(resource.id)
+            missing_schema.write(resource.id+'\n')
     except ChunkedEncodingError as err:
         log.info('a conexação foi encerrada, ChunkedEncodingError')
         with open('./logs/errors/ChunkedEncodingError.txt', 'a') as chunked_encoding_error:
-            chunked_encoding_error.write(resource.id)
+            chunked_encoding_error.write(resource.id+'\n')
 
     if 'file_contents' in locals():
         try:
@@ -72,6 +73,7 @@ for resource in resources:
 
             run_spacial_indexing(csv_file, len_row, resource)
             # run_temporal_index(resource)
+            # run_thematic_indexing(resource)
 
         except CypherSyntaxError as err:
             log.exception("CypherSyntaxError", exc_info=True)

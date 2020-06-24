@@ -22,11 +22,9 @@ def insert_into_resource_place(gid, resource, total, quant, driver):
     with driver.session() as session:
         session.run("""
             match (p:Place {{gid:"{0}"}})
-            merge (r: Resource{{id: "{1}", url: "{2}", name: "{3}", description: "{4}", 
-            package_id: "{5}", organization_name: "{6}", total:{7}}})
-            create (p)<-[ht:HAS_TERM{{freq:{8}/toFloat(r.total), quant:{8}}}]-(r)
-        """.format(gid, resource.id, resource.url, resource.name, resource.description,
-                   resource.package_id, resource.package.organization_name, total, quant))
+            merge (r: Resource{{id: "{1}", package_id: "{2}", total:{3}}})
+            create (p)<-[ht:HAS_TERM{{freq:{4}/toFloat(r.total), quant:{4}}}]-(r)
+        """.format(gid, resource.id, resource.package_id, total, quant))
 
 
 class Neo4jIndex:
