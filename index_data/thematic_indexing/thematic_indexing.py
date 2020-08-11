@@ -1,23 +1,28 @@
 import pysolr
-from model import MetadataResources
+from model import MetadataResources, MetadataDataset
+from sys import getsizeof
 
-solr = pysolr.Solr("http://localhost:8983/solr/main", always_commit=True)  # auth=<type of authentication>
-solr.ping()
-
-
-def run_thematic_indexing(resource: MetadataResources):
-    metadata = f"{resource.name} {resource.description} {resource.package.title} {resource.package.notes} " \
-               f"{resource.package.tags}"
-    doc = {'id': resource.id, 'metadata': metadata, 'package_id': resource.package_id,
-           'num_resources_package': resource.package.quant_resources}
-    solr.add(doc)
+solr_resource = pysolr.Solr("http://localhost:8983/solr/resource", always_commit=True)  # auth=<type of authentication>
+solr_dataset = pysolr.Solr("http://localhost:8983/solr/dataset", always_commit=True)  # auth=<type of authentication>
+solr_resource.ping()
+solr_dataset.ping()
 
 
-# solr.add({'id': '123', 'metadata': {'add': 'foi comprar abacate'}, 'package_id': '321', 'num_resources_package': 4})
+def run_thematic_dataset_indexing(dataset: MetadataDataset):
+    metadata_dataset = ""
+    if len(dataset.resources) == 0:
+        return
 
-# 'package_id': '321',
-          # 'package_metadata': {'add': 'zé das couves junior'}
-# 'package_id': '321',
-          # 'dataset_metadata': {'add': 'zé das couves junior'}
-
-# {'id': '123', 'metadata': {'add': 'zé das couves junior'}, 'package_id': '321', 'num_resources_package': 4}
+    for metadata in [dataset.title, dataset.notes, dataset.tags]:
+        metadata_dataset += f"{metadata}\n"
+    metadata_resources = ""
+    for resource in dataset.resources:
+        metadata_resource = ""
+        for metadata in [resource.name, resource.description, metadata_dataset]:
+            metadata_resource += f"{metadata}\n"
+        # print("resource metadata size(kb): ", getsizeof(metadata_resource)/1024)
+        solr_resource.add({'id': resource.id, 'metadata': metadata_resource})
+        metadata_resources += f"{metadata_resource}\n"
+    metadata_dataset += f"\n{metadata_resources}"
+    # print("dataset metadata size(kb): ", getsizeof(metadata_dataset)/1024)
+    solr_dataset.add({'id': dataset.id, 'metadata': metadata_dataset})

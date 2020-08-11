@@ -1,7 +1,0 @@
-sudo docker run -p 8983:8983 -v "$PWD/configsets:/opt/solr-8.5.1/server/solr/configsets/" --name solr_tcc solr
-
-sudo docker exec -it solr_tcc solr create -c main -d main
-
-https://github.com/stavarengo/portuguese-brazilian-synonyms
-
-https://github.com/felipebn/opennlp-pt-br-lemmatizer-dict-generator
