@@ -6,6 +6,18 @@ Base = declarative_base()
 engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost:5433/data_processor_db')
 
 
+class MetadataResources(Base):
+    __tablename__ = 'metadata_resources'
+    id = Column(String, primary_key=True)
+    url = Column(String)
+    name = Column(String)
+    description = Column(String)
+    package_id = Column(String, ForeignKey('metadata_dataset.id'))
+    format = Column(String)
+    created = Column(String)
+    # package = relationship('MetadataDataset', lazy='joined')
+
+
 class MetadataDataset(Base):
     __tablename__ = 'metadata_dataset'
     id = Column(String, primary_key=True)
@@ -18,30 +30,25 @@ class MetadataDataset(Base):
     tags = Column(String)
     notes = Column(String)
     quant_resources = Column(Integer)
-
-
-class MetadataResources(Base):
-    __tablename__ = 'metadata_resources'
-    id = Column(String, primary_key=True)
-    url = Column(String)
-    name = Column(String)
-    description = Column(String)
-    package_id = Column(String, ForeignKey('metadata_dataset.id'))
-    format = Column(String)
-    created = Column(String)
-    package = relationship('MetadataDataset', lazy='joined')
+    resources: list = relationship('MetadataResources', lazy='joined',
+                                   primaryjoin="""and_(MetadataDataset.id == MetadataResources.package_id,
+                                            MetadataResources.format.ilike('csv'),
+                                            MetadataResources.url.ilike('http%://%'),
+                                            MetadataResources.url.notilike('%.zip'))""")
 
 
 Session = sessionmaker(bind=engine)
+session = Session()
 
 
 def get_resources():
-    session = Session()
     return session.query(MetadataResources).filter(and_(MetadataResources.format.ilike('csv'),
                                                         MetadataResources.url.ilike('http%://%'),
                                                         MetadataResources.url.notilike('%.zip'))) \
         .order_by(MetadataResources.created).all()
 
 
-# resources = get_resources()
-# print(resources[100].dataset.organization_name)
+def get_dataset(offset, limit=1):
+    # resource_csv = session.query(MetadataResources).filter(MetadataResources.format.ilike('csv')).subquery()
+    return session.query(MetadataDataset) \
+        .order_by(MetadataDataset.metadata_created).limit(limit).offset(offset).all()
