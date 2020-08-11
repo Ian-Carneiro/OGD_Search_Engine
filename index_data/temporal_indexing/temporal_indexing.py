@@ -1,4 +1,6 @@
 from sqlalchemy import create_engine, text
+
+from model import MetadataDataset
 from .date_finder import date_parser
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
@@ -9,10 +11,12 @@ from index_log import log
 engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost:5431/temporal_indexing_module')
 
 
-def run_temporal_index(resource):
+def run_temporal_index(resource, num_resources_package, package_title, package_notes):
     funcs = [lambda: (date_parser(resource.name), f"resource.name: {resource.name}"),
              lambda: (date_parser(resource.description), f"resource.description: {resource.description}"),
-             lambda: (date_parser(resource.package.title), f"resource.package.title: {resource.package.title}")]
+             lambda: (date_parser(package_title), f"package.title: {package_title}"),
+             lambda: (date_parser(package_notes), f"package.notes: {package_notes}"),
+             ]
     for func in funcs:
         dates = func()
         if dates[0]:
@@ -58,8 +62,16 @@ def run_temporal_index(resource):
                        "(id_resource, interval_start, interval_end, package_id, num_resources_package) "
                        "values(:id_resource, :interval_start, :interval_end, :package_id, :num_resources_package)")
             conn.execute(sql, id_resource=resource.id, interval_start=interval[0], interval_end=interval[1],
-                         package_id=resource.package_id, num_resources_package=resource.package.quant_resources)
+                         package_id=resource.package_id, num_resources_package=num_resources_package)
     log.info(f"intervalo encontrado: {interval}")
+
+
+def run_temporal_dataset_indexing(dataset: MetadataDataset):
+    num_resources = len(dataset.resources)
+    for resource in dataset.resources:
+        log.info('')
+        log.info('id_resource: ' + resource.id + ' url: ' + resource.url)
+        run_temporal_index(resource, num_resources, dataset.title, dataset.notes)
 
 
 def find_interval_in_file(csv_file, index, len_row):
