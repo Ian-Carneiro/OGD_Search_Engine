@@ -1,6 +1,7 @@
-from sqlalchemy import Column, String, create_engine, select, and_, ForeignKey, Integer
+from sqlalchemy import Column, String, Boolean, create_engine, and_, ForeignKey, Integer, update
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, relationship
+from sqlalchemy.orm import sessionmaker, relationship, make_transient
+
 
 Base = declarative_base()
 engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost:5433/data_processor_db')
@@ -15,7 +16,11 @@ class MetadataResources(Base):
     package_id = Column(String, ForeignKey('metadata_dataset.id'))
     format = Column(String)
     created = Column(String)
-    # package = relationship('MetadataDataset', lazy='joined')
+    spatial_indexing = Column(Boolean)
+    temporal_indexing = Column(Boolean)
+    thematic_indexing = Column(Boolean)
+    excluded = Column(Boolean)
+    updated = Column(Boolean)
 
 
 class MetadataDataset(Base):
@@ -29,7 +34,7 @@ class MetadataDataset(Base):
     organization_id = Column(String)
     tags = Column(String)
     notes = Column(String)
-    quant_resources = Column(Integer)
+    num_resources = Column(Integer)
     resources: list = relationship('MetadataResources', lazy='joined',
                                    primaryjoin="""and_(MetadataDataset.id == MetadataResources.package_id,
                                             MetadataResources.format.ilike('csv'),
@@ -38,17 +43,56 @@ class MetadataDataset(Base):
 
 
 Session = sessionmaker(bind=engine)
-session = Session()
 
 
 def get_resources():
-    return session.query(MetadataResources).filter(and_(MetadataResources.format.ilike('csv'),
+    session = Session()
+    resources = session.query(MetadataResources).filter(and_(MetadataResources.format.ilike('csv'),
                                                         MetadataResources.url.ilike('http%://%'),
                                                         MetadataResources.url.notilike('%.zip'))) \
         .order_by(MetadataResources.created).all()
+    session.close()
+    return resources
 
 
 def get_dataset(offset, limit=1):
-    # resource_csv = session.query(MetadataResources).filter(MetadataResources.format.ilike('csv')).subquery()
-    return session.query(MetadataDataset) \
+    session = Session()
+    dataset = session.query(MetadataDataset) \
         .order_by(MetadataDataset.metadata_created).limit(limit).offset(offset).all()
+    session.close()
+    return dataset
+
+
+def set_as_indexed(resource_id, indexing_done):
+    stm = update(MetadataResources).where(MetadataResources.id == resource_id).values(**{indexing_done: True})
+    engine.execute(stm)
+
+
+def spatial_indexing_done(resource_id_list: list):
+    for id_ in resource_id_list:
+        set_as_indexed(id_, "spatial_indexing")
+
+
+def temporal_indexing_done(resource_id_list: list):
+    for id_ in resource_id_list:
+        set_as_indexed(id_, "temporal_indexing")
+
+
+def thematic_indexing_done(resource_id_list: list):
+    for id_ in resource_id_list:
+        set_as_indexed(id_, "thematic_indexing")
+
+
+def get_deleted_resources(limit=1):
+    session = Session()
+    packages = session.query(MetadataDataset)\
+        .filter(and_(MetadataResources.format.ilike('csv'),
+                     MetadataResources.excluded.is_(True),
+                     MetadataResources.package_id.like(MetadataDataset.id))).limit(limit).all()
+    for package in packages:
+        for resource in package.resources:
+            session.delete(resource)
+        make_transient(package)
+    session.commit()
+    session.close()
+    return packages
