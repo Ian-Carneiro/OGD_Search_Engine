@@ -18,13 +18,28 @@ def return_type_place(place, driver):
             return result[0]
 
 
-def insert_into_resource_place(gid, resource, total, quant, driver):
+def insert_into_resource_place(gid, resource, num_package_resources, total, quant, driver):
     with driver.session() as session:
         session.run("""
             match (p:Place {{gid:"{0}"}})
-            merge (r: Resource{{id: "{1}", package_id: "{2}", total:{3}}})
-            create (p)<-[ht:HAS_TERM{{freq:{4}/toFloat(r.total), quant:{4}}}]-(r)
-        """.format(gid, resource.id, resource.package_id, total, quant))
+            merge (r: Resource{{id: "{1}", package_id: "{2}", total:{3}, num_package_resources: {4}}})
+            create (p)<-[ht:HAS_TERM{{freq:{5}/toFloat(r.total), quant:{5}}}]-(r)
+        """.format(gid, resource.id, resource.package_id, total, num_package_resources, quant))
+
+
+def update_num_resources(package_id, num_package_resources, driver):
+    with driver.session() as session:
+        session.run(f"""
+            match(r:Resource{{package_id:"{package_id}"}})
+            set r.num_package_resources = {num_package_resources}
+        """)
+
+
+def delete_spatial_index(resource_id, driver):
+    with driver.session() as session:
+        session.run(f"""
+            match(r: Resource {{id: "{resource_id}"}}) detach delete r;
+        """)
 
 
 class Neo4jIndex:

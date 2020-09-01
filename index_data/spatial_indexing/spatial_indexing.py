@@ -9,7 +9,8 @@ from sys import maxsize
 from chardet.universaldetector import UniversalDetector
 
 from model import MetadataDataset, MetadataResources
-from spatial_indexing.neo4j_index import return_type_place, insert_into_resource_place, Neo4jIndex
+from spatial_indexing.neo4j_index import return_type_place, insert_into_resource_place, \
+    Neo4jIndex, delete_spatial_index, update_num_resources
 from neobolt.exceptions import CypherSyntaxError
 from statistics import mode, StatisticsError
 from multiprocessing import Process, Manager, Lock, Value
@@ -146,7 +147,7 @@ def analyze_csv(file):
     return dialect, len_row, types_and_indexes_
 
 
-def index(resource: MetadataResources, encoding, quant_process=cpu_count()):
+def index(resource: MetadataResources, num_package_resources, encoding, quant_process=cpu_count()):
     try:
         with open('./spatial_indexing/tmp_csv.csv', 'r', encoding=encoding, newline=None) as file_contents:
             res = analyze_csv(file_contents)
@@ -199,9 +200,12 @@ def index(resource: MetadataResources, encoding, quant_process=cpu_count()):
 
                     log.info(f"{len_csv_file} linhas foram verificadas")
 
+                if resource.updated:
+                    log.info(f"recurso {resource.id} marcado para atualização")
+                    delete_spatial_index(resource.id, driver)
                 for key in places_id_dict:
                     try:
-                        insert_into_resource_place(key, resource, quant_indexed_rows.value,
+                        insert_into_resource_place(key, resource, num_package_resources, quant_indexed_rows.value,
                                                    places_id_dict[key], driver)
                     except CypherSyntaxError:
                         log.info(f"CypherSyntaxError. key:{key} quant_places: {places_id_dict[key]} "
@@ -217,20 +221,16 @@ def index(resource: MetadataResources, encoding, quant_process=cpu_count()):
         # encoding = 'ISO-8859-1'
         log.info('Ao decodificar o arquivo, uma exceção ocorreu...')
         log.info(err)
-        with open('./logs/errors/DecodeError.txt', 'a') as decode_error:
-            decode_error.write(resource.id + '\n')
-    # except _csv.Error:
-    # encoding = 'utf-16'
-    # log.info('Ao decodificar o arquivo, uma exceção ocorreu... mudando para UTF-16')
 
 
-def run_spatial_dataset_indexing(dataset: MetadataDataset):
+def run_spatial_dataset_indexing(dataset: MetadataDataset, update_num_package_resources):
     detector_charset = UniversalDetector()
+    indexed_resources_ids = []
+    if update_num_package_resources:
+        update_num_resources(dataset.id, dataset.num_resources, driver)
     for resource in dataset.resources:
-        # if resource.id in ['74629e84-a00e-45c0-942d-069201fb65b1', 'a23eec06-7950-4cd7-bef8-b9db50206c27"']:
         if path.exists("./spatial_indexing/tmp_csv.csv"):
             remove("./spatial_indexing/tmp_csv.csv")
-        log.info('')
         log.info('id_resource: ' + resource.id + ' url: ' + resource.url)
         try:
             with get(resource.url, timeout=(5, 36), stream=True) as request:
@@ -253,24 +253,22 @@ def run_spatial_dataset_indexing(dataset: MetadataDataset):
                              f"{detector_charset.result['encoding']}: {detector_charset.result['confidence']}")
                     if not encoding or detector_charset.result['confidence'] >= 0.9:
                         encoding = detector_charset.result['encoding']
-                    index(resource, encoding)
+                    index(resource, dataset.num_resources, encoding)
+                    indexed_resources_ids.append(resource.id)
         except ConnectionError:
             log.info('Erro de Conexão, ConnectionError')
-            with open('./logs/errors/ConnectionError.txt', 'a') as connection_error:
-                connection_error.write(resource.id + '\n')
         except ReadTimeout:
             log.info('Erro de Conexão, ReadTimeout')
-            with open('./logs/errors/ReadTimeout.txt', 'a') as read_timeout:
-                read_timeout.write(resource.id + '\n')
         except MissingSchema:
             log.exception('requests.exceptions.MissingSchema', exc_info=True)
-            with open('./logs/errors/MissingSchema.txt', 'a') as missing_schema:
-                missing_schema.write(resource.id + '\n')
         except ChunkedEncodingError:
             log.info('a conexação foi encerrada, ChunkedEncodingError')
-            with open('./logs/errors/ChunkedEncodingError.txt', 'a') as chunked_encoding_error:
-                chunked_encoding_error.write(resource.id + '\n')
         except StopIteration:
             log.info('Chunk vazio')
-            with open('./logs/errors/StopIteration.txt', 'a') as stop_iteration:
-                stop_iteration.write(resource.id + '\n')
+    return indexed_resources_ids
+
+
+def delete_spatial_indexes(dataset: MetadataDataset):
+    for resource in dataset.resources:
+        delete_spatial_index(resource.id, driver)
+    update_num_resources(dataset.id, dataset.num_resources, driver)
