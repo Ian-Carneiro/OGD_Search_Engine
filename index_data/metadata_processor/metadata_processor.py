@@ -1,55 +1,47 @@
 from ckanapi import RemoteCKAN
-import json
-import pandas
+import pandas as pd
 from sqlalchemy import create_engine
-import time
-import schedule
-from threading import Thread
+from index_log import log
 
-# portaisUrls = ['http://dados.gov.br', 'http://dados.al.gov.br', 'http://dados.recife.pe.gov.br', 'https://dados.rs.gov.br', 'http://datapoa.com.br', 'http://dados.fortaleza.ce.gov.br', 'http://dados.prefeitura.sp.gov.br']
-# dados_gov = RemoteCKAN('http://dados.al.gov.br')
-# dados_gov = RemoteCKAN('http://dados.recife.pe.gov.br')
-# dados_gov = RemoteCKAN('https://dados.rs.gov.br')
-# dados_gov = RemoteCKAN('http://datapoa.com.br')
-# dados_gov = RemoteCKAN('http://www.data.rio')# Não funciona
-# dados_gov = RemoteCKAN('http://dados.fortaleza.ce.gov.br')
-# dados_gov = RemoteCKAN('http://dados.prefeitura.sp.gov.br')
-
-dados_gov = RemoteCKAN('http://dados.gov.br')
-assert dados_gov.action.site_read()
-engine = create_engine('postgresql+psycopg2://postgres:postgres@db_postgres_tcc:5432/data_processor_db')
+engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost:5433/data_processor_db')
 
 
-def download_and_persist():
-    engine.execute("DROP TABLE IF EXISTS metadata_resources;")
-    engine.execute("DROP TABLE IF EXISTS metadata_dataset;")
+def download_and_persist_metadata():
+    log.info("Baixando e persistindo metadados.")
+    log.info('Estabelecento conexão com dados.gov.br...')
+    dados_gov = RemoteCKAN('http://dados.gov.br')
+    assert dados_gov.action.site_read()
+    log.info('conexão estabelecida.')
+    with engine.connect() as conn:
+        conn.execute("DROP TABLE IF EXISTS metadata_dataset;")
+        conn.execute("UPDATE metadata_resources SET excluded=TRUE;")
     page = 0
-    total_time_persistence = 0
-    total_time_process_data = 0
-    total_time_download = 0
 
     while True:
-        print("Page: ", page)
-        ti = time.time()
+        log.info("Página(até 1000 metadados de recursos): " + str(page))
         metadata = dados_gov.action.current_package_list_with_resources(limit=1000, offset=1000 * page)
-        total_time_download += time.time()-ti
 
-        ti = time.time()
         page += 1
 
-        new_metadata = pandas.io.json.json_normalize(metadata)
-        new_metadata = new_metadata[['maintainer', 'id', 'author', 'state', 'name', 'url', 'notes', 'metadata_created',
-                                     'metadata_modified', 'title', 'license_title']]
+        new_metadata = pd.json_normalize(metadata)
+        dataset = new_metadata[['id', 'maintainer', 'author', 'name', 'url', 'notes', 'metadata_created', 'tags',
+                                'metadata_modified', 'title']]
+        resources = pd.json_normalize(metadata, 'resources')
+        resources = resources[['id', 'package_id', 'url', 'description', 'name', 'format', 'created', 'last_modified']]
 
-        resources = pandas.io.json.json_normalize(metadata, 'resources')
-        resources = resources[['id', 'package_id', 'url', 'description', 'name', 'format', 'created',
-                               'last_modified', 'state']]
+        num_csv = resources['format'].eq('CSV').astype(int).groupby(resources['package_id']).sum()
+        dataset = pd.merge(dataset, num_csv, left_on='id', right_on='package_id', how='left')\
+            .rename(columns={'format': 'num_resources'})
+        resources['spatial_indexing'] = False
+        resources['temporal_indexing'] = False
+        resources['thematic_indexing'] = False
+        resources['updated'] = False
+        resources['excluded'] = False
 
-        metadata = pandas.read_json(json.dumps(metadata))
         tags = []
         organizations = []
         organization_id = []
-        for index, m in metadata.iterrows():
+        for m in metadata:
             try:
                 organizations.append(m['organization']['name'])
                 organization_id.append(m['organization']['id'])
@@ -57,33 +49,18 @@ def download_and_persist():
                 organizations.append(None)
                 organization_id.append(None)
             tags.append(", ".join([tag['name'] for tag in m['tags']]))
+        dataset['tags'] = tags
+        dataset['organization_name'] = organizations
+        dataset['organization_id'] = organization_id
 
-        new_metadata['tags'] = tags
-        new_metadata['organization_name'] = organizations
-        new_metadata['organization_id'] = organization_id
-        total_time_process_data += time.time() - ti
-
-        ti = time.time()
-        new_metadata.to_sql(name='metadata_dataset', con=engine, if_exists='append', index=False)
+        dataset.to_sql(name='metadata_dataset', con=engine, if_exists='append', index=False)
         resources.to_sql(name='metadata_resources', con=engine, if_exists='append', index=False)
-        total_time_persistence += time.time() - ti
+
         if len(metadata) < 1000:
             break
-
-    print("totalTimePersistence:", total_time_persistence)
-    print("totalTimeDownload:", total_time_download)
-    print("totalTimeProcessData:", total_time_process_data)
-
-
-def agendador():
-    schedule.every().day.at("00:00").do(download_and_persist)
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
-
-
-def run():
-    download_and_persist()
-    thread = Thread(target=agendador)
-    thread.start()
-    # agendador()
+    with engine.connect() as conn:
+        num_dataset = conn.execute("SELECT count(*) FROM metadata_dataset;").fetchone()
+        num_resources = conn.execute("SELECT count(*) FROM metadata_resources;").fetchone()
+        log.info("Quantidade de conjuntos de dados: " + str(num_dataset))
+        log.info("Quantidade de recursos: " + str(num_resources))
+    dados_gov.close()
