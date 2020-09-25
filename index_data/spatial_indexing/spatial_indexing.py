@@ -3,7 +3,7 @@ from index_log import log
 from neo4j import GraphDatabase, basic_auth
 from requests import get
 import _csv
-from requests.exceptions import ChunkedEncodingError, ConnectionError, ReadTimeout, MissingSchema
+from requests.exceptions import ChunkedEncodingError, ConnectionError, ReadTimeout, MissingSchema, ContentDecodingError
 from csv import field_size_limit, Sniffer, reader, QUOTE_ALL
 from sys import maxsize
 from chardet.universaldetector import UniversalDetector
@@ -14,10 +14,14 @@ from spatial_indexing.neo4j_index import return_type_place, insert_into_resource
 from neobolt.exceptions import CypherSyntaxError
 from statistics import mode, StatisticsError
 from multiprocessing import Process, Manager, Lock, Value
-from os import cpu_count, remove, path
+from os import remove, path
+from spatial_indexing.config import config
 
 # precisa estar encrypted=False quando rodar local
-driver = GraphDatabase.driver("bolt://0.0.0.0:7687", auth=basic_auth("neo4j", "neo4j"), encrypted=False)
+driver = GraphDatabase.driver(config.db_connection["bolt_uri"],
+                              auth=basic_auth(config.db_connection["user"],
+                                              config.db_connection["password"]),
+                              encrypted=False)
 
 field_size_limit(maxsize)
 
@@ -42,10 +46,9 @@ def types_and_indexes(csv_file: list, driver_: GraphDatabase):
             res = None
             try:
                 res = return_type_place(row[j], driver_)
-            except CypherSyntaxError as err:
-                log.info(
-                    "Erro ao verificar se o termo é um local e se possui um tipo.(índice a partir do 0) i={0}, j={1}"
-                        .format(str(quant_rows), str(j)))
+            except Exception:
+                log.info("Erro ao verificar se o termo é um local e se possui um tipo."
+                         "(índice a partir do 0) i={0}, j={1}".format(str(quant_rows), str(j)))
             if res:
                 if res != "UNDEFINED":
                     pattern_type = "+".join([pattern_type, res])
@@ -118,7 +121,7 @@ def read_lines_file(file, num_lines):
 
 def analyze_csv(file):
     try:
-        dialect = Sniffer().sniff(''.join(read_lines_file(file, 50)))
+        dialect = Sniffer().sniff(''.join(read_lines_file(file, config.num_lines_to_check_csv_dialect)))
         log.info(f"delimiter: ({dialect.delimiter}) doublequote: ({dialect.doublequote}) "
                  f"escapechar: ({dialect.escapechar}) "
                  f"lineterminator: ({dialect.lineterminator}) quotechar: ({dialect.quotechar}) "
@@ -128,7 +131,7 @@ def analyze_csv(file):
         log.info("Não foi possível determinar o delimitador.")
         return ()
     file.seek(0)
-    csv_file = reader(read_lines_file(file, 100), dialect, quoting=QUOTE_ALL)
+    csv_file = reader(read_lines_file(file, config.num_lines_to_check_type_of_place), dialect, quoting=QUOTE_ALL)
     csv_file = list(csv_file)
     # Verifica qual o provável tamanho de cada linha do csv
     try:
@@ -147,7 +150,7 @@ def analyze_csv(file):
     return dialect, len_row, types_and_indexes_
 
 
-def index(resource: MetadataResources, num_package_resources, encoding, quant_process=cpu_count()):
+def index(resource: MetadataResources, num_package_resources, encoding, quant_process=config.num_cpu_to_index):
     try:
         with open('./spatial_indexing/tmp_csv.csv', 'r', encoding=encoding, newline=None) as file_contents:
             res = analyze_csv(file_contents)
@@ -163,7 +166,7 @@ def index(resource: MetadataResources, num_package_resources, encoding, quant_pr
                 lock = Lock()
                 time_i = time()
                 while True:
-                    csv_file = reader(file_contents.readlines(1024 * 1024 * 50), dialect, quoting=QUOTE_ALL)
+                    csv_file = reader(file_contents.readlines(config.csv_chunk_size), dialect, quoting=QUOTE_ALL)
                     csv_file = list(csv_file)
                     if not csv_file:
                         break
@@ -200,7 +203,7 @@ def index(resource: MetadataResources, num_package_resources, encoding, quant_pr
 
                     log.info(f"{len_csv_file} linhas foram verificadas")
 
-                if resource.updated:
+                if resource.updated or resource.spatial_indexing:
                     log.info(f"recurso {resource.id} marcado para atualização")
                     delete_spatial_index(resource.id, driver)
                 for key in places_id_dict:
@@ -233,7 +236,7 @@ def run_spatial_dataset_indexing(dataset: MetadataDataset, update_num_package_re
             remove("./spatial_indexing/tmp_csv.csv")
         log.info('id_resource: ' + resource.id + ' url: ' + resource.url)
         try:
-            with get(resource.url, timeout=(5, 36), stream=True) as request:
+            with get(resource.url, timeout=config.request_timeout, stream=True) as request:
                 encoding = request.encoding
                 log.info('headers: ' + request.headers.__str__())
                 if not request.headers['Content-Type'].__contains__('text/html') and \
@@ -244,7 +247,7 @@ def run_spatial_dataset_indexing(dataset: MetadataDataset, update_num_package_re
                             'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'):
                     with open('./spatial_indexing/tmp_csv.csv', 'wb') as file_contents:
                         detector_charset.reset()
-                        for chunk in request.iter_content(chunk_size=1024 * 1024 * 50):
+                        for chunk in request.iter_content(chunk_size=config.csv_chunk_size):
                             file_contents.write(chunk)
                             detector_charset.feed(chunk)
                         detector_charset.close()
@@ -263,12 +266,14 @@ def run_spatial_dataset_indexing(dataset: MetadataDataset, update_num_package_re
             log.exception('requests.exceptions.MissingSchema', exc_info=True)
         except ChunkedEncodingError:
             log.info('a conexação foi encerrada, ChunkedEncodingError')
+        except ContentDecodingError:
+            log.exception('ContentDecodingError', exc_info=True)
         except StopIteration:
             log.info('Chunk vazio')
     return indexed_resources_ids
 
 
-def delete_spatial_indexes(dataset: MetadataDataset):
-    for resource in dataset.resources:
-        delete_spatial_index(resource.id, driver)
-    update_num_resources(dataset.id, dataset.num_resources, driver)
+def delete_spatial_indexes(num_resources, resource):
+    log.info(f'removendo índice espacial de resource {resource.id}')
+    delete_spatial_index(resource.id, driver)
+    update_num_resources(resource.package_id, num_resources, driver)

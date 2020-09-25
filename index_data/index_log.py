@@ -1,8 +1,9 @@
 import logging
 from logging.handlers import RotatingFileHandler
+from config import config
 
-handler = RotatingFileHandler('./logs/data_processor.log', maxBytes=1024*1024, backupCount=0)
-
+handler = RotatingFileHandler(config.log["file_name"], maxBytes=config.log["max_file_bytes"],
+                              backupCount=config.log["backup_count"])
 logging.basicConfig(format='%(asctime)s - %(levelname)s : %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p',
                     level=logging.INFO, handlers=[handler])
 

@@ -1,20 +1,68 @@
-version: '3'
+version: '3.8'
 services:
-  db_postgres_tcc:
-    build: ./db/
-    ports:
-      - "5433:5432"
-  python_tcc:
-    build: .
-    links:
-      - db_postgres_tcc
-    volumes:
-      - .:/app/
-      - /etc/localtime:/etc/localtime:ro
-  neo4j_tcc:
-    image: neo4j
-    volumes:
-      - ./db/neo4j/csv:/var/lib/neo4j/import
+  spatial_index_database:
+    build: ./databases_and_solr_configs/spatial_indexing
+    container_name: spatial_index_database
     ports:
       - "7474:7474"
       - "7687:7687"
+  thematic_index_solr:
+    build: ./databases_and_solr_configs/thematic_indexing
+    container_name: thematic_index_solr
+    environment:
+    - SOLR_JAVA_MEM=-Xms4g -Xmx4g
+    entrypoint:
+    - bash
+    - "-c"
+    - "precreate-core dataset /opt/solr/server/solr/configsets/dataset; precreate-core resource /opt/solr/server/solr/configsets/resource; exec solr -f"
+    ports: 
+      - "8983:8983" 
+  temporal_index_database:
+    build: ./databases_and_solr_configs/temporal_indexing
+    container_name: temporal_index_database
+    ports:
+      - "5430:5432"
+  metadata_database:
+    build: ./databases_and_solr_configs/metadata_processor
+    container_name: metadata_database
+    ports:
+      - "5431:5432"
+  index_data:
+    build:
+      context: .
+      dockerfile: Dockerfile_index_data
+    container_name: index_data_tcc
+    restart: on-failure
+    external_links:
+      - spatial_index_database
+      - thematic_index_solr
+      - temporal_index_database
+      - metadata_database
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./index_data:/usr/src/app
+    depends_on:
+      - spatial_index_database
+      - thematic_index_solr
+      - temporal_index_database
+      - metadata_database
+  api_rest:
+    build:
+      context: .
+      dockerfile: Dockerfile_api_rest
+    container_name: api_rest_tcc
+    restart: on-failure
+    external_links:
+      - spatial_index_database
+      - thematic_index_solr
+      - temporal_index_database
+      - metadata_database
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./api_rest:/usr/src/app
+    depends_on:
+      - spatial_index_database
+      - thematic_index_solr
+      - temporal_index_database
+      - metadata_database

@@ -1,5 +1,5 @@
 from neo4j import GraphDatabase, basic_auth
-
+from spatial_indexing.config import config
 
 sort_ordering_criteria = {'MUNICÍPIO': 3, 'UF': 2, 'REGIÃO': 1}
 
@@ -44,7 +44,10 @@ def delete_spatial_index(resource_id, driver):
 
 class Neo4jIndex:
     def __init__(self):
-        self._driver = GraphDatabase.driver("bolt://0.0.0.0:7687", auth=basic_auth("neo4j", "neo4j"), encrypted=False)
+        self._driver = GraphDatabase.driver(config.db_connection["bolt_uri"],
+                                            auth=basic_auth(config.db_connection["user"],
+                                                            config.db_connection["password"]),
+                                            encrypted=False)
 
     def close(self):
         self._driver.close()

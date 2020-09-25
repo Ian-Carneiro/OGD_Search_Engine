@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine, text
+from temporal_indexing.config import config
 
-engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost:5431/temporal_indexing_module')
+engine = create_engine(config.db_connection)
 
 
 def delete_temporal_index(resource_id):

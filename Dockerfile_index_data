@@ -1,0 +1,10 @@
+FROM nickgryg/alpine-pandas
+WORKDIR /usr/src/app
+RUN apk update && \
+    apk add --no-cache g++ && \
+    apk add postgresql-dev
+RUN pip3 install --upgrade pip
+#COPY index_data /usr/src/app
+COPY ./index_data/requirements.txt /usr/src/app/requirements.txt
+RUN PYTHONPATH=/usr/bin/python pip3 install -r /usr/src/app/requirements.txt
+CMD python3 ./data_processor.py

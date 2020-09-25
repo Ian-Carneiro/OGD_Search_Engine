@@ -47,7 +47,7 @@ def run_temporal_index(resource, num_resources_package, package_title, package_n
 
     if interval:
         interval = [i.date() for i in interval]
-        if resource.updated:
+        if resource.updated or resource.temporal_indexing:
             log.info(f"recurso {resource.id} marcado para atualização")
             delete_temporal_index(resource.id)
 
@@ -66,7 +66,7 @@ def run_temporal_dataset_indexing(dataset: MetadataDataset, update_num_package_r
     return indexed_resources_ids
 
 
-def delete_temporal_indexes(dataset: MetadataDataset):
-    for resource in dataset.resources:
-        delete_temporal_index(resource.id)
-    update_num_resources(dataset.id, dataset.num_resources)
+def delete_temporal_indexes(num_resources, resource):
+    log.info(f'removendo índice temporal de resource {resource.id}')
+    delete_temporal_index(resource.id)
+    update_num_resources(resource.package_id, num_resources)

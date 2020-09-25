@@ -62,7 +62,7 @@ def get_resources_or_dataset_ids_(query_level):
             p.start()
         for p in processes:
             p.join()
-    # ----------------------------------------------------------------------------------------------------------------#
+        # ----------------------------------------------------------------------------------------------------------------#
         results_queries = []
         if 'spatial_query_return' in locals():
             results_queries.append(spatial_query_return)
@@ -71,7 +71,7 @@ def get_resources_or_dataset_ids_(query_level):
         if 'thematic_query_return' in locals():
             results_queries.append(thematic_query_return)
         results_queries.sort(key=lambda elem: len(elem))
-    # ----------------------------------------------------------------------------------------------------------------#
+        # ----------------------------------------------------------------------------------------------------------------#
         resources_or_dataset_dict = {}
         lt_dict_freq = results_queries[0]
         for result in results_queries[1:]:
@@ -83,7 +83,7 @@ def get_resources_or_dataset_ids_(query_level):
             # print(lt_dict_freq)
             lt_dict_freq = resources_or_dataset_dict
             resources_or_dataset_dict = {}
-    # ----------------------------------------------------------------------------------------------------------------#
+        # ----------------------------------------------------------------------------------------------------------------#
         response = [{"id": key, "freq": lt_dict_freq[key]} for key in lt_dict_freq.keys()]
         response.sort(key=lambda elem: elem["freq"], reverse=True)
         response = make_response(jsonify(response), 200)
@@ -94,7 +94,7 @@ def spatial_query(gid_place, query_level, spatial_query_return):
     time_i = time()
     spatial_query_return.update(spatial.get_resources(gid_place)
                                 if query_level == 'resource' else spatial.get_dataset(gid_place))
-    print('tempo de execução(spatial_query):', time()-time_i)
+    print('tempo de execução(spatial_query):', time() - time_i)
 
 
 def temporal_query(interval_start, interval_end, query_level, temporal_query_return):
@@ -121,3 +121,9 @@ def get_resources_or_dataset(query_level):
     else:
         dataset = model.get_dataset(request.json['ids'])
         return jsonify(dataset)
+
+
+@app.route('/status')
+def status():
+    return jsonify({"status": "ok"})
+

@@ -1,7 +1,8 @@
 import pysolr
+from app.config import config
 
-solr_resource = pysolr.Solr("http://localhost:8983/solr/resource", always_commit=True)  # auth=<type of authentication>
-solr_dataset = pysolr.Solr("http://localhost:8983/solr/dataset", always_commit=True)  # auth=<type of authentication>
+solr_resource = pysolr.Solr(config.thematic_config["resource_solr_core_uri"], always_commit=True)  # auth=<type of authentication>
+solr_dataset = pysolr.Solr(config.thematic_config["dataset_solr_core_uri"], always_commit=True)  # auth=<type of authentication>
 solr_resource.ping()
 solr_dataset.ping()
 
@@ -22,13 +23,3 @@ def get_dataset(query: str):
         doc['score'] /= 100
         ids[doc['id']] = doc['score']
     return ids
-
-
-# def get_dataset(query: str):
-#     docs = solr.search(query, **{'fl': 'num_resources_package', 'omitHeader': 'true', 'group': 'true',
-#                        'group.field': 'package_id', 'group.limit': 1, 'rows': 1000000000})
-#     ids = {}
-#     for doc in docs.grouped['package_id']['groups']:
-#         doc_list = doc['doclist']
-#         ids[doc['groupValue']] = doc_list['numFound']/doc_list['docs'][0]['num_resources_package']
-#     return ids

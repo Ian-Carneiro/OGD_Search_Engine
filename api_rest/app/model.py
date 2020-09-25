@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine, text
+from app.config import config
 
-engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost:5433/data_processor_db')
+engine = create_engine(config.model_config['db_connection'])
 
 
 def get_resources(ids: list):

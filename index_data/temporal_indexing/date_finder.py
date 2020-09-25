@@ -3,6 +3,7 @@ import datetime
 import dateparser.conf
 import re
 from index_log import log
+from temporal_indexing.config import config
 
 
 def search(text):
@@ -105,7 +106,7 @@ def date_parser(text):
                                            })
         except OverflowError:
             log.info(f"date OverflowError")
-        if found and datetime.datetime(1900, 1, 1) <= found[0][1] <= datetime.datetime.now():
+        if found and config.min_date_allowed <= found[0][1] <= config.max_date_allowed:
             dates.append((found[0][1], m[1]))
     return dates
 

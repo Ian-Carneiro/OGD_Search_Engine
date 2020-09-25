@@ -1,0 +1,9 @@
+FROM python:3.8.6-alpine3.12
+WORKDIR /usr/src/app
+RUN apk update && \
+    apk add --no-cache g++ && \
+    apk add postgresql-dev
+RUN pip3 install --upgrade pip
+COPY ./api_rest/requirements.txt /usr/src/app/requirements.txt
+RUN PYTHONPATH=/usr/bin/python pip3 install -r /usr/src/app/requirements.txt
+CMD python3 ./run.py
