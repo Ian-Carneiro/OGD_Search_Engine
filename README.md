@@ -8,4 +8,4 @@
 2. Execute o seguinte comando:
     - `docker-compose up`
 
-    **Nota: a instalação da aplicação foi feita no linux.**
+    **Nota: a instalação da aplicação foi testada no linux.**
