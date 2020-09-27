@@ -8,8 +8,6 @@ logs/
 
 tmp_csv.csv
 
-place_neo4j.csv
-
 _notes_
 
 # See http://help.github.com/ignore-files/ for more about ignoring files.

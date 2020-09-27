@@ -1,0 +1,5597 @@
+gid,nome,tipo,fk
+1,Norte,REGIÃO,
+2,Sudeste,REGIÃO,
+3,Nordeste,REGIÃO,
+4,Centro-Oeste,REGIÃO,
+5,Sul,REGIÃO,
+6,Piauí,UF,3
+7,Maranhão,UF,3
+8,Espírito Santo,UF,2
+9,Rondônia,UF,1
+10,Acre,UF,1
+11,Amazonas,UF,1
+12,Roraima,UF,1
+13,Pará,UF,1
+14,Amapá,UF,1
+15,Tocantins,UF,1
+16,Alagoas,UF,3
+17,Paraná,UF,5
+18,Santa Catarina,UF,5
+19,Mato Grosso do Sul,UF,4
+20,Sergipe,UF,3
+21,Mato Grosso,UF,4
+22,Rio Grande do Sul,UF,5
+23,Rio de Janeiro,UF,2
+24,Minas Gerais,UF,2
+25,Rio Grande do Norte,UF,3
+26,Distrito Federal,UF,4
+27,Paraíba,UF,3
+28,Pernambuco,UF,3
+29,Bahia,UF,3
+30,Goiás,UF,4
+31,São Paulo,UF,2
+32,Ceará,UF,3
+33,Acajutiba,MUNICÍPIO,29
+34,Aporá,MUNICÍPIO,29
+35,Campestre do Maranhão,MUNICÍPIO,7
+36,Porto Murtinho,MUNICÍPIO,19
+37,Pimenteiras do Oeste,MUNICÍPIO,9
+38,Santa Maria de Itabira,MUNICÍPIO,24
+45,Divinolândia de Minas,MUNICÍPIO,24
+46,Jacinto,MUNICÍPIO,24
+47,Padre Carvalho,MUNICÍPIO,24
+48,Cristália,MUNICÍPIO,24
+49,Felisburgo,MUNICÍPIO,24
+50,Aurilândia,MUNICÍPIO,30
+51,Tesouro,MUNICÍPIO,21
+52,Francisco Sá,MUNICÍPIO,24
+53,Rubim,MUNICÍPIO,24
+54,Pavussu,MUNICÍPIO,6
+55,São Francisco do Guaporé,MUNICÍPIO,9
+56,Campo Belo do Sul,MUNICÍPIO,18
+57,Congonhas,MUNICÍPIO,24
+58,Vale do Anari,MUNICÍPIO,9
+59,Adrianópolis,MUNICÍPIO,17
+60,Jaguaruna,MUNICÍPIO,18
+61,Ibiúna,MUNICÍPIO,31
+62,Nova Brasilândia,MUNICÍPIO,21
+63,Codó,MUNICÍPIO,7
+64,Itinga,MUNICÍPIO,24
+65,São Luís de Montes Belos,MUNICÍPIO,30
+66,Moiporá,MUNICÍPIO,30
+67,Palestina de Goiás,MUNICÍPIO,30
+68,Curvelo,MUNICÍPIO,24
+69,Campo Azul,MUNICÍPIO,24
+39,Fátima,MUNICÍPIO,29
+40,Carapicuíba,MUNICÍPIO,31
+41,Salto de Pirapora,MUNICÍPIO,31
+42,Taguaí,MUNICÍPIO,31
+43,Boituva,MUNICÍPIO,31
+44,Encruzilhada,MUNICÍPIO,29
+70,Piranhas,MUNICÍPIO,30
+71,Torixoréu,MUNICÍPIO,21
+72,Córrego do Ouro,MUNICÍPIO,30
+73,Eunápolis,MUNICÍPIO,29
+74,Mesquita,MUNICÍPIO,23
+75,Cambuquira,MUNICÍPIO,24
+76,Conceição do Rio Verde,MUNICÍPIO,24
+77,Cruzília,MUNICÍPIO,24
+78,Sabáudia,MUNICÍPIO,17
+79,Cajamar,MUNICÍPIO,31
+80,Caieiras,MUNICÍPIO,31
+81,Pirapora do Bom Jesus,MUNICÍPIO,31
+82,Tejupá,MUNICÍPIO,31
+83,Piatã,MUNICÍPIO,29
+84,Abaíra,MUNICÍPIO,29
+85,Cavalcante,MUNICÍPIO,30
+86,Arraias,MUNICÍPIO,15
+87,Santana,MUNICÍPIO,29
+88,Santa Maria da Vitória,MUNICÍPIO,29
+89,Paramirim,MUNICÍPIO,29
+90,Iramaia,MUNICÍPIO,29
+91,Rio de Contas,MUNICÍPIO,29
+92,Minaçu,MUNICÍPIO,30
+93,Trombas,MUNICÍPIO,30
+94,Colorado do Oeste,MUNICÍPIO,9
+95,Alto Paraíso de Goiás,MUNICÍPIO,30
+96,Montividiu do Norte,MUNICÍPIO,30
+97,Igrapiúna,MUNICÍPIO,29
+98,Macaúbas,MUNICÍPIO,29
+99,São Desidério,MUNICÍPIO,29
+100,Paratinga,MUNICÍPIO,29
+101,Sítio do Mato,MUNICÍPIO,29
+102,Araguaçu,MUNICÍPIO,15
+103,Iaçu,MUNICÍPIO,29
+104,Campos Belos,MUNICÍPIO,30
+105,Baianópolis,MUNICÍPIO,29
+106,Boa Vista do Tupim,MUNICÍPIO,29
+107,Ibipitanga,MUNICÍPIO,29
+108,Estrela do Norte,MUNICÍPIO,30
+109,Carlos Barbosa,MUNICÍPIO,22
+110,Tijucas do Sul,MUNICÍPIO,17
+111,Barreirinha,MUNICÍPIO,11
+112,Rio Maria,MUNICÍPIO,13
+113,Tapes,MUNICÍPIO,22
+114,Belo Oriente,MUNICÍPIO,24
+115,Santa Vitória,MUNICÍPIO,24
+116,Seabra,MUNICÍPIO,29
+117,Ibitiara,MUNICÍPIO,29
+118,Serra Dourada,MUNICÍPIO,29
+119,Registro,MUNICÍPIO,31
+120,Itaoca,MUNICÍPIO,31
+121,Ribeira,MUNICÍPIO,31
+122,Arapuã,MUNICÍPIO,17
+123,Apiaí,MUNICÍPIO,31
+124,Santa Vitória do Palmar,MUNICÍPIO,22
+125,Ubiratã,MUNICÍPIO,17
+126,Jequié,MUNICÍPIO,29
+127,Matina,MUNICÍPIO,29
+128,Formoso,MUNICÍPIO,30
+129,Livramento de Nossa Senhora,MUNICÍPIO,29
+130,Guarani de Goiás,MUNICÍPIO,30
+131,Lindolfo Collor,MUNICÍPIO,22
+132,Santo Amaro,MUNICÍPIO,29
+133,Uruçuí,MUNICÍPIO,6
+134,Serra Nova Dourada,MUNICÍPIO,21
+135,Manoel Emídio,MUNICÍPIO,6
+136,Rafael Jambeiro,MUNICÍPIO,29
+137,Santa Terezinha,MUNICÍPIO,29
+138,Cachoeira,MUNICÍPIO,29
+139,Taguatinga,MUNICÍPIO,15
+140,Parecis,MUNICÍPIO,9
+141,Aurora do Tocantins,MUNICÍPIO,15
+142,Castro Alves,MUNICÍPIO,29
+143,Iraquara,MUNICÍPIO,29
+144,Ipecaetá,MUNICÍPIO,29
+145,Feira de Santana,MUNICÍPIO,29
+146,Conceição do Jacuípe,MUNICÍPIO,29
+147,Ponte Alta do Bom Jesus,MUNICÍPIO,15
+148,Conceição do Tocantins,MUNICÍPIO,15
+149,Taipas do Tocantins,MUNICÍPIO,15
+150,Bom Jesus do Araguaia,MUNICÍPIO,21
+151,Itanhangá,MUNICÍPIO,21
+152,Coração de Maria,MUNICÍPIO,29
+153,Cristópolis,MUNICÍPIO,29
+154,Cabo de Santo Agostinho,MUNICÍPIO,28
+155,São João do Arraial,MUNICÍPIO,6
+156,Santa Tereza de Goiás,MUNICÍPIO,30
+157,Pires do Rio,MUNICÍPIO,30
+158,Santo Antônio da Barra,MUNICÍPIO,30
+159,Barra do Ouro,MUNICÍPIO,15
+160,Viamão,MUNICÍPIO,22
+161,Paraúna,MUNICÍPIO,30
+162,Santa Rita do Araguaia,MUNICÍPIO,30
+163,Planalto,MUNICÍPIO,31
+164,Platina,MUNICÍPIO,31
+165,Pontalinda,MUNICÍPIO,31
+166,Porto Feliz,MUNICÍPIO,31
+167,Londrina,MUNICÍPIO,17
+168,Bertioga,MUNICÍPIO,31
+169,Araruama,MUNICÍPIO,23
+170,Pantano Grande,MUNICÍPIO,22
+429,Colina,MUNICÍPIO,31
+171,Barra do Ribeiro,MUNICÍPIO,22
+172,Rio Pardo,MUNICÍPIO,22
+173,São Sepé,MUNICÍPIO,22
+174,Alegrete,MUNICÍPIO,22
+175,Cachoeira do Sul,MUNICÍPIO,22
+176,Eldorado do Sul,MUNICÍPIO,22
+177,Arroio dos Ratos,MUNICÍPIO,22
+178,Montenegro,MUNICÍPIO,22
+179,Timbó,MUNICÍPIO,18
+180,Novo Cabrais,MUNICÍPIO,22
+181,Piên,MUNICÍPIO,17
+182,Gararu,MUNICÍPIO,20
+183,Bom Retiro,MUNICÍPIO,18
+184,Tunápolis,MUNICÍPIO,18
+185,Sant'Ana do Livramento,MUNICÍPIO,22
+186,Bom Jesus do Sul,MUNICÍPIO,17
+187,Jarinu,MUNICÍPIO,31
+188,Taubaté,MUNICÍPIO,31
+189,Marechal Cândido Rondon,MUNICÍPIO,17
+190,Mercedes,MUNICÍPIO,17
+191,Igreja Nova,MUNICÍPIO,16
+192,Terenos,MUNICÍPIO,19
+193,Itu,MUNICÍPIO,31
+194,Campo Alegre,MUNICÍPIO,18
+195,São Mateus do Sul,MUNICÍPIO,17
+196,Três Barras,MUNICÍPIO,18
+197,Fraiburgo,MUNICÍPIO,18
+198,Santa Cecília,MUNICÍPIO,18
+199,Angélica,MUNICÍPIO,19
+200,Nova Andradina,MUNICÍPIO,19
+201,Maracaju,MUNICÍPIO,19
+202,Jateí,MUNICÍPIO,19
+203,Quitandinha,MUNICÍPIO,17
+204,Chopinzinho,MUNICÍPIO,17
+205,Reserva do Iguaçu,MUNICÍPIO,17
+206,Novo Horizonte do Sul,MUNICÍPIO,19
+207,Eldorado,MUNICÍPIO,19
+208,Douradina,MUNICÍPIO,19
+209,Ivinhema,MUNICÍPIO,19
+210,Guia Lopes da Laguna,MUNICÍPIO,19
+211,Dois Irmãos do Buriti,MUNICÍPIO,19
+212,Campo Magro,MUNICÍPIO,17
+213,Colombo,MUNICÍPIO,17
+214,Quedas do Iguaçu,MUNICÍPIO,17
+215,São Miguel do Iguaçu,MUNICÍPIO,17
+216,Catanduvas,MUNICÍPIO,17
+217,Fernandes Pinheiro,MUNICÍPIO,17
+218,Santa Helena,MUNICÍPIO,17
+219,Uruguaiana,MUNICÍPIO,22
+220,Laranjal Paulista,MUNICÍPIO,31
+221,Quaraí,MUNICÍPIO,22
+222,Aral Moreira,MUNICÍPIO,19
+223,Mundo Novo,MUNICÍPIO,19
+224,Japorã,MUNICÍPIO,19
+225,Coronel Sapucaia,MUNICÍPIO,19
+226,Elias Fausto,MUNICÍPIO,31
+227,Avaré,MUNICÍPIO,31
+228,Cambé,MUNICÍPIO,17
+229,Ipaussu,MUNICÍPIO,31
+230,Ilhéus,MUNICÍPIO,29
+231,Piracaia,MUNICÍPIO,31
+232,Céu Azul,MUNICÍPIO,17
+233,Teixeira Soares,MUNICÍPIO,17
+234,Cerro Azul,MUNICÍPIO,17
+235,Candói,MUNICÍPIO,17
+236,Porto Amazonas,MUNICÍPIO,17
+237,Porto Barreiro,MUNICÍPIO,17
+238,Reserva,MUNICÍPIO,17
+239,Sete Barras,MUNICÍPIO,31
+240,Iporanga,MUNICÍPIO,31
+241,Quatro Pontes,MUNICÍPIO,17
+242,Nova Tebas,MUNICÍPIO,17
+243,Campina da Lagoa,MUNICÍPIO,17
+244,Palotina,MUNICÍPIO,17
+245,Miracatu,MUNICÍPIO,31
+246,Rancho Alegre D'Oeste,MUNICÍPIO,17
+247,Itariri,MUNICÍPIO,31
+248,Pedro de Toledo,MUNICÍPIO,31
+249,Guapiara,MUNICÍPIO,31
+250,Juquiá,MUNICÍPIO,31
+251,Ortigueira,MUNICÍPIO,17
+252,Bom Sucesso de Itararé,MUNICÍPIO,31
+253,Arapoti,MUNICÍPIO,17
+254,Santo Antônio dos Lopes,MUNICÍPIO,7
+255,Itambé,MUNICÍPIO,17
+256,Marumbi,MUNICÍPIO,17
+257,Itaporanga,MUNICÍPIO,31
+258,Bom Sucesso,MUNICÍPIO,17
+259,Jussara,MUNICÍPIO,17
+260,Riachuelo,MUNICÍPIO,25
+261,Alto Paraíso,MUNICÍPIO,17
+262,Itaquiraí,MUNICÍPIO,19
+263,Salesópolis,MUNICÍPIO,31
+264,Jupi,MUNICÍPIO,28
+265,São Roque,MUNICÍPIO,31
+266,Mandaguari,MUNICÍPIO,17
+267,Minas do Leão,MUNICÍPIO,22
+268,Cacequi,MUNICÍPIO,22
+269,General Câmara,MUNICÍPIO,22
+313,Videira,MUNICÍPIO,18
+314,Xavantina,MUNICÍPIO,18
+315,Mairipotaba,MUNICÍPIO,30
+316,Piracanjuba,MUNICÍPIO,30
+317,Curvelândia,MUNICÍPIO,21
+318,Ponte Branca,MUNICÍPIO,21
+319,Araçaí,MUNICÍPIO,24
+320,Rio Verde de Mato Grosso,MUNICÍPIO,19
+321,Serra do Ramalho,MUNICÍPIO,29
+322,Paranaiguara,MUNICÍPIO,30
+270,São Miguel do Fidalgo,MUNICÍPIO,6
+271,Praia Grande,MUNICÍPIO,31
+272,Praia Grande,MUNICÍPIO,18
+273,Flores da Cunha,MUNICÍPIO,22
+274,Relvado,MUNICÍPIO,22
+275,Nova Roma do Sul,MUNICÍPIO,22
+276,Presidente Epitácio,MUNICÍPIO,31
+277,Promissão,MUNICÍPIO,31
+278,Fontoura Xavier,MUNICÍPIO,22
+279,Maiquinique,MUNICÍPIO,29
+280,Arroio do Tigre,MUNICÍPIO,22
+281,Jacuizinho,MUNICÍPIO,22
+282,Progresso,MUNICÍPIO,22
+283,Novo Repartimento,MUNICÍPIO,13
+284,Tucuruí,MUNICÍPIO,13
+285,Santa Inês,MUNICÍPIO,7
+286,Olho d'Água das Cunhãs,MUNICÍPIO,7
+287,Altamira do Maranhão,MUNICÍPIO,7
+288,Soledade,MUNICÍPIO,22
+289,Lagoão,MUNICÍPIO,22
+290,Coqueiro Baixo,MUNICÍPIO,22
+291,Caxias do Sul,MUNICÍPIO,22
+292,Canudos do Vale,MUNICÍPIO,22
+293,Ouro Verde de Minas,MUNICÍPIO,24
+294,Manhuaçu,MUNICÍPIO,24
+295,Marliéria,MUNICÍPIO,24
+296,Rio Piracicaba,MUNICÍPIO,24
+297,Juti,MUNICÍPIO,19
+298,Paranapanema,MUNICÍPIO,31
+299,Valinhos,MUNICÍPIO,31
+300,Votorantim,MUNICÍPIO,31
+301,Mairinque,MUNICÍPIO,31
+302,Araçoiaba da Serra,MUNICÍPIO,31
+303,Ribeirão do Pinhal,MUNICÍPIO,17
+304,Jundiaí do Sul,MUNICÍPIO,17
+305,Quatiguá,MUNICÍPIO,17
+306,Arês,MUNICÍPIO,25
+307,Congonhas do Norte,MUNICÍPIO,24
+308,Piraí,MUNICÍPIO,23
+309,Fazenda Nova,MUNICÍPIO,30
+310,Itapuca,MUNICÍPIO,22
+311,Vera,MUNICÍPIO,21
+312,Várzea Grande,MUNICÍPIO,21
+323,Malhada,MUNICÍPIO,29
+324,Arroio Grande,MUNICÍPIO,22
+325,Cerrito,MUNICÍPIO,22
+326,Piratini,MUNICÍPIO,22
+327,Herval,MUNICÍPIO,22
+328,Pedro Osório,MUNICÍPIO,22
+329,Turuçu,MUNICÍPIO,22
+330,São Lourenço do Sul,MUNICÍPIO,22
+331,Campina das Missões,MUNICÍPIO,22
+332,Coronel Martins,MUNICÍPIO,18
+333,Novo Horizonte,MUNICÍPIO,18
+334,Juscimeira,MUNICÍPIO,21
+335,Santa Rosa do Piauí,MUNICÍPIO,6
+336,Guiratinga,MUNICÍPIO,21
+337,Bela Vista,MUNICÍPIO,19
+338,Reserva do Cabaçal,MUNICÍPIO,21
+339,Datas,MUNICÍPIO,24
+340,Jauru,MUNICÍPIO,21
+341,Vale de São Domingos,MUNICÍPIO,21
+342,Camamu,MUNICÍPIO,29
+343,Joaíma,MUNICÍPIO,24
+344,Rio do Prado,MUNICÍPIO,24
+345,Manoel Vitorino,MUNICÍPIO,29
+346,Presidente Figueiredo,MUNICÍPIO,11
+347,Mirante,MUNICÍPIO,29
+348,Condeúba,MUNICÍPIO,29
+349,Contendas do Sincorá,MUNICÍPIO,29
+350,Jacaraci,MUNICÍPIO,29
+351,Cordeiros,MUNICÍPIO,29
+352,Mortugaba,MUNICÍPIO,29
+353,São Félix do Coribe,MUNICÍPIO,29
+354,Coroaci,MUNICÍPIO,24
+355,Coribe,MUNICÍPIO,29
+356,Carinhanha,MUNICÍPIO,29
+357,Água Preta,MUNICÍPIO,28
+358,Peçanha,MUNICÍPIO,24
+359,Serro,MUNICÍPIO,24
+360,Santo Antônio do Itambé,MUNICÍPIO,24
+361,Inaciolândia,MUNICÍPIO,30
+362,Jampruca,MUNICÍPIO,24
+363,Mathias Lobato,MUNICÍPIO,24
+364,Frei Inocêncio,MUNICÍPIO,24
+365,Marilac,MUNICÍPIO,24
+366,Cachoeira Alta,MUNICÍPIO,30
+367,Serranópolis,MUNICÍPIO,30
+368,Coxim,MUNICÍPIO,19
+369,Chapadão do Céu,MUNICÍPIO,30
+370,Inimutaba,MUNICÍPIO,24
+371,Morro da Garça,MUNICÍPIO,24
+372,Nacip Raydan,MUNICÍPIO,24
+373,Presidente Kubitschek,MUNICÍPIO,24
+374,Maurilândia,MUNICÍPIO,30
+375,Porteirão,MUNICÍPIO,30
+376,Santa Helena de Goiás,MUNICÍPIO,30
+377,Vicentinópolis,MUNICÍPIO,30
+378,Turvelândia,MUNICÍPIO,30
+379,Alto Taquari,MUNICÍPIO,21
+380,Sonora,MUNICÍPIO,19
+381,Rio Quente,MUNICÍPIO,30
+382,Ibirapuã,MUNICÍPIO,29
+383,Buenópolis,MUNICÍPIO,24
+384,Nova Viçosa,MUNICÍPIO,29
+385,Joviânia,MUNICÍPIO,30
+386,Itamarandiba,MUNICÍPIO,24
+387,Poté,MUNICÍPIO,24
+388,Serra dos Aimorés,MUNICÍPIO,24
+389,Aloândia,MUNICÍPIO,30
+390,Olhos-d'Água,MUNICÍPIO,24
+391,Jardim do Seridó,MUNICÍPIO,25
+392,Assis Chateaubriand,MUNICÍPIO,17
+393,Nova Aurora,MUNICÍPIO,17
+394,Pitangueiras,MUNICÍPIO,31
+395,Cana Verde,MUNICÍPIO,24
+396,Jardinópolis,MUNICÍPIO,31
+397,Cascavel,MUNICÍPIO,17
+398,São Tiago,MUNICÍPIO,24
+399,Cafel?ndia,MUNICÍPIO,17
+400,Jesu?tas,MUNICÍPIO,17
+401,Toledo,MUNICÍPIO,17
+402,Tup?ssi,MUNICÍPIO,17
+403,Pontal,MUNICÍPIO,31
+404,Itapura,MUNICÍPIO,31
+405,Camacho,MUNICÍPIO,24
+406,Lagoa Dourada,MUNICÍPIO,24
+407,Embaúba,MUNICÍPIO,31
+408,Monte Azul Paulista,MUNICÍPIO,31
+409,Santo Antônio do Amparo,MUNICÍPIO,24
+410,Resende Costa,MUNICÍPIO,24
+411,Cedral,MUNICÍPIO,31
+412,Batatais,MUNICÍPIO,31
+413,Alpinópolis,MUNICÍPIO,24
+414,Tanque Novo,MUNICÍPIO,29
+415,Cristais,MUNICÍPIO,24
+416,São José do Rio Preto,MUNICÍPIO,31
+417,Monções,MUNICÍPIO,31
+418,Olímpia,MUNICÍPIO,31
+419,Nova Castilho,MUNICÍPIO,31
+420,Pratápolis,MUNICÍPIO,24
+421,Taquarituba,MUNICÍPIO,31
+422,Pereira Barreto,MUNICÍPIO,31
+423,Sales Oliveira,MUNICÍPIO,31
+424,Guapé,MUNICÍPIO,24
+425,Oliveira,MUNICÍPIO,24
+426,São Miguel do Anta,MUNICÍPIO,24
+427,Guapiaçu,MUNICÍPIO,31
+428,Nhandeara,MUNICÍPIO,31
+430,Terra Roxa,MUNICÍPIO,31
+431,Candeias,MUNICÍPIO,24
+432,Itaú de Minas,MUNICÍPIO,24
+433,São José da Barra,MUNICÍPIO,24
+434,Capetinga,MUNICÍPIO,24
+435,Orlândia,MUNICÍPIO,31
+436,Nuporanga,MUNICÍPIO,31
+437,Floreal,MUNICÍPIO,31
+438,Sud Mennucci,MUNICÍPIO,31
+439,Porto Firme,MUNICÍPIO,24
+440,Canaã,MUNICÍPIO,24
+441,Itaverava,MUNICÍPIO,24
+442,Passa Tempo,MUNICÍPIO,24
+443,Alagoa,MUNICÍPIO,24
+444,Carneirinho,MUNICÍPIO,24
+445,Cássia,MUNICÍPIO,24
+446,Caxambu,MUNICÍPIO,24
+447,Gramado Xavier,MUNICÍPIO,22
+448,Malhada de Pedras,MUNICÍPIO,29
+449,Floresta Azul,MUNICÍPIO,29
+450,Boqueirão do Leão,MUNICÍPIO,22
+451,Macarani,MUNICÍPIO,29
+452,Segredo,MUNICÍPIO,22
+453,Tunas,MUNICÍPIO,22
+454,Santana do Paraíso,MUNICÍPIO,24
+455,Nova Alvorada,MUNICÍPIO,22
+456,Nova Prata,MUNICÍPIO,22
+457,André da Rocha,MUNICÍPIO,22
+458,Meleiro,MUNICÍPIO,18
+459,Monte Alegre dos Campos,MUNICÍPIO,22
+460,Protásio Alves,MUNICÍPIO,22
+461,Mombuca,MUNICÍPIO,31
+462,Monte Mor,MUNICÍPIO,31
+463,Óleo,MUNICÍPIO,31
+464,Lorena,MUNICÍPIO,31
+465,Quinze de Novembro,MUNICÍPIO,22
+466,Tietê,MUNICÍPIO,31
+467,Espumoso,MUNICÍPIO,22
+468,Selbach,MUNICÍPIO,22
+469,Serafina Corrêa,MUNICÍPIO,22
+470,Ipê,MUNICÍPIO,22
+471,Victor Graeff,MUNICÍPIO,22
+472,Ibirapuitã,MUNICÍPIO,22
+473,Itaqui,MUNICÍPIO,22
+474,Camargo,MUNICÍPIO,22
+475,Casca,MUNICÍPIO,22
+476,Turvo,MUNICÍPIO,18
+477,Pedra do Anta,MUNICÍPIO,24
+478,Onda Verde,MUNICÍPIO,31
+479,Carmo da Mata,MUNICÍPIO,24
+480,São Joaquim da Barra,MUNICÍPIO,31
+481,Jeceaba,MUNICÍPIO,24
+482,Ouro Branco,MUNICÍPIO,24
+483,Joaquim Távora,MUNICÍPIO,17
+484,São Miguel do Araguaia,MUNICÍPIO,30
+485,Ubaíra,MUNICÍPIO,29
+486,Itaeté,MUNICÍPIO,29
+487,Wenceslau Guimarães,MUNICÍPIO,29
+488,Mucugê,MUNICÍPIO,29
+489,Iperó,MUNICÍPIO,31
+490,Jaguari,MUNICÍPIO,22
+491,Anta Gorda,MUNICÍPIO,22
+492,Capão do Cipó,MUNICÍPIO,22
+493,São Borja,MUNICÍPIO,22
+494,Dois Lajeados,MUNICÍPIO,22
+495,São José dos Ausentes,MUNICÍPIO,22
+496,Bom Jardim da Serra,MUNICÍPIO,18
+497,São Vendelino,MUNICÍPIO,22
+498,Cerro Branco,MUNICÍPIO,22
+499,Arvorezinha,MUNICÍPIO,22
+500,Jaquirana,MUNICÍPIO,22
+501,São Marcos,MUNICÍPIO,22
+502,Boa Vista do Incra,MUNICÍPIO,22
+503,Antônio Prado,MUNICÍPIO,22
+504,Japurá,MUNICÍPIO,11
+505,São Gabriel da Cachoeira,MUNICÍPIO,11
+506,Urucará,MUNICÍPIO,11
+507,Jóia,MUNICÍPIO,22
+508,Bom Jesus,MUNICÍPIO,22
+509,Boa Vista do Cadeado,MUNICÍPIO,22
+510,Cruzeiro do Sul,MUNICÍPIO,22
+511,Sinimbu,MUNICÍPIO,22
+512,Afuá,MUNICÍPIO,13
+513,Nova Esperança do Sul,MUNICÍPIO,22
+514,Vale do Sol,MUNICÍPIO,22
+515,Santa Luzia do Norte,MUNICÍPIO,16
+516,Passa Sete,MUNICÍPIO,22
+517,Forquetinha,MUNICÍPIO,22
+518,Nova Petrópolis,MUNICÍPIO,22
+519,Herveiras,MUNICÍPIO,22
+520,Sério,MUNICÍPIO,22
+521,Ciríaco,MUNICÍPIO,22
+522,Grão Pará,MUNICÍPIO,18
+523,Passo Fundo,MUNICÍPIO,22
+524,Água Santa,MUNICÍPIO,22
+525,Muitos Capões,MUNICÍPIO,22
+526,Caibaté,MUNICÍPIO,22
+527,Caseiros,MUNICÍPIO,22
+528,Ibiraiaras,MUNICÍPIO,22
+529,Capão Alto,MUNICÍPIO,18
+530,Rolador,MUNICÍPIO,22
+531,Roque Gonzales,MUNICÍPIO,22
+532,Condor,MUNICÍPIO,22
+533,São Francisco de Paula,MUNICÍPIO,24
+542,Envira,MUNICÍPIO,11
+543,Beruri,MUNICÍPIO,11
+544,Boa Vista do Ramos,MUNICÍPIO,11
+651,Mateiros,MUNICÍPIO,15
+652,São Gabriel,MUNICÍPIO,29
+653,Queimadas,MUNICÍPIO,29
+534,Barra de Guabiraba,MUNICÍPIO,28
+535,Colméia,MUNICÍPIO,15
+536,Itaporã do Tocantins,MUNICÍPIO,15
+537,Dois Irmãos,MUNICÍPIO,22
+538,Nicolau Vergueiro,MUNICÍPIO,22
+539,Amaturá,MUNICÍPIO,11
+540,Passa e Fica,MUNICÍPIO,25
+545,Araricá,MUNICÍPIO,22
+546,Pompéia,MUNICÍPIO,31
+547,Capanema,MUNICÍPIO,13
+548,Nova Timboteua,MUNICÍPIO,13
+549,Tupi Paulista,MUNICÍPIO,31
+550,Capitólio,MUNICÍPIO,24
+551,Lizarda,MUNICÍPIO,15
+552,Pinheiro Machado,MUNICÍPIO,22
+553,Aceguá,MUNICÍPIO,22
+554,Nova Mamoré,MUNICÍPIO,9
+556,Arambaré,MUNICÍPIO,22
+557,Pinhal Grande,MUNICÍPIO,22
+558,Talismã,MUNICÍPIO,15
+559,Encruzilhada do Sul,MUNICÍPIO,22
+560,Formigueiro,MUNICÍPIO,22
+561,Santa Maria,MUNICÍPIO,22
+562,Barra do Quaraí,MUNICÍPIO,22
+563,Triunfo,MUNICÍPIO,22
+654,Lagarto,MUNICÍPIO,20
+655,Feijó,MUNICÍPIO,10
+656,Poço Redondo,MUNICÍPIO,20
+657,Paraíso do Tocantins,MUNICÍPIO,15
+658,Miracema do Tocantins,MUNICÍPIO,15
+659,Morro Cabeça no Tempo,MUNICÍPIO,6
+660,Divinópolis do Tocantins,MUNICÍPIO,15
+661,Alto Paraíso,MUNICÍPIO,9
+662,Buritis,MUNICÍPIO,9
+663,São Félix do Tocantins,MUNICÍPIO,15
+1386,Caibi,MUNICÍPIO,18
+541,Mata,MUNICÍPIO,22
+565,Canavieira,MUNICÍPIO,6
+566,Lagoa da Canoa,MUNICÍPIO,16
+616,Serrinha,MUNICÍPIO,29
+617,Olindina,MUNICÍPIO,29
+618,Gurupi,MUNICÍPIO,15
+619,Manicoré,MUNICÍPIO,11
+620,São Miguel do Guaporé,MUNICÍPIO,9
+621,São José do Jacuípe,MUNICÍPIO,29
+622,Itapicuru,MUNICÍPIO,29
+623,Novo Acordo,MUNICÍPIO,15
+624,Presidente Médici,MUNICÍPIO,9
+625,Juara,MUNICÍPIO,21
+626,Capim Grosso,MUNICÍPIO,29
+627,Lagoa da Confusão,MUNICÍPIO,15
+628,Natividade,MUNICÍPIO,15
+629,Wanderley,MUNICÍPIO,29
+630,Mansidão,MUNICÍPIO,29
+631,Peixe,MUNICÍPIO,15
+632,Cotegipe,MUNICÍPIO,29
+633,Morro do Chapéu,MUNICÍPIO,29
+634,Miguel Calmon,MUNICÍPIO,29
+635,Santa Rita de Cássia,MUNICÍPIO,29
+636,Santaluz,MUNICÍPIO,29
+567,Teixeirópolis,MUNICÍPIO,9
+568,Timbiras,MUNICÍPIO,7
+569,Pontão,MUNICÍPIO,22
+570,Bonfim do Piauí,MUNICÍPIO,6
+571,São Paulo das Missões,MUNICÍPIO,22
+572,Nova Candelária,MUNICÍPIO,22
+573,Crissiumal,MUNICÍPIO,22
+574,Baía da Traição,MUNICÍPIO,27
+575,Pirapó,MUNICÍPIO,22
+576,Santo Expedito do Sul,MUNICÍPIO,22
+637,Barrolândia,MUNICÍPIO,15
+638,Piritiba,MUNICÍPIO,29
+639,Mairi,MUNICÍPIO,29
+640,Quijingue,MUNICÍPIO,29
+641,Rondolândia,MUNICÍPIO,21
+642,União do Sul,MUNICÍPIO,21
+643,Almas,MUNICÍPIO,15
+644,Santa Carmem,MUNICÍPIO,21
+645,Inhambupe,MUNICÍPIO,29
+646,Mundo Novo,MUNICÍPIO,29
+647,Brasnorte,MUNICÍPIO,21
+648,Alto Boa Vista,MUNICÍPIO,21
+649,Gentio do Ouro,MUNICÍPIO,29
+650,Xique-Xique,MUNICÍPIO,29
+577,Timbé do Sul,MUNICÍPIO,18
+578,Morpará,MUNICÍPIO,29
+579,São Domingos,MUNICÍPIO,29
+580,Porto Lucena,MUNICÍPIO,22
+581,Cândido Godói,MUNICÍPIO,22
+582,Saldanha Marinho,MUNICÍPIO,22
+583,Guarulhos,MUNICÍPIO,31
+584,Riacho de Santana,MUNICÍPIO,29
+585,Monte Alegre de Goiás,MUNICÍPIO,30
+586,Nova América da Colina,MUNICÍPIO,17
+587,Natividade da Serra,MUNICÍPIO,31
+588,Alambari,MUNICÍPIO,31
+589,Angatuba,MUNICÍPIO,31
+590,Poá,MUNICÍPIO,31
+591,Carlópolis,MUNICÍPIO,17
+592,Capela do Alto,MUNICÍPIO,31
+593,Araçariguama,MUNICÍPIO,31
+594,Iaciara,MUNICÍPIO,30
+595,Caetité,MUNICÍPIO,29
+596,Campinápolis,MUNICÍPIO,21
+597,Gaúcha do Norte,MUNICÍPIO,21
+598,Ituaçu,MUNICÍPIO,29
+599,Nilo Peçanha,MUNICÍPIO,29
+600,Nova Roma,MUNICÍPIO,30
+601,Santa Rita do Trivelato,MUNICÍPIO,21
+602,Nova Maringá,MUNICÍPIO,21
+603,Nova Ubiratã,MUNICÍPIO,21
+604,Campinorte,MUNICÍPIO,30
+605,Dom Basílio,MUNICÍPIO,29
+606,Itaporanga d'Ajuda,MUNICÍPIO,20
+607,América Dourada,MUNICÍPIO,29
+608,Nova Brasilândia D'Oeste,MUNICÍPIO,9
+609,Alvorada D'Oeste,MUNICÍPIO,9
+610,Retirolândia,MUNICÍPIO,29
+611,Rio Real,MUNICÍPIO,29
+612,Rolim de Moura,MUNICÍPIO,9
+613,Castanheiras,MUNICÍPIO,9
+614,Jandaíra,MUNICÍPIO,29
+615,Gavião,MUNICÍPIO,29
+664,Santana do Araguaia,MUNICÍPIO,13
+665,Juazeiro,MUNICÍPIO,29
+666,Carlinda,MUNICÍPIO,21
+667,Santa Brígida,MUNICÍPIO,29
+668,Vila Rica,MUNICÍPIO,21
+669,Novo Mundo,MUNICÍPIO,21
+670,Jaguarari,MUNICÍPIO,29
+671,Santa Cruz do Xingu,MUNICÍPIO,21
+672,Riacho Frio,MUNICÍPIO,6
+673,Campo Formoso,MUNICÍPIO,29
+674,Tocantínia,MUNICÍPIO,15
+675,Colniza,MUNICÍPIO,21
+676,Pilão Arcado,MUNICÍPIO,29
+677,Rio Crespo,MUNICÍPIO,9
+678,Pão de Açúcar,MUNICÍPIO,16
+679,Lábrea,MUNICÍPIO,11
+680,Dois Irmãos do Tocantins,MUNICÍPIO,15
+681,Machadinho D'Oeste,MUNICÍPIO,9
+682,São Félix do Xingu,MUNICÍPIO,13
+683,Sento Sé,MUNICÍPIO,29
+684,São José do Ouro,MUNICÍPIO,22
+685,Nonoai,MUNICÍPIO,22
+686,Ituporanga,MUNICÍPIO,18
+687,Trindade do Sul,MUNICÍPIO,22
+688,Cacique Doble,MUNICÍPIO,22
+689,Jacutinga,MUNICÍPIO,22
+690,São Valério do Sul,MUNICÍPIO,22
+691,Porto Mauá,MUNICÍPIO,22
+692,Marcelino Ramos,MUNICÍPIO,22
+693,Rio Branco,MUNICÍPIO,10
+694,Paulo Afonso,MUNICÍPIO,29
+695,Xapuri,MUNICÍPIO,10
+696,Capela,MUNICÍPIO,20
+697,Pindobaçu,MUNICÍPIO,29
+698,Cristalândia,MUNICÍPIO,15
+699,Belém,MUNICÍPIO,27
+700,Gaurama,MUNICÍPIO,22
+701,Horizontina,MUNICÍPIO,22
+702,Erechim,MUNICÍPIO,22
+703,Vargem,MUNICÍPIO,18
+704,Maximiliano de Almeida,MUNICÍPIO,22
+705,Novo Machado,MUNICÍPIO,22
+706,Frederico Westphalen,MUNICÍPIO,22
+707,Planalto,MUNICÍPIO,22
+708,Cachoeira do Arari,MUNICÍPIO,13
+709,Anajás,MUNICÍPIO,13
+710,São José do Cerrito,MUNICÍPIO,18
+711,Correia Pinto,MUNICÍPIO,18
+712,Ponte Alta,MUNICÍPIO,18
+713,Aratiba,MUNICÍPIO,22
+714,São Valentim,MUNICÍPIO,22
+715,Benjamin Constant do Sul,MUNICÍPIO,22
+717,Bom Conselho,MUNICÍPIO,28
+718,Feira da Mata,MUNICÍPIO,29
+719,Entre Rios,MUNICÍPIO,29
+720,Sucupira do Norte,MUNICÍPIO,7
+721,Adustina,MUNICÍPIO,29
+750,Campos Novos,MUNICÍPIO,18
+751,Entre Rios do Sul,MUNICÍPIO,22
+752,Erval Grande,MUNICÍPIO,22
+753,Palmeira,MUNICÍPIO,18
+754,Curitibanos,MUNICÍPIO,18
+755,Otacílio Costa,MUNICÍPIO,18
+756,Tiradentes do Sul,MUNICÍPIO,22
+757,Erval Seco,MUNICÍPIO,22
+758,Faxinalzinho,MUNICÍPIO,22
+875,São Martinho,MUNICÍPIO,22
+876,Áurea,MUNICÍPIO,22
+877,Três Palmeiras,MUNICÍPIO,22
+878,Campinas do Sul,MUNICÍPIO,22
+879,Ponte Preta,MUNICÍPIO,22
+722,São Miguel dos Milagres,MUNICÍPIO,16
+723,Lagoa do Tocantins,MUNICÍPIO,15
+724,Vidal Ramos,MUNICÍPIO,18
+725,Curuá,MUNICÍPIO,13
+726,Lagoa dos Patos,MUNICÍPIO,24
+727,Castanheira,MUNICÍPIO,21
+728,Monte Santo,MUNICÍPIO,29
+729,Amparo de São Francisco,MUNICÍPIO,20
+730,Ponte Alta do Tocantins,MUNICÍPIO,15
+731,Euclides da Cunha,MUNICÍPIO,29
+732,Banzaê,MUNICÍPIO,29
+733,Monte do Carmo,MUNICÍPIO,15
+734,Parnaguá,MUNICÍPIO,6
+735,Cícero Dantas,MUNICÍPIO,29
+736,Terra Nova do Norte,MUNICÍPIO,21
+737,Montes Altos,MUNICÍPIO,7
+738,Juruena,MUNICÍPIO,21
+739,Capixaba,MUNICÍPIO,10
+740,Peixoto de Azevedo,MUNICÍPIO,21
+741,Lima Campos,MUNICÍPIO,7
+742,Buriti,MUNICÍPIO,7
+743,Nina Rodrigues,MUNICÍPIO,7
+744,Itapecuru Mirim,MUNICÍPIO,7
+745,Amarante do Maranhão,MUNICÍPIO,7
+746,Redentora,MUNICÍPIO,22
+747,Seberi,MUNICÍPIO,22
+748,Viadutos,MUNICÍPIO,22
+749,Itatiba do Sul,MUNICÍPIO,22
+759,Rio Largo,MUNICÍPIO,16
+760,Formosa do Sul,MUNICÍPIO,18
+761,Itaguaçu da Bahia,MUNICÍPIO,29
+762,Nova Rosalândia,MUNICÍPIO,15
+763,Barra do Choça,MUNICÍPIO,29
+764,Pérola d'Oeste,MUNICÍPIO,17
+765,Suzano,MUNICÍPIO,31
+766,Tucano,MUNICÍPIO,29
+767,Santa Cruz Cabrália,MUNICÍPIO,29
+768,Alto Alegre,MUNICÍPIO,12
+769,Bonfim,MUNICÍPIO,12
+770,Caracaraí,MUNICÍPIO,12
+771,Iracema,MUNICÍPIO,12
+772,Amapá,MUNICÍPIO,14
+773,Presidente Nereu,MUNICÍPIO,18
+774,Novo Triunfo,MUNICÍPIO,29
+775,Santa Tereza do Tocantins,MUNICÍPIO,15
+776,Nova Guarita,MUNICÍPIO,21
+777,Malhada dos Bois,MUNICÍPIO,20
+778,Nova Bandeirantes,MUNICÍPIO,21
+779,Cedro de São João,MUNICÍPIO,20
+780,Canudos,MUNICÍPIO,29
+781,Alto Parnaíba,MUNICÍPIO,7
+782,Nossa Senhora da Glória,MUNICÍPIO,20
+783,Matupá,MUNICÍPIO,21
+830,São Francisco do Piauí,MUNICÍPIO,6
+831,Campina Grande,MUNICÍPIO,27
+832,Goianésia do Pará,MUNICÍPIO,13
+833,Santa Luzia,MUNICÍPIO,7
+834,Dom Eliseu,MUNICÍPIO,13
+835,Conceição do Lago-Açu,MUNICÍPIO,7
+836,Matões do Norte,MUNICÍPIO,7
+837,São Mateus do Maranhão,MUNICÍPIO,7
+838,Tufilândia,MUNICÍPIO,7
+839,Pirapemas,MUNICÍPIO,7
+840,Itaipava do Grajaú,MUNICÍPIO,7
+841,Barra do Corda,MUNICÍPIO,7
+880,Caxias,MUNICÍPIO,7
+1049,Candeias do Jamari,MUNICÍPIO,9
+1081,Nova Lacerda,MUNICÍPIO,21
+1082,Licínio de Almeida,MUNICÍPIO,29
+1083,São João d'Aliança,MUNICÍPIO,30
+1084,Uruçuca,MUNICÍPIO,29
+784,Afonso Cunha,MUNICÍPIO,7
+785,Bandeirantes do Tocantins,MUNICÍPIO,15
+786,São Sebastião do Umbuzeiro,MUNICÍPIO,27
+787,Brasilândia do Tocantins,MUNICÍPIO,15
+788,Carnaubeira da Penha,MUNICÍPIO,28
+789,Caruaru,MUNICÍPIO,28
+790,Santa Cruz,MUNICÍPIO,28
+791,Santa Filomena,MUNICÍPIO,28
+792,Ribeiro Gonçalves,MUNICÍPIO,6
+793,Brejo da Madre de Deus,MUNICÍPIO,28
+794,São Bento do Tocantins,MUNICÍPIO,15
+795,Colinas do Tocantins,MUNICÍPIO,15
+796,Campo Alegre do Fidalgo,MUNICÍPIO,6
+797,Betânia,MUNICÍPIO,28
+798,Conceição do Araguaia,MUNICÍPIO,13
+799,Redenção,MUNICÍPIO,13
+800,Pequizeiro,MUNICÍPIO,15
+801,Palmeirante,MUNICÍPIO,15
+802,Baixa Grande do Ribeiro,MUNICÍPIO,6
+803,Bernardo Sayão,MUNICÍPIO,15
+804,Bom Jesus,MUNICÍPIO,25
+805,Floresta do Araguaia,MUNICÍPIO,13
+806,João Lisboa,MUNICÍPIO,7
+807,Tasso Fragoso,MUNICÍPIO,7
+808,Sambaíba,MUNICÍPIO,7
+809,Guajará,MUNICÍPIO,11
+810,Arapoema,MUNICÍPIO,15
+811,Aroeiras,MUNICÍPIO,27
+812,Nova Olinda,MUNICÍPIO,15
+813,Pau D'Arco,MUNICÍPIO,13
+814,Bom Jardim,MUNICÍPIO,28
+815,Santa Cecília,MUNICÍPIO,27
+816,Alcantil,MUNICÍPIO,27
+817,Aliança,MUNICÍPIO,28
+818,Eirunepé,MUNICÍPIO,11
+819,Mâncio Lima,MUNICÍPIO,10
+820,Filadélfia,MUNICÍPIO,15
+821,Balsas,MUNICÍPIO,7
+822,Pau D'Arco,MUNICÍPIO,15
+823,Ipixuna,MUNICÍPIO,11
+824,Itaueira,MUNICÍPIO,6
+825,São José do Egito,MUNICÍPIO,28
+826,Gado Bravo,MUNICÍPIO,27
+827,Benedito Leite,MUNICÍPIO,7
+828,São Félix de Balsas,MUNICÍPIO,7
+829,Chapadinha,MUNICÍPIO,7
+868,Palmeiras,MUNICÍPIO,29
+869,Botuverá,MUNICÍPIO,18
+870,Monte Carlo,MUNICÍPIO,18
+871,Tangará,MUNICÍPIO,18
+872,Alecrim,MUNICÍPIO,22
+873,Tuparendi,MUNICÍPIO,22
+874,Ribamar Fiquene,MUNICÍPIO,7
+842,Altinho,MUNICÍPIO,28
+843,São Luís Gonzaga do Maranhão,MUNICÍPIO,7
+844,Satubinha,MUNICÍPIO,7
+845,Bacabal,MUNICÍPIO,7
+846,Joselândia,MUNICÍPIO,7
+847,Paraí,MUNICÍPIO,22
+848,São Jorge,MUNICÍPIO,22
+849,Augusto Pestana,MUNICÍPIO,22
+850,Alpestre,MUNICÍPIO,22
+851,Pejuçara,MUNICÍPIO,22
+852,Santo Cristo,MUNICÍPIO,22
+853,São Geraldo do Araguaia,MUNICÍPIO,13
+854,Sucupira do Riachão,MUNICÍPIO,7
+855,Rio dos Índios,MUNICÍPIO,22
+856,Santa Tereza do Oeste,MUNICÍPIO,17
+857,Erval Velho,MUNICÍPIO,18
+858,Itá,MUNICÍPIO,18
+859,Gonçalves Dias,MUNICÍPIO,7
+860,Lagoa Grande do Maranhão,MUNICÍPIO,7
+861,Esperantinópolis,MUNICÍPIO,7
+862,Pedreiras,MUNICÍPIO,7
+863,São João do Soter,MUNICÍPIO,7
+864,Açailândia,MUNICÍPIO,7
+865,Arame,MUNICÍPIO,7
+866,Cidelândia,MUNICÍPIO,7
+867,Tanque do Piauí,MUNICÍPIO,6
+881,José de Freitas,MUNICÍPIO,6
+882,Bom Jesus das Selvas,MUNICÍPIO,7
+883,Buriticupu,MUNICÍPIO,7
+884,Marajá do Sena,MUNICÍPIO,7
+885,Itaituba,MUNICÍPIO,13
+886,Tapauá,MUNICÍPIO,11
+887,Altamira,MUNICÍPIO,13
+888,Anori,MUNICÍPIO,11
+889,Muricilândia,MUNICÍPIO,15
+890,Borba,MUNICÍPIO,11
+891,Bom Jardim,MUNICÍPIO,7
+892,Coari,MUNICÍPIO,11
+893,Nova Olinda do Norte,MUNICÍPIO,11
+894,Careiro,MUNICÍPIO,11
+895,Autazes,MUNICÍPIO,11
+896,Alto Alegre do Pindaré,MUNICÍPIO,7
+897,Canutama,MUNICÍPIO,11
+898,Pauini,MUNICÍPIO,11
+899,Pacajá,MUNICÍPIO,13
+900,Babaçulândia,MUNICÍPIO,15
+901,São Raimundo das Mangabeiras,MUNICÍPIO,7
+902,Apuí,MUNICÍPIO,11
+903,Jacareacanga,MUNICÍPIO,13
+904,Água Branca,MUNICÍPIO,6
+905,Atalaia do Norte,MUNICÍPIO,11
+906,Serra Redonda,MUNICÍPIO,27
+907,Xinguara,MUNICÍPIO,13
+908,Salgadinho,MUNICÍPIO,27
+909,Feira Nova do Maranhão,MUNICÍPIO,7
+910,Montadas,MUNICÍPIO,27
+911,Carmolândia,MUNICÍPIO,15
+912,Junco do Seridó,MUNICÍPIO,27
+913,Capitão Poço,MUNICÍPIO,13
+914,São Pedro dos Crentes,MUNICÍPIO,7
+915,Piraquê,MUNICÍPIO,15
+916,Turilândia,MUNICÍPIO,7
+917,Manaus,MUNICÍPIO,11
+918,Garrafão do Norte,MUNICÍPIO,13
+919,Maraã,MUNICÍPIO,11
+920,Irituia,MUNICÍPIO,13
+921,Porto de Moz,MUNICÍPIO,13
+922,Cachoeira do Piriá,MUNICÍPIO,13
+923,Tucumã,MUNICÍPIO,13
+999,Fonte Boa,MUNICÍPIO,11
+1000,Rio Preto da Eva,MUNICÍPIO,11
+1001,Ipixuna do Pará,MUNICÍPIO,13
+1002,Cajari,MUNICÍPIO,7
+1003,Monção,MUNICÍPIO,7
+1004,Zé Doca,MUNICÍPIO,7
+924,Cuitegi,MUNICÍPIO,27
+925,São Domingos do Azeitão,MUNICÍPIO,7
+926,Formosa da Serra Negra,MUNICÍPIO,7
+927,Piçarra,MUNICÍPIO,13
+928,Cajazeiras do Piauí,MUNICÍPIO,6
+929,Pedra Lavrada,MUNICÍPIO,27
+930,Borborema,MUNICÍPIO,27
+931,Canaã dos Carajás,MUNICÍPIO,13
+932,Mirador,MUNICÍPIO,7
+933,Sítio Novo,MUNICÍPIO,7
+934,Curionópolis,MUNICÍPIO,13
+935,São João do Paraíso,MUNICÍPIO,7
+936,Xambioá,MUNICÍPIO,15
+937,Palmeiras do Tocantins,MUNICÍPIO,15
+938,Riachinho,MUNICÍPIO,15
+939,Parauapebas,MUNICÍPIO,13
+940,Porto Franco,MUNICÍPIO,7
+941,Nova Floresta,MUNICÍPIO,27
+942,Serra de São Bento,MUNICÍPIO,25
+943,Senador La Rocque,MUNICÍPIO,7
+944,Governador Eugênio Barros,MUNICÍPIO,7
+945,Araguatins,MUNICÍPIO,15
+946,São João do Araguaia,MUNICÍPIO,13
+947,Santo Antônio dos Milagres,MUNICÍPIO,6
+948,Grajaú,MUNICÍPIO,7
+949,Lajeado Novo,MUNICÍPIO,7
+950,Beneditinos,MUNICÍPIO,6
+951,Parnarama,MUNICÍPIO,7
+952,Matões,MUNICÍPIO,7
+953,Passagem Franca,MUNICÍPIO,7
+954,Passagem,MUNICÍPIO,25
+955,São José do Brejo do Cruz,MUNICÍPIO,27
+956,Novo Aripuanã,MUNICÍPIO,11
+957,Palestina do Pará,MUNICÍPIO,13
+958,Tuntum,MUNICÍPIO,7
+1005,São João do Carú,MUNICÍPIO,7
+1006,Caapiranga,MUNICÍPIO,11
+1007,Codajás,MUNICÍPIO,11
+1008,Presidente Juscelino,MUNICÍPIO,7
+1009,Baião,MUNICÍPIO,13
+1010,Pedro do Rosário,MUNICÍPIO,7
+1011,Araguanã,MUNICÍPIO,7
+1012,Nova Olinda do Maranhão,MUNICÍPIO,7
+1013,Manacapuru,MUNICÍPIO,11
+1014,Urucurituba,MUNICÍPIO,11
+1015,Rosário,MUNICÍPIO,7
+1072,Garopaba,MUNICÍPIO,18
+1073,Barra do Bugres,MUNICÍPIO,21
+1074,Mineiros,MUNICÍPIO,30
+959,Pirambu,MUNICÍPIO,20
+960,Águas Mornas,MUNICÍPIO,18
+961,Três de Maio,MUNICÍPIO,22
+962,São João da Urtiga,MUNICÍPIO,22
+963,Pé de Serra,MUNICÍPIO,29
+964,General Carneiro,MUNICÍPIO,21
+965,Cosmópolis,MUNICÍPIO,31
+966,Santo Antônio do Retiro,MUNICÍPIO,24
+967,São Pedro do Piauí,MUNICÍPIO,6
+968,Nova União,MUNICÍPIO,9
+969,Acará,MUNICÍPIO,13
+1075,Denise,MUNICÍPIO,21
+970,São Geraldo do Baixio,MUNICÍPIO,24
+971,São João da Mata,MUNICÍPIO,24
+972,Buriti Bravo,MUNICÍPIO,7
+973,São Francisco do Brejão,MUNICÍPIO,7
+974,Anapu,MUNICÍPIO,13
+975,Trairão,MUNICÍPIO,13
+976,Davinópolis,MUNICÍPIO,7
+977,Barcelos,MUNICÍPIO,11
+978,Santa Isabel do Rio Negro,MUNICÍPIO,11
+979,São Luiz,MUNICÍPIO,12
+980,Rorainópolis,MUNICÍPIO,12
+981,São João da Baliza,MUNICÍPIO,12
+982,Alenquer,MUNICÍPIO,13
+983,Caroebe,MUNICÍPIO,12
+984,Almeirim,MUNICÍPIO,13
+985,Ponta de Pedras,MUNICÍPIO,13
+986,São Miguel do Guamá,MUNICÍPIO,13
+987,Ourém,MUNICÍPIO,13
+988,Pedro Régis,MUNICÍPIO,27
+989,Westfália,MUNICÍPIO,22
+1016,Matias Olímpio,MUNICÍPIO,6
+1017,Pindaré-Mirim,MUNICÍPIO,7
+1018,Mata Roma,MUNICÍPIO,7
+1019,Ulianópolis,MUNICÍPIO,13
+1076,Poções,MUNICÍPIO,29
+1077,Nortelândia,MUNICÍPIO,21
+1078,Planalto,MUNICÍPIO,29
+1079,Caculé,MUNICÍPIO,29
+1080,Arenápolis,MUNICÍPIO,21
+990,Gandu,MUNICÍPIO,29
+991,Itaparica,MUNICÍPIO,29
+992,Barra Mansa,MUNICÍPIO,23
+993,Barra do Piraí,MUNICÍPIO,23
+994,Turiaçu,MUNICÍPIO,7
+995,São Bernardo,MUNICÍPIO,7
+996,Manaquiri,MUNICÍPIO,11
+997,Iranduba,MUNICÍPIO,11
+998,Igarapé Grande,MUNICÍPIO,7
+1020,Jurema,MUNICÍPIO,6
+1021,Cantanhede,MUNICÍPIO,7
+1022,Brasil Novo,MUNICÍPIO,13
+1023,Paragominas,MUNICÍPIO,13
+1024,Anapurus,MUNICÍPIO,7
+1025,Olho d'Água das Flores,MUNICÍPIO,16
+1026,Vitória do Mearim,MUNICÍPIO,7
+1027,Satuba,MUNICÍPIO,16
+1028,Silves,MUNICÍPIO,11
+1029,São Vicente Ferrer,MUNICÍPIO,7
+1030,Itapiranga,MUNICÍPIO,11
+1031,Glória,MUNICÍPIO,29
+1032,Duque Bacelar,MUNICÍPIO,7
+1033,Jordão,MUNICÍPIO,10
+1034,Pedra,MUNICÍPIO,28
+1035,Santa Filomena,MUNICÍPIO,6
+1036,Olho d'Água do Casado,MUNICÍPIO,16
+1037,Guarantã do Norte,MUNICÍPIO,21
+1038,Monteirópolis,MUNICÍPIO,16
+1039,Delmiro Gouveia,MUNICÍPIO,16
+1040,Bujari,MUNICÍPIO,10
+1041,Novo Progresso,MUNICÍPIO,13
+1042,Paranaíta,MUNICÍPIO,21
+1043,Apiacás,MUNICÍPIO,21
+1044,Santa Rosa do Purus,MUNICÍPIO,10
+1045,Macururé,MUNICÍPIO,29
+1046,Abreulândia,MUNICÍPIO,15
+1047,Rio dos Bois,MUNICÍPIO,15
+1048,Itapuã do Oeste,MUNICÍPIO,9
+1050,Messias,MUNICÍPIO,16
+1051,Iati,MUNICÍPIO,28
+1052,Itaíba,MUNICÍPIO,28
+1053,Canapi,MUNICÍPIO,16
+1054,Mata Grande,MUNICÍPIO,16
+1055,Tupirama,MUNICÍPIO,15
+1056,Petrolândia,MUNICÍPIO,28
+1057,Planalto da Serra,MUNICÍPIO,21
+1058,Caraíbas,MUNICÍPIO,29
+1059,Cajuri,MUNICÍPIO,24
+1060,Augusto de Lima,MUNICÍPIO,24
+1061,Nilópolis,MUNICÍPIO,23
+1062,Bonito,MUNICÍPIO,19
+1063,Coluna,MUNICÍPIO,24
+1064,Buíque,MUNICÍPIO,28
+1065,Gravatá,MUNICÍPIO,28
+1066,Ibimirim,MUNICÍPIO,28
+1067,Presidente Kennedy,MUNICÍPIO,15
+1068,Tupanatinga,MUNICÍPIO,28
+1069,Iguaí,MUNICÍPIO,29
+1070,Presidente Jânio Quadros,MUNICÍPIO,29
+1071,Palhoça,MUNICÍPIO,18
+1085,Aracatu,MUNICÍPIO,29
+1086,Juvenília,MUNICÍPIO,24
+1087,Nobres,MUNICÍPIO,21
+1088,Mambaí,MUNICÍPIO,30
+1089,Santo Afonso,MUNICÍPIO,21
+1090,Buritinópolis,MUNICÍPIO,30
+1091,Boa Nova,MUNICÍPIO,29
+1092,Santa Terezinha de Goiás,MUNICÍPIO,30
+1093,Nova Iguaçu de Goiás,MUNICÍPIO,30
+1094,Simolândia,MUNICÍPIO,30
+1095,Caetanos,MUNICÍPIO,29
+1096,Posse,MUNICÍPIO,30
+1097,Bom Jesus da Serra,MUNICÍPIO,29
+1098,Nova Marilândia,MUNICÍPIO,21
+1099,Ibiassucê,MUNICÍPIO,29
+1100,São Gonçalo,MUNICÍPIO,23
+1102,Tanhaçu,MUNICÍPIO,29
+1103,Lagoa Real,MUNICÍPIO,29
+1104,Parnamirim,MUNICÍPIO,25
+1105,Chavantes,MUNICÍPIO,31
+1106,Bertópolis,MUNICÍPIO,24
+1107,Epitaciolândia,MUNICÍPIO,10
+1108,Garruchos,MUNICÍPIO,22
+1109,Santo Antônio das Missões,MUNICÍPIO,22
+1110,Juruá,MUNICÍPIO,11
+1111,Normandia,MUNICÍPIO,12
+1112,Cantá,MUNICÍPIO,12
+1113,Mucajaí,MUNICÍPIO,12
+1114,Boa Vista,MUNICÍPIO,12
+1115,Manduri,MUNICÍPIO,31
+1116,Rafard,MUNICÍPIO,31
+1117,Conchas,MUNICÍPIO,31
+1118,Prado Ferreira,MUNICÍPIO,17
+1119,Capela,MUNICÍPIO,16
+1120,Naviraí,MUNICÍPIO,19
+1121,Córrego do Bom Jesus,MUNICÍPIO,24
+1122,Consolação,MUNICÍPIO,24
+1123,Teodoro Sampaio,MUNICÍPIO,31
+1124,Mogi Mirim,MUNICÍPIO,31
+1125,Santa Maria da Serra,MUNICÍPIO,31
+1126,Dois Córregos,MUNICÍPIO,31
+1127,Borda da Mata,MUNICÍPIO,24
+1128,Corumbataí,MUNICÍPIO,31
+1129,São José do Alegre,MUNICÍPIO,24
+1130,Espírito Santo do Pinhal,MUNICÍPIO,31
+1131,Socorro,MUNICÍPIO,31
+1132,Presidente Bernardes,MUNICÍPIO,31
+1133,Vera Cruz,MUNICÍPIO,31
+1134,Oscar Bressane,MUNICÍPIO,31
+1135,São Pedro do Turvo,MUNICÍPIO,31
+1136,Ocauçu,MUNICÍPIO,31
+1137,Lupércio,MUNICÍPIO,31
+1138,Piratininga,MUNICÍPIO,31
+1139,Marília,MUNICÍPIO,31
+1140,São Pedro,MUNICÍPIO,31
+1141,Torrinha,MUNICÍPIO,31
+1142,Paraguaçu Paulista,MUNICÍPIO,31
+1143,Quatis,MUNICÍPIO,23
+1144,Rio das Flores,MUNICÍPIO,23
+1145,Bocaina de Minas,MUNICÍPIO,24
+1146,Valença,MUNICÍPIO,23
+1147,Vassouras,MUNICÍPIO,23
+1148,Conchal,MUNICÍPIO,31
+1149,Mogi Guaçu,MUNICÍPIO,31
+1150,Petrópolis,MUNICÍPIO,23
+1151,Irapuru,MUNICÍPIO,31
+1152,Maria da Fé,MUNICÍPIO,24
+1153,Piranguinho,MUNICÍPIO,24
+1154,Santa Rita do Sapucaí,MUNICÍPIO,24
+1155,Fátima do Sul,MUNICÍPIO,19
+1156,Deodápolis,MUNICÍPIO,19
+1157,Cachoeira de Minas,MUNICÍPIO,24
+1158,São Sebastião do Rio Verde,MUNICÍPIO,24
+1159,Marabá Paulista,MUNICÍPIO,31
+1160,Nova Colinas,MUNICÍPIO,7
+1161,Álvares Machado,MUNICÍPIO,31
+1162,Jacutinga,MUNICÍPIO,24
+1163,Passa Vinte,MUNICÍPIO,24
+1164,Jaru,MUNICÍPIO,9
+1165,Itirapina,MUNICÍPIO,31
+1166,São José do Xingu,MUNICÍPIO,21
+1167,Aripuanã,MUNICÍPIO,21
+1168,Duque de Caxias,MUNICÍPIO,23
+1169,Ubirajara,MUNICÍPIO,31
+1170,Martinópolis,MUNICÍPIO,31
+1171,Nantes,MUNICÍPIO,31
+1172,Leme,MUNICÍPIO,31
+1173,São José do Vale do Rio Preto,MUNICÍPIO,23
+1174,Agudos,MUNICÍPIO,31
+1175,Itajubá,MUNICÍPIO,24
+1176,Caarapó,MUNICÍPIO,19
+1177,Presidente Prudente,MUNICÍPIO,31
+1178,Andradas,MUNICÍPIO,24
+1179,Baependi,MUNICÍPIO,24
+1180,Natércia,MUNICÍPIO,24
+1181,Guariba,MUNICÍPIO,31
+1182,Guapimirim,MUNICÍPIO,23
+1183,Socorro do Piauí,MUNICÍPIO,6
+1184,Santo Antônio de Pádua,MUNICÍPIO,23
+1185,Delfim Moreira,MUNICÍPIO,24
+1186,Lutécia,MUNICÍPIO,31
+1187,Taciba,MUNICÍPIO,31
+1188,Brotas,MUNICÍPIO,31
+1189,Queluz,MUNICÍPIO,31
+1190,São João do Pau d'Alho,MUNICÍPIO,31
+1191,João Ramalho,MUNICÍPIO,31
+1192,Narandiba,MUNICÍPIO,31
+1193,Conceição da Aparecida,MUNICÍPIO,24
+1194,Duartina,MUNICÍPIO,31
+1195,Anaurilândia,MUNICÍPIO,19
+1196,Rosana,MUNICÍPIO,31
+1197,Laguna Carapã,MUNICÍPIO,19
+1198,Garça,MUNICÍPIO,31
+1199,Bauru,MUNICÍPIO,31
+1200,Ouro Fino,MUNICÍPIO,24
+1201,Presidente Alves,MUNICÍPIO,31
+1202,Antônio Carlos,MUNICÍPIO,24
+1203,Descoberto,MUNICÍPIO,24
+1204,Dobrada,MUNICÍPIO,31
+1205,Clementina,MUNICÍPIO,31
+1206,Taquaritinga,MUNICÍPIO,31
+1207,Rubiácea,MUNICÍPIO,31
+1209,Salmourão,MUNICÍPIO,31
+1210,Dracena,MUNICÍPIO,31
+1211,Novo Horizonte,MUNICÍPIO,31
+1212,Itajobi,MUNICÍPIO,31
+1213,Alfenas,MUNICÍPIO,24
+1214,Glicério,MUNICÍPIO,31
+1215,Braúna,MUNICÍPIO,31
+1216,Borborema,MUNICÍPIO,31
+1217,Elói Mendes,MUNICÍPIO,24
+1218,Divisa Nova,MUNICÍPIO,24
+1219,Ibertioga,MUNICÍPIO,24
+1220,Piedade do Rio Grande,MUNICÍPIO,24
+1221,Caconde,MUNICÍPIO,31
+1222,Itutinga,MUNICÍPIO,24
+1223,Carrancas,MUNICÍPIO,24
+1224,Guararapes,MUNICÍPIO,31
+1225,Carmo da Cachoeira,MUNICÍPIO,24
+1226,Motuca,MUNICÍPIO,31
+1227,Guatapará,MUNICÍPIO,31
+1228,Cabo Verde,MUNICÍPIO,24
+1229,Araçatuba,MUNICÍPIO,31
+1230,Pradópolis,MUNICÍPIO,31
+1231,Mococa,MUNICÍPIO,31
+1232,Cataguases,MUNICÍPIO,24
+1233,Adamantina,MUNICÍPIO,31
+1234,Itápolis,MUNICÍPIO,31
+1235,Guaiçara,MUNICÍPIO,31
+1236,Santa Rosa de Viterbo,MUNICÍPIO,31
+1237,Tapiratiba,MUNICÍPIO,31
+1238,Fernando Prestes,MUNICÍPIO,31
+1239,Ouro Verde,MUNICÍPIO,31
+1240,Flórida Paulista,MUNICÍPIO,31
+1241,Santa Mercedes,MUNICÍPIO,31
+1242,São João del Rei,MUNICÍPIO,24
+1243,Cravinhos,MUNICÍPIO,31
+1244,Luís Antônio,MUNICÍPIO,31
+1245,Santa Adélia,MUNICÍPIO,31
+1246,Monte Belo,MUNICÍPIO,24
+1247,Santos Dumont,MUNICÍPIO,24
+1248,Cachoeira Paulista,MUNICÍPIO,31
+1249,Matão,MUNICÍPIO,31
+1250,Piacatu,MUNICÍPIO,31
+1251,Votuporanga,MUNICÍPIO,31
+1252,Brasiléia,MUNICÍPIO,10
+1253,Lavras,MUNICÍPIO,24
+1254,Puxinanã,MUNICÍPIO,27
+1255,Barbacena,MUNICÍPIO,24
+1256,Boa Esperança do Sul,MUNICÍPIO,31
+1257,Marapoama,MUNICÍPIO,31
+1258,Carmo,MUNICÍPIO,23
+1259,Pacaembu,MUNICÍPIO,31
+1260,Andrelândia,MUNICÍPIO,24
+1261,Mar de Espanha,MUNICÍPIO,24
+1262,Gavião Peixoto,MUNICÍPIO,31
+1263,Vila Nova dos Martírios,MUNICÍPIO,7
+1264,Cássia dos Coqueiros,MUNICÍPIO,31
+1265,Marabá,MUNICÍPIO,13
+1266,Carmo de Minas,MUNICÍPIO,24
+1267,Caiuá,MUNICÍPIO,31
+1268,Ponta Porã,MUNICÍPIO,19
+1269,Itaporã,MUNICÍPIO,19
+1270,Pindorama,MUNICÍPIO,31
+1271,Guaraçaí,MUNICÍPIO,31
+1272,Alterosa,MUNICÍPIO,24
+1273,Barrinha,MUNICÍPIO,31
+1274,Ressaquinha,MUNICÍPIO,24
+1275,Presidente Venceslau,MUNICÍPIO,31
+1276,Alfredo Marcondes,MUNICÍPIO,31
+1277,Vargem Grande do Sul,MUNICÍPIO,31
+1278,Aperibé,MUNICÍPIO,23
+1279,Santa Rita do Pardo,MUNICÍPIO,19
+1280,Nova Independência,MUNICÍPIO,31
+1281,Prados,MUNICÍPIO,24
+1282,Boa Esperança,MUNICÍPIO,24
+1283,Ariranha,MUNICÍPIO,31
+1284,Miraí,MUNICÍPIO,24
+1355,Soledade de Minas,MUNICÍPIO,24
+1208,Gabriel Monteiro,MUNICÍPIO,31
+1285,Campo Largo do Piauí,MUNICÍPIO,6
+1286,Piquerobi,MUNICÍPIO,31
+1287,Cafelândia,MUNICÍPIO,31
+1288,Barroso,MUNICÍPIO,24
+1289,Santo Antônio da Alegria,MUNICÍPIO,31
+1290,Sertãozinho,MUNICÍPIO,31
+1291,Cabeceiras do Piauí,MUNICÍPIO,6
+1292,Potirendaba,MUNICÍPIO,31
+1293,Conceição da Barra de Minas,MUNICÍPIO,24
+1294,Castilho,MUNICÍPIO,31
+1295,Carmo do Rio Claro,MUNICÍPIO,24
+1296,Propriá,MUNICÍPIO,20
+1297,Laguna,MUNICÍPIO,18
+1345,Analândia,MUNICÍPIO,31
+1298,Balneário Pinhal,MUNICÍPIO,22
+1299,Candiota,MUNICÍPIO,22
+1300,Bombinhas,MUNICÍPIO,18
+1301,Penha,MUNICÍPIO,18
+1302,Nova Iorque,MUNICÍPIO,7
+1303,Boa Vista do Buricá,MUNICÍPIO,22
+1304,Coronel Bicaco,MUNICÍPIO,22
+1305,Constantina,MUNICÍPIO,22
+1306,Umbaúba,MUNICÍPIO,20
+1307,Embu-Guaçu,MUNICÍPIO,31
+1308,Dores do Rio Preto,MUNICÍPIO,8
+1346,Espírito Santo do Dourado,MUNICÍPIO,24
+1347,Bocaina,MUNICÍPIO,31
+1348,Dourado,MUNICÍPIO,31
+1349,Ribeirão Bonito,MUNICÍPIO,31
+1350,Pirassununga,MUNICÍPIO,31
+1351,Aguaí,MUNICÍPIO,31
+1352,Santa Bárbara do Monte Verde,MUNICÍPIO,24
+1353,Santa Rita de Jacutinga,MUNICÍPIO,24
+1354,São Sebastião da Bela Vista,MUNICÍPIO,24
+1309,Baraúna,MUNICÍPIO,27
+1310,Colorado,MUNICÍPIO,22
+1311,Urussanga,MUNICÍPIO,18
+1312,Lagoa dos Três Cantos,MUNICÍPIO,22
+1313,Entre-Ijuís,MUNICÍPIO,22
+1314,Alegria,MUNICÍPIO,22
+1315,Centenário,MUNICÍPIO,22
+1316,São Domingos do Sul,MUNICÍPIO,22
+1317,Rondinha,MUNICÍPIO,22
+1318,Ernestina,MUNICÍPIO,22
+1319,Santo Antônio,MUNICÍPIO,25
+1320,Miguel Leão,MUNICÍPIO,6
+1321,Carandaí,MUNICÍPIO,24
+1322,Getulina,MUNICÍPIO,31
+1323,Pongaí,MUNICÍPIO,31
+1324,Itaocara,MUNICÍPIO,23
+1325,Caldas,MUNICÍPIO,24
+1326,Guarantã,MUNICÍPIO,31
+1327,Monsenhor Paulo,MUNICÍPIO,24
+1328,Frei Paulo,MUNICÍPIO,20
+1329,Ribeirão dos Índios,MUNICÍPIO,31
+1330,Amajari,MUNICÍPIO,12
+1331,Pacaraima,MUNICÍPIO,12
+1332,Uiramutã,MUNICÍPIO,12
+1333,Iacri,MUNICÍPIO,31
+1334,Casa Branca,MUNICÍPIO,31
+1335,Caracol,MUNICÍPIO,19
+1336,Caratinga,MUNICÍPIO,24
+1337,Conceição de Macabu,MUNICÍPIO,23
+1338,Quissamã,MUNICÍPIO,23
+1339,Quintana,MUNICÍPIO,31
+1340,Liberdade,MUNICÍPIO,24
+1341,Santa Rita de Caldas,MUNICÍPIO,24
+1342,Funilândia,MUNICÍPIO,24
+1343,Paraopeba,MUNICÍPIO,24
+1344,Santa Cruz da Conceição,MUNICÍPIO,31
+1356,Divinolândia,MUNICÍPIO,31
+1357,Flora Rica,MUNICÍPIO,31
+1358,Batayporã,MUNICÍPIO,19
+1359,Antônio João,MUNICÍPIO,19
+1360,Nova Alvorada do Sul,MUNICÍPIO,19
+1361,Boracéia,MUNICÍPIO,31
+1362,Rinópolis,MUNICÍPIO,31
+1363,Pirapetinga,MUNICÍPIO,24
+1364,Bias Fortes,MUNICÍPIO,24
+1365,Luiziânia,MUNICÍPIO,31
+1366,Muniz Ferreira,MUNICÍPIO,29
+1367,Santo Amaro da Imperatriz,MUNICÍPIO,18
+1368,Alfredo Wagner,MUNICÍPIO,18
+1369,Não-Me-Toque,MUNICÍPIO,22
+1370,David Canabarro,MUNICÍPIO,22
+1371,Itapiranga,MUNICÍPIO,18
+1372,Vitor Meireles,MUNICÍPIO,18
+1373,Treze Tílias,MUNICÍPIO,18
+1374,Ibirajuba,MUNICÍPIO,28
+1375,Monte Belo do Sul,MUNICÍPIO,22
+1376,Marcionílio Souza,MUNICÍPIO,29
+1377,Lençóis,MUNICÍPIO,29
+1378,Maracás,MUNICÍPIO,29
+1379,Andaraí,MUNICÍPIO,29
+1380,Sete Quedas,MUNICÍPIO,19
+1381,Descanso,MUNICÍPIO,18
+1382,Ponte Serrada,MUNICÍPIO,18
+1383,Lindóia do Sul,MUNICÍPIO,18
+1384,Cunha Porã,MUNICÍPIO,18
+1385,Iraceminha,MUNICÍPIO,18
+1387,Vargeão,MUNICÍPIO,18
+1388,Itajaí,MUNICÍPIO,18
+1389,Itaberá,MUNICÍPIO,31
+1390,São Miguel Arcanjo,MUNICÍPIO,31
+1391,Paranhos,MUNICÍPIO,19
+1392,Pilar do Sul,MUNICÍPIO,31
+1393,Ilhota,MUNICÍPIO,18
+1394,Riqueza,MUNICÍPIO,18
+1395,Tacuru,MUNICÍPIO,19
+1396,Itapeva,MUNICÍPIO,31
+1397,Congonhinhas,MUNICÍPIO,17
+1398,Siqueira Campos,MUNICÍPIO,17
+1399,Tapejara,MUNICÍPIO,17
+1400,Ilha de Itamaracá,MUNICÍPIO,28
+1401,Silveiras,MUNICÍPIO,31
+1402,Botelhos,MUNICÍPIO,24
+1403,Santópolis do Aguapeí,MUNICÍPIO,31
+1404,Quatipuru,MUNICÍPIO,13
+1405,Nova Monte Verde,MUNICÍPIO,21
+1406,Tuiuti,MUNICÍPIO,31
+1407,Pratânia,MUNICÍPIO,31
+1408,Uarini,MUNICÍPIO,11
+1409,Vitória do Xingu,MUNICÍPIO,13
+1410,Governador Newton Bello,MUNICÍPIO,7
+1411,Cacimba de Areia,MUNICÍPIO,27
+1412,São Caetano do Sul,MUNICÍPIO,31
+1413,Arcos,MUNICÍPIO,24
+1414,Carmo do Cajuru,MUNICÍPIO,24
+1415,Igaratinga,MUNICÍPIO,24
+1416,São Gonçalo do Pará,MUNICÍPIO,24
+1417,Cardoso,MUNICÍPIO,31
+1418,Macedônia,MUNICÍPIO,31
+1419,São José da Bela Vista,MUNICÍPIO,31
+1420,Japaraíba,MUNICÍPIO,24
+1421,Timbaúba dos Batistas,MUNICÍPIO,25
+1422,Belo Horizonte,MUNICÍPIO,24
+1423,Paranaíba,MUNICÍPIO,19
+1424,Inocência,MUNICÍPIO,19
+1425,Aparecida do Taboado,MUNICÍPIO,19
+1426,Nova Lima,MUNICÍPIO,24
+1427,Contagem,MUNICÍPIO,24
+1428,Bandeirantes,MUNICÍPIO,19
+1429,Córrego Novo,MUNICÍPIO,24
+1430,Bom Jesus do Galho,MUNICÍPIO,24
+1431,Dionísio,MUNICÍPIO,24
+1432,Água Clara,MUNICÍPIO,19
+1433,Nova Era,MUNICÍPIO,24
+1434,Jaguaraçu,MUNICÍPIO,24
+1435,Lagoa Santa,MUNICÍPIO,24
+1436,São Gabriel do Oeste,MUNICÍPIO,19
+1437,Limeira do Oeste,MUNICÍPIO,24
+1438,Maravilhas,MUNICÍPIO,24
+1439,União de Minas,MUNICÍPIO,24
+1440,Cristais Paulista,MUNICÍPIO,31
+1441,Franca,MUNICÍPIO,31
+1442,São Sebastião da Boa Vista,MUNICÍPIO,13
+1443,Lambari D'Oeste,MUNICÍPIO,21
+1444,Porto Estrela,MUNICÍPIO,21
+1445,Matinha,MUNICÍPIO,7
+1446,Mostardas,MUNICÍPIO,22
+1447,São João Batista,MUNICÍPIO,7
+1448,Iguape,MUNICÍPIO,31
+1449,Juquitiba,MUNICÍPIO,31
+1450,Guaratuba,MUNICÍPIO,17
+1451,Ribeirão Corrente,MUNICÍPIO,31
+1452,Belo Vale,MUNICÍPIO,24
+1453,Bom Lugar,MUNICÍPIO,7
+1454,Paranaguá,MUNICÍPIO,17
+1455,Guará,MUNICÍPIO,31
+1456,Ipuã,MUNICÍPIO,31
+1457,Palmeira d'Oeste,MUNICÍPIO,31
+1458,Lago Verde,MUNICÍPIO,7
+1459,Ouro Preto,MUNICÍPIO,24
+1460,Guaíra,MUNICÍPIO,31
+1461,Bonfim,MUNICÍPIO,24
+1462,Palestina,MUNICÍPIO,31
+1463,Buritizal,MUNICÍPIO,31
+1464,Fronteira,MUNICÍPIO,24
+1465,Álvares Florence,MUNICÍPIO,31
+1466,Pontes Gestal,MUNICÍPIO,31
+1467,Mariana,MUNICÍPIO,24
+1468,Ituverava,MUNICÍPIO,31
+1469,Itaguara,MUNICÍPIO,24
+1470,São João Batista do Glória,MUNICÍPIO,24
+1471,Santo Antônio do Grama,MUNICÍPIO,24
+1472,Claraval,MUNICÍPIO,24
+1473,Guaraci,MUNICÍPIO,31
+1474,Itapecerica,MUNICÍPIO,24
+1475,Icém,MUNICÍPIO,31
+1476,Doresópolis,MUNICÍPIO,24
+1477,Colômbia,MUNICÍPIO,31
+1478,Campo Grande,MUNICÍPIO,19
+1479,Camacan,MUNICÍPIO,29
+1480,Aramina,MUNICÍPIO,31
+1481,Urânia,MUNICÍPIO,31
+1482,Pontalina,MUNICÍPIO,30
+1483,Portelândia,MUNICÍPIO,30
+1484,Jataí,MUNICÍPIO,30
+1485,Prado,MUNICÍPIO,29
+1486,Itaipé,MUNICÍPIO,24
+1487,Novo Cruzeiro,MUNICÍPIO,24
+1488,Carmo do Rio Verde,MUNICÍPIO,30
+1489,Bocaiúva,MUNICÍPIO,24
+1490,Teixeira de Freitas,MUNICÍPIO,29
+1491,Perolândia,MUNICÍPIO,30
+1492,Professor Jamil,MUNICÍPIO,30
+1493,Espinosa,MUNICÍPIO,24
+1494,Santa Cruz de Goiás,MUNICÍPIO,30
+1495,Chapada do Norte,MUNICÍPIO,24
+1496,Montividiu,MUNICÍPIO,30
+1497,Jandaia,MUNICÍPIO,30
+1498,Vereda,MUNICÍPIO,29
+1499,Edéia,MUNICÍPIO,30
+1500,Caraí,MUNICÍPIO,24
+1501,Crisólita,MUNICÍPIO,24
+1502,Rio Verde,MUNICÍPIO,30
+1503,Francisco Dumont,MUNICÍPIO,24
+1504,Jequitaí,MUNICÍPIO,24
+1505,Itiquira,MUNICÍPIO,21
+1506,Santo Antônio do Leverger,MUNICÍPIO,21
+1507,Cezarina,MUNICÍPIO,30
+1508,Itanhém,MUNICÍPIO,29
+1509,Cristianópolis,MUNICÍPIO,30
+1510,Araçuaí,MUNICÍPIO,24
+1511,Alto Garças,MUNICÍPIO,21
+1512,Rondonópolis,MUNICÍPIO,21
+1513,Águas Formosas,MUNICÍPIO,24
+1514,Santa Luzia,MUNICÍPIO,29
+1515,Una,MUNICÍPIO,29
+1516,Arataca,MUNICÍPIO,29
+1517,Faina,MUNICÍPIO,30
+1518,Rubiataba,MUNICÍPIO,30
+1519,Nova América,MUNICÍPIO,30
+1520,São João do Paraíso,MUNICÍPIO,24
+1521,Araguapaz,MUNICÍPIO,30
+1522,Glória D'Oeste,MUNICÍPIO,21
+1523,Potiraguá,MUNICÍPIO,29
+1524,Itarantim,MUNICÍPIO,29
+1525,Jussari,MUNICÍPIO,29
+1526,Ribeirão do Largo,MUNICÍPIO,29
+1527,Tremedal,MUNICÍPIO,29
+1528,Vitória da Conquista,MUNICÍPIO,29
+1529,Jangada,MUNICÍPIO,21
+1530,Araputanga,MUNICÍPIO,21
+1531,Poxoréu,MUNICÍPIO,21
+1532,Cândido Sales,MUNICÍPIO,29
+1533,Itambé,MUNICÍPIO,29
+1534,Ninheira,MUNICÍPIO,24
+1535,Salto do Céu,MUNICÍPIO,21
+1536,Medina,MUNICÍPIO,24
+1537,Rubelita,MUNICÍPIO,24
+1538,Bom Jardim de Goiás,MUNICÍPIO,30
+1539,Conceição do Mato Dentro,MUNICÍPIO,24
+1540,Cassilândia,MUNICÍPIO,19
+1541,Braúnas,MUNICÍPIO,24
+1542,Itanhomi,MUNICÍPIO,24
+1543,Morro do Pilar,MUNICÍPIO,24
+1544,Mossâmedes,MUNICÍPIO,30
+1694,Santana do Maranhão,MUNICÍPIO,7
+1695,Santa Cruz da Vitória,MUNICÍPIO,29
+1696,Barro Preto,MUNICÍPIO,29
+1697,Itaju do Colônia,MUNICÍPIO,29
+1698,Itapé,MUNICÍPIO,29
+1699,Coronel Xavier Chaves,MUNICÍPIO,24
+1700,Nazareno,MUNICÍPIO,24
+1701,São José da Vitória,MUNICÍPIO,29
+1702,Dores de Campos,MUNICÍPIO,24
+1703,Camanducaia,MUNICÍPIO,24
+1545,Leoberto Leal,MUNICÍPIO,18
+1546,São Sebastião,MUNICÍPIO,31
+1547,Niterói,MUNICÍPIO,23
+1548,São Francisco do Sul,MUNICÍPIO,18
+1549,Balneário Barra do Sul,MUNICÍPIO,18
+1550,Ilhabela,MUNICÍPIO,31
+1551,Caraguatatuba,MUNICÍPIO,31
+1552,Itanhaém,MUNICÍPIO,31
+1553,Pirangi,MUNICÍPIO,31
+1554,Senador Salgado Filho,MUNICÍPIO,22
+1555,Matelândia,MUNICÍPIO,17
+1556,Planalto,MUNICÍPIO,17
+1557,Faxinal dos Guedes,MUNICÍPIO,18
+1558,Guaramirim,MUNICÍPIO,18
+1559,Joinville,MUNICÍPIO,18
+1560,São Domingos,MUNICÍPIO,18
+1561,Galvão,MUNICÍPIO,18
+1562,Dionísio Cerqueira,MUNICÍPIO,18
+1563,Guarujá do Sul,MUNICÍPIO,18
+1564,Sul Brasil,MUNICÍPIO,18
+1565,São José do Cedro,MUNICÍPIO,18
+1566,Clevelândia,MUNICÍPIO,17
+1567,Mariópolis,MUNICÍPIO,17
+1568,Caçador,MUNICÍPIO,18
+1569,Calmon,MUNICÍPIO,18
+1570,General Carneiro,MUNICÍPIO,17
+1571,Tocantinópolis,MUNICÍPIO,15
+1572,São Francisco do Maranhão,MUNICÍPIO,7
+1573,Porto União,MUNICÍPIO,18
+1574,Salto Veloso,MUNICÍPIO,18
+1575,Nazaré,MUNICÍPIO,15
+1704,Cambuí,MUNICÍPIO,24
+1705,Itaperuna,MUNICÍPIO,23
+1576,Pedro Velho,MUNICÍPIO,25
+1577,Assis Brasil,MUNICÍPIO,10
+1578,Tabatinga,MUNICÍPIO,11
+1579,Santo Antônio do Içá,MUNICÍPIO,11
+1580,Benjamin Constant,MUNICÍPIO,11
+1581,Engenheiro Navarro,MUNICÍPIO,24
+1582,Romelândia,MUNICÍPIO,18
+1583,Coqueiral,MUNICÍPIO,24
+1584,Conselheiro Lafaiete,MUNICÍPIO,24
+1585,Diamantina,MUNICÍPIO,24
+1586,Ouro Verde,MUNICÍPIO,18
+1587,Abelardo Luz,MUNICÍPIO,18
+1588,Entre Rios,MUNICÍPIO,18
+1589,Quilombo,MUNICÍPIO,18
+1590,Papanduva,MUNICÍPIO,18
+1591,Flor do Sertão,MUNICÍPIO,18
+1592,Serranópolis do Iguaçu,MUNICÍPIO,17
+1593,Rio Azul,MUNICÍPIO,17
+1594,Capitão Leônidas Marques,MUNICÍPIO,17
+1595,Nova Laranjeiras,MUNICÍPIO,17
+1596,Santa Izabel do Oeste,MUNICÍPIO,17
+1597,Santa Lúcia,MUNICÍPIO,17
+1598,Bela Vista da Caroba,MUNICÍPIO,17
+1599,Boa Vista da Aparecida,MUNICÍPIO,17
+1600,Guaraqueçaba,MUNICÍPIO,17
+1601,Mandirituba,MUNICÍPIO,17
+1602,Medianeira,MUNICÍPIO,17
+1603,Nova Esperança do Sudoeste,MUNICÍPIO,17
+1604,Realeza,MUNICÍPIO,17
+1605,Rio Bonito do Iguaçu,MUNICÍPIO,17
+1606,São João,MUNICÍPIO,17
+1607,Major Vieira,MUNICÍPIO,18
+1608,Serra Alta,MUNICÍPIO,18
+1609,Jaraguá do Sul,MUNICÍPIO,18
+1610,Pomerode,MUNICÍPIO,18
+1611,Barra Bonita,MUNICÍPIO,18
+1612,Rio Negrinho,MUNICÍPIO,18
+1613,Timbó Grande,MUNICÍPIO,18
+1614,Ipuaçu,MUNICÍPIO,18
+1615,Passos Maia,MUNICÍPIO,18
+1616,Palmas,MUNICÍPIO,17
+1706,Muquém do São Francisco,MUNICÍPIO,29
+1707,Oliveira dos Brejinhos,MUNICÍPIO,29
+1708,Bom Jesus da Lapa,MUNICÍPIO,29
+1709,Ibotirama,MUNICÍPIO,29
+1710,Ibicoara,MUNICÍPIO,29
+1711,Saúde,MUNICÍPIO,29
+1712,Jacobina,MUNICÍPIO,29
+1713,Nossa Senhora do Livramento,MUNICÍPIO,21
+1714,Morungaba,MUNICÍPIO,31
+1715,Itatiba,MUNICÍPIO,31
+1716,Cerqueira César,MUNICÍPIO,31
+1717,Ibirarema,MUNICÍPIO,31
+1718,Iaras,MUNICÍPIO,31
+1719,Santa Mariana,MUNICÍPIO,17
+1720,Cândido Mota,MUNICÍPIO,31
+1721,Leópolis,MUNICÍPIO,17
+1722,Joanópolis,MUNICÍPIO,31
+1617,Dom Silvério,MUNICÍPIO,24
+1618,Bugre,MUNICÍPIO,24
+1619,Picada Café,MUNICÍPIO,22
+1620,Matos Costa,MUNICÍPIO,18
+1621,Jupiá,MUNICÍPIO,18
+1622,Palma Sola,MUNICÍPIO,18
+1623,Irineópolis,MUNICÍPIO,18
+1624,Aimorés,MUNICÍPIO,24
+1625,Abel Figueiredo,MUNICÍPIO,13
+1626,Lebon Régis,MUNICÍPIO,18
+1723,Cesário Lange,MUNICÍPIO,31
+1724,Quadra,MUNICÍPIO,31
+1725,Tatuí,MUNICÍPIO,31
+1726,Mairiporã,MUNICÍPIO,31
+1727,Abatiá,MUNICÍPIO,17
+1728,Cidade Gaúcha,MUNICÍPIO,17
+1729,Douradina,MUNICÍPIO,17
+1730,Bandeirantes,MUNICÍPIO,17
+1731,Nova Esperança,MUNICÍPIO,17
+1732,Cerquilho,MUNICÍPIO,31
+1733,Bofete,MUNICÍPIO,31
+1734,Ourinhos,MUNICÍPIO,31
+1735,Vargem,MUNICÍPIO,31
+1736,Sarutaiá,MUNICÍPIO,31
+1737,Anhembi,MUNICÍPIO,31
+1738,Amambai,MUNICÍPIO,19
+1739,Taquarussu,MUNICÍPIO,19
+1740,Nossa Senhora das Graças,MUNICÍPIO,17
+1741,Cabreúva,MUNICÍPIO,31
+1742,Itapiratins,MUNICÍPIO,15
+1743,São Pedro da Cipa,MUNICÍPIO,21
+1744,Periquito,MUNICÍPIO,24
+1627,Fervedouro,MUNICÍPIO,24
+1628,Rio Fortuna,MUNICÍPIO,18
+1629,Rio das Antas,MUNICÍPIO,18
+1630,Itabirinha,MUNICÍPIO,24
+1631,Santa Isabel,MUNICÍPIO,31
+1632,Pinhalzinho,MUNICÍPIO,18
+1633,Indaiatuba,MUNICÍPIO,31
+1634,Pereiras,MUNICÍPIO,31
+1635,Faria Lemos,MUNICÍPIO,24
+1636,Felício dos Santos,MUNICÍPIO,24
+1637,Diorama,MUNICÍPIO,30
+1638,Alvarães,MUNICÍPIO,11
+1745,Sobrália,MUNICÍPIO,24
+1837,Sombrio,MUNICÍPIO,18
+1838,Portel,MUNICÍPIO,13
+1839,Itaiópolis,MUNICÍPIO,18
+1840,Limeira,MUNICÍPIO,31
+1845,São Jorge d'Oeste,MUNICÍPIO,17
+1846,Jacupiranga,MUNICÍPIO,31
+1639,Teutônia,MUNICÍPIO,22
+1640,Sorocaba,MUNICÍPIO,31
+1641,Botucatu,MUNICÍPIO,31
+1642,Dom Pedro de Alcântara,MUNICÍPIO,22
+1643,Jardim Alegre,MUNICÍPIO,17
+1644,Farol,MUNICÍPIO,17
+1645,Godoy Moreira,MUNICÍPIO,17
+1646,Goioerê,MUNICÍPIO,17
+1647,Alto Piquiri,MUNICÍPIO,17
+1648,Barbosa Ferraz,MUNICÍPIO,17
+1649,Francisco Alves,MUNICÍPIO,17
+1650,Nova Campina,MUNICÍPIO,31
+1651,Janiópolis,MUNICÍPIO,17
+1652,Lidianópolis,MUNICÍPIO,17
+1653,Ribeirão Branco,MUNICÍPIO,31
+1654,Ribeirão Grande,MUNICÍPIO,31
+1655,Roseira,MUNICÍPIO,31
+1656,Lunardelli,MUNICÍPIO,17
+1657,Campo Mourão,MUNICÍPIO,17
+1658,Corumbataí do Sul,MUNICÍPIO,17
+1659,Cruzmaltina,MUNICÍPIO,17
+1660,Grandes Rios,MUNICÍPIO,17
+1661,Boa Esperança,MUNICÍPIO,17
+1662,Pariquera-Açu,MUNICÍPIO,31
+1663,Ilha Comprida,MUNICÍPIO,31
+1664,Cajati,MUNICÍPIO,31
+1665,Altamira do Paraná,MUNICÍPIO,17
+1666,Iguatu,MUNICÍPIO,17
+1667,Mato Rico,MUNICÍPIO,17
+1668,Ouro Verde do Oeste,MUNICÍPIO,17
+1669,São José das Palmeiras,MUNICÍPIO,17
+1670,Jaborá,MUNICÍPIO,18
+1772,Ourilândia do Norte,MUNICÍPIO,13
+1773,São Francisco do Pará,MUNICÍPIO,13
+1774,Maracanã,MUNICÍPIO,13
+1775,Marapanim,MUNICÍPIO,13
+1776,Vitória do Jari,MUNICÍPIO,14
+1777,Nhamundá,MUNICÍPIO,11
+1778,Santana,MUNICÍPIO,14
+1779,Itaubal,MUNICÍPIO,14
+1780,Santa Maria do Tocantins,MUNICÍPIO,15
+1781,Orocó,MUNICÍPIO,28
+1782,Lagoa Grande,MUNICÍPIO,28
+1783,Araguacema,MUNICÍPIO,15
+1784,Guaraí,MUNICÍPIO,15
+1847,Capão Bonito,MUNICÍPIO,31
+1848,Riversul,MUNICÍPIO,31
+1849,Itapecerica da Serra,MUNICÍPIO,31
+1850,Coronel Macedo,MUNICÍPIO,31
+1671,Ivoti,MUNICÍPIO,22
+1672,Guatambú,MUNICÍPIO,18
+1673,Nova Crixás,MUNICÍPIO,30
+1674,Diamante do Sul,MUNICÍPIO,17
+1675,Pracinha,MUNICÍPIO,31
+1676,Ponte Alta do Norte,MUNICÍPIO,18
+1677,Porangaba,MUNICÍPIO,31
+1678,Guareí,MUNICÍPIO,31
+1679,Timburi,MUNICÍPIO,31
+1680,Fartura,MUNICÍPIO,31
+1681,Atibaia,MUNICÍPIO,31
+1682,Silveira Martins,MUNICÍPIO,22
+1683,Jussara,MUNICÍPIO,30
+1684,Palmital,MUNICÍPIO,31
+1685,Umburanas,MUNICÍPIO,29
+1686,Santa Cruz do Rio Pardo,MUNICÍPIO,31
+1687,Cafeara,MUNICÍPIO,17
+1688,São João de Meriti,MUNICÍPIO,23
+1689,Jaguaquara,MUNICÍPIO,29
+1690,Colorado,MUNICÍPIO,17
+1691,Andirá,MUNICÍPIO,17
+1692,Centenário do Sul,MUNICÍPIO,17
+1693,Pindamonhangaba,MUNICÍPIO,31
+1786,Dom Inocêncio,MUNICÍPIO,6
+1787,Jacuípe,MUNICÍPIO,16
+1788,Garanhuns,MUNICÍPIO,28
+1789,Cajueiro,MUNICÍPIO,16
+1790,Miranorte,MUNICÍPIO,15
+1791,Chorrochó,MUNICÍPIO,29
+1792,Carneiros,MUNICÍPIO,16
+1851,Paraibuna,MUNICÍPIO,31
+1746,Sampaio,MUNICÍPIO,15
+1747,Rio Negro,MUNICÍPIO,17
+1748,Planaltina do Paraná,MUNICÍPIO,17
+1749,Santa Isabel do Ivaí,MUNICÍPIO,17
+1750,Igaratá,MUNICÍPIO,31
+1751,Santa Luz,MUNICÍPIO,6
+1752,Tapira,MUNICÍPIO,17
+1753,Jaborandi,MUNICÍPIO,29
+1754,Porto Seguro,MUNICÍPIO,29
+1755,Brumadinho,MUNICÍPIO,24
+1756,Potim,MUNICÍPIO,31
+1757,Nova Iguaçu,MUNICÍPIO,23
+1758,Pedreira,MUNICÍPIO,31
+1759,Borebi,MUNICÍPIO,31
+1760,Santo Inácio,MUNICÍPIO,17
+1761,Porecatu,MUNICÍPIO,17
+1762,Santa Inês,MUNICÍPIO,17
+1763,Areias,MUNICÍPIO,31
+1764,Lagoa Santa,MUNICÍPIO,30
+1765,Rio das Ostras,MUNICÍPIO,23
+1766,Poconé,MUNICÍPIO,21
+1767,Pontal do Araguaia,MUNICÍPIO,21
+1768,Muaná,MUNICÍPIO,13
+1769,Maués,MUNICÍPIO,11
+1770,Darcinópolis,MUNICÍPIO,15
+1771,Estreito,MUNICÍPIO,7
+1785,Ribeirão,MUNICÍPIO,28
+1793,Balneário Piçarras,MUNICÍPIO,18
+1794,Iacanga,MUNICÍPIO,31
+1795,Ibitinga,MUNICÍPIO,31
+1796,São Carlos,MUNICÍPIO,31
+1797,Ibirá,MUNICÍPIO,31
+1798,Nova Aliança,MUNICÍPIO,31
+1799,Américo de Campos,MUNICÍPIO,31
+1800,Selvíria,MUNICÍPIO,19
+1801,Aquidauana,MUNICÍPIO,19
+1802,Couto de Magalhães de Minas,MUNICÍPIO,24
+1803,Sidrolândia,MUNICÍPIO,19
+1804,Bom Jesus do Amparo,MUNICÍPIO,24
+1805,Bom Jesus da Penha,MUNICÍPIO,24
+1806,Claro dos Poções,MUNICÍPIO,24
+1807,Coqueiros do Sul,MUNICÍPIO,22
+1808,São Vicente,MUNICÍPIO,31
+1809,São Manuel,MUNICÍPIO,31
+1810,São Simão,MUNICÍPIO,31
+1811,São Lourenço da Serra,MUNICÍPIO,31
+1812,Araruna,MUNICÍPIO,17
+1813,Apucarana,MUNICÍPIO,17
+1814,Araucária,MUNICÍPIO,17
+1815,Ribeirão Claro,MUNICÍPIO,17
+1816,Rio Bom,MUNICÍPIO,17
+1817,Morrinhos do Sul,MUNICÍPIO,22
+1818,Santa Terezinha,MUNICÍPIO,18
+1819,Passo do Sobrado,MUNICÍPIO,22
+1820,Palmeira das Missões,MUNICÍPIO,22
+1821,Urubici,MUNICÍPIO,18
+1822,Paes Landim,MUNICÍPIO,6
+1823,Ibicuí,MUNICÍPIO,29
+1824,Boca do Acre,MUNICÍPIO,11
+1825,Rondon do Pará,MUNICÍPIO,13
+1826,Faro,MUNICÍPIO,13
+1827,Mojuí dos Campos,MUNICÍPIO,13
+1828,Santa Cruz do Arari,MUNICÍPIO,13
+1829,São Caetano de Odivelas,MUNICÍPIO,13
+1830,Imaruí,MUNICÍPIO,18
+1831,Loreto,MUNICÍPIO,7
+1832,Barão de Grajaú,MUNICÍPIO,7
+1833,Carolina,MUNICÍPIO,7
+1834,Brotas de Macaúbas,MUNICÍPIO,29
+1835,Ibiquera,MUNICÍPIO,29
+1836,Piedade,MUNICÍPIO,31
+1841,Arroio do Sal,MUNICÍPIO,22
+1842,Seara,MUNICÍPIO,18
+1843,Xaxim,MUNICÍPIO,18
+1844,Xanxerê,MUNICÍPIO,18
+1852,Redenção da Serra,MUNICÍPIO,31
+1853,Salto,MUNICÍPIO,31
+1854,Areiópolis,MUNICÍPIO,31
+1855,Artur Nogueira,MUNICÍPIO,31
+1856,Ipeúna,MUNICÍPIO,31
+1857,Bariri,MUNICÍPIO,31
+1858,Indiana,MUNICÍPIO,31
+1859,Mariápolis,MUNICÍPIO,31
+1860,Osvaldo Cruz,MUNICÍPIO,31
+1861,Reginópolis,MUNICÍPIO,31
+1862,Lins,MUNICÍPIO,31
+1863,Jaboticabal,MUNICÍPIO,31
+1864,José Bonifácio,MUNICÍPIO,31
+1865,Mirandópolis,MUNICÍPIO,31
+1866,Uchoa,MUNICÍPIO,31
+1867,Neves Paulista,MUNICÍPIO,31
+1868,Carmópolis de Minas,MUNICÍPIO,24
+1869,Comercinho,MUNICÍPIO,24
+1870,Desterro de Entre Rios,MUNICÍPIO,24
+1871,Itaberaí,MUNICÍPIO,30
+1872,Tefé,MUNICÍPIO,11
+1873,Óbidos,MUNICÍPIO,13
+1874,Oriximiná,MUNICÍPIO,13
+1875,Pedra Bela,MUNICÍPIO,31
+1876,Bagé,MUNICÍPIO,22
+1877,Campanário,MUNICÍPIO,24
+1878,Catuji,MUNICÍPIO,24
+1879,Senador Elói de Souza,MUNICÍPIO,25
+1880,Parintins,MUNICÍPIO,11
+1881,Açucena,MUNICÍPIO,24
+1882,Água Boa,MUNICÍPIO,24
+1883,Tarauacá,MUNICÍPIO,10
+1884,Pracuúba,MUNICÍPIO,14
+1885,Coração de Jesus,MUNICÍPIO,24
+1886,Sanclerlândia,MUNICÍPIO,30
+1887,Ribeirãozinho,MUNICÍPIO,21
+1888,Almenara,MUNICÍPIO,24
+1889,Catuti,MUNICÍPIO,24
+1890,Heitoraí,MUNICÍPIO,30
+1891,Matrinchã,MUNICÍPIO,30
+1892,Angical,MUNICÍPIO,29
+1893,Santa Rosa do Tocantins,MUNICÍPIO,15
+1894,Carauari,MUNICÍPIO,11
+1895,Eldorado do Carajás,MUNICÍPIO,13
+1896,Caseara,MUNICÍPIO,15
+1897,Rio Grande do Piauí,MUNICÍPIO,6
+1898,Bertolínia,MUNICÍPIO,6
+1899,Bannach,MUNICÍPIO,13
+1900,Araguaína,MUNICÍPIO,15
+1901,Santa Fé do Araguaia,MUNICÍPIO,15
+1902,Aragominas,MUNICÍPIO,15
+1903,Itinga do Maranhão,MUNICÍPIO,7
+1904,Capela de Santana,MUNICÍPIO,22
+1905,Tabocas do Brejo Velho,MUNICÍPIO,29
+1906,Gilbués,MUNICÍPIO,6
+1907,Pontes e Lacerda,MUNICÍPIO,21
+1908,João Costa,MUNICÍPIO,6
+1909,Tremembé,MUNICÍPIO,31
+1910,Pedra Branca do Amapari,MUNICÍPIO,14
+1911,Bastos,MUNICÍPIO,31
+1912,Tabaporã,MUNICÍPIO,21
+1913,Rurópolis,MUNICÍPIO,13
+1914,Breves,MUNICÍPIO,13
+1915,Aveiro,MUNICÍPIO,13
+1916,Caçapava do Sul,MUNICÍPIO,22
+1917,Aiuruoca,MUNICÍPIO,24
+1918,Cabrobó,MUNICÍPIO,28
+1919,Conde,MUNICÍPIO,27
+1920,Forquilhinha,MUNICÍPIO,18
+1921,Ipumirim,MUNICÍPIO,18
+1922,Irani,MUNICÍPIO,18
+1923,São Pedro do Suaçuí,MUNICÍPIO,24
+1924,Orleans,MUNICÍPIO,18
+1925,São Cristóvão do Sul,MUNICÍPIO,18
+1926,Cromínia,MUNICÍPIO,30
+1927,Campos Verdes,MUNICÍPIO,30
+1928,Governador Jorge Teixeira,MUNICÍPIO,9
+1929,Carazinho,MUNICÍPIO,22
+1930,Valença,MUNICÍPIO,29
+1931,Fortaleza dos Valos,MUNICÍPIO,22
+1932,Vista Alegre do Prata,MUNICÍPIO,22
+1933,Bozano,MUNICÍPIO,22
+1934,Alpercata,MUNICÍPIO,24
+1935,Portão,MUNICÍPIO,22
+1936,Camaçari,MUNICÍPIO,29
+1937,Dom Feliciano,MUNICÍPIO,22
+1938,Candelária,MUNICÍPIO,22
+1939,Unistalda,MUNICÍPIO,22
+1940,Agricolândia,MUNICÍPIO,6
+1941,Quatro Irmãos,MUNICÍPIO,22
+1942,Tucunduva,MUNICÍPIO,22
+1943,Santana de Parnaíba,MUNICÍPIO,31
+1944,Aparecida,MUNICÍPIO,31
+1945,Piracicaba,MUNICÍPIO,31
+1946,Itaguajé,MUNICÍPIO,17
+1947,Amparo,MUNICÍPIO,31
+1948,Mirante do Paranapanema,MUNICÍPIO,31
+1949,Pirapozinho,MUNICÍPIO,31
+1950,Regente Feijó,MUNICÍPIO,31
+1951,Santo Anastácio,MUNICÍPIO,31
+1952,Parapuã,MUNICÍPIO,31
+1953,Queiroz,MUNICÍPIO,31
+1954,Junqueirópolis,MUNICÍPIO,31
+1955,Lucianópolis,MUNICÍPIO,31
+1956,Serra Azul,MUNICÍPIO,31
+1957,Monte Castelo,MUNICÍPIO,31
+1958,Ribeirão Preto,MUNICÍPIO,31
+1959,Santo Antônio do Aracanguá,MUNICÍPIO,31
+1960,Mirassolândia,MUNICÍPIO,31
+1962,Barretos,MUNICÍPIO,31
+1963,Cosmorama,MUNICÍPIO,31
+1964,Coronel Fabriciano,MUNICÍPIO,24
+1965,Barão de Melgaço,MUNICÍPIO,21
+1966,Dom Aquino,MUNICÍPIO,21
+1967,Rio Branco,MUNICÍPIO,21
+1968,Laje,MUNICÍPIO,29
+1969,Araguaiana,MUNICÍPIO,21
+1970,Palmeirópolis,MUNICÍPIO,15
+1971,Combinado,MUNICÍPIO,15
+1972,Lavandeira,MUNICÍPIO,15
+1973,Ipaba,MUNICÍPIO,24
+1974,Flor da Serra do Sul,MUNICÍPIO,17
+1975,Figueirópolis,MUNICÍPIO,15
+1976,Sucupira,MUNICÍPIO,15
+1977,Colíder,MUNICÍPIO,21
+1978,Umbuzeiro,MUNICÍPIO,27
+1979,Manfrinópolis,MUNICÍPIO,17
+1980,Itapuí,MUNICÍPIO,31
+1981,Limoeiro do Ajuru,MUNICÍPIO,13
+1982,Governador Nunes Freire,MUNICÍPIO,7
+1983,Gurupá,MUNICÍPIO,13
+1984,Putinga,MUNICÍPIO,22
+1985,Santo Antônio do Paraíso,MUNICÍPIO,17
+1986,Barão de Antonina,MUNICÍPIO,31
+1987,Santa Bárbara d'Oeste,MUNICÍPIO,31
+1988,Brazópolis,MUNICÍPIO,24
+1989,Agudos do Sul,MUNICÍPIO,17
+1990,Nazaré do Piauí,MUNICÍPIO,6
+2070,Santo Ângelo,MUNICÍPIO,22
+2071,Bonito,MUNICÍPIO,29
+2072,Painel,MUNICÍPIO,18
+2073,Ajuricaba,MUNICÍPIO,22
+2074,Almirante Tamandaré do Sul,MUNICÍPIO,22
+2075,Campo Novo,MUNICÍPIO,22
+2076,Capão Bonito do Sul,MUNICÍPIO,22
+2077,Catuípe,MUNICÍPIO,22
+2167,Arceburgo,MUNICÍPIO,24
+2168,Penápolis,MUNICÍPIO,31
+2169,Tambaú,MUNICÍPIO,31
+2170,Valparaíso,MUNICÍPIO,31
+2171,Urupês,MUNICÍPIO,31
+2172,Alto Rio Doce,MUNICÍPIO,24
+1961,São João das Duas Pontes,MUNICÍPIO,31
+1991,Benedito Novo,MUNICÍPIO,18
+1992,São Bento do Sul,MUNICÍPIO,18
+1993,Cruz Alta,MUNICÍPIO,22
+1994,Derrubadas,MUNICÍPIO,22
+1995,Dom Pedrito,MUNICÍPIO,22
+1996,Guaporé,MUNICÍPIO,22
+1997,Independência,MUNICÍPIO,22
+1998,Resende,MUNICÍPIO,23
+1999,Caiçara,MUNICÍPIO,22
+2000,Chuvisca,MUNICÍPIO,22
+2001,Ibirubá,MUNICÍPIO,22
+2002,Itamaraju,MUNICÍPIO,29
+2003,Mata de São João,MUNICÍPIO,29
+2004,Caparaó,MUNICÍPIO,24
+2005,Presidente Sarney,MUNICÍPIO,7
+2006,Peri Mirim,MUNICÍPIO,7
+2007,Palmeirândia,MUNICÍPIO,7
+2008,Mocajuba,MUNICÍPIO,13
+2009,Maranhãozinho,MUNICÍPIO,7
+2010,São Sebastião do Uatumã,MUNICÍPIO,11
+2011,São Braz do Piauí,MUNICÍPIO,6
+2012,Goianorte,MUNICÍPIO,15
+2013,Igaci,MUNICÍPIO,16
+2014,Pedro Afonso,MUNICÍPIO,15
+2015,Centenário,MUNICÍPIO,15
+2016,Barão do Triunfo,MUNICÍPIO,22
+2019,Santa Maria das Barreiras,MUNICÍPIO,13
+2020,Diamantino,MUNICÍPIO,21
+2021,Rosário Oeste,MUNICÍPIO,21
+2022,Amaral Ferrador,MUNICÍPIO,22
+2017,Divino,MUNICÍPIO,24
+2023,Pedras Altas,MUNICÍPIO,22
+2024,Guaratinguetá,MUNICÍPIO,31
+2025,Cristal,MUNICÍPIO,22
+2026,Santa Margarida do Sul,MUNICÍPIO,22
+2027,Santana da Boa Vista,MUNICÍPIO,22
+2028,Paranavaí,MUNICÍPIO,17
+2029,Piquete,MUNICÍPIO,31
+2030,Cabrália Paulista,MUNICÍPIO,31
+2031,Campo Bom,MUNICÍPIO,22
+2032,Eugênio de Castro,MUNICÍPIO,22
+2033,Taquari,MUNICÍPIO,22
+2034,Vale Verde,MUNICÍPIO,22
+2035,Estiva,MUNICÍPIO,24
+2036,Virgínia,MUNICÍPIO,24
+2037,Sandovalina,MUNICÍPIO,31
+2038,Anhumas,MUNICÍPIO,31
+2039,Restinga Sêca,MUNICÍPIO,22
+2040,Santa Cruz do Sul,MUNICÍPIO,22
+2041,Nova Hartz,MUNICÍPIO,22
+2042,Quevedos,MUNICÍPIO,22
+2043,Vera Cruz,MUNICÍPIO,22
+2044,Luís Eduardo Magalhães,MUNICÍPIO,29
+2045,Macajuba,MUNICÍPIO,29
+2046,Sapucaia,MUNICÍPIO,23
+2047,Bataguassu,MUNICÍPIO,19
+2048,Rio Brilhante,MUNICÍPIO,19
+2049,Jardim,MUNICÍPIO,19
+2050,Nioaque,MUNICÍPIO,19
+2051,Brasilândia,MUNICÍPIO,19
+2052,Marques de Souza,MUNICÍPIO,22
+2053,São Francisco de Assis,MUNICÍPIO,22
+2054,Coronel Freitas,MUNICÍPIO,18
+2055,Venâncio Aires,MUNICÍPIO,22
+2056,Coxilha,MUNICÍPIO,22
+2057,Santa Terezinha do Progresso,MUNICÍPIO,18
+2058,Taió,MUNICÍPIO,18
+2059,Vila Lângaro,MUNICÍPIO,22
+2060,Inhacorá,MUNICÍPIO,22
+2061,Jari,MUNICÍPIO,22
+2062,Marau,MUNICÍPIO,22
+2063,Santo Antônio do Palma,MUNICÍPIO,22
+2064,São Miguel das Missões,MUNICÍPIO,22
+2065,Tapera,MUNICÍPIO,22
+2066,Sangão,MUNICÍPIO,18
+2067,Jundiaí,MUNICÍPIO,31
+2068,Novo Barreiro,MUNICÍPIO,22
+2069,Panambi,MUNICÍPIO,22
+2018,Itirapuã,MUNICÍPIO,31
+2078,Irecê,MUNICÍPIO,29
+2079,Dois Irmãos das Missões,MUNICÍPIO,22
+2080,Floriano Peixoto,MUNICÍPIO,22
+2081,Getúlio Vargas,MUNICÍPIO,22
+2082,Boquim,MUNICÍPIO,20
+2083,Ibiaçá,MUNICÍPIO,22
+2084,Sananduva,MUNICÍPIO,22
+2085,Santo Augusto,MUNICÍPIO,22
+2086,São José do Inhacorá,MUNICÍPIO,22
+2087,São Nicolau,MUNICÍPIO,22
+2088,Sarandi,MUNICÍPIO,22
+2089,Tapejara,MUNICÍPIO,22
+2090,Lages,MUNICÍPIO,18
+2091,Urupema,MUNICÍPIO,18
+2092,Chapada,MUNICÍPIO,22
+2093,Ipiranga do Sul,MUNICÍPIO,22
+2094,Lagoa Vermelha,MUNICÍPIO,22
+2095,Sertão,MUNICÍPIO,22
+2096,Itaperuçu,MUNICÍPIO,17
+2097,Braga,MUNICÍPIO,22
+2098,Liberato Salzano,MUNICÍPIO,22
+2099,Tubarão,MUNICÍPIO,18
+2100,Zortéa,MUNICÍPIO,18
+2101,Brunópolis,MUNICÍPIO,18
+2102,Doutor Maurício Cardoso,MUNICÍPIO,22
+2103,Esperança do Sul,MUNICÍPIO,22
+2104,Rio Claro,MUNICÍPIO,31
+2105,Serra Negra,MUNICÍPIO,31
+2106,Caiabu,MUNICÍPIO,31
+2107,Emilianópolis,MUNICÍPIO,31
+2108,Guaimbê,MUNICÍPIO,31
+2109,Nova Europa,MUNICÍPIO,31
+2110,Santa Cruz das Palmeiras,MUNICÍPIO,31
+2111,Tenente Portela,MUNICÍPIO,22
+2112,Três Passos,MUNICÍPIO,22
+2113,Palmitos,MUNICÍPIO,18
+2114,São Lourenço do Oeste,MUNICÍPIO,18
+2115,Itapejara d'Oeste,MUNICÍPIO,17
+2116,Bento de Abreu,MUNICÍPIO,31
+2117,Franco da Rocha,MUNICÍPIO,31
+2118,Itatinga,MUNICÍPIO,31
+2119,Itupeva,MUNICÍPIO,31
+2120,Ângulo,MUNICÍPIO,17
+2121,Iguatemi,MUNICÍPIO,19
+2122,Águas de Santa Bárbara,MUNICÍPIO,31
+2123,Bragança Paulista,MUNICÍPIO,31
+2124,Miranda,MUNICÍPIO,19
+2125,Monteiro Lobato,MUNICÍPIO,31
+2126,Piraju,MUNICÍPIO,31
+2127,Rio das Pedras,MUNICÍPIO,31
+2128,Campinas,MUNICÍPIO,31
+2129,Campos do Jordão,MUNICÍPIO,31
+2130,Espírito Santo do Turvo,MUNICÍPIO,31
+2131,Paulínia,MUNICÍPIO,31
+2132,Alvorada do Sul,MUNICÍPIO,17
+2133,Assis,MUNICÍPIO,31
+2134,Iepê,MUNICÍPIO,31
+2135,Igaraçu do Tietê,MUNICÍPIO,31
+2136,Lençóis Paulista,MUNICÍPIO,31
+2137,Lucélia,MUNICÍPIO,31
+2138,Maracaí,MUNICÍPIO,31
+2139,Paulistânia,MUNICÍPIO,31
+2140,Santo Antônio de Posse,MUNICÍPIO,31
+2141,Monte Aprazível,MUNICÍPIO,31
+2142,Patrocínio Paulista,MUNICÍPIO,31
+2143,Restinga,MUNICÍPIO,31
+2144,São José dos Campos,MUNICÍPIO,31
+2145,Jaú,MUNICÍPIO,31
+2146,Macatuba,MUNICÍPIO,31
+2147,Mineiros do Tietê,MUNICÍPIO,31
+2148,Três Rios,MUNICÍPIO,23
+2149,Oriente,MUNICÍPIO,31
+2150,Quatá,MUNICÍPIO,31
+2151,Tupã,MUNICÍPIO,31
+2152,Bom Jardim de Minas,MUNICÍPIO,24
+2153,Careaçu,MUNICÍPIO,24
+2154,Sagres,MUNICÍPIO,31
+2155,São João da Boa Vista,MUNICÍPIO,31
+2156,Trabiju,MUNICÍPIO,31
+2157,Uru,MUNICÍPIO,31
+2158,Campanha,MUNICÍPIO,24
+2159,Cordislândia,MUNICÍPIO,24
+2160,Jales,MUNICÍPIO,31
+2161,Campestre,MUNICÍPIO,24
+2162,Orindiúva,MUNICÍPIO,31
+2163,Rincão,MUNICÍPIO,31
+2164,Santa Rita do Passa Quatro,MUNICÍPIO,31
+2165,São José do Rio Pardo,MUNICÍPIO,31
+2166,Alto Alegre,MUNICÍPIO,31
+2173,Júlio de Castilhos,MUNICÍPIO,22
+2174,Lavras do Sul,MUNICÍPIO,22
+2175,Rosário do Sul,MUNICÍPIO,22
+2176,Tupanciretã,MUNICÍPIO,22
+2177,Campos Gerais,MUNICÍPIO,24
+2178,Imbé de Minas,MUNICÍPIO,24
+2179,São Francisco de Paula,MUNICÍPIO,22
+2180,São Luiz Gonzaga,MUNICÍPIO,22
+2181,Itabuna,MUNICÍPIO,29
+2182,Campo Belo,MUNICÍPIO,24
+2183,Bebedouro,MUNICÍPIO,31
+2184,Rio do Pires,MUNICÍPIO,29
+2185,Cajobi,MUNICÍPIO,31
+2186,Lavínia,MUNICÍPIO,31
+2187,Altinópolis,MUNICÍPIO,31
+2188,Gastão Vidigal,MUNICÍPIO,31
+2189,Murutinga do Sul,MUNICÍPIO,31
+2190,Altair,MUNICÍPIO,31
+2191,Andradina,MUNICÍPIO,31
+2192,Morro Agudo,MUNICÍPIO,31
+2193,Cláudio,MUNICÍPIO,24
+2194,Jeriquara,MUNICÍPIO,31
+2195,Nova Granada,MUNICÍPIO,31
+2196,Carbonita,MUNICÍPIO,24
+2197,Edealina,MUNICÍPIO,30
+2198,Urutaí,MUNICÍPIO,30
+2199,Corumbá,MUNICÍPIO,19
+2200,Juína,MUNICÍPIO,21
+2201,Berilo,MUNICÍPIO,24
+2202,Formosa do Rio Preto,MUNICÍPIO,29
+2203,Botumirim,MUNICÍPIO,24
+2204,Francisco Badaró,MUNICÍPIO,24
+2205,Conceição do Pará,MUNICÍPIO,24
+2206,Calçado,MUNICÍPIO,28
+2207,Itacambira,MUNICÍPIO,24
+2208,Itacajá,MUNICÍPIO,15
+2209,Recursolândia,MUNICÍPIO,15
+2210,Jutaí,MUNICÍPIO,11
+2211,Novo Airão,MUNICÍPIO,11
+2212,Sumaré,MUNICÍPIO,31
+2213,Corinto,MUNICÍPIO,24
+2214,Betim,MUNICÍPIO,24
+2215,Mazagão,MUNICÍPIO,14
+2216,Porto Grande,MUNICÍPIO,14
+2217,Ananás,MUNICÍPIO,15
+2218,Rochedo,MUNICÍPIO,19
+2219,Pingo d'Água,MUNICÍPIO,24
+2220,Barão de Cocais,MUNICÍPIO,24
+2221,Cordisburgo,MUNICÍPIO,24
+2222,Alvorada de Minas,MUNICÍPIO,24
+2223,Ivolândia,MUNICÍPIO,30
+2224,Alcinópolis,MUNICÍPIO,19
+2225,Chapadão do Sul,MUNICÍPIO,19
+2226,Cotriguaçu,MUNICÍPIO,21
+2227,Arari,MUNICÍPIO,7
+2228,Dom Joaquim,MUNICÍPIO,24
+2229,Água Boa,MUNICÍPIO,21
+2230,Campo Novo do Parecis,MUNICÍPIO,21
+2231,Nova Mutum,MUNICÍPIO,21
+2232,Lucas do Rio Verde,MUNICÍPIO,21
+2233,Paranatinga,MUNICÍPIO,21
+2234,Novo Santo Antônio,MUNICÍPIO,21
+2235,Ribeirão Cascalheira,MUNICÍPIO,21
+2236,São José do Rio Claro,MUNICÍPIO,21
+2237,Sapezal,MUNICÍPIO,21
+2238,Quirinópolis,MUNICÍPIO,30
+2239,Canarana,MUNICÍPIO,21
+2240,Itaúba,MUNICÍPIO,21
+2241,Porto dos Gaúchos,MUNICÍPIO,21
+2242,Querência,MUNICÍPIO,21
+2243,São João do Pacuí,MUNICÍPIO,24
+2244,Virgem da Lapa,MUNICÍPIO,24
+2245,Campos Lindos,MUNICÍPIO,15
+2246,Caiapônia,MUNICÍPIO,30
+2247,Pium,MUNICÍPIO,15
+2248,Rio Sono,MUNICÍPIO,15
+2249,Palmeiras de Goiás,MUNICÍPIO,30
+2250,Confresa,MUNICÍPIO,21
+2251,Alto Araguaia,MUNICÍPIO,21
+2252,Nova Canaã do Norte,MUNICÍPIO,21
+2253,Cafezal do Sul,MUNICÍPIO,17
+2254,Porto Velho,MUNICÍPIO,9
+2255,Riachão,MUNICÍPIO,7
+2256,Araguainha,MUNICÍPIO,21
+2257,Marcelândia,MUNICÍPIO,21
+2258,Pedra Preta,MUNICÍPIO,21
+2259,Firminópolis,MUNICÍPIO,30
+2260,Iporá,MUNICÍPIO,30
+2261,Israelândia,MUNICÍPIO,30
+2262,Belo Campo,MUNICÍPIO,29
+2263,Canavieiras,MUNICÍPIO,29
+2264,Guaraíta,MUNICÍPIO,30
+2265,Itapirapuã,MUNICÍPIO,30
+2266,Mirassol d'Oeste,MUNICÍPIO,21
+2267,São José dos Quatro Marcos,MUNICÍPIO,21
+2268,Canindé de São Francisco,MUNICÍPIO,20
+2269,Viseu,MUNICÍPIO,13
+2270,Pai Pedro,MUNICÍPIO,24
+2271,Palmas de Monte Alto,MUNICÍPIO,29
+2272,Caturama,MUNICÍPIO,29
+2273,Alta Floresta,MUNICÍPIO,21
+2274,Cuiabá,MUNICÍPIO,21
+2275,Madre de Deus,MUNICÍPIO,29
+2276,Humaitá,MUNICÍPIO,11
+2277,Alvorada do Norte,MUNICÍPIO,30
+2278,Sebastião Laranjeiras,MUNICÍPIO,29
+2279,Riachão do Bacamarte,MUNICÍPIO,27
+2280,Taperoá,MUNICÍPIO,29
+2281,Teolândia,MUNICÍPIO,29
+2282,Maraú,MUNICÍPIO,29
+2283,Campinaçu,MUNICÍPIO,30
+2284,Mara Rosa,MUNICÍPIO,30
+2285,Nova Xavantina,MUNICÍPIO,21
+2286,Tangará da Serra,MUNICÍPIO,21
+2287,Jussiape,MUNICÍPIO,29
+2288,Seringueiras,MUNICÍPIO,9
+2289,Jaguaripe,MUNICÍPIO,29
+2290,Belmonte,MUNICÍPIO,29
+2291,Santa Terezinha,MUNICÍPIO,21
+2292,Lagoa de Pedras,MUNICÍPIO,25
+2293,Figueirão,MUNICÍPIO,19
+2294,Sinop,MUNICÍPIO,21
+2295,Riachão das Neves,MUNICÍPIO,29
+2296,Maragogipe,MUNICÍPIO,29
+2297,Nova Redenção,MUNICÍPIO,29
+2298,Palmeira,MUNICÍPIO,17
+2299,São Valério,MUNICÍPIO,15
+2300,Serra Negra do Norte,MUNICÍPIO,25
+2301,Alvorada,MUNICÍPIO,15
+2302,Tapurah,MUNICÍPIO,21
+2303,Theobroma,MUNICÍPIO,9
+2304,Paranã,MUNICÍPIO,15
+2305,Feliz Natal,MUNICÍPIO,21
+2424,Aragarças,MUNICÍPIO,30
+2306,Novo Horizonte do Norte,MUNICÍPIO,21
+2307,Salgado Filho,MUNICÍPIO,17
+2308,Cláudia,MUNICÍPIO,21
+2309,Luciara,MUNICÍPIO,21
+2310,São Félix do Araguaia,MUNICÍPIO,21
+2311,Caicó,MUNICÍPIO,25
+2312,Urupá,MUNICÍPIO,9
+2313,Brejinho de Nazaré,MUNICÍPIO,15
+2314,Tanquinho,MUNICÍPIO,29
+2315,Barra,MUNICÍPIO,29
+2316,Itiúba,MUNICÍPIO,29
+2352,São Gonçalo do Rio Abaixo,MUNICÍPIO,24
+2426,Britânia,MUNICÍPIO,30
+2427,Indiara,MUNICÍPIO,30
+2428,Hidrolina,MUNICÍPIO,30
+2518,Cansanção,MUNICÍPIO,29
+2519,Bernardino de Campos,MUNICÍPIO,31
+2779,São João Nepomuceno,MUNICÍPIO,24
+2780,São José da Safira,MUNICÍPIO,24
+2317,General Maynard,MUNICÍPIO,20
+2318,Colinas,MUNICÍPIO,7
+2319,Fernando Falcão,MUNICÍPIO,7
+2320,Vila Velha,MUNICÍPIO,8
+2321,Teotônio Vilela,MUNICÍPIO,16
+2322,Jeremoabo,MUNICÍPIO,29
+2323,Águas Belas,MUNICÍPIO,28
+2324,Palestina,MUNICÍPIO,16
+2325,Volta Grande,MUNICÍPIO,24
+2326,Acari,MUNICÍPIO,25
+2327,Fortuna,MUNICÍPIO,7
+2328,Brejo de Areia,MUNICÍPIO,7
+2329,Primavera do Leste,MUNICÍPIO,21
+2330,Vitorino Freire,MUNICÍPIO,7
+2331,Vargem Grande,MUNICÍPIO,7
+2332,Paracambi,MUNICÍPIO,23
+2333,Tartarugalzinho,MUNICÍPIO,14
+2334,Serra do Navio,MUNICÍPIO,14
+2335,Cachoeira Grande,MUNICÍPIO,7
+2336,Tonantins,MUNICÍPIO,11
+2337,Bagre,MUNICÍPIO,13
+2338,Centro do Guilherme,MUNICÍPIO,7
+2339,Aurora do Pará,MUNICÍPIO,13
+2340,Cametá,MUNICÍPIO,13
+2341,Madeiro,MUNICÍPIO,6
+2342,Monte Alegre,MUNICÍPIO,13
+2343,Santa Luzia do Pará,MUNICÍPIO,13
+2344,Conquista D'Oeste,MUNICÍPIO,21
+2345,Cutias,MUNICÍPIO,14
+2346,Macapá,MUNICÍPIO,14
+2347,Pilõezinhos,MUNICÍPIO,27
+2348,São Gabriel,MUNICÍPIO,22
+2349,São Vicente do Sul,MUNICÍPIO,22
+2350,Monte das Gameleiras,MUNICÍPIO,25
+2351,São Geraldo da Piedade,MUNICÍPIO,24
+2508,Avaí,MUNICÍPIO,31
+2353,Lucena,MUNICÍPIO,27
+2354,Esmeraldas,MUNICÍPIO,24
+2355,Matozinhos,MUNICÍPIO,24
+2356,Santa Luzia,MUNICÍPIO,24
+2357,Jaú do Tocantins,MUNICÍPIO,15
+2358,Crixás,MUNICÍPIO,30
+2359,Porto Alegre do Norte,MUNICÍPIO,21
+2360,Itaboraí,MUNICÍPIO,23
+2361,Mogi das Cruzes,MUNICÍPIO,31
+2363,Dourados,MUNICÍPIO,19
+2364,Mirante da Serra,MUNICÍPIO,9
+2365,Guajará-Mirim,MUNICÍPIO,9
+2366,Chaves,MUNICÍPIO,13
+2367,Comodoro,MUNICÍPIO,21
+2368,Alta Floresta D'Oeste,MUNICÍPIO,9
+2369,Alto Alegre dos Parecis,MUNICÍPIO,9
+2370,Cabixi,MUNICÍPIO,9
+2371,Cacoal,MUNICÍPIO,9
+2372,Marechal Thaumaturgo,MUNICÍPIO,10
+2373,Porto Walter,MUNICÍPIO,10
+2374,Rodrigues Alves,MUNICÍPIO,10
+2375,Sena Madureira,MUNICÍPIO,10
+2376,Manoel Urbano,MUNICÍPIO,10
+2377,Campo Novo de Rondônia,MUNICÍPIO,9
+2378,Ariquemes,MUNICÍPIO,9
+2379,Cerejeiras,MUNICÍPIO,9
+2380,Corumbiara,MUNICÍPIO,9
+2381,Chupinguaia,MUNICÍPIO,9
+2382,Cujubim,MUNICÍPIO,9
+2383,Costa Marques,MUNICÍPIO,9
+2384,Acrelândia,MUNICÍPIO,10
+2385,Senador Guiomard,MUNICÍPIO,10
+2386,Cruzeiro do Sul,MUNICÍPIO,10
+2387,Oeiras do Pará,MUNICÍPIO,13
+2388,Soure,MUNICÍPIO,13
+2389,São Domingos do Araguaia,MUNICÍPIO,13
+2390,Aliança do Tocantins,MUNICÍPIO,15
+2391,Chapada da Natividade,MUNICÍPIO,15
+2392,Crixás do Tocantins,MUNICÍPIO,15
+2393,Aparecida do Rio Negro,MUNICÍPIO,15
+2394,Bom Jesus do Tocantins,MUNICÍPIO,15
+2395,Igarapé-Miri,MUNICÍPIO,13
+2396,Couto Magalhães,MUNICÍPIO,15
+2397,Araguanã,MUNICÍPIO,15
+2398,Primavera,MUNICÍPIO,13
+2399,Amaralina,MUNICÍPIO,30
+2400,Aporé,MUNICÍPIO,30
+2401,Bom Jesus de Goiás,MUNICÍPIO,30
+2402,Caçu,MUNICÍPIO,30
+2403,Aparecida do Rio Doce,MUNICÍPIO,30
+2404,Uruará,MUNICÍPIO,13
+2405,Senador José Porfírio,MUNICÍPIO,13
+2406,Laranjal do Jari,MUNICÍPIO,14
+2407,Ferreira Gomes,MUNICÍPIO,14
+2408,Dueré,MUNICÍPIO,15
+2409,Cariri do Tocantins,MUNICÍPIO,15
+2410,Dianópolis,MUNICÍPIO,15
+2411,Goiatins,MUNICÍPIO,15
+2412,Monte Santo do Tocantins,MUNICÍPIO,15
+2413,Marianópolis do Tocantins,MUNICÍPIO,15
+2414,Juarina,MUNICÍPIO,15
+2415,Formoso do Araguaia,MUNICÍPIO,15
+2416,Pugmil,MUNICÍPIO,15
+2417,Sandolândia,MUNICÍPIO,15
+2418,São Salvador do Tocantins,MUNICÍPIO,15
+2419,Tupiratins,MUNICÍPIO,15
+2420,Dormentes,MUNICÍPIO,28
+2421,Barros Cassal,MUNICÍPIO,22
+2422,Anicuns,MUNICÍPIO,30
+2423,Buriti de Goiás,MUNICÍPIO,30
+2509,Avanhandava,MUNICÍPIO,31
+2510,Paulo Frontin,MUNICÍPIO,17
+2511,Peabiru,MUNICÍPIO,17
+2512,Perobal,MUNICÍPIO,17
+2513,Pérola,MUNICÍPIO,17
+2514,Araraquara,MUNICÍPIO,31
+2515,Araras,MUNICÍPIO,31
+2362,Nova Friburgo,MUNICÍPIO,23
+2425,Araçu,MUNICÍPIO,30
+2429,Ourolândia,MUNICÍPIO,29
+2430,Mozarlândia,MUNICÍPIO,30
+2431,Santa Fé de Goiás,MUNICÍPIO,30
+2432,Uruana,MUNICÍPIO,30
+2433,Pilar de Goiás,MUNICÍPIO,30
+2434,Uirapuru,MUNICÍPIO,30
+2435,Mutunópolis,MUNICÍPIO,30
+2436,Mundo Novo,MUNICÍPIO,30
+2437,São Domingos,MUNICÍPIO,30
+2438,Porangatu,MUNICÍPIO,30
+2439,Itatiaia,MUNICÍPIO,23
+2440,Iguaba Grande,MUNICÍPIO,23
+2441,Ribas do Rio Pardo,MUNICÍPIO,19
+2442,Corguinho,MUNICÍPIO,19
+2443,Paraíso das Águas,MUNICÍPIO,19
+2444,Três Lagoas,MUNICÍPIO,19
+2445,Costa Rica,MUNICÍPIO,19
+2446,Espírito Santo,MUNICÍPIO,25
+2447,Cananéia,MUNICÍPIO,31
+2448,Guarujá,MUNICÍPIO,31
+2449,Rio de Janeiro,MUNICÍPIO,23
+2450,Ubatuba,MUNICÍPIO,31
+2451,Peruíbe,MUNICÍPIO,31
+2452,Cabo Frio,MUNICÍPIO,23
+2453,Arraial do Cabo,MUNICÍPIO,23
+2454,Armação dos Búzios,MUNICÍPIO,23
+2455,Caravelas,MUNICÍPIO,29
+2456,Caçapava,MUNICÍPIO,31
+2457,Jacareí,MUNICÍPIO,31
+2458,Comendador Levy Gasparian,MUNICÍPIO,23
+2459,Macuco,MUNICÍPIO,23
+2460,Cambuci,MUNICÍPIO,23
+2461,Macaé,MUNICÍPIO,23
+2516,Arco-Íris,MUNICÍPIO,31
+2517,Arealva,MUNICÍPIO,31
+2462,Braço do Trombudo,MUNICÍPIO,18
+2463,Paraíba do Sul,MUNICÍPIO,23
+2464,Trajano de Moraes,MUNICÍPIO,23
+2465,Volta Redonda,MUNICÍPIO,23
+2466,Barracão,MUNICÍPIO,22
+2467,Campo Verde,MUNICÍPIO,21
+2468,Alto Paraguai,MUNICÍPIO,21
+2469,Chapada dos Guimarães,MUNICÍPIO,21
+2470,Campos de Júlio,MUNICÍPIO,21
+2471,Acorizal,MUNICÍPIO,21
+2472,Sorriso,MUNICÍPIO,21
+2473,Anita Garibaldi,MUNICÍPIO,18
+2474,Araranguá,MUNICÍPIO,18
+2475,Arroio Trinta,MUNICÍPIO,18
+2476,Braço do Norte,MUNICÍPIO,18
+2477,Cerro Negro,MUNICÍPIO,18
+2478,Campo Erê,MUNICÍPIO,18
+2479,Iporã do Oeste,MUNICÍPIO,18
+2480,Vargem Bonita,MUNICÍPIO,18
+2481,Biritiba Mirim,MUNICÍPIO,31
+2482,Três Corações,MUNICÍPIO,24
+2483,Três Pontas,MUNICÍPIO,24
+2484,Tumiritinga,MUNICÍPIO,24
+2485,Campina do Simão,MUNICÍPIO,17
+2486,Campina Grande do Sul,MUNICÍPIO,17
+2487,Campo Bonito,MUNICÍPIO,17
+2488,Campo do Tenente,MUNICÍPIO,17
+2489,Cândido de Abreu,MUNICÍPIO,17
+2490,Cantagalo,MUNICÍPIO,17
+2491,Carambeí,MUNICÍPIO,17
+2492,Castro,MUNICÍPIO,17
+2493,Cianorte,MUNICÍPIO,17
+2494,Conselheiro Mairinck,MUNICÍPIO,17
+2495,Contenda,MUNICÍPIO,17
+2496,Corbélia,MUNICÍPIO,17
+2497,Cornélio Procópio,MUNICÍPIO,17
+2498,Coronel Domingos Soares,MUNICÍPIO,17
+2499,Coronel Vivida,MUNICÍPIO,17
+2500,Doutor Camargo,MUNICÍPIO,17
+2501,Doutor Ulysses,MUNICÍPIO,17
+2502,Enéas Marques,MUNICÍPIO,17
+2503,Engenheiro Beltrão,MUNICÍPIO,17
+2504,Goioxim,MUNICÍPIO,17
+2505,Rio do Sul,MUNICÍPIO,18
+2506,Japira,MUNICÍPIO,17
+2507,Auriflama,MUNICÍPIO,31
+2520,Caldeirão Grande,MUNICÍPIO,29
+2521,Bananal,MUNICÍPIO,31
+2522,Barra Bonita,MUNICÍPIO,31
+2523,Barra do Chapéu,MUNICÍPIO,31
+2524,Barra do Turvo,MUNICÍPIO,31
+2525,Esplanada,MUNICÍPIO,29
+2526,Ibirapitanga,MUNICÍPIO,29
+2527,Coronel João Sá,MUNICÍPIO,29
+2528,Curaçá,MUNICÍPIO,29
+2529,Ponta Grossa,MUNICÍPIO,17
+2530,Pontal do Paraná,MUNICÍPIO,17
+2531,Porto Vitória,MUNICÍPIO,17
+2532,Pranchita,MUNICÍPIO,17
+2533,Buri,MUNICÍPIO,31
+2534,Andorinha,MUNICÍPIO,29
+2535,Anagé,MUNICÍPIO,29
+2536,Barreiras,MUNICÍPIO,29
+2537,Barra da Estiva,MUNICÍPIO,29
+2538,Santa Maria do Oeste,MUNICÍPIO,17
+2539,Brumado,MUNICÍPIO,29
+2540,Capela do Alto Alegre,MUNICÍPIO,29
+2541,Capivari,MUNICÍPIO,31
+2542,Catanduva,MUNICÍPIO,31
+2543,Itaberaba,MUNICÍPIO,29
+2544,Estrela d'Oeste,MUNICÍPIO,31
+2545,Jucuruçu,MUNICÍPIO,29
+2546,Itabela,MUNICÍPIO,29
+2547,Guaratinga,MUNICÍPIO,29
+2548,Guajeru,MUNICÍPIO,29
+2549,Correntina,MUNICÍPIO,29
+2550,Cajuru,MUNICÍPIO,31
+2551,Campina do Monte Alegre,MUNICÍPIO,31
+2552,Coroados,MUNICÍPIO,31
+2553,Cotia,MUNICÍPIO,31
+2554,Eldorado,MUNICÍPIO,31
+2555,Cruzeiro,MUNICÍPIO,31
+2556,Cunha,MUNICÍPIO,31
+2557,Descalvado,MUNICÍPIO,31
+2558,Echaporã,MUNICÍPIO,31
+2559,Macaubal,MUNICÍPIO,31
+2560,Paraíso,MUNICÍPIO,31
+2561,Pederneiras,MUNICÍPIO,31
+2562,Pardinho,MUNICÍPIO,31
+2563,Pirajuí,MUNICÍPIO,31
+2564,Santo Expedito,MUNICÍPIO,31
+2565,Suzanápolis,MUNICÍPIO,31
+2566,Tabapuã,MUNICÍPIO,31
+2567,Tabatinga,MUNICÍPIO,31
+2568,Taiúva,MUNICÍPIO,31
+2569,Tanabi,MUNICÍPIO,31
+2570,Tapiraí,MUNICÍPIO,31
+2571,Taquarivaí,MUNICÍPIO,31
+2572,Boa Vista das Missões,MUNICÍPIO,22
+2573,Bossoroca,MUNICÍPIO,22
+2574,Brochier,MUNICÍPIO,22
+2575,Butiá,MUNICÍPIO,22
+2576,Cristino Castro,MUNICÍPIO,6
+2577,Currais,MUNICÍPIO,6
+2578,Flores do Piauí,MUNICÍPIO,6
+2579,Mato Castelhano,MUNICÍPIO,22
+2580,Chiapetta,MUNICÍPIO,22
+2663,Juramento,MUNICÍPIO,24
+2664,Machado,MUNICÍPIO,24
+2665,Madre de Deus de Minas,MUNICÍPIO,24
+2666,Malacacheta,MUNICÍPIO,24
+2667,Ipuiúna,MUNICÍPIO,24
+2668,Itabira,MUNICÍPIO,24
+2669,Itabirito,MUNICÍPIO,24
+2670,Itambacuri,MUNICÍPIO,24
+2671,Itambé do Mato Dentro,MUNICÍPIO,24
+2672,Itaobim,MUNICÍPIO,24
+2673,Itaúna,MUNICÍPIO,24
+2781,São José da Varginha,MUNICÍPIO,24
+2581,Regeneração,MUNICÍPIO,6
+2582,Hulha Negra,MUNICÍPIO,22
+2583,Jaguarão,MUNICÍPIO,22
+2584,Maçambará,MUNICÍPIO,22
+2585,Manoel Viana,MUNICÍPIO,22
+2586,Pinhal da Serra,MUNICÍPIO,22
+2587,Bacuri,MUNICÍPIO,7
+2588,Poço das Antas,MUNICÍPIO,22
+2589,Pouso Novo,MUNICÍPIO,22
+2590,Ronda Alta,MUNICÍPIO,22
+2591,Salto do Jacuí,MUNICÍPIO,22
+2592,Santiago,MUNICÍPIO,22
+2593,São José do Herval,MUNICÍPIO,22
+2594,São Martinho da Serra,MUNICÍPIO,22
+2595,União da Serra,MUNICÍPIO,22
+2596,Vacaria,MUNICÍPIO,22
+2597,Veranópolis,MUNICÍPIO,22
+2598,Vila Nova do Sul,MUNICÍPIO,22
+2599,Imperatriz,MUNICÍPIO,7
+2600,Centro Novo do Maranhão,MUNICÍPIO,7
+2601,Godofredo Viana,MUNICÍPIO,7
+2602,Lago da Pedra,MUNICÍPIO,7
+2603,Lagoa do Mato,MUNICÍPIO,7
+2604,Maracaçumé,MUNICÍPIO,7
+2605,Presidente Médici,MUNICÍPIO,7
+2606,Feliz Deserto,MUNICÍPIO,16
+2607,Arauá,MUNICÍPIO,20
+2608,Pedrinhas,MUNICÍPIO,20
+2609,Monte Alegre de Sergipe,MUNICÍPIO,20
+2610,Salgado,MUNICÍPIO,20
+2611,Nossa Senhora das Dores,MUNICÍPIO,20
+2612,Mar Vermelho,MUNICÍPIO,16
+2613,Telha,MUNICÍPIO,20
+2614,Tobias Barreto,MUNICÍPIO,20
+2615,Tomar do Geru,MUNICÍPIO,20
+2616,Belém do São Francisco,MUNICÍPIO,28
+2617,Capitão,MUNICÍPIO,22
+2618,Floresta,MUNICÍPIO,28
+2619,São Sebastião da Grama,MUNICÍPIO,31
+2620,Sarapuí,MUNICÍPIO,31
+2621,Porto da Folha,MUNICÍPIO,20
+2719,Novo Oriente de Minas,MUNICÍPIO,24
+2782,São José do Goiabal,MUNICÍPIO,24
+2783,São José do Jacuri,MUNICÍPIO,24
+2784,Senhora do Porto,MUNICÍPIO,24
+2785,São Pedro dos Ferros,MUNICÍPIO,24
+2786,Serra Azul de Minas,MUNICÍPIO,24
+2787,Serrania,MUNICÍPIO,24
+2788,São Sebastião do Maranhão,MUNICÍPIO,24
+2789,São Sebastião do Oeste,MUNICÍPIO,24
+2790,São Sebastião do Paraíso,MUNICÍPIO,24
+2622,Axixá do Tocantins,MUNICÍPIO,15
+2623,Mirandiba,MUNICÍPIO,28
+2624,Sanharó,MUNICÍPIO,28
+2625,Petrolina,MUNICÍPIO,28
+2626,Juripiranga,MUNICÍPIO,27
+2627,Santa Maria da Boa Vista,MUNICÍPIO,28
+2628,Tacaratu,MUNICÍPIO,28
+2629,Surubim,MUNICÍPIO,28
+2773,Santa Rita de Ibitipoca,MUNICÍPIO,24
+2774,São Gonçalo do Sapucaí,MUNICÍPIO,24
+2775,São João da Lagoa,MUNICÍPIO,24
+2776,São João das Missões,MUNICÍPIO,24
+2777,Tarumirim,MUNICÍPIO,24
+2778,São João Evangelista,MUNICÍPIO,24
+2630,Toritama,MUNICÍPIO,28
+2631,Pocinhos,MUNICÍPIO,27
+2632,Queimadas,MUNICÍPIO,27
+2633,Ielmo Marinho,MUNICÍPIO,25
+2634,Lagoa de Velhos,MUNICÍPIO,25
+2635,São Fernando,MUNICÍPIO,25
+2636,Engenheiro Caldas,MUNICÍPIO,24
+2637,Vila Flor,MUNICÍPIO,25
+2638,Senador Georgino Avelino,MUNICÍPIO,25
+2639,Dores de Guanhães,MUNICÍPIO,24
+2640,Estrela Dalva,MUNICÍPIO,24
+2641,Eugenópolis,MUNICÍPIO,24
+2642,Florestal,MUNICÍPIO,24
+2643,Formiga,MUNICÍPIO,24
+2644,Fortaleza de Minas,MUNICÍPIO,24
+2645,Fortuna de Minas,MUNICÍPIO,24
+2646,Fruta de Leite,MUNICÍPIO,24
+2647,Galiléia,MUNICÍPIO,24
+2648,Glaucilândia,MUNICÍPIO,24
+2649,Gurinhatã,MUNICÍPIO,24
+2650,Gonzaga,MUNICÍPIO,24
+2651,Gouveia,MUNICÍPIO,24
+2652,Grão Mogol,MUNICÍPIO,24
+2653,Guanhães,MUNICÍPIO,24
+2654,Guaraciaba,MUNICÍPIO,24
+2655,Guaraciama,MUNICÍPIO,24
+2656,Ibituruna,MUNICÍPIO,24
+2657,Inhapim,MUNICÍPIO,24
+2658,Inhaúma,MUNICÍPIO,24
+2659,Ipanema,MUNICÍPIO,24
+2660,Iapu,MUNICÍPIO,24
+2661,Ibiraci,MUNICÍPIO,24
+2662,Juiz de Fora,MUNICÍPIO,24
+2674,Nova Módica,MUNICÍPIO,24
+2675,Itumirim,MUNICÍPIO,24
+2676,Iturama,MUNICÍPIO,24
+2677,Jacuí,MUNICÍPIO,24
+2678,Padre Paraíso,MUNICÍPIO,24
+2679,Pains,MUNICÍPIO,24
+2680,Jequeri,MUNICÍPIO,24
+2681,Joaquim Felício,MUNICÍPIO,24
+2682,José Raydan,MUNICÍPIO,24
+2683,Ladainha,MUNICÍPIO,24
+2684,Lamim,MUNICÍPIO,24
+2685,Leopoldina,MUNICÍPIO,24
+2686,Lima Duarte,MUNICÍPIO,24
+2687,Luislândia,MUNICÍPIO,24
+2688,Luminárias,MUNICÍPIO,24
+2689,Manga,MUNICÍPIO,24
+2690,Pedra do Indaiá,MUNICÍPIO,24
+2691,Materlândia,MUNICÍPIO,24
+2692,Ritápolis,MUNICÍPIO,24
+2693,Ventania,MUNICÍPIO,17
+2694,Vera Cruz do Oeste,MUNICÍPIO,17
+2695,Verê,MUNICÍPIO,17
+2696,Virmond,MUNICÍPIO,17
+2697,Vitorino,MUNICÍPIO,17
+2698,Wenceslau Braz,MUNICÍPIO,17
+2699,Xambrê,MUNICÍPIO,17
+2700,Mesquita,MUNICÍPIO,24
+2701,Minas Novas,MUNICÍPIO,24
+2702,Minduri,MUNICÍPIO,24
+2703,Mirabela,MUNICÍPIO,24
+2704,Monjolos,MUNICÍPIO,24
+2705,Montalvânia,MUNICÍPIO,24
+2706,Monte Azul,MUNICÍPIO,24
+2707,Monte Santo de Minas,MUNICÍPIO,24
+2708,Montes Claros,MUNICÍPIO,24
+2709,Montezuma,MUNICÍPIO,24
+2710,São Miguel do Tocantins,MUNICÍPIO,15
+2711,Jordânia,MUNICÍPIO,24
+2712,Itapetinga,MUNICÍPIO,29
+2713,Pau Brasil,MUNICÍPIO,29
+2714,Itapebi,MUNICÍPIO,29
+2715,Mascote,MUNICÍPIO,29
+2716,Itagimirim,MUNICÍPIO,29
+2717,Nepomuceno,MUNICÍPIO,24
+2718,Nova Resende,MUNICÍPIO,24
+2720,Olho D'Água do Piauí,MUNICÍPIO,6
+2721,Altos,MUNICÍPIO,6
+2722,Onça de Pitangui,MUNICÍPIO,24
+2723,Boqueirão do Piauí,MUNICÍPIO,6
+2724,Santo Antônio do Jacinto,MUNICÍPIO,24
+2725,Papagaios,MUNICÍPIO,24
+2726,Pará de Minas,MUNICÍPIO,24
+2727,Paraguaçu,MUNICÍPIO,24
+2728,Paraisópolis,MUNICÍPIO,24
+2729,Passos,MUNICÍPIO,24
+2730,São Domingos do Prata,MUNICÍPIO,24
+2731,Paulistas,MUNICÍPIO,24
+2732,Pavão,MUNICÍPIO,24
+2733,Pedra Azul,MUNICÍPIO,24
+2734,Pedro Leopoldo,MUNICÍPIO,24
+2735,Pedro Teixeira,MUNICÍPIO,24
+2736,São Francisco de Sales,MUNICÍPIO,24
+2737,Pequi,MUNICÍPIO,24
+2738,Perdões,MUNICÍPIO,24
+2739,Pimenta,MUNICÍPIO,24
+2740,Piracema,MUNICÍPIO,24
+2741,Piumhi,MUNICÍPIO,24
+2742,Poço Fundo,MUNICÍPIO,24
+2743,Poços de Caldas,MUNICÍPIO,24
+2744,Pocrane,MUNICÍPIO,24
+2745,Ponte Nova,MUNICÍPIO,24
+2746,Ponto dos Volantes,MUNICÍPIO,24
+2747,Porteirinha,MUNICÍPIO,24
+2748,Pouso Alegre,MUNICÍPIO,24
+2749,Pouso Alto,MUNICÍPIO,24
+2750,Presidente Juscelino,MUNICÍPIO,24
+2751,Santa Cruz do Escalvado,MUNICÍPIO,24
+2752,Santa Efigênia de Minas,MUNICÍPIO,24
+2753,Raul Soares,MUNICÍPIO,24
+2754,Riacho dos Machados,MUNICÍPIO,24
+2755,Ribeirão das Neves,MUNICÍPIO,24
+2756,Rio Pomba,MUNICÍPIO,24
+2757,Rio Acima,MUNICÍPIO,24
+2758,Rio Casca,MUNICÍPIO,24
+2759,Rio Doce,MUNICÍPIO,24
+2760,Rio Espera,MUNICÍPIO,24
+2761,Rio Preto,MUNICÍPIO,24
+2762,Sabará,MUNICÍPIO,24
+2763,Sabinópolis,MUNICÍPIO,24
+2764,Santa Maria do Suaçuí,MUNICÍPIO,24
+2765,Santana da Vargem,MUNICÍPIO,24
+2766,Santana de Cataguases,MUNICÍPIO,24
+2767,Santana de Pirapama,MUNICÍPIO,24
+2768,Santana do Deserto,MUNICÍPIO,24
+2769,Santana do Garambéu,MUNICÍPIO,24
+2770,Santana do Jacaré,MUNICÍPIO,24
+2771,Santana do Riacho,MUNICÍPIO,24
+2772,Santana dos Montes,MUNICÍPIO,24
+2791,São Sebastião do Rio Preto,MUNICÍPIO,24
+2792,Virginópolis,MUNICÍPIO,24
+2793,São Tomás de Aquino,MUNICÍPIO,24
+2794,São Vicente de Minas,MUNICÍPIO,24
+2795,Silvianópolis,MUNICÍPIO,24
+2796,Simão Pereira,MUNICÍPIO,24
+2797,Simonésia,MUNICÍPIO,24
+2798,Sardoá,MUNICÍPIO,24
+2799,Sem-Peixe,MUNICÍPIO,24
+2800,Senador Modestino Gonçalves,MUNICÍPIO,24
+2801,Setubinha,MUNICÍPIO,24
+2802,Taiobeiras,MUNICÍPIO,24
+2803,Taquaraçu de Minas,MUNICÍPIO,24
+2804,Ubaporanga,MUNICÍPIO,24
+2805,Umburatiba,MUNICÍPIO,24
+2806,Vargem Bonita,MUNICÍPIO,24
+2807,Varginha,MUNICÍPIO,24
+2808,Veredinha,MUNICÍPIO,24
+2809,Virgolândia,MUNICÍPIO,24
+2810,Altônia,MUNICÍPIO,17
+2811,Alto Paraná,MUNICÍPIO,17
+2812,Ampére,MUNICÍPIO,17
+2813,Antônio Olinto,MUNICÍPIO,17
+2814,Arapongas,MUNICÍPIO,17
+2815,Ariranha do Ivaí,MUNICÍPIO,17
+2816,Assaí,MUNICÍPIO,17
+2817,Astorga,MUNICÍPIO,17
+2818,Atalaia,MUNICÍPIO,17
+2819,Balsa Nova,MUNICÍPIO,17
+2820,Barra do Jacaré,MUNICÍPIO,17
+2821,Bela Vista do Paraíso,MUNICÍPIO,17
+2822,Bituruna,MUNICÍPIO,17
+2823,Boa Esperança do Iguaçu,MUNICÍPIO,17
+2824,Boa Ventura de São Roque,MUNICÍPIO,17
+2825,Bocaiúva do Sul,MUNICÍPIO,17
+2826,Bom Sucesso do Sul,MUNICÍPIO,17
+2827,Borrazópolis,MUNICÍPIO,17
+2828,Braganey,MUNICÍPIO,17
+2829,Califórnia,MUNICÍPIO,17
+2830,Espigão Alto do Iguaçu,MUNICÍPIO,17
+2831,Faxinal,MUNICÍPIO,17
+2832,Fênix,MUNICÍPIO,17
+2833,Figueira,MUNICÍPIO,17
+2834,Formosa do Oeste,MUNICÍPIO,17
+2835,Foz do Jordão,MUNICÍPIO,17
+2836,Francisco Beltrão,MUNICÍPIO,17
+2837,Guamiranga,MUNICÍPIO,17
+2838,Guapirama,MUNICÍPIO,17
+2839,Guaraci,MUNICÍPIO,17
+2840,Honório Serpa,MUNICÍPIO,17
+2841,Ibaiti,MUNICÍPIO,17
+2842,Ibema,MUNICÍPIO,17
+2843,Ibiporã,MUNICÍPIO,17
+2844,Icaraíma,MUNICÍPIO,17
+2845,Ipiranga,MUNICÍPIO,17
+2846,Iporã,MUNICÍPIO,17
+2847,Iracema do Oeste,MUNICÍPIO,17
+2848,Irati,MUNICÍPIO,17
+2849,Iretama,MUNICÍPIO,17
+2850,Ivaí,MUNICÍPIO,17
+2851,Ivaiporã,MUNICÍPIO,17
+2852,Ivaté,MUNICÍPIO,17
+2853,Jaboti,MUNICÍPIO,17
+2854,Jacarezinho,MUNICÍPIO,17
+2855,Juranda,MUNICÍPIO,17
+2856,Kaloré,MUNICÍPIO,17
+2857,Lapa,MUNICÍPIO,17
+2858,Laranjal,MUNICÍPIO,17
+2859,Laranjeiras do Sul,MUNICÍPIO,17
+2860,Lindoeste,MUNICÍPIO,17
+2861,Lobato,MUNICÍPIO,17
+2862,Luiziana,MUNICÍPIO,17
+2863,Lupionópolis,MUNICÍPIO,17
+2864,Mallet,MUNICÍPIO,17
+2865,Mamborê,MUNICÍPIO,17
+2866,Mandaguaçu,MUNICÍPIO,17
+2867,Mangueirinha,MUNICÍPIO,17
+2868,Manoel Ribas,MUNICÍPIO,17
+2869,João Pessoa,MUNICÍPIO,27
+2870,Itamarati,MUNICÍPIO,11
+2871,Fortaleza dos Nogueiras,MUNICÍPIO,7
+2872,Água Azul do Norte,MUNICÍPIO,13
+2873,Marmeleiro,MUNICÍPIO,17
+2874,Marquinho,MUNICÍPIO,17
+2875,Mauá da Serra,MUNICÍPIO,17
+2876,Miraselva,MUNICÍPIO,17
+2877,Missal,MUNICÍPIO,17
+2878,Moreira Sales,MUNICÍPIO,17
+2879,Morretes,MUNICÍPIO,17
+2880,Munhoz de Melo,MUNICÍPIO,17
+2881,Nova Cantu,MUNICÍPIO,17
+2882,Nova Fátima,MUNICÍPIO,17
+2891,Alcântara,MUNICÍPIO,7
+2892,Apicum-Açu,MUNICÍPIO,7
+2893,Guimarães,MUNICÍPIO,7
+2894,Bragança,MUNICÍPIO,13
+2895,Tracuateua,MUNICÍPIO,13
+2896,Augusto Corrêa,MUNICÍPIO,13
+2897,Paranacity,MUNICÍPIO,17
+2898,Paranapoema,MUNICÍPIO,17
+2883,Caputira,MUNICÍPIO,24
+2884,Oiapoque,MUNICÍPIO,14
+2885,Icatu,MUNICÍPIO,7
+2886,Imbituba,MUNICÍPIO,18
+2887,Porto Rico do Maranhão,MUNICÍPIO,7
+2888,Cajapió,MUNICÍPIO,7
+2889,Cururupu,MUNICÍPIO,7
+2899,Divisa Alegre,MUNICÍPIO,24
+2900,Miguelópolis,MUNICÍPIO,31
+2901,Itaju,MUNICÍPIO,31
+2902,Itaí,MUNICÍPIO,31
+2903,Mirassol,MUNICÍPIO,31
+2904,Além Paraíba,MUNICÍPIO,24
+2905,Meridiano,MUNICÍPIO,31
+2906,Pato Branco,MUNICÍPIO,17
+2958,São João do Manhuaçu,MUNICÍPIO,24
+2959,Rio Pardo de Minas,MUNICÍPIO,24
+2960,Santo Hipólito,MUNICÍPIO,24
+2961,Angra dos Reis,MUNICÍPIO,23
+2962,São José do Barreiro,MUNICÍPIO,31
+2963,Rio Claro,MUNICÍPIO,23
+2890,São Luís,MUNICÍPIO,7
+2907,Mira Estrela,MUNICÍPIO,31
+2908,Riolândia,MUNICÍPIO,31
+2909,Chalé,MUNICÍPIO,24
+2910,Lajedão,MUNICÍPIO,29
+2911,Ruy Barbosa,MUNICÍPIO,29
+2912,Aricanduva,MUNICÍPIO,24
+2913,Rancho Alegre,MUNICÍPIO,17
+2914,Rebouças,MUNICÍPIO,17
+2915,Renascença,MUNICÍPIO,17
+2916,Rio Branco do Ivaí,MUNICÍPIO,17
+2917,Rio Branco do Sul,MUNICÍPIO,17
+2918,Rolândia,MUNICÍPIO,17
+2919,Rosário do Ivaí,MUNICÍPIO,17
+2920,Santa Cecília do Pavão,MUNICÍPIO,17
+2921,Santa Cruz de Monte Castelo,MUNICÍPIO,17
+2922,Rio Grande da Serra,MUNICÍPIO,31
+2923,Uauá,MUNICÍPIO,29
+2924,Calçoene,MUNICÍPIO,14
+2925,Cáceres,MUNICÍPIO,21
+2926,Cândido Mendes,MUNICÍPIO,7
+2927,Anahy,MUNICÍPIO,17
+2928,Schroeder,MUNICÍPIO,18
+2929,Santo Antônio do Sudoeste,MUNICÍPIO,17
+2930,São Jerônimo da Serra,MUNICÍPIO,17
+2931,São João do Caiuá,MUNICÍPIO,17
+2932,São João do Ivaí,MUNICÍPIO,17
+2933,São João do Triunfo,MUNICÍPIO,17
+2934,São Jorge do Ivaí,MUNICÍPIO,17
+2935,São Jorge do Patrocínio,MUNICÍPIO,17
+2936,São José da Boa Vista,MUNICÍPIO,17
+2937,São José dos Pinhais,MUNICÍPIO,17
+2938,São Pedro do Iguaçu,MUNICÍPIO,17
+2939,Sapopema,MUNICÍPIO,17
+2940,Saudade do Iguaçu,MUNICÍPIO,17
+2941,Sengés,MUNICÍPIO,17
+2942,Sertaneja,MUNICÍPIO,17
+2943,Sertanópolis,MUNICÍPIO,17
+2944,Telêmaco Borba,MUNICÍPIO,17
+2945,Terra Roxa,MUNICÍPIO,17
+2946,Tibagi,MUNICÍPIO,17
+2947,Tomazina,MUNICÍPIO,17
+2948,Três Barras do Paraná,MUNICÍPIO,17
+2949,Tunas do Paraná,MUNICÍPIO,17
+2950,Tuneiras do Oeste,MUNICÍPIO,17
+2964,Itaguaí,MUNICÍPIO,23
+2965,Paraty,MUNICÍPIO,23
+2967,São Paulo de Olivença,MUNICÍPIO,11
+2968,Buritirana,MUNICÍPIO,7
+2969,Major Gercino,MUNICÍPIO,18
+2970,São João Batista,MUNICÍPIO,18
+2951,Coronel Pilar,MUNICÍPIO,22
+2952,Miguel Pereira,MUNICÍPIO,23
+2953,Herculândia,MUNICÍPIO,31
+2954,Lagoinha do Piauí,MUNICÍPIO,6
+2955,Governador Edison Lobão,MUNICÍPIO,7
+2956,Nova Santa Rita,MUNICÍPIO,22
+2957,Porto Alegre,MUNICÍPIO,22
+2971,Candeal,MUNICÍPIO,29
+2972,Monte Alegre do Sul,MUNICÍPIO,31
+2973,São Bento do Sapucaí,MUNICÍPIO,31
+2974,Inajá,MUNICÍPIO,17
+2975,Americana,MUNICÍPIO,31
+2976,Fernandópolis,MUNICÍPIO,31
+2977,Rubinéia,MUNICÍPIO,31
+2978,Jaguariúna,MUNICÍPIO,31
+2979,Antônio Dias,MUNICÍPIO,24
+2980,Ferros,MUNICÍPIO,24
+2981,Sete Lagoas,MUNICÍPIO,24
+2982,São Luiz do Paraitinga,MUNICÍPIO,31
+2983,Estrela Velha,MUNICÍPIO,22
+2984,Dilermando de Aguiar,MUNICÍPIO,22
+2985,Baldim,MUNICÍPIO,24
+2986,Caetanópolis,MUNICÍPIO,24
+3036,Mato Leitão,MUNICÍPIO,22
+2987,São José,MUNICÍPIO,18
+2988,Itapissuma,MUNICÍPIO,28
+2989,Pinheiro,MUNICÍPIO,7
+2990,Mirinzal,MUNICÍPIO,7
+5239,Parazinho,MUNICÍPIO,25
+5240,Buriti dos Montes,MUNICÍPIO,6
+2991,Nova Guataporanga,MUNICÍPIO,31
+2992,Panorama,MUNICÍPIO,31
+2993,Irapuã,MUNICÍPIO,31
+2994,Mendonça,MUNICÍPIO,31
+2995,Monte Alto,MUNICÍPIO,31
+2996,Paulicéia,MUNICÍPIO,31
+2997,Igarapé-Açu,MUNICÍPIO,13
+2998,Itacoatiara,MUNICÍPIO,11
+2999,Serrano do Maranhão,MUNICÍPIO,7
+3000,Santa Helena,MUNICÍPIO,7
+3001,Nova Esperança do Piriá,MUNICÍPIO,13
+3002,Assunção,MUNICÍPIO,27
+3003,Moju,MUNICÍPIO,13
+3004,Prainha,MUNICÍPIO,13
+3005,Caeté,MUNICÍPIO,24
+3006,Santa Bárbara do Sul,MUNICÍPIO,22
+3007,Itacurubi,MUNICÍPIO,22
+3008,Anastácio,MUNICÍPIO,19
+3009,Laje do Muriaé,MUNICÍPIO,23
+3010,Monte Castelo,MUNICÍPIO,18
+3011,São Jerônimo,MUNICÍPIO,22
+3012,Águia Branca,MUNICÍPIO,8
+3013,Colatina,MUNICÍPIO,8
+3014,Fundão,MUNICÍPIO,8
+3015,Domingos Martins,MUNICÍPIO,8
+3016,Dona Euzébia,MUNICÍPIO,24
+3017,São Tomé das Letras,MUNICÍPIO,24
+3018,Tabocão,MUNICÍPIO,15
+3047,Boa Vista do Sul,MUNICÍPIO,22
+3019,Diogo de Vasconcelos,MUNICÍPIO,24
+3020,Alto Alegre,MUNICÍPIO,22
+3021,União da Vitória,MUNICÍPIO,17
+3022,Espera Feliz,MUNICÍPIO,24
+3023,Presidente Kennedy,MUNICÍPIO,8
+3024,Bom Jesus do Itabapoana,MUNICÍPIO,23
+3025,Sooretama,MUNICÍPIO,8
+3026,Pedro Canário,MUNICÍPIO,8
+3048,Capão da Canoa,MUNICÍPIO,22
+3049,Guarapuava,MUNICÍPIO,17
+3050,Guaraniaçu,MUNICÍPIO,17
+3027,Luís Domingues,MUNICÍPIO,7
+3028,Barão de Cotegipe,MUNICÍPIO,22
+3029,Wenceslau Braz,MUNICÍPIO,24
+3030,São José do Povo,MUNICÍPIO,21
+3031,Águas Vermelhas,MUNICÍPIO,24
+3032,Capinzal do Norte,MUNICÍPIO,7
+3033,Carangola,MUNICÍPIO,24
+3034,Carnaúba dos Dantas,MUNICÍPIO,25
+3035,Montanhas,MUNICÍPIO,25
+3037,Irará,MUNICÍPIO,29
+3038,Cocal do Sul,MUNICÍPIO,18
+3039,Mafra,MUNICÍPIO,18
+3040,Chiador,MUNICÍPIO,24
+3041,Confins,MUNICÍPIO,24
+3042,Rio Bananal,MUNICÍPIO,8
+3043,São Francisco de Itabapoana,MUNICÍPIO,23
+3044,Planaltino,MUNICÍPIO,29
+3045,Catas Altas,MUNICÍPIO,24
+3051,Arapiraca,MUNICÍPIO,16
+3046,Presidente Tancredo Neves,MUNICÍPIO,29
+3052,Várzea Grande,MUNICÍPIO,6
+3053,Diamante D'Oeste,MUNICÍPIO,17
+3054,Curral de Dentro,MUNICÍPIO,24
+3055,Ibicaré,MUNICÍPIO,18
+3056,São Raimundo Nonato,MUNICÍPIO,6
+3057,União do Oeste,MUNICÍPIO,18
+3058,Campestre,MUNICÍPIO,16
+3059,Xangri-lá,MUNICÍPIO,22
+3060,Agrolândia,MUNICÍPIO,18
+3061,Sítio Novo do Tocantins,MUNICÍPIO,15
+3062,Santiago do Sul,MUNICÍPIO,18
+3063,Demerval Lobão,MUNICÍPIO,6
+3064,São Joaquim,MUNICÍPIO,18
+3065,Belém,MUNICÍPIO,16
+3066,Agudo,MUNICÍPIO,22
+3067,São João do Piauí,MUNICÍPIO,6
+3068,Macaparana,MUNICÍPIO,28
+3069,Palmeira do Piauí,MUNICÍPIO,6
+3070,Paulo Lopes,MUNICÍPIO,18
+3071,Nova Itaberaba,MUNICÍPIO,18
+3072,Pedro Laurentino,MUNICÍPIO,6
+3073,São José do Hortêncio,MUNICÍPIO,22
+3074,Jitaúna,MUNICÍPIO,29
+3075,Bodoquena,MUNICÍPIO,19
+3076,Rio Negro,MUNICÍPIO,19
+3077,Vitória das Missões,MUNICÍPIO,22
+3078,Pedro Gomes,MUNICÍPIO,19
+3079,Canabrava do Norte,MUNICÍPIO,21
+3080,Arenópolis,MUNICÍPIO,30
+3081,Aruanã,MUNICÍPIO,30
+3082,Colinas do Sul,MUNICÍPIO,30
+3083,Murici,MUNICÍPIO,16
+3084,São Bernardo do Campo,MUNICÍPIO,31
+3085,Sítio do Quinto,MUNICÍPIO,29
+3086,Presidente Getúlio,MUNICÍPIO,18
+3087,Piranhas,MUNICÍPIO,16
+3088,Capão do Leão,MUNICÍPIO,22
+3089,Giruá,MUNICÍPIO,22
+3090,Canguçu,MUNICÍPIO,22
+3091,Pelotas,MUNICÍPIO,22
+3092,Ibiam,MUNICÍPIO,18
+3093,Santa Rosa,MUNICÍPIO,22
+3094,Porto Esperidião,MUNICÍPIO,21
+3095,Figueirópolis D'Oeste,MUNICÍPIO,21
+3096,Vila Bela da Santíssima Trindade,MUNICÍPIO,21
+3097,Agrestina,MUNICÍPIO,28
+3098,Campo Grande,MUNICÍPIO,25
+3099,Sete de Setembro,MUNICÍPIO,22
+3100,Goiabeira,MUNICÍPIO,24
+3101,Alfredo Vasconcelos,MUNICÍPIO,24
+3102,Pajeú do Piauí,MUNICÍPIO,6
+4629,Taipu,MUNICÍPIO,25
+3103,Pindaí,MUNICÍPIO,29
+3104,Piripá,MUNICÍPIO,29
+3105,Alto Horizonte,MUNICÍPIO,30
+3106,Campo Largo,MUNICÍPIO,17
+3107,Novo São Joaquim,MUNICÍPIO,21
+3108,Brejinho,MUNICÍPIO,25
+3122,Pinheiro Preto,MUNICÍPIO,18
+3109,Cravolândia,MUNICÍPIO,29
+3110,Aiquara,MUNICÍPIO,29
+3111,Porto Alegre do Tocantins,MUNICÍPIO,15
+3112,Barracão,MUNICÍPIO,17
+3113,Plácido de Castro,MUNICÍPIO,10
+3114,Casimiro de Abreu,MUNICÍPIO,23
+3115,Barreiras do Piauí,MUNICÍPIO,6
+3116,Lafaiete Coutinho,MUNICÍPIO,29
+3449,Pedrão,MUNICÍPIO,29
+3117,São Vicente do Seridó,MUNICÍPIO,27
+3118,São João da Ponta,MUNICÍPIO,13
+3119,Viana,MUNICÍPIO,7
+3120,Boa Hora,MUNICÍPIO,6
+3121,Três Coroas,MUNICÍPIO,22
+3123,São Felipe D'Oeste,MUNICÍPIO,9
+3124,Severiano de Almeida,MUNICÍPIO,22
+3125,Ibipeba,MUNICÍPIO,29
+3126,Engenheiro Paulo de Frontin,MUNICÍPIO,23
+3127,Sebastião Barros,MUNICÍPIO,6
+3128,João Dourado,MUNICÍPIO,29
+3129,Jussara,MUNICÍPIO,29
+3130,Entre Rios de Minas,MUNICÍPIO,24
+3131,Governador Valadares,MUNICÍPIO,24
+3132,Concórdia,MUNICÍPIO,18
+3133,Ipiranga de Goiás,MUNICÍPIO,30
+3134,Novo Alegre,MUNICÍPIO,15
+3135,Roncador,MUNICÍPIO,17
+3136,Tamarana,MUNICÍPIO,17
+3137,Estrela do Norte,MUNICÍPIO,31
+3138,Bom Sucesso,MUNICÍPIO,24
+3139,Ferraz de Vasconcelos,MUNICÍPIO,31
+3140,São Paulo,MUNICÍPIO,31
+3141,Cardoso Moreira,MUNICÍPIO,23
+3142,Cantagalo,MUNICÍPIO,23
+3143,São Fidélis,MUNICÍPIO,23
+3144,São João da Barra,MUNICÍPIO,23
+3145,São Sebastião do Alto,MUNICÍPIO,23
+3146,Santa Maria Madalena,MUNICÍPIO,23
+3147,Serra Preta,MUNICÍPIO,29
+3148,Ipirá,MUNICÍPIO,29
+3149,Atalaia,MUNICÍPIO,16
+3150,Capanema,MUNICÍPIO,17
+3151,Ji-Paraná,MUNICÍPIO,9
+3152,Espigão D'Oeste,MUNICÍPIO,9
+3153,Mongaguá,MUNICÍPIO,31
+3154,Paripueira,MUNICÍPIO,16
+3155,Passagem Franca do Piauí,MUNICÍPIO,6
+3156,Pojuca,MUNICÍPIO,29
+3157,São Miguel dos Campos,MUNICÍPIO,16
+3158,Jandira,MUNICÍPIO,31
+3159,Mauá,MUNICÍPIO,31
+3160,Taboão da Serra,MUNICÍPIO,31
+3161,Ouro Preto do Oeste,MUNICÍPIO,9
+3162,Pimenta Bueno,MUNICÍPIO,9
+3163,Vilhena,MUNICÍPIO,9
+3164,Uruaçu,MUNICÍPIO,30
+3165,Rodelas,MUNICÍPIO,29
+3166,Pintadas,MUNICÍPIO,29
+3167,Palmares do Sul,MUNICÍPIO,22
+3168,Nova Canaã,MUNICÍPIO,29
+3169,Anchieta,MUNICÍPIO,18
+3170,Paraíso,MUNICÍPIO,18
+3171,São Miguel do Oeste,MUNICÍPIO,18
+3172,Bandeirante,MUNICÍPIO,18
+3173,Belmonte,MUNICÍPIO,18
+3285,Itaquara,MUNICÍPIO,29
+3174,Carapebus,MUNICÍPIO,23
+3456,São Pedro da Aldeia,MUNICÍPIO,23
+3175,Celso Ramos,MUNICÍPIO,18
+3457,Campos Novos Paulista,MUNICÍPIO,31
+3458,Charqueada,MUNICÍPIO,31
+3176,Araçás,MUNICÍPIO,29
+3177,Mãe do Rio,MUNICÍPIO,13
+3178,Santarém,MUNICÍPIO,13
+3179,Irati,MUNICÍPIO,18
+3180,São João do Oeste,MUNICÍPIO,18
+3181,Conde,MUNICÍPIO,29
+3182,Lauro Müller,MUNICÍPIO,18
+3183,São Carlos,MUNICÍPIO,18
+3184,Lajeado Grande,MUNICÍPIO,18
+5311,Governador Dix-Sept Rosado,MUNICÍPIO,25
+5312,São João da Fronteira,MUNICÍPIO,6
+3185,Rio do Campo,MUNICÍPIO,18
+4533,Areia de Baraúnas,MUNICÍPIO,27
+3186,José Boiteux,MUNICÍPIO,18
+3187,Macieira,MUNICÍPIO,18
+3188,Maravilha,MUNICÍPIO,18
+3189,Modelo,MUNICÍPIO,18
+3190,São Miguel da Boa Vista,MUNICÍPIO,18
+3191,Santa Helena,MUNICÍPIO,18
+3192,Souto Soares,MUNICÍPIO,29
+3193,Princesa,MUNICÍPIO,18
+3194,Trombudo Central,MUNICÍPIO,18
+3195,Saltinho,MUNICÍPIO,18
+3196,São Bernardino,MUNICÍPIO,18
+3197,Ametista do Sul,MUNICÍPIO,22
+3198,Antonina,MUNICÍPIO,17
+3199,Tamboara,MUNICÍPIO,17
+3200,Marema,MUNICÍPIO,18
+3201,Peritiba,MUNICÍPIO,18
+3202,Governador Archer,MUNICÍPIO,7
+3203,Almirante Tamandaré,MUNICÍPIO,17
+3204,Santos,MUNICÍPIO,31
+3205,Vargem Grande Paulista,MUNICÍPIO,31
+3206,Miraguaí,MUNICÍPIO,22
+3207,Saudades,MUNICÍPIO,18
+3208,Embu das Artes,MUNICÍPIO,31
+3209,Santo André,MUNICÍPIO,31
+3210,Itapevi,MUNICÍPIO,31
+3211,Itaquaquecetuba,MUNICÍPIO,31
+3212,Várzea Paulista,MUNICÍPIO,31
+5313,Cachoeira Dourada,MUNICÍPIO,24
+3213,Barra do Guarita,MUNICÍPIO,22
+3214,Jambeiro,MUNICÍPIO,31
+3215,Torre de Pedra,MUNICÍPIO,31
+3216,Vinhedo,MUNICÍPIO,31
+3217,Saquarema,MUNICÍPIO,23
+3218,Salto Grande,MUNICÍPIO,31
+3219,Santo Antônio do Pinhal,MUNICÍPIO,31
+3220,Tanguá,MUNICÍPIO,23
+3221,Águas de Lindóia,MUNICÍPIO,31
+3459,Dirceu Arcoverde,MUNICÍPIO,6
+3460,Água Doce,MUNICÍPIO,18
+3461,Belmiro Braga,MUNICÍPIO,24
+3462,Viana,MUNICÍPIO,8
+3222,Euclides da Cunha Paulista,MUNICÍPIO,31
+3223,Fernão,MUNICÍPIO,31
+3224,Araguari,MUNICÍPIO,24
+3225,Borá,MUNICÍPIO,31
+3226,Inúbia Paulista,MUNICÍPIO,31
+3227,Itobi,MUNICÍPIO,31
+3228,Porto Ferreira,MUNICÍPIO,31
+3229,Sabino,MUNICÍPIO,31
+3230,Abadia dos Dourados,MUNICÍPIO,24
+3231,Santa Cruz da Esperança,MUNICÍPIO,31
+3232,Elisiário,MUNICÍPIO,31
+3233,Novais,MUNICÍPIO,31
+3234,União Paulista,MUNICÍPIO,31
+3235,Rio Paranaíba,MUNICÍPIO,24
+4072,São José dos Ramos,MUNICÍPIO,27
+3236,Brás Pires,MUNICÍPIO,24
+3237,Lagoa Alegre,MUNICÍPIO,6
+4073,Teixeira,MUNICÍPIO,27
+4074,Jaboticatubas,MUNICÍPIO,24
+3238,Capela Nova,MUNICÍPIO,24
+3239,Caranaíba,MUNICÍPIO,24
+3240,Casa Grande,MUNICÍPIO,24
+3241,Pratinha,MUNICÍPIO,24
+3242,Cipotânea,MUNICÍPIO,24
+3243,Nova Luzitânia,MUNICÍPIO,31
+3244,Araponga,MUNICÍPIO,24
+3245,Perdizes,MUNICÍPIO,24
+4542,Curral de Cima,MUNICÍPIO,27
+3246,Catas Altas da Noruega,MUNICÍPIO,24
+3247,Valentim Gentil,MUNICÍPIO,31
+3248,Barra Longa,MUNICÍPIO,24
+3249,Iconha,MUNICÍPIO,8
+3250,Conquista,MUNICÍPIO,24
+3251,Montanha,MUNICÍPIO,8
+3252,Ataléia,MUNICÍPIO,24
+3253,Santa Rita d'Oeste,MUNICÍPIO,31
+3254,Santa Albertina,MUNICÍPIO,31
+3255,Conceição de Ipanema,MUNICÍPIO,24
+3256,Bela Vista de Minas,MUNICÍPIO,24
+3257,Ouroeste,MUNICÍPIO,31
+3258,Araxá,MUNICÍPIO,24
+3259,Populina,MUNICÍPIO,31
+3260,Dolcinópolis,MUNICÍPIO,31
+3261,Careiro da Várzea,MUNICÍPIO,11
+3262,Entre Folhas,MUNICÍPIO,24
+3263,Cachoeira da Prata,MUNICÍPIO,24
+3264,Caucaia,MUNICÍPIO,32
+3265,São João do Manteninha,MUNICÍPIO,24
+3266,Afonso Cláudio,MUNICÍPIO,8
+3267,Vila Valério,MUNICÍPIO,8
+3268,Vargem Alta,MUNICÍPIO,8
+3269,Capim Branco,MUNICÍPIO,24
+3270,Tanque d'Arca,MUNICÍPIO,16
+3271,Rio Novo do Sul,MUNICÍPIO,8
+3272,Castelo,MUNICÍPIO,8
+3273,Holambra,MUNICÍPIO,31
+3274,Muniz Freire,MUNICÍPIO,8
+3275,Guarapari,MUNICÍPIO,8
+3276,Linhares,MUNICÍPIO,8
+3277,Vila Pavão,MUNICÍPIO,8
+3278,Cariacica,MUNICÍPIO,8
+3279,Cachoeiro de Itapemirim,MUNICÍPIO,8
+3280,Viradouro,MUNICÍPIO,31
+3281,Angelândia,MUNICÍPIO,24
+3282,Prudentópolis,MUNICÍPIO,17
+3283,Nova Belém,MUNICÍPIO,24
+3284,Barra de São Francisco,MUNICÍPIO,8
+3286,Avelino Lopes,MUNICÍPIO,6
+3389,Simões Filho,MUNICÍPIO,29
+3287,Palmares Paulista,MUNICÍPIO,31
+3288,Medeiros Neto,MUNICÍPIO,29
+3289,Chapada de Areia,MUNICÍPIO,15
+3290,Palmas,MUNICÍPIO,15
+3291,Taquaral,MUNICÍPIO,31
+3292,Congonhal,MUNICÍPIO,24
+3293,Cristiano Otoni,MUNICÍPIO,24
+3294,Peritoró,MUNICÍPIO,7
+3295,Alvinlândia,MUNICÍPIO,31
+3296,Berizal,MUNICÍPIO,24
+4171,Ibiraçu,MUNICÍPIO,8
+3297,Conceição dos Ouros,MUNICÍPIO,24
+3298,São Patrício,MUNICÍPIO,30
+3299,Landri Sales,MUNICÍPIO,6
+3300,Ceres,MUNICÍPIO,30
+3301,Vista Alegre do Alto,MUNICÍPIO,31
+3302,Aurelino Leal,MUNICÍPIO,29
+3303,Barra do Rocha,MUNICÍPIO,29
+3304,Água Fria,MUNICÍPIO,29
+3305,Ponto Novo,MUNICÍPIO,29
+3306,Senhor do Bonfim,MUNICÍPIO,29
+3307,Lajeado,MUNICÍPIO,15
+3308,Santa Luzia do Paruá,MUNICÍPIO,7
+3309,Campo Alegre de Lourdes,MUNICÍPIO,29
+3310,Bom Jesus,MUNICÍPIO,6
+3311,Belo Monte,MUNICÍPIO,16
+3312,Boca da Mata,MUNICÍPIO,16
+3313,São José da Laje,MUNICÍPIO,16
+3314,Angical do Piauí,MUNICÍPIO,6
+3315,Alvorada do Gurguéia,MUNICÍPIO,6
+3316,Queimada Nova,MUNICÍPIO,6
+3317,Major Isidoro,MUNICÍPIO,16
+3318,Alagoinha,MUNICÍPIO,28
+3319,Tamboril do Piauí,MUNICÍPIO,6
+3320,Afrânio,MUNICÍPIO,28
+3321,Cacimbas,MUNICÍPIO,27
+3322,São Francisco de Assis do Piauí,MUNICÍPIO,6
+3323,Belo Jardim,MUNICÍPIO,28
+3324,Camalaú,MUNICÍPIO,27
+3325,Bezerros,MUNICÍPIO,28
+3326,São João do Tigre,MUNICÍPIO,27
+3327,Abreu e Lima,MUNICÍPIO,28
+3328,Diamante do Norte,MUNICÍPIO,17
+3329,Araçoiaba,MUNICÍPIO,28
+3330,Itaguari,MUNICÍPIO,30
+3331,Monteiro,MUNICÍPIO,27
+3332,Ribeira do Piauí,MUNICÍPIO,6
+4598,Extremoz,MUNICÍPIO,25
+3333,Ubaitaba,MUNICÍPIO,29
+3361,Bom Jesus,MUNICÍPIO,18
+3334,Sebastião Leal,MUNICÍPIO,6
+3335,Dona Francisca,MUNICÍPIO,22
+3336,Alhandra,MUNICÍPIO,27
+3337,Alagoa Grande,MUNICÍPIO,27
+3338,Anadia,MUNICÍPIO,16
+3339,Guadalupe,MUNICÍPIO,6
+5314,São Francisco,MUNICÍPIO,27
+3340,Porto Alegre do Piauí,MUNICÍPIO,6
+5315,São João da Canabrava,MUNICÍPIO,6
+5316,Macau,MUNICÍPIO,25
+5317,Veríssimo,MUNICÍPIO,24
+3341,Wanderlândia,MUNICÍPIO,15
+3342,Bananeiras,MUNICÍPIO,27
+3343,Barra de Santa Rosa,MUNICÍPIO,27
+3344,Santa Terezinha do Tocantins,MUNICÍPIO,15
+3345,Angico,MUNICÍPIO,15
+3346,Luzinópolis,MUNICÍPIO,15
+3347,Amarante,MUNICÍPIO,6
+3348,Barro Duro,MUNICÍPIO,6
+3349,Jardim do Mulato,MUNICÍPIO,6
+3350,São Gonçalo do Amarante,MUNICÍPIO,32
+3351,São Miguel da Baixa Grande,MUNICÍPIO,6
+3352,São Félix,MUNICÍPIO,29
+3353,Jatobá,MUNICÍPIO,7
+3354,Maurilândia do Tocantins,MUNICÍPIO,15
+3355,Vera Cruz,MUNICÍPIO,29
+3356,Palmeirais,MUNICÍPIO,6
+3357,Santo Estêvão,MUNICÍPIO,29
+3358,Sapeaçu,MUNICÍPIO,29
+3359,Francisco Ayres,MUNICÍPIO,6
+3360,Cachoeirinha,MUNICÍPIO,15
+3362,Terra Santa,MUNICÍPIO,13
+3363,Benevides,MUNICÍPIO,13
+3364,Acaiaca,MUNICÍPIO,24
+3365,Castanhal,MUNICÍPIO,13
+3366,Magalhães Barata,MUNICÍPIO,13
+3367,Inhangapi,MUNICÍPIO,13
+3368,Serrolândia,MUNICÍPIO,29
+3369,Terra Alta,MUNICÍPIO,13
+3370,Praia Norte,MUNICÍPIO,15
+3371,Porto Real,MUNICÍPIO,23
+3372,Jaraguari,MUNICÍPIO,19
+3373,Mari,MUNICÍPIO,27
+3374,Cabaceiras do Paraguaçu,MUNICÍPIO,29
+3375,Ermo,MUNICÍPIO,18
+3376,Gravatal,MUNICÍPIO,18
+3377,Içara,MUNICÍPIO,18
+3378,Jacinto Machado,MUNICÍPIO,18
+3379,Castelândia,MUNICÍPIO,30
+3380,Gouvelândia,MUNICÍPIO,30
+3381,Pilar,MUNICÍPIO,16
+3382,Guaraciaba,MUNICÍPIO,18
+3383,Hugo Napoleão,MUNICÍPIO,6
+3384,Foz do Iguaçu,MUNICÍPIO,17
+3385,Lagoinha,MUNICÍPIO,31
+3386,Novo Horizonte do Oeste,MUNICÍPIO,9
+3387,São Francisco do Conde,MUNICÍPIO,29
+4674,Mário Campos,MUNICÍPIO,24
+3388,São Sebastião do Passé,MUNICÍPIO,29
+3390,Terra Nova,MUNICÍPIO,29
+3401,Sátiro Dias,MUNICÍPIO,29
+3391,Ubatã,MUNICÍPIO,29
+3392,Uibaí,MUNICÍPIO,29
+4676,Pedra Dourada,MUNICÍPIO,24
+3393,Santo Antônio de Jesus,MUNICÍPIO,29
+3394,São Felipe,MUNICÍPIO,29
+3528,Tupandi,MUNICÍPIO,22
+3529,Gentil,MUNICÍPIO,22
+3395,Teodoro Sampaio,MUNICÍPIO,29
+3530,Guabiju,MUNICÍPIO,22
+3531,Ijuí,MUNICÍPIO,22
+4677,Teixeiras,MUNICÍPIO,24
+3396,Acauã,MUNICÍPIO,6
+3555,Coronel Barros,MUNICÍPIO,22
+4887,Guaramiranga,MUNICÍPIO,32
+4888,Deputado Irapuan Pinheiro,MUNICÍPIO,32
+3397,Ribeira do Pombal,MUNICÍPIO,29
+3783,Goiás,MUNICÍPIO,30
+4889,Solonópole,MUNICÍPIO,32
+4890,Padre Bernardo,MUNICÍPIO,30
+4891,Presidente Olegário,MUNICÍPIO,24
+4892,Coromandel,MUNICÍPIO,24
+4893,Planaltina,MUNICÍPIO,30
+4894,Água Fria de Goiás,MUNICÍPIO,30
+4895,Cabeceiras,MUNICÍPIO,30
+4896,Cabeceira Grande,MUNICÍPIO,24
+4897,Bonfinópolis de Minas,MUNICÍPIO,24
+4898,Formosa,MUNICÍPIO,30
+4899,Natalândia,MUNICÍPIO,24
+4900,Campo Alegre de Goiás,MUNICÍPIO,30
+4901,Capitão de Campos,MUNICÍPIO,6
+4902,Lagoa Grande,MUNICÍPIO,24
+4903,Luziânia,MUNICÍPIO,30
+4904,Orizona,MUNICÍPIO,30
+4905,Ipameri,MUNICÍPIO,30
+4906,Ipu,MUNICÍPIO,32
+4907,Tiros,MUNICÍPIO,24
+3398,Teofilândia,MUNICÍPIO,29
+4908,Tapiraí,MUNICÍPIO,24
+4909,Poranga,MUNICÍPIO,32
+4910,Serra da Saudade,MUNICÍPIO,24
+4911,São Gotardo,MUNICÍPIO,24
+4912,Santo Antônio do Monte,MUNICÍPIO,24
+4913,Itapipoca,MUNICÍPIO,32
+4914,Apuiarés,MUNICÍPIO,32
+4915,Tejuçuoca,MUNICÍPIO,32
+4916,Trairi,MUNICÍPIO,32
+4917,Paracatu,MUNICÍPIO,24
+4918,Barreirinhas,MUNICÍPIO,7
+4919,Humberto de Campos,MUNICÍPIO,7
+4920,Cristalina,MUNICÍPIO,30
+4921,Brasília,MUNICÍPIO,26
+4922,Unaí,MUNICÍPIO,24
+3399,Santa Bárbara,MUNICÍPIO,29
+4923,Quixaba,MUNICÍPIO,28
+3400,Santanópolis,MUNICÍPIO,29
+4924,Boa Ventura,MUNICÍPIO,27
+4925,Olho d'Água,MUNICÍPIO,27
+4926,Santa Cruz da Baixa Verde,MUNICÍPIO,28
+3402,Lontras,MUNICÍPIO,18
+3404,Antônio Almeida,MUNICÍPIO,6
+3403,Cotiporã,MUNICÍPIO,22
+3405,Betânia do Piauí,MUNICÍPIO,6
+3437,Garuva,MUNICÍPIO,18
+3406,Arraial,MUNICÍPIO,6
+4927,Caiçara do Rio do Vento,MUNICÍPIO,25
+4928,Pedro Avelino,MUNICÍPIO,25
+4929,São Luiz do Norte,MUNICÍPIO,30
+4930,Santa Rita do Novo Destino,MUNICÍPIO,30
+3407,Barra do Rio Azul,MUNICÍPIO,22
+4931,Nova Glória,MUNICÍPIO,30
+4932,Santa Isabel,MUNICÍPIO,30
+4933,Niquelândia,MUNICÍPIO,30
+4934,Rialma,MUNICÍPIO,30
+4935,Goianésia,MUNICÍPIO,30
+4936,Mimoso de Goiás,MUNICÍPIO,30
+4937,Barro Alto,MUNICÍPIO,30
+4938,Cocalzinho de Goiás,MUNICÍPIO,30
+4939,Itapaci,MUNICÍPIO,30
+4940,Vila Propício,MUNICÍPIO,30
+4941,Messias Targino,MUNICÍPIO,25
+4942,Bom Sucesso,MUNICÍPIO,27
+4943,Pombal,MUNICÍPIO,27
+4944,Verdejante,MUNICÍPIO,28
+4945,Vila Boa,MUNICÍPIO,30
+4946,Paulino Neves,MUNICÍPIO,7
+4947,Tutóia,MUNICÍPIO,7
+4948,Santo Amaro do Maranhão,MUNICÍPIO,7
+4949,Cruz,MUNICÍPIO,32
+4950,Tabira,MUNICÍPIO,28
+4951,Ingazeira,MUNICÍPIO,28
+4952,Custódia,MUNICÍPIO,28
+4953,Sertânia,MUNICÍPIO,28
+3408,Brejo do Piauí,MUNICÍPIO,6
+4954,Iguaracy,MUNICÍPIO,28
+4955,Juru,MUNICÍPIO,27
+4956,Princesa Isabel,MUNICÍPIO,27
+4957,Afogados da Ingazeira,MUNICÍPIO,28
+3409,Conceição das Pedras,MUNICÍPIO,24
+3410,Arroio do Meio,MUNICÍPIO,22
+3411,São Pedro de Alcântara,MUNICÍPIO,18
+3412,Tijucas,MUNICÍPIO,18
+4958,Santana de Mangueira,MUNICÍPIO,27
+4959,Diamante,MUNICÍPIO,27
+4960,Pedra Branca,MUNICÍPIO,27
+4961,Piancó,MUNICÍPIO,27
+4962,Igaracy,MUNICÍPIO,27
+4963,Arapuá,MUNICÍPIO,24
+4964,Abaeté,MUNICÍPIO,24
+3413,Santa Rosa de Lima,MUNICÍPIO,18
+4965,Curral Velho,MUNICÍPIO,27
+4966,Itapagipe,MUNICÍPIO,24
+4967,Frutal,MUNICÍPIO,24
+4968,Monte Alegre de Minas,MUNICÍPIO,24
+4969,Comendador Gomes,MUNICÍPIO,24
+4970,Prata,MUNICÍPIO,24
+4971,Planura,MUNICÍPIO,24
+3414,São Martinho,MUNICÍPIO,18
+4972,Pirajuba,MUNICÍPIO,24
+4973,Conceição das Alagoas,MUNICÍPIO,24
+4974,Campo Florido,MUNICÍPIO,24
+4975,Lagoa Formosa,MUNICÍPIO,24
+4976,Lagamar,MUNICÍPIO,24
+3415,São Bonifácio,MUNICÍPIO,18
+3416,Guaribas,MUNICÍPIO,6
+4977,Vazante,MUNICÍPIO,24
+4978,Guarda-Mor,MUNICÍPIO,24
+3417,Anitápolis,MUNICÍPIO,18
+3444,Ouriçangas,MUNICÍPIO,29
+4979,Fortaleza,MUNICÍPIO,32
+4980,Aquiraz,MUNICÍPIO,32
+4981,Uberaba,MUNICÍPIO,24
+4982,Tapira,MUNICÍPIO,24
+4983,Serra do Salitre,MUNICÍPIO,24
+3418,Chapadão do Lageado,MUNICÍPIO,18
+4984,São Roque de Minas,MUNICÍPIO,24
+4985,Patrocínio,MUNICÍPIO,24
+4986,Patos de Minas,MUNICÍPIO,24
+4987,Nova Ponte,MUNICÍPIO,24
+4988,Medeiros,MUNICÍPIO,24
+4989,Formoso,MUNICÍPIO,24
+4990,Arneiroz,MUNICÍPIO,32
+4991,Aiuaba,MUNICÍPIO,32
+4992,Saboeiro,MUNICÍPIO,32
+4993,Jucás,MUNICÍPIO,32
+3419,Imbuia,MUNICÍPIO,18
+4994,Parambu,MUNICÍPIO,32
+4995,Icó,MUNICÍPIO,32
+4996,Acopiara,MUNICÍPIO,32
+4997,Igarapava,MUNICÍPIO,31
+4998,Santa Fé de Minas,MUNICÍPIO,24
+4999,São Romão,MUNICÍPIO,24
+5000,Riachinho,MUNICÍPIO,24
+5001,Dom Bosco,MUNICÍPIO,24
+5002,Icaraí de Minas,MUNICÍPIO,24
+5003,Cedro,MUNICÍPIO,32
+5004,Ubaí,MUNICÍPIO,24
+5005,Ponto Chique,MUNICÍPIO,24
+5006,Chapada Gaúcha,MUNICÍPIO,24
+5007,São Francisco,MUNICÍPIO,24
+3420,Itapema,MUNICÍPIO,18
+3421,São Pedro do Butiá,MUNICÍPIO,22
+3422,São João do Itaperiú,MUNICÍPIO,18
+5008,Campo Grande do Piauí,MUNICÍPIO,6
+5009,Morada Nova,MUNICÍPIO,32
+5010,Campinas do Piauí,MUNICÍPIO,6
+5011,Choró,MUNICÍPIO,32
+5012,Itapiúna,MUNICÍPIO,32
+5013,Pimenteiras,MUNICÍPIO,6
+3423,Guabiruba,MUNICÍPIO,18
+5014,Assaré,MUNICÍPIO,32
+5015,Pio IX,MUNICÍPIO,6
+5016,Antonina do Norte,MUNICÍPIO,32
+5017,Fortim,MUNICÍPIO,32
+3424,Brusque,MUNICÍPIO,18
+3425,Apiúna,MUNICÍPIO,18
+5019,Viçosa,MUNICÍPIO,25
+3426,Camboriú,MUNICÍPIO,18
+3427,Rio dos Cedros,MUNICÍPIO,18
+5020,Patu,MUNICÍPIO,25
+5021,Esperantina,MUNICÍPIO,6
+5022,Barras,MUNICÍPIO,6
+5023,Amontada,MUNICÍPIO,32
+5024,Ibiá,MUNICÍPIO,24
+5025,Uberlândia,MUNICÍPIO,24
+5026,Rifaina,MUNICÍPIO,31
+5027,Pedregulho,MUNICÍPIO,31
+5028,Sacramento,MUNICÍPIO,24
+5029,Itarema,MUNICÍPIO,32
+5030,Bela Cruz,MUNICÍPIO,32
+5031,Umirim,MUNICÍPIO,32
+5032,Senador Sá,MUNICÍPIO,32
+5033,Baturité,MUNICÍPIO,32
+5034,Aracoiaba,MUNICÍPIO,32
+3428,Ascurra,MUNICÍPIO,18
+3429,Gaspar,MUNICÍPIO,18
+5035,Ocara,MUNICÍPIO,32
+5036,Aracati,MUNICÍPIO,32
+5037,Cascavel,MUNICÍPIO,32
+5038,Beberibe,MUNICÍPIO,32
+5039,Ibaretama,MUNICÍPIO,32
+5040,Cocos,MUNICÍPIO,29
+5041,Sobral,MUNICÍPIO,32
+5042,Camocim,MUNICÍPIO,32
+5043,Ibiapina,MUNICÍPIO,32
+3430,Doutor Pedrinho,MUNICÍPIO,18
+3445,Colinas,MUNICÍPIO,22
+3431,Blumenau,MUNICÍPIO,18
+3432,Rodeio,MUNICÍPIO,18
+3433,Massaranduba,MUNICÍPIO,18
+3434,Barão,MUNICÍPIO,22
+3446,Estância Velha,MUNICÍPIO,22
+3435,Corupá,MUNICÍPIO,18
+5044,Chorozinho,MUNICÍPIO,32
+5045,Ibicuitinga,MUNICÍPIO,32
+3436,Ibirama,MUNICÍPIO,18
+3438,Indaial,MUNICÍPIO,18
+3447,Antônio Carlos,MUNICÍPIO,18
+3439,Navegantes,MUNICÍPIO,18
+5046,Conceição do Canindé,MUNICÍPIO,6
+5047,Alto Longá,MUNICÍPIO,6
+3440,Rancho Queimado,MUNICÍPIO,18
+3448,Igrejinha,MUNICÍPIO,22
+3441,Biguaçu,MUNICÍPIO,18
+3442,Feira Grande,MUNICÍPIO,16
+3443,Balneário Camboriú,MUNICÍPIO,18
+3450,Caraá,MUNICÍPIO,22
+3451,Maratá,MUNICÍPIO,22
+5048,Porteiras,MUNICÍPIO,32
+3452,Barra Funda,MUNICÍPIO,22
+3453,Salvador do Sul,MUNICÍPIO,22
+3454,São Pedro do Sul,MUNICÍPIO,22
+3455,Taquara,MUNICÍPIO,22
+5049,Urbano Santos,MUNICÍPIO,7
+3463,Paripiranga,MUNICÍPIO,29
+3464,Conselheiro Pena,MUNICÍPIO,24
+5050,Venha-Ver,MUNICÍPIO,25
+5051,Tarrafas,MUNICÍPIO,32
+5052,Ituiutaba,MUNICÍPIO,24
+5053,Campina Verde,MUNICÍPIO,24
+5054,Bernardino Batista,MUNICÍPIO,27
+5055,São João da Serra,MUNICÍPIO,6
+5056,São Miguel do Tapuio,MUNICÍPIO,6
+5057,Areia Branca,MUNICÍPIO,25
+5058,Acaraú,MUNICÍPIO,32
+3465,São Gonçalo dos Campos,MUNICÍPIO,29
+5059,Santana do Acaraú,MUNICÍPIO,32
+5060,Tururu,MUNICÍPIO,32
+5061,Uruoca,MUNICÍPIO,32
+3466,Arroio do Padre,MUNICÍPIO,22
+3467,Governador Lindenberg,MUNICÍPIO,8
+3468,Água Doce do Norte,MUNICÍPIO,8
+3469,Mantena,MUNICÍPIO,24
+5062,Jardim,MUNICÍPIO,32
+5063,Marco,MUNICÍPIO,32
+5064,Santa Quitéria,MUNICÍPIO,32
+5065,Irauçuba,MUNICÍPIO,32
+5066,Primeira Cruz,MUNICÍPIO,7
+5067,Aroazes,MUNICÍPIO,6
+3471,Sertão Santana,MUNICÍPIO,22
+3472,Morro Redondo,MUNICÍPIO,22
+3473,Jaramataia,MUNICÍPIO,16
+3474,Alvorada,MUNICÍPIO,22
+3475,Itanagra,MUNICÍPIO,29
+5068,Jandaíra,MUNICÍPIO,25
+5069,Goiânia,MUNICÍPIO,30
+5070,Hidrolândia,MUNICÍPIO,30
+5071,Brasileira,MUNICÍPIO,6
+5072,Ipueiras,MUNICÍPIO,32
+5073,Domingos Mourão,MUNICÍPIO,6
+5074,São Benedito,MUNICÍPIO,32
+5075,Porto do Mangue,MUNICÍPIO,25
+5076,Mossoró,MUNICÍPIO,25
+5077,Brejo Santo,MUNICÍPIO,32
+5078,Jati,MUNICÍPIO,32
+5079,Conceição,MUNICÍPIO,27
+5080,São Miguel do Passa Quatro,MUNICÍPIO,30
+5081,Alexânia,MUNICÍPIO,30
+5082,Ibiaí,MUNICÍPIO,24
+5083,Flores,MUNICÍPIO,28
+5084,Potiretama,MUNICÍPIO,32
+5085,Iracema,MUNICÍPIO,32
+5086,Felipe Guerra,MUNICÍPIO,25
+5087,Banabuiú,MUNICÍPIO,32
+3476,Capivari do Sul,MUNICÍPIO,22
+3477,Cerro Grande do Sul,MUNICÍPIO,22
+5318,Três Ranchos,MUNICÍPIO,30
+3478,Cidreira,MUNICÍPIO,22
+3479,Linha Nova,MUNICÍPIO,22
+3480,Sentinela do Sul,MUNICÍPIO,22
+3481,Tavares,MUNICÍPIO,22
+3482,Alto Feliz,MUNICÍPIO,22
+3483,Itapira,MUNICÍPIO,31
+3484,Cachoeirinha,MUNICÍPIO,22
+3784,Colares,MUNICÍPIO,13
+3485,Glorinha,MUNICÍPIO,22
+3486,Sapucaia do Sul,MUNICÍPIO,22
+3487,Gravataí,MUNICÍPIO,22
+3488,Novo Hamburgo,MUNICÍPIO,22
+3489,Três Cachoeiras,MUNICÍPIO,22
+3490,Osório,MUNICÍPIO,22
+3491,Itatim,MUNICÍPIO,29
+3492,São Leopoldo,MUNICÍPIO,22
+3493,Sumidouro,MUNICÍPIO,23
+3494,Ituberá,MUNICÍPIO,29
+3495,São Brás,MUNICÍPIO,16
+3496,Faxinal do Soturno,MUNICÍPIO,22
+3497,Imigrante,MUNICÍPIO,22
+3498,Morro Reuter,MUNICÍPIO,22
+3499,Feliz,MUNICÍPIO,22
+3500,Paraíso do Sul,MUNICÍPIO,22
+3501,Pareci Novo,MUNICÍPIO,22
+3502,Garibaldi,MUNICÍPIO,22
+3503,Presidente Lucena,MUNICÍPIO,22
+3504,Pedro Alexandre,MUNICÍPIO,29
+3505,Riozinho,MUNICÍPIO,22
+4121,Siriri,MUNICÍPIO,20
+3506,Rolante,MUNICÍPIO,22
+3507,São Pedro da Serra,MUNICÍPIO,22
+3508,Tabaí,MUNICÍPIO,22
+3509,Cardeal da Silva,MUNICÍPIO,29
+3510,Nova Soure,MUNICÍPIO,29
+3511,Canela,MUNICÍPIO,22
+3512,Estrela,MUNICÍPIO,22
+3513,Conceição do Coité,MUNICÍPIO,29
+3514,Ibarama,MUNICÍPIO,22
+5319,Maracanaú,MUNICÍPIO,32
+3515,Itati,MUNICÍPIO,22
+3516,Nova Bréscia,MUNICÍPIO,22
+3517,Japaratinga,MUNICÍPIO,16
+3518,Nova Palma,MUNICÍPIO,22
+3519,Santa Maria do Herval,MUNICÍPIO,22
+3520,São João do Polêsine,MUNICÍPIO,22
+3521,Sobradinho,MUNICÍPIO,22
+3522,Capivari de Baixo,MUNICÍPIO,18
+3523,Toropi,MUNICÍPIO,22
+3524,Torres,MUNICÍPIO,22
+3525,Caiçara,MUNICÍPIO,27
+3526,Siderópolis,MUNICÍPIO,18
+3527,Três Forquilhas,MUNICÍPIO,22
+3532,Vale Real,MUNICÍPIO,22
+3533,Passo de Torres,MUNICÍPIO,18
+3534,São João do Sul,MUNICÍPIO,18
+3535,Pescaria Brava,MUNICÍPIO,18
+3536,Doutor Ricardo,MUNICÍPIO,22
+3537,Santa Rosa do Sul,MUNICÍPIO,18
+3538,Encantado,MUNICÍPIO,22
+3539,São Ludgero,MUNICÍPIO,18
+3540,Farroupilha,MUNICÍPIO,22
+3541,Vespasiano Corrêa,MUNICÍPIO,22
+3542,Ilópolis,MUNICÍPIO,22
+3543,Muçum,MUNICÍPIO,22
+3544,Roca Sales,MUNICÍPIO,22
+3545,Santa Tereza,MUNICÍPIO,22
+3546,São Valentim do Sul,MUNICÍPIO,22
+3547,Travesseiro,MUNICÍPIO,22
+3548,Itamonte,MUNICÍPIO,24
+3549,Maracajá,MUNICÍPIO,18
+3550,Morro da Fumaça,MUNICÍPIO,18
+3551,Cambará do Sul,MUNICÍPIO,22
+3552,Campestre da Serra,MUNICÍPIO,22
+3553,Morro do Chapéu do Piauí,MUNICÍPIO,6
+3554,Campos Borges,MUNICÍPIO,22
+3556,Fazenda Vilanova,MUNICÍPIO,22
+3557,Senador Rui Palmeira,MUNICÍPIO,16
+3558,Lagoa Bonita do Sul,MUNICÍPIO,22
+3559,Mormaço,MUNICÍPIO,22
+3560,Nova Araçá,MUNICÍPIO,22
+3561,Parobé,MUNICÍPIO,22
+3789,Indiaporã,MUNICÍPIO,31
+3562,São Sebastião do Caí,MUNICÍPIO,22
+3563,Vila Flores,MUNICÍPIO,22
+3564,Vila Maria,MUNICÍPIO,22
+3565,Paverama,MUNICÍPIO,22
+3566,Pedras Grandes,MUNICÍPIO,18
+3567,Mato Queimado,MUNICÍPIO,22
+3568,Lajes Pintadas,MUNICÍPIO,25
+3569,Muliterno,MUNICÍPIO,22
+3570,Nova Bassano,MUNICÍPIO,22
+3571,Santa Cecília do Sul,MUNICÍPIO,22
+3572,Santa Clara do Sul,MUNICÍPIO,22
+3573,Barra de São Miguel,MUNICÍPIO,16
+3574,Santo Antônio do Planalto,MUNICÍPIO,22
+3575,Tio Hugo,MUNICÍPIO,22
+5375,Cocal de Telha,MUNICÍPIO,6
+3576,Nova Veneza,MUNICÍPIO,18
+5376,Floresta do Piauí,MUNICÍPIO,6
+3577,Cerro Largo,MUNICÍPIO,22
+5377,Santo Antônio de Lisboa,MUNICÍPIO,6
+3578,Guarani das Missões,MUNICÍPIO,22
+3579,Jaboticaba,MUNICÍPIO,22
+3580,Nordestina,MUNICÍPIO,29
+3581,Nova Ramada,MUNICÍPIO,22
+3582,Salvador das Missões,MUNICÍPIO,22
+3583,Canhoba,MUNICÍPIO,20
+5378,Itainópolis,MUNICÍPIO,6
+3584,Morro Grande,MUNICÍPIO,18
+3585,Treze de Maio,MUNICÍPIO,18
+3586,Charrua,MUNICÍPIO,22
+3587,Dezesseis de Novembro,MUNICÍPIO,22
+3588,Erebango,MUNICÍPIO,22
+3589,Esmeralda,MUNICÍPIO,22
+3590,São Sebastião de Lagoa de Roça,MUNICÍPIO,27
+3591,Estação,MUNICÍPIO,22
+3592,Machadinho,MUNICÍPIO,22
+3593,Jacaré dos Homens,MUNICÍPIO,16
+3594,Montauri,MUNICÍPIO,22
+3595,Nova Boa Vista,MUNICÍPIO,22
+3596,Nova Pádua,MUNICÍPIO,22
+3597,Porto Xavier,MUNICÍPIO,22
+3598,São José das Missões,MUNICÍPIO,22
+3599,São Pedro das Missões,MUNICÍPIO,22
+3600,Chã de Alegria,MUNICÍPIO,28
+3601,Tupanci do Sul,MUNICÍPIO,22
+3602,Ubiretama,MUNICÍPIO,22
+5320,Itaitinga,MUNICÍPIO,32
+3603,Bom Progresso,MUNICÍPIO,22
+3604,Carlos Gomes,MUNICÍPIO,22
+3605,Santana do Mundaú,MUNICÍPIO,16
+3606,Cruzaltense,MUNICÍPIO,22
+3607,Humaitá,MUNICÍPIO,22
+3608,Novo Tiradentes,MUNICÍPIO,22
+3609,Angelim,MUNICÍPIO,28
+3610,Novo Xingu,MUNICÍPIO,22
+5321,Iraí de Minas,MUNICÍPIO,24
+3611,Paim Filho,MUNICÍPIO,22
+3612,Paulo Bento,MUNICÍPIO,22
+3613,Porto Vera Cruz,MUNICÍPIO,22
+3614,Sagrada Família,MUNICÍPIO,22
+3615,Três Arroios,MUNICÍPIO,22
+5379,Tibau,MUNICÍPIO,25
+3616,Capinzal,MUNICÍPIO,18
+3617,Petrolândia,MUNICÍPIO,18
+3618,Vera Cruz,MUNICÍPIO,25
+3619,Agronômica,MUNICÍPIO,18
+3620,Hortolândia,MUNICÍPIO,31
+3621,Cristal do Sul,MUNICÍPIO,22
+3622,Gramado,MUNICÍPIO,22
+3623,Gramado dos Loureiros,MUNICÍPIO,22
+3624,Iraí,MUNICÍPIO,22
+3625,Palmitinho,MUNICÍPIO,22
+3626,Pinheirinho do Vale,MUNICÍPIO,22
+3627,Arantina,MUNICÍPIO,24
+3628,Rodeio Bonito,MUNICÍPIO,22
+3629,Taquaruçu do Sul,MUNICÍPIO,22
+3630,Vicente Dutra,MUNICÍPIO,22
+3631,Riachão do Poço,MUNICÍPIO,27
+3632,Vista Alegre,MUNICÍPIO,22
+3633,Frei Rogério,MUNICÍPIO,18
+3634,Ipira,MUNICÍPIO,18
+3635,Ouro,MUNICÍPIO,18
+3636,Paial,MUNICÍPIO,18
+3637,Pouso Redondo,MUNICÍPIO,18
+5380,Janduís,MUNICÍPIO,25
+3638,Catanduvas,MUNICÍPIO,18
+3639,Cordilheira Alta,MUNICÍPIO,18
+3640,Dona Emma,MUNICÍPIO,18
+3641,Iomerê,MUNICÍPIO,18
+3642,Joaçaba,MUNICÍPIO,18
+3643,Luzerna,MUNICÍPIO,18
+3644,Mirim Doce,MUNICÍPIO,18
+3645,Mondaí,MUNICÍPIO,18
+5381,Olho d'Água do Borges,MUNICÍPIO,25
+3646,Planalto Alegre,MUNICÍPIO,18
+3647,Argirita,MUNICÍPIO,24
+3648,Rio do Oeste,MUNICÍPIO,18
+3649,Barão de Monte Alto,MUNICÍPIO,24
+3650,Alumínio,MUNICÍPIO,31
+3651,Vista Gaúcha,MUNICÍPIO,22
+3652,Francisco Morato,MUNICÍPIO,31
+3653,Olímpio Noronha,MUNICÍPIO,24
+3654,Guararema,MUNICÍPIO,31
+3655,Louveira,MUNICÍPIO,31
+3656,Nazaré Paulista,MUNICÍPIO,31
+3657,Vanini,MUNICÍPIO,22
+3658,Canitar,MUNICÍPIO,31
+3659,Porto Rico,MUNICÍPIO,17
+3660,Jumirim,MUNICÍPIO,31
+3661,Saltinho,MUNICÍPIO,31
+3662,Divinésia,MUNICÍPIO,24
+3663,Amaporã,MUNICÍPIO,17
+3664,Florínea,MUNICÍPIO,31
+3665,Canas,MUNICÍPIO,31
+3666,Cruzália,MUNICÍPIO,31
+3667,Nova Odessa,MUNICÍPIO,31
+3668,Pedrinhas Paulista,MUNICÍPIO,31
+3669,Coimbra,MUNICÍPIO,24
+3670,Tarumã,MUNICÍPIO,31
+3671,Engenheiro Coelho,MUNICÍPIO,31
+3672,Iracemápolis,MUNICÍPIO,31
+3673,Lindóia,MUNICÍPIO,31
+3674,Ribeirão do Sul,MUNICÍPIO,31
+3675,Bom Repouso,MUNICÍPIO,24
+3676,Bueno Brandão,MUNICÍPIO,24
+3677,Santa Gertrudes,MUNICÍPIO,31
+3790,Firmino Alves,MUNICÍPIO,29
+3678,Paty do Alferes,MUNICÍPIO,23
+3679,Matinhas,MUNICÍPIO,27
+3680,Amparo do Serra,MUNICÍPIO,24
+3681,Adolfo,MUNICÍPIO,31
+3682,Glória de Dourados,MUNICÍPIO,19
+3683,Santo Antônio do Jardim,MUNICÍPIO,31
+3684,Magda,MUNICÍPIO,31
+5088,Milton Brandão,MUNICÍPIO,6
+5089,Várzea da Palma,MUNICÍPIO,24
+5090,Buritizeiro,MUNICÍPIO,24
+5091,Brasilândia de Minas,MUNICÍPIO,24
+5092,Tupaciguara,MUNICÍPIO,24
+3685,Carvalhos,MUNICÍPIO,24
+5093,Alto Santo,MUNICÍPIO,32
+5094,Goiatuba,MUNICÍPIO,30
+5095,Goiandira,MUNICÍPIO,30
+5096,Caldas Novas,MUNICÍPIO,30
+5097,Cachoeira Dourada,MUNICÍPIO,30
+5098,Buriti Alegre,MUNICÍPIO,30
+5099,Centralina,MUNICÍPIO,24
+5100,Nova Aurora,MUNICÍPIO,30
+5101,Morrinhos,MUNICÍPIO,30
+5102,Marzagão,MUNICÍPIO,30
+5103,Itumbiara,MUNICÍPIO,30
+5104,Canápolis,MUNICÍPIO,24
+5105,Panamá,MUNICÍPIO,30
+3686,Júlio Mesquita,MUNICÍPIO,31
+5107,Goianira,MUNICÍPIO,30
+3687,Lavrinhas,MUNICÍPIO,31
+5108,São José da Lagoa Tapada,MUNICÍPIO,27
+5109,São Francisco de Goiás,MUNICÍPIO,30
+5110,Guapó,MUNICÍPIO,30
+5111,Caturaí,MUNICÍPIO,30
+5112,Inhumas,MUNICÍPIO,30
+5113,Trindade,MUNICÍPIO,30
+5114,Senador Canedo,MUNICÍPIO,30
+5115,Caldazinha,MUNICÍPIO,30
+5116,Petrolina de Goiás,MUNICÍPIO,30
+5117,Água Limpa,MUNICÍPIO,30
+5118,Abadiânia,MUNICÍPIO,30
+5119,Bela Vista de Goiás,MUNICÍPIO,30
+5120,Jaraguá,MUNICÍPIO,30
+5121,Corumbá de Goiás,MUNICÍPIO,30
+5122,Três Marias,MUNICÍPIO,24
+5123,Varjão de Minas,MUNICÍPIO,24
+5124,Morada Nova de Minas,MUNICÍPIO,24
+5125,Felixlândia,MUNICÍPIO,24
+5126,Lassance,MUNICÍPIO,24
+5127,Boa Viagem,MUNICÍPIO,32
+5128,Madalena,MUNICÍPIO,32
+5129,Paramoti,MUNICÍPIO,32
+5130,Luís Correia,MUNICÍPIO,6
+5131,Canindé,MUNICÍPIO,32
+5132,Monsenhor Tabosa,MUNICÍPIO,32
+3688,Águas da Prata,MUNICÍPIO,31
+3689,Camaragibe,MUNICÍPIO,28
+5133,Novo Oriente,MUNICÍPIO,32
+5134,Santa Rosa da Serra,MUNICÍPIO,24
+5135,Lagoa da Prata,MUNICÍPIO,24
+5136,Perdigão,MUNICÍPIO,24
+5137,Iguatama,MUNICÍPIO,24
+5138,Nova Serrana,MUNICÍPIO,24
+5139,Estrela do Indaiá,MUNICÍPIO,24
+5140,Moema,MUNICÍPIO,24
+3690,Bandeira do Sul,MUNICÍPIO,24
+3691,Vitória Brasil,MUNICÍPIO,31
+5141,Matutina,MUNICÍPIO,24
+5142,Martinho Campos,MUNICÍPIO,24
+5143,Luz,MUNICÍPIO,24
+5144,Leandro Ferreira,MUNICÍPIO,24
+3692,Carvalhópolis,MUNICÍPIO,24
+5145,Dores do Indaiá,MUNICÍPIO,24
+5146,Cedro do Abaeté,MUNICÍPIO,24
+5147,Quartel Geral,MUNICÍPIO,24
+5148,Pompéu,MUNICÍPIO,24
+5149,Pitangui,MUNICÍPIO,24
+5150,Córrego Danta,MUNICÍPIO,24
+5151,Campos Altos,MUNICÍPIO,24
+5152,Bom Despacho,MUNICÍPIO,24
+5153,Bambuí,MUNICÍPIO,24
+3693,Santa Lúcia,MUNICÍPIO,31
+3694,Marilena,MUNICÍPIO,17
+5154,Araújos,MUNICÍPIO,24
+5155,Pentecoste,MUNICÍPIO,32
+3695,Bicas,MUNICÍPIO,24
+3696,Delfinópolis,MUNICÍPIO,24
+3697,Pedranópolis,MUNICÍPIO,31
+5156,Manaíra,MUNICÍPIO,27
+5157,Serra Talhada,MUNICÍPIO,28
+5158,Milhã,MUNICÍPIO,32
+3698,Chácara,MUNICÍPIO,24
+3699,Coronel Pacheco,MUNICÍPIO,24
+3700,Areado,MUNICÍPIO,24
+3701,Cândido Rodrigues,MUNICÍPIO,31
+3702,São José de Ubá,MUNICÍPIO,23
+3703,Santa Ernestina,MUNICÍPIO,31
+3704,Astolfo Dutra,MUNICÍPIO,24
+3705,São Gonçalo do Piauí,MUNICÍPIO,6
+3706,Dumont,MUNICÍPIO,31
+3707,Antônio Prado de Minas,MUNICÍPIO,24
+3708,Campo do Meio,MUNICÍPIO,24
+3709,Franciscópolis,MUNICÍPIO,24
+3710,Cristina,MUNICÍPIO,24
+3711,Pinhão,MUNICÍPIO,17
+3712,Palmital,MUNICÍPIO,17
+3713,Pitanga,MUNICÍPIO,17
+3714,Silva Jardim,MUNICÍPIO,23
+3715,Brejinho,MUNICÍPIO,28
+3716,Indaiabira,MUNICÍPIO,24
+3717,Desterro do Melo,MUNICÍPIO,24
+3718,Ladário,MUNICÍPIO,19
+3719,Águas de São Pedro,MUNICÍPIO,31
+3720,Catiguá,MUNICÍPIO,31
+3721,Turiúba,MUNICÍPIO,31
+3722,Aguanil,MUNICÍPIO,24
+3723,Tenório,MUNICÍPIO,27
+3724,Natividade,MUNICÍPIO,23
+3725,Carmópolis,MUNICÍPIO,20
+3726,Capelinha,MUNICÍPIO,24
+3727,Brodowski,MUNICÍPIO,31
+3728,Buritama,MUNICÍPIO,31
+3729,Lourdes,MUNICÍPIO,31
+3730,Querência do Norte,MUNICÍPIO,17
+3731,Jaci,MUNICÍPIO,31
+3732,Poloni,MUNICÍPIO,31
+5322,Croatá,MUNICÍPIO,32
+5323,Santa Cruz dos Milagres,MUNICÍPIO,6
+3733,Guzolândia,MUNICÍPIO,31
+3734,Ipiguá,MUNICÍPIO,31
+3735,Jaborandi,MUNICÍPIO,31
+3736,Marinópolis,MUNICÍPIO,31
+3737,Treviso,MUNICÍPIO,18
+3738,São João de Iracema,MUNICÍPIO,31
+3739,São Francisco,MUNICÍPIO,31
+3740,Campestre de Goiás,MUNICÍPIO,30
+5324,Cachoeira dos Índios,MUNICÍPIO,27
+5325,Varjão,MUNICÍPIO,30
+5326,Jucurutu,MUNICÍPIO,25
+5327,Açu,MUNICÍPIO,25
+3741,Córrego Fundo,MUNICÍPIO,24
+5328,Paraú,MUNICÍPIO,25
+5329,Triunfo Potiguar,MUNICÍPIO,25
+5330,Pedra Preta,MUNICÍPIO,25
+5331,Valença do Piauí,MUNICÍPIO,6
+3742,Crucilândia,MUNICÍPIO,24
+5332,Santa Teresinha,MUNICÍPIO,27
+5333,Brejo do Cruz,MUNICÍPIO,27
+5334,Belém do Brejo do Cruz,MUNICÍPIO,27
+5335,Lagoa,MUNICÍPIO,27
+5336,Pilões,MUNICÍPIO,25
+3743,Três Fronteiras,MUNICÍPIO,31
+5337,Marizópolis,MUNICÍPIO,27
+5338,Janaúba,MUNICÍPIO,24
+3744,Nova Canaã Paulista,MUNICÍPIO,31
+3745,Abre Campo,MUNICÍPIO,24
+3746,Santa Fé do Sul,MUNICÍPIO,31
+3747,Coxixola,MUNICÍPIO,27
+3748,Santana da Ponte Pensa,MUNICÍPIO,31
+3749,Turmalina,MUNICÍPIO,31
+3750,Alvinópolis,MUNICÍPIO,24
+3751,Riachão,MUNICÍPIO,27
+3752,Itatiaiuçu,MUNICÍPIO,24
+3753,Ibirité,MUNICÍPIO,24
+3754,Barra dos Coqueiros,MUNICÍPIO,20
+3755,Igarapé,MUNICÍPIO,24
+3756,Nossa Senhora de Nazaré,MUNICÍPIO,6
+3757,Mendes,MUNICÍPIO,23
+3856,Cafarnaum,MUNICÍPIO,29
+3758,Alvarenga,MUNICÍPIO,24
+3759,Jaçanã,MUNICÍPIO,25
+3760,Carmésia,MUNICÍPIO,24
+3761,Mantenópolis,MUNICÍPIO,8
+4124,Bonito,MUNICÍPIO,13
+3762,Cantagalo,MUNICÍPIO,24
+3763,Divino das Laranjeiras,MUNICÍPIO,24
+3764,Capitão Andrade,MUNICÍPIO,24
+3765,Pescador,MUNICÍPIO,24
+3766,Cuparaque,MUNICÍPIO,24
+5382,Jaicós,MUNICÍPIO,6
+3767,Fronteira dos Vales,MUNICÍPIO,24
+3768,Camutanga,MUNICÍPIO,28
+5383,Joca Claudino,MUNICÍPIO,27
+5384,Água Comprida,MUNICÍPIO,24
+3769,Álvaro de Carvalho,MUNICÍPIO,31
+3770,São João da Paraúna,MUNICÍPIO,30
+3771,Palminópolis,MUNICÍPIO,30
+3772,Nazário,MUNICÍPIO,30
+3773,Santa Bárbara de Goiás,MUNICÍPIO,30
+3774,Bandeira,MUNICÍPIO,24
+3775,Cachoeira de Pajeú,MUNICÍPIO,24
+3776,Novo Planalto,MUNICÍPIO,30
+3777,Coronel Murta,MUNICÍPIO,24
+3778,Nova Olímpia,MUNICÍPIO,21
+3779,Santo Antônio do Leste,MUNICÍPIO,21
+3780,Engenho Velho,MUNICÍPIO,22
+3781,Piaçabuçu,MUNICÍPIO,16
+3782,Mato Verde,MUNICÍPIO,24
+3785,Itaguaru,MUNICÍPIO,30
+3786,Montes Claros de Goiás,MUNICÍPIO,30
+3787,Jaciara,MUNICÍPIO,21
+3788,Curralinho,MUNICÍPIO,13
+3791,Divisópolis,MUNICÍPIO,24
+3792,Moeda,MUNICÍPIO,24
+3793,Urucânia,MUNICÍPIO,24
+3794,Mesópolis,MUNICÍPIO,31
+4090,Duas Barras,MUNICÍPIO,23
+3795,Maetinga,MUNICÍPIO,29
+3796,Taquaral de Goiás,MUNICÍPIO,30
+3797,Queimados,MUNICÍPIO,23
+3798,Piraí do Norte,MUNICÍPIO,29
+3799,Itapitanga,MUNICÍPIO,29
+3800,Brejões,MUNICÍPIO,29
+3801,Miracema,MUNICÍPIO,23
+3802,Itapetim,MUNICÍPIO,28
+3803,Indiavaí,MUNICÍPIO,21
+3804,Zacarias,MUNICÍPIO,31
+3805,São Vicente Férrer,MUNICÍPIO,28
+3806,Ubarana,MUNICÍPIO,31
+4091,Prata do Piauí,MUNICÍPIO,6
+3807,Novo Brasil,MUNICÍPIO,30
+3808,Candiba,MUNICÍPIO,29
+3809,Amparo,MUNICÍPIO,27
+3810,Barra de Santana,MUNICÍPIO,27
+3811,Urandi,MUNICÍPIO,29
+3812,Coaraci,MUNICÍPIO,29
+3813,Quixaba,MUNICÍPIO,27
+3814,Itamari,MUNICÍPIO,29
+5385,Itatira,MUNICÍPIO,32
+3815,Iuiu,MUNICÍPIO,29
+3816,Lagoa Salgada,MUNICÍPIO,25
+3817,Rio do Antônio,MUNICÍPIO,29
+3818,Damianópolis,MUNICÍPIO,30
+3819,Esteio,MUNICÍPIO,22
+3820,Salinas da Margarida,MUNICÍPIO,29
+3821,Santa Inês,MUNICÍPIO,29
+3822,Lauro de Freitas,MUNICÍPIO,29
+3823,Boninal,MUNICÍPIO,29
+3824,São Cristóvão,MUNICÍPIO,20
+3825,Mendes Pimentel,MUNICÍPIO,24
+3826,Botuporã,MUNICÍPIO,29
+3827,Ibirataia,MUNICÍPIO,29
+3828,Itororó,MUNICÍPIO,29
+3829,Cairu,MUNICÍPIO,29
+5386,Caraúbas,MUNICÍPIO,25
+3830,Itiruçu,MUNICÍPIO,29
+3831,Nova Fátima,MUNICÍPIO,29
+3832,Novo Jardim,MUNICÍPIO,15
+3833,Ipiranga do Norte,MUNICÍPIO,21
+3834,São Miguel das Matas,MUNICÍPIO,29
+3835,Sapucaia,MUNICÍPIO,13
+3836,Bonópolis,MUNICÍPIO,30
+3837,Divinópolis de Goiás,MUNICÍPIO,30
+3838,Nova Nazaré,MUNICÍPIO,21
+3839,Serra Caiada,MUNICÍPIO,25
+3840,Medicilândia,MUNICÍPIO,13
+3841,Cocalinho,MUNICÍPIO,21
+3842,Alagoinha,MUNICÍPIO,27
+3843,Amargosa,MUNICÍPIO,29
+5387,Portalegre,MUNICÍPIO,25
+3844,Aratuípe,MUNICÍPIO,29
+3845,Érico Cardoso,MUNICÍPIO,29
+5388,Assunção do Piauí,MUNICÍPIO,6
+3846,Jiquiriçá,MUNICÍPIO,29
+3847,Lajedo do Tabocal,MUNICÍPIO,29
+5389,Magalhães de Almeida,MUNICÍPIO,7
+3848,Milagres,MUNICÍPIO,29
+5390,Bom Princípio do Piauí,MUNICÍPIO,6
+3849,Mutuípe,MUNICÍPIO,29
+3850,Nazaré,MUNICÍPIO,29
+3851,Salvador,MUNICÍPIO,29
+3852,Muritiba,MUNICÍPIO,29
+3853,Saubara,MUNICÍPIO,29
+3912,Marechal Deodoro,MUNICÍPIO,16
+3854,Varzedo,MUNICÍPIO,29
+3855,Utinga,MUNICÍPIO,29
+3857,Jerônimo Monteiro,MUNICÍPIO,8
+3913,Pindoba,MUNICÍPIO,16
+3858,Conceição do Almeida,MUNICÍPIO,29
+3859,Nova Ibiá,MUNICÍPIO,29
+3860,Nova Itarana,MUNICÍPIO,29
+3861,Brejolândia,MUNICÍPIO,29
+3862,Candeias,MUNICÍPIO,29
+3863,Duas Estradas,MUNICÍPIO,27
+3864,Catolândia,MUNICÍPIO,29
+3865,Lajedinho,MUNICÍPIO,29
+5391,Frecheirinha,MUNICÍPIO,32
+3866,Wagner,MUNICÍPIO,29
+5396,Uruburetama,MUNICÍPIO,32
+3867,Riachão do Jacuípe,MUNICÍPIO,29
+3868,Campo Grande,MUNICÍPIO,16
+3869,Mulungu do Morro,MUNICÍPIO,29
+3870,Roteiro,MUNICÍPIO,16
+3871,Santa Luzia D'Oeste,MUNICÍPIO,9
+3872,Tapiramutá,MUNICÍPIO,29
+3873,Maruim,MUNICÍPIO,20
+3874,Várzea da Roça,MUNICÍPIO,29
+5397,Cocal dos Alves,MUNICÍPIO,6
+3875,Miravânia,MUNICÍPIO,24
+3876,Piraquara,MUNICÍPIO,17
+3877,Várzea Nova,MUNICÍPIO,29
+3878,Quatro Barras,MUNICÍPIO,17
+3879,Lagoa d'Anta,MUNICÍPIO,25
+3880,Barro Alto,MUNICÍPIO,29
+3881,Frei Martinho,MUNICÍPIO,27
+3882,Jundiá,MUNICÍPIO,25
+3883,Barra do Mendes,MUNICÍPIO,29
+3884,Canarana,MUNICÍPIO,29
+3885,Ipupiara,MUNICÍPIO,29
+3886,Cristinápolis,MUNICÍPIO,20
+3887,Rio da Conceição,MUNICÍPIO,15
+3888,Várzea do Poço,MUNICÍPIO,29
+3889,Ipueiras,MUNICÍPIO,15
+3890,Pindorama do Tocantins,MUNICÍPIO,15
+3891,Silvanópolis,MUNICÍPIO,15
+3892,Santa Rita do Tocantins,MUNICÍPIO,15
+3893,Caém,MUNICÍPIO,29
+3894,Macaíba,MUNICÍPIO,25
+3895,Crisópolis,MUNICÍPIO,29
+3896,Jesuânia,MUNICÍPIO,24
+3897,Lambari,MUNICÍPIO,24
+3898,Ribeira do Amparo,MUNICÍPIO,29
+3899,Olho d'Água Grande,MUNICÍPIO,16
+3900,Fátima,MUNICÍPIO,15
+3901,Filadélfia,MUNICÍPIO,29
+3902,Antônio Gonçalves,MUNICÍPIO,29
+3903,Nipoã,MUNICÍPIO,31
+5398,Forquilha,MUNICÍPIO,32
+3904,Quixabeira,MUNICÍPIO,29
+5399,Rafael Godeiro,MUNICÍPIO,25
+3905,Inconfidentes,MUNICÍPIO,24
+3906,São Pedro,MUNICÍPIO,25
+3907,Gracho Cardoso,MUNICÍPIO,20
+3908,Carira,MUNICÍPIO,20
+3909,Porto Nacional,MUNICÍPIO,15
+3910,Sobradinho,MUNICÍPIO,29
+3911,São Gonçalo do Gurguéia,MUNICÍPIO,6
+3914,São Sebastião,MUNICÍPIO,16
+3915,Taquarana,MUNICÍPIO,16
+3916,Traipu,MUNICÍPIO,16
+5339,Delta,MUNICÍPIO,24
+3917,Aquidabã,MUNICÍPIO,20
+5340,Verdelândia,MUNICÍPIO,24
+5341,Itacarambi,MUNICÍPIO,24
+5342,Jericó,MUNICÍPIO,27
+5343,Cônego Marinho,MUNICÍPIO,24
+5344,Pedras de Maria da Cruz,MUNICÍPIO,24
+3918,São José do Mantimento,MUNICÍPIO,24
+5345,Lucrécia,MUNICÍPIO,25
+5346,Brasília de Minas,MUNICÍPIO,24
+5347,Japonvar,MUNICÍPIO,24
+5348,Pintópolis,MUNICÍPIO,24
+5349,Urucuia,MUNICÍPIO,24
+5350,Arinos,MUNICÍPIO,24
+3919,Remanso,MUNICÍPIO,29
+3920,Monte Alegre do Piauí,MUNICÍPIO,6
+5400,Luís Gomes,MUNICÍPIO,25
+3921,Palmeira dos Índios,MUNICÍPIO,16
+5401,Pacujá,MUNICÍPIO,32
+3922,São José da Tapera,MUNICÍPIO,16
+3923,Santana do Seridó,MUNICÍPIO,25
+3924,Redenção do Gurguéia,MUNICÍPIO,6
+3925,Várzea Branca,MUNICÍPIO,6
+3926,Coivaras,MUNICÍPIO,6
+3927,Água Branca,MUNICÍPIO,16
+3928,Inhapi,MUNICÍPIO,16
+3929,Ouro Velho,MUNICÍPIO,27
+3930,Pariconha,MUNICÍPIO,16
+3931,Paulo Jacinto,MUNICÍPIO,16
+3932,Maravilha,MUNICÍPIO,16
+5402,Reriutaba,MUNICÍPIO,32
+3933,Jatobá,MUNICÍPIO,28
+3934,Lagoa do Ouro,MUNICÍPIO,28
+3935,Terezinha,MUNICÍPIO,28
+3936,Maragogi,MUNICÍPIO,16
+3937,Araruna,MUNICÍPIO,27
+3938,Porto Calvo,MUNICÍPIO,16
+3939,Brejão,MUNICÍPIO,28
+3940,Camocim de São Félix,MUNICÍPIO,28
+3941,Correntes,MUNICÍPIO,28
+3942,Logradouro,MUNICÍPIO,27
+3943,Novo Lino,MUNICÍPIO,16
+3944,Areia Branca,MUNICÍPIO,20
+3945,Barra de São Miguel,MUNICÍPIO,27
+3946,Goianinha,MUNICÍPIO,25
+3947,Caraúbas,MUNICÍPIO,27
+3948,Congo,MUNICÍPIO,27
+3949,Japi,MUNICÍPIO,25
+3950,Riacho de Santo Antônio,MUNICÍPIO,27
+3951,Guarará,MUNICÍPIO,24
+3952,Caaporã,MUNICÍPIO,27
+3953,Desterro,MUNICÍPIO,27
+3954,Sarzedo,MUNICÍPIO,24
+3955,Senador Alexandre Costa,MUNICÍPIO,7
+3956,Algodão de Jandaíra,MUNICÍPIO,27
+3957,Araçagi,MUNICÍPIO,27
+3958,Ipueira,MUNICÍPIO,25
+3959,Ouro Branco,MUNICÍPIO,25
+3965,Itabaianinha,MUNICÍPIO,20
+3960,São João do Sabugi,MUNICÍPIO,25
+3961,Cuité,MUNICÍPIO,27
+3962,Ribeirão Pires,MUNICÍPIO,31
+3963,Baía Formosa,MUNICÍPIO,25
+3979,Dom Pedro,MUNICÍPIO,7
+3964,Canguaretama,MUNICÍPIO,25
+3966,Bento Fernandes,MUNICÍPIO,25
+3967,Graça Aranha,MUNICÍPIO,7
+3968,Santa Filomena do Maranhão,MUNICÍPIO,7
+3969,São Domingos do Maranhão,MUNICÍPIO,7
+3970,Ceará-Mirim,MUNICÍPIO,25
+3971,Itaguatins,MUNICÍPIO,15
+3972,São Sebastião do Tocantins,MUNICÍPIO,15
+3973,Jenipapo dos Vieiras,MUNICÍPIO,7
+3974,Presidente Dutra,MUNICÍPIO,7
+3975,São Raimundo do Doca Bezerra,MUNICÍPIO,7
+3976,Buenos Aires,MUNICÍPIO,28
+3977,Simões,MUNICÍPIO,6
+3978,Teresina,MUNICÍPIO,6
+3980,Resplendor,MUNICÍPIO,24
+5159,Horizonte,MUNICÍPIO,32
+3981,São José dos Basílios,MUNICÍPIO,7
+3982,São Pedro da Água Branca,MUNICÍPIO,7
+5160,Nazarezinho,MUNICÍPIO,27
+5161,Campos Sales,MUNICÍPIO,32
+3983,São Roberto,MUNICÍPIO,7
+5162,Quixeré,MUNICÍPIO,32
+3984,Timon,MUNICÍPIO,7
+3994,Nova Aliança do Ivaí,MUNICÍPIO,17
+3985,União,MUNICÍPIO,6
+3986,Bernardo do Mearim,MUNICÍPIO,7
+3987,Miguel Alves,MUNICÍPIO,6
+3988,Nossa Senhora dos Remédios,MUNICÍPIO,6
+3989,Aldeias Altas,MUNICÍPIO,7
+3990,Coelho Neto,MUNICÍPIO,7
+3995,Milagres do Maranhão,MUNICÍPIO,7
+3991,Coroatá,MUNICÍPIO,7
+3996,Boa Vista,MUNICÍPIO,27
+3992,Pio XII,MUNICÍPIO,7
+5163,Granjeiro,MUNICÍPIO,32
+3993,Solânea,MUNICÍPIO,27
+3997,Breu Branco,MUNICÍPIO,13
+3998,Igarapé do Meio,MUNICÍPIO,7
+5164,Quixelô,MUNICÍPIO,32
+3999,Placas,MUNICÍPIO,13
+4000,Areial,MUNICÍPIO,27
+4002,Massaranduba,MUNICÍPIO,27
+4001,Anajatuba,MUNICÍPIO,7
+4003,São Bento,MUNICÍPIO,7
+4004,Barcarena,MUNICÍPIO,13
+4005,Santa Rita,MUNICÍPIO,7
+4006,Belterra,MUNICÍPIO,13
+4007,Bacurituba,MUNICÍPIO,7
+4008,Paço do Lumiar,MUNICÍPIO,7
+4009,Abaetetuba,MUNICÍPIO,13
+4010,Tomé-Açu,MUNICÍPIO,13
+4017,Pitimbu,MUNICÍPIO,27
+4011,Rondon,MUNICÍPIO,17
+4012,Tailândia,MUNICÍPIO,13
+4013,Concórdia do Pará,MUNICÍPIO,13
+4014,Alto Alegre do Maranhão,MUNICÍPIO,7
+4015,Juruti,MUNICÍPIO,13
+4016,São Domingos do Capim,MUNICÍPIO,13
+4018,Alto Jequitibá,MUNICÍPIO,24
+4019,Carlos Chagas,MUNICÍPIO,24
+5165,Cascalho Rico,MUNICÍPIO,24
+4020,Bequimão,MUNICÍPIO,7
+5166,Grupiara,MUNICÍPIO,24
+4021,Boa Vista do Gurupi,MUNICÍPIO,7
+4022,Januário Cicco,MUNICÍPIO,25
+4023,Ibatiba,MUNICÍPIO,8
+4024,Trizidela do Vale,MUNICÍPIO,7
+4025,Prata,MUNICÍPIO,27
+4026,Campos dos Goytacazes,MUNICÍPIO,23
+4027,Central do Maranhão,MUNICÍPIO,7
+4028,Junco do Maranhão,MUNICÍPIO,7
+4029,Pureza,MUNICÍPIO,25
+4030,Atalanta,MUNICÍPIO,18
+4031,Barcelona,MUNICÍPIO,25
+4032,Bujaru,MUNICÍPIO,13
+4033,Bacabeira,MUNICÍPIO,7
+4034,Carutapera,MUNICÍPIO,7
+4035,Santa Izabel do Pará,MUNICÍPIO,13
+4036,Lagoa Seca,MUNICÍPIO,27
+4037,Albertina,MUNICÍPIO,24
+4038,Joca Marques,MUNICÍPIO,6
+4039,Sulina,MUNICÍPIO,17
+4040,Santa Bárbara do Pará,MUNICÍPIO,13
+5167,Frutuoso Gomes,MUNICÍPIO,25
+4041,Pau D'Arco do Piauí,MUNICÍPIO,6
+4042,Remígio,MUNICÍPIO,27
+4043,Itaúna do Sul,MUNICÍPIO,17
+4044,Guaporema,MUNICÍPIO,17
+4045,Santarém Novo,MUNICÍPIO,13
+5168,Serrinha dos Pintos,MUNICÍPIO,25
+5169,Buritis,MUNICÍPIO,24
+5170,Sítio d'Abadia,MUNICÍPIO,30
+4046,Vigia,MUNICÍPIO,13
+4047,Piúma,MUNICÍPIO,8
+4048,Miranda do Norte,MUNICÍPIO,7
+4049,Passagem,MUNICÍPIO,27
+4050,Mirangaba,MUNICÍPIO,29
+4051,Quebrangulo,MUNICÍPIO,16
+4052,Arara,MUNICÍPIO,27
+5171,Valparaíso de Goiás,MUNICÍPIO,30
+5172,Divinópolis,MUNICÍPIO,24
+4053,Cruzeta,MUNICÍPIO,25
+4054,Cunhataí,MUNICÍPIO,18
+4055,Salete,MUNICÍPIO,18
+4056,São Geraldo,MUNICÍPIO,24
+4057,Aracitaba,MUNICÍPIO,24
+5173,Fernando Pedroza,MUNICÍPIO,25
+5174,Redenção,MUNICÍPIO,32
+4058,Arandu,MUNICÍPIO,31
+5175,Bodó,MUNICÍPIO,25
+4059,Ibititá,MUNICÍPIO,29
+5176,Lajes,MUNICÍPIO,25
+5177,Jaguaruana,MUNICÍPIO,32
+4060,Campo Limpo Paulista,MUNICÍPIO,31
+4061,Parisi,MUNICÍPIO,31
+4062,Santa Salete,MUNICÍPIO,31
+4063,Anísio de Abreu,MUNICÍPIO,6
+4064,Brejo,MUNICÍPIO,7
+4065,Pastos Bons,MUNICÍPIO,7
+4066,Piedade de Ponte Nova,MUNICÍPIO,24
+4071,Batalha,MUNICÍPIO,16
+4067,Dirce Reis,MUNICÍPIO,31
+5178,São José de Espinharas,MUNICÍPIO,27
+4068,Valente,MUNICÍPIO,29
+4069,São José do Peixe,MUNICÍPIO,6
+4070,Presidente Vargas,MUNICÍPIO,7
+5179,João Dias,MUNICÍPIO,25
+4075,Moita Bonita,MUNICÍPIO,20
+4076,Machados,MUNICÍPIO,28
+4077,São Domingos do Cariri,MUNICÍPIO,27
+5180,Brejo dos Santos,MUNICÍPIO,27
+4078,São Sebastião do Anta,MUNICÍPIO,24
+4079,Senador José Bento,MUNICÍPIO,24
+4080,Palmelo,MUNICÍPIO,30
+5181,Alexandria,MUNICÍPIO,25
+4081,Lago do Junco,MUNICÍPIO,7
+4082,Coronel Ezequiel,MUNICÍPIO,25
+4083,Equador,MUNICÍPIO,25
+4084,Novo Horizonte,MUNICÍPIO,29
+5182,Santa Cruz,MUNICÍPIO,27
+4085,Jardim Olinda,MUNICÍPIO,17
+4086,Lagoa Nova,MUNICÍPIO,25
+4087,Santa Branca,MUNICÍPIO,31
+4088,Vicentina,MUNICÍPIO,19
+4089,Zabelê,MUNICÍPIO,27
+4092,Carpina,MUNICÍPIO,28
+4559,Juarez Távora,MUNICÍPIO,27
+4093,Natuba,MUNICÍPIO,27
+4094,Pedra Grande,MUNICÍPIO,25
+4095,Teresópolis,MUNICÍPIO,23
+4096,Cabedelo,MUNICÍPIO,27
+4120,Anamã,MUNICÍPIO,11
+4097,São José de Ribamar,MUNICÍPIO,7
+4098,Caturité,MUNICÍPIO,27
+4099,Santa Maria,MUNICÍPIO,25
+4100,Rio Bonito,MUNICÍPIO,23
+4101,Barra D'Alcântara,MUNICÍPIO,6
+4102,Raposa,MUNICÍPIO,7
+4103,Paulista,MUNICÍPIO,28
+4104,Poço Branco,MUNICÍPIO,25
+4105,Boqueirão,MUNICÍPIO,27
+4560,Mataraca,MUNICÍPIO,27
+4106,Dias d'Ávila,MUNICÍPIO,29
+4561,Maturéia,MUNICÍPIO,27
+4107,Natal,MUNICÍPIO,25
+4108,Ministro Andreazza,MUNICÍPIO,9
+4109,Parelhas,MUNICÍPIO,25
+4110,Curuçá,MUNICÍPIO,13
+4111,Salinópolis,MUNICÍPIO,13
+4576,Pirpirituba,MUNICÍPIO,27
+4112,Aparecida d'Oeste,MUNICÍPIO,31
+4113,Fernando de Noronha,MUNICÍPIO,28
+4114,Cacaulândia,MUNICÍPIO,9
+4115,Monte Negro,MUNICÍPIO,9
+4116,Primavera de Rondônia,MUNICÍPIO,9
+4117,Vale do Paraíso,MUNICÍPIO,9
+4118,Rio do Fogo,MUNICÍPIO,25
+4119,Malhador,MUNICÍPIO,20
+4122,Porto Acre,MUNICÍPIO,10
+4123,Bom Jesus do Tocantins,MUNICÍPIO,13
+4125,Jacundá,MUNICÍPIO,13
+4126,Melgaço,MUNICÍPIO,13
+4134,Marituba,MUNICÍPIO,13
+4127,Ananindeua,MUNICÍPIO,13
+4128,Belém,MUNICÍPIO,13
+4129,Brejo Grande do Araguaia,MUNICÍPIO,13
+4130,Cumaru do Norte,MUNICÍPIO,13
+4131,Itupiranga,MUNICÍPIO,13
+4132,Carrasco Bonito,MUNICÍPIO,15
+4133,Nova Ipixuna,MUNICÍPIO,13
+4135,Peixe-Boi,MUNICÍPIO,13
+4150,Avelinópolis,MUNICÍPIO,30
+4136,Santa Maria do Pará,MUNICÍPIO,13
+4137,Salvaterra,MUNICÍPIO,13
+4138,São João de Pirabas,MUNICÍPIO,13
+4139,Santo Antônio do Tauá,MUNICÍPIO,13
+4140,Aguiarnópolis,MUNICÍPIO,15
+4172,Italva,MUNICÍPIO,23
+4141,Augustinópolis,MUNICÍPIO,15
+4142,Buriti do Tocantins,MUNICÍPIO,15
+4233,Ichu,MUNICÍPIO,29
+4143,Esperantina,MUNICÍPIO,15
+4332,Fartura do Piauí,MUNICÍPIO,6
+4144,Oliveira de Fátima,MUNICÍPIO,15
+4145,Escada,MUNICÍPIO,28
+4146,Amorinópolis,MUNICÍPIO,30
+4147,Acreúna,MUNICÍPIO,30
+4148,Cachoeira de Goiás,MUNICÍPIO,30
+4149,Monte Carmelo,MUNICÍPIO,24
+4348,Porto,MUNICÍPIO,6
+4151,Americano do Brasil,MUNICÍPIO,30
+4152,Baliza,MUNICÍPIO,30
+4168,João Neiva,MUNICÍPIO,8
+4153,Adelândia,MUNICÍPIO,30
+4154,Doverlândia,MUNICÍPIO,30
+4155,Guarinos,MUNICÍPIO,30
+4156,Itapuranga,MUNICÍPIO,30
+4157,Jaupaci,MUNICÍPIO,30
+4158,Itajá,MUNICÍPIO,30
+4159,Itarumã,MUNICÍPIO,30
+4169,Bom Jardim,MUNICÍPIO,23
+4170,Apiacá,MUNICÍPIO,8
+4160,São Simão,MUNICÍPIO,30
+4161,Guiricema,MUNICÍPIO,24
+4162,Turvânia,MUNICÍPIO,30
+4163,Morro Agudo de Goiás,MUNICÍPIO,30
+4164,Teresina de Goiás,MUNICÍPIO,30
+4165,Pancas,MUNICÍPIO,8
+4166,Marilândia,MUNICÍPIO,8
+4167,Lajinha,MUNICÍPIO,24
+4173,Belford Roxo,MUNICÍPIO,23
+4174,Maricá,MUNICÍPIO,23
+4175,Camapuã,MUNICÍPIO,19
+4176,Cruz das Almas,MUNICÍPIO,29
+4177,Japeri,MUNICÍPIO,23
+4178,Barra do Garças,MUNICÍPIO,21
+4179,Nova Santa Helena,MUNICÍPIO,21
+4180,São Roque do Canaã,MUNICÍPIO,8
+4181,Magé,MUNICÍPIO,23
+4182,Areal,MUNICÍPIO,23
+4183,Balneário Arroio do Silva,MUNICÍPIO,18
+4184,Balneário Gaivota,MUNICÍPIO,18
+4185,Cordeiro,MUNICÍPIO,23
+4186,Cachoeiras de Macacu,MUNICÍPIO,23
+4187,Pinheiral,MUNICÍPIO,23
+4188,Venda Nova do Imigrante,MUNICÍPIO,8
+4189,Seropédica,MUNICÍPIO,23
+4190,Igarassu,MUNICÍPIO,28
+4191,Tuparetama,MUNICÍPIO,28
+4192,Balneário Rincão,MUNICÍPIO,18
+4193,Abdon Batista,MUNICÍPIO,18
+4194,Herval d'Oeste,MUNICÍPIO,18
+4195,Águas de Chapecó,MUNICÍPIO,18
+4196,Águas Frias,MUNICÍPIO,18
+4197,Alto Bela Vista,MUNICÍPIO,18
+4198,Arabutã,MUNICÍPIO,18
+4199,Armazém,MUNICÍPIO,18
+4200,Caldas Brandão,MUNICÍPIO,27
+4201,Canoinhas,MUNICÍPIO,18
+4202,Arvoredo,MUNICÍPIO,18
+4203,Aurora,MUNICÍPIO,18
+4204,Bela Vista do Toldo,MUNICÍPIO,18
+4205,Bocaina do Sul,MUNICÍPIO,18
+4206,Bom Jesus do Oeste,MUNICÍPIO,18
+4207,Caxambu do Sul,MUNICÍPIO,18
+4208,Chapecó,MUNICÍPIO,18
+4209,Criciúma,MUNICÍPIO,18
+4210,Lacerdópolis,MUNICÍPIO,18
+4211,Laurentino,MUNICÍPIO,18
+4212,Jardinópolis,MUNICÍPIO,18
+4213,Nova Erechim,MUNICÍPIO,18
+4214,Piratuba,MUNICÍPIO,18
+4215,Presidente Castello Branco,MUNICÍPIO,18
+4216,Rio Rufino,MUNICÍPIO,18
+4217,Tigrinhos,MUNICÍPIO,18
+4218,Witmarsum,MUNICÍPIO,18
+4219,Tombos,MUNICÍPIO,24
+4220,Américo Brasiliense,MUNICÍPIO,31
+4221,Turmalina,MUNICÍPIO,24
+4222,Turvolândia,MUNICÍPIO,24
+4223,Cruzeiro do Iguaçu,MUNICÍPIO,17
+4224,Cruzeiro do Oeste,MUNICÍPIO,17
+4225,Cruzeiro do Sul,MUNICÍPIO,17
+4226,Cruz Machado,MUNICÍPIO,17
+4227,Curitiba,MUNICÍPIO,17
+4228,Curiúva,MUNICÍPIO,17
+4229,Dois Vizinhos,MUNICÍPIO,17
+4583,São João do Cariri,MUNICÍPIO,27
+4584,Cumari,MUNICÍPIO,30
+4230,Aspásia,MUNICÍPIO,31
+4231,Biritinga,MUNICÍPIO,29
+4232,Pitangueiras,MUNICÍPIO,17
+4234,Ingá,MUNICÍPIO,27
+4235,Almadina,MUNICÍPIO,29
+4236,Arapeí,MUNICÍPIO,31
+4237,Barrocas,MUNICÍPIO,29
+4238,São Domingos do Norte,MUNICÍPIO,8
+4239,Arujá,MUNICÍPIO,31
+4240,Abaré,MUNICÍPIO,29
+4241,Bady Bassitt,MUNICÍPIO,31
+4242,Balbinos,MUNICÍPIO,31
+4243,Antas,MUNICÍPIO,29
+4244,Alagoinhas,MUNICÍPIO,29
+4245,Bilac,MUNICÍPIO,31
+4246,Birigui,MUNICÍPIO,31
+4247,Buritirama,MUNICÍPIO,29
+4248,Bálsamo,MUNICÍPIO,31
+4249,Barbosa,MUNICÍPIO,31
+4250,Barueri,MUNICÍPIO,31
+4251,Alcobaça,MUNICÍPIO,29
+4252,Conceição da Feira,MUNICÍPIO,29
+4253,Elísio Medrado,MUNICÍPIO,29
+4254,Bom Jesus dos Perdões,MUNICÍPIO,31
+4255,Brejo Alegre,MUNICÍPIO,31
+4256,Amélia Rodrigues,MUNICÍPIO,29
+4257,Apuarema,MUNICÍPIO,29
+4258,Antônio Cardoso,MUNICÍPIO,29
+4259,Anguera,MUNICÍPIO,29
+4260,Pinhais,MUNICÍPIO,17
+4261,Pinhalão,MUNICÍPIO,17
+4262,Pinhal de São Bento,MUNICÍPIO,17
+4263,Piraí do Sul,MUNICÍPIO,17
+4264,Aramari,MUNICÍPIO,29
+4265,Canápolis,MUNICÍPIO,29
+4266,Araci,MUNICÍPIO,29
+4267,Baixa Grande,MUNICÍPIO,29
+4268,Boquira,MUNICÍPIO,29
+4269,Casa Nova,MUNICÍPIO,29
+4270,Laranjeiras,MUNICÍPIO,20
+4271,Buerarema,MUNICÍPIO,29
+4272,Catu,MUNICÍPIO,29
+4273,Nossa Senhora de Lourdes,MUNICÍPIO,20
+4274,Cipó,MUNICÍPIO,29
+4275,Governador Mangabeira,MUNICÍPIO,29
+4276,Central,MUNICÍPIO,29
+4277,Estiva Gerbi,MUNICÍPIO,31
+4278,Caatiba,MUNICÍPIO,29
+4279,Irajuba,MUNICÍPIO,29
+4280,Ipiaú,MUNICÍPIO,29
+4281,Itagibá,MUNICÍPIO,29
+4282,Gongogi,MUNICÍPIO,29
+4283,Corrente,MUNICÍPIO,6
+4284,Ibicaraí,MUNICÍPIO,29
+4285,Itajuípe,MUNICÍPIO,29
+4286,Cristalândia do Piauí,MUNICÍPIO,6
+4287,Guanambi,MUNICÍPIO,29
+4288,Igaporã,MUNICÍPIO,29
+4289,Dom Macedo Costa,MUNICÍPIO,29
+4290,Itacaré,MUNICÍPIO,29
+4291,Itagi,MUNICÍPIO,29
+4292,Dário Meira,MUNICÍPIO,29
+4293,Cordeirópolis,MUNICÍPIO,31
+4294,Curralinhos,MUNICÍPIO,6
+4295,Cubatão,MUNICÍPIO,31
+4296,Lamarão,MUNICÍPIO,29
+4297,Diadema,MUNICÍPIO,31
+4298,Lapão,MUNICÍPIO,29
+4299,Gália,MUNICÍPIO,31
+4300,General Salgado,MUNICÍPIO,31
+4301,Guarani d'Oeste,MUNICÍPIO,31
+4302,Ibaté,MUNICÍPIO,31
+4303,Ilha Solteira,MUNICÍPIO,31
+4304,Itapetininga,MUNICÍPIO,31
+4305,Itapirapuã Paulista,MUNICÍPIO,31
+4306,Itararé,MUNICÍPIO,31
+4307,Osasco,MUNICÍPIO,31
+4308,Paranapuã,MUNICÍPIO,31
+4309,Pinhalzinho,MUNICÍPIO,31
+4310,Rancharia,MUNICÍPIO,31
+4311,Santa Clara d'Oeste,MUNICÍPIO,31
+4312,Presidente Dutra,MUNICÍPIO,29
+4313,Barra de Santo Antônio,MUNICÍPIO,16
+4314,Sales,MUNICÍPIO,31
+4315,Francinópolis,MUNICÍPIO,6
+4316,Sebastianópolis do Sul,MUNICÍPIO,31
+4317,Brejo Grande,MUNICÍPIO,20
+4318,Serrana,MUNICÍPIO,31
+4319,Severínia,MUNICÍPIO,31
+4320,Taiaçu,MUNICÍPIO,31
+4321,Tarabai,MUNICÍPIO,31
+4322,Bento Gonçalves,MUNICÍPIO,22
+4323,Bom Princípio,MUNICÍPIO,22
+5351,Doutor Severiano,MUNICÍPIO,25
+4324,Bom Retiro do Sul,MUNICÍPIO,22
+4325,Camaquã,MUNICÍPIO,22
+4326,Mampituba,MUNICÍPIO,22
+5352,Bonito de Minas,MUNICÍPIO,24
+4327,Canto do Buriti,MUNICÍPIO,6
+5353,Januária,MUNICÍPIO,24
+5354,Monsenhor Hipólito,MUNICÍPIO,6
+4328,Capitão Gervásio Oliveira,MUNICÍPIO,6
+5355,Vera Mendes,MUNICÍPIO,6
+5356,Oeiras,MUNICÍPIO,6
+5357,Isaías Coelho,MUNICÍPIO,6
+4329,Caracol,MUNICÍPIO,6
+4330,Coronel José Dias,MUNICÍPIO,6
+4331,Curimatá,MUNICÍPIO,6
+4333,Colônia do Gurguéia,MUNICÍPIO,6
+4334,Pinhal,MUNICÍPIO,22
+4335,Eliseu Martins,MUNICÍPIO,6
+4336,Floriano,MUNICÍPIO,6
+4337,Júlio Borges,MUNICÍPIO,6
+4338,Elesbão Veloso,MUNICÍPIO,6
+4339,Lagoa do Barro do Piauí,MUNICÍPIO,6
+4340,Luzilândia,MUNICÍPIO,6
+4341,Marcos Parente,MUNICÍPIO,6
+4342,Mariano Moro,MUNICÍPIO,22
+4343,Jerumenha,MUNICÍPIO,6
+4344,Lagoa do Piauí,MUNICÍPIO,6
+4345,Cerro Grande,MUNICÍPIO,22
+5358,Bela Vista do Piauí,MUNICÍPIO,6
+4346,Nazária,MUNICÍPIO,6
+4347,Monsenhor Gil,MUNICÍPIO,6
+4349,São Lourenço do Piauí,MUNICÍPIO,6
+4363,Pinto Bandeira,MUNICÍPIO,22
+4350,Fagundes Varela,MUNICÍPIO,22
+4351,Harmonia,MUNICÍPIO,22
+5359,Sussuapara,MUNICÍPIO,6
+5360,Ouricuri,MUNICÍPIO,28
+4352,Itaara,MUNICÍPIO,22
+4353,Ivorá,MUNICÍPIO,22
+4354,Lajeado,MUNICÍPIO,22
+4355,Lajeado do Bugre,MUNICÍPIO,22
+4356,São Miguel do Gostoso,MUNICÍPIO,25
+4357,Maquiné,MUNICÍPIO,22
+4358,Amapá do Maranhão,MUNICÍPIO,7
+4359,Sapiranga,MUNICÍPIO,22
+4360,Axixá,MUNICÍPIO,7
+4361,Terra de Areia,MUNICÍPIO,22
+4362,Bela Vista do Maranhão,MUNICÍPIO,7
+4364,São José do Sul,MUNICÍPIO,22
+4395,Chã Preta,MUNICÍPIO,16
+4365,Santo Antônio da Patrulha,MUNICÍPIO,22
+4366,Sede Nova,MUNICÍPIO,22
+4367,Sapé,MUNICÍPIO,27
+4368,Cedral,MUNICÍPIO,7
+4369,Governador Luiz Rocha,MUNICÍPIO,7
+4370,Lago dos Rodrigues,MUNICÍPIO,7
+4371,Olinda Nova do Maranhão,MUNICÍPIO,7
+4372,Penalva,MUNICÍPIO,7
+4373,Campo Alegre,MUNICÍPIO,16
+4374,Paulo Ramos,MUNICÍPIO,7
+4375,Coqueiro Seco,MUNICÍPIO,16
+4376,Poção de Pedras,MUNICÍPIO,7
+4377,Maribondo,MUNICÍPIO,16
+4378,Santa Quitéria do Maranhão,MUNICÍPIO,7
+4379,Minador do Negrão,MUNICÍPIO,16
+4380,Olivença,MUNICÍPIO,16
+4381,Morros,MUNICÍPIO,7
+4382,São Benedito do Rio Preto,MUNICÍPIO,7
+4383,Paraibano,MUNICÍPIO,7
+4384,São João dos Patos,MUNICÍPIO,7
+4385,Girau do Ponciano,MUNICÍPIO,16
+4386,Junqueiro,MUNICÍPIO,16
+4387,Craíbas,MUNICÍPIO,16
+4388,São Paulo do Potengi,MUNICÍPIO,25
+4389,Cacimbinhas,MUNICÍPIO,16
+4390,Dois Riachos,MUNICÍPIO,16
+4391,Estrela de Alagoas,MUNICÍPIO,16
+4392,Limoeiro de Anadia,MUNICÍPIO,16
+4393,Santana do Ipanema,MUNICÍPIO,16
+4394,Coité do Nóia,MUNICÍPIO,16
+4396,Jequiá da Praia,MUNICÍPIO,16
+4478,Jaqueira,MUNICÍPIO,28
+4397,Jundiá,MUNICÍPIO,16
+4398,Matriz de Camaragibe,MUNICÍPIO,16
+4399,Coruripe,MUNICÍPIO,16
+4400,Branquinha,MUNICÍPIO,16
+4479,Jurema,MUNICÍPIO,28
+4401,Ibateguara,MUNICÍPIO,16
+4402,Colônia Leopoldina,MUNICÍPIO,16
+4403,Aracaju,MUNICÍPIO,20
+4404,Joaquim Gomes,MUNICÍPIO,16
+4405,Flexeiras,MUNICÍPIO,16
+4406,Maceió,MUNICÍPIO,16
+4407,Porto Real do Colégio,MUNICÍPIO,16
+4408,Ouro Branco,MUNICÍPIO,16
+4409,Poço das Trincheiras,MUNICÍPIO,16
+4410,Viçosa,MUNICÍPIO,16
+4411,Pedra Mole,MUNICÍPIO,20
+4412,Penedo,MUNICÍPIO,16
+4480,Lagoa de Itaenga,MUNICÍPIO,28
+4413,União dos Palmares,MUNICÍPIO,16
+4414,Porto de Pedras,MUNICÍPIO,16
+4415,São Luís do Quitunde,MUNICÍPIO,16
+4416,Passo de Camaragibe,MUNICÍPIO,16
+4417,Campo do Brito,MUNICÍPIO,20
+4418,Cumbe,MUNICÍPIO,20
+4419,Divina Pastora,MUNICÍPIO,20
+4420,Itabaiana,MUNICÍPIO,20
+4421,Japaratuba,MUNICÍPIO,20
+4422,Estância,MUNICÍPIO,20
+4423,São Francisco,MUNICÍPIO,20
+4424,Feira Nova,MUNICÍPIO,20
+4425,Ilha das Flores,MUNICÍPIO,20
+4426,Indiaroba,MUNICÍPIO,20
+4427,Tangará,MUNICÍPIO,25
+4428,Itabi,MUNICÍPIO,20
+4429,Tenente Laurentino Cruz,MUNICÍPIO,25
+4430,Japoatã,MUNICÍPIO,20
+4431,Rosário do Catete,MUNICÍPIO,20
+4432,Macambira,MUNICÍPIO,20
+4433,Amaraji,MUNICÍPIO,28
+4434,Muribeca,MUNICÍPIO,20
+4435,Neópolis,MUNICÍPIO,20
+5361,Campo Limpo de Goiás,MUNICÍPIO,30
+4436,Nossa Senhora Aparecida,MUNICÍPIO,20
+4437,Nossa Senhora do Socorro,MUNICÍPIO,20
+4438,Pacatuba,MUNICÍPIO,20
+4439,Pinhão,MUNICÍPIO,20
+5362,Santo Inácio do Piauí,MUNICÍPIO,6
+4440,Riachão do Dantas,MUNICÍPIO,20
+5363,São Julião,MUNICÍPIO,6
+4441,Riachuelo,MUNICÍPIO,20
+4442,Ribeirópolis,MUNICÍPIO,20
+4443,Santa Luzia do Itanhy,MUNICÍPIO,20
+4444,Santana do São Francisco,MUNICÍPIO,20
+5241,Alto do Rodrigues,MUNICÍPIO,25
+5242,Castelo do Piauí,MUNICÍPIO,6
+4445,Santa Rosa de Lima,MUNICÍPIO,20
+5243,Geminiano,MUNICÍPIO,6
+5244,Francisco Macedo,MUNICÍPIO,6
+4446,Santo Amaro das Brotas,MUNICÍPIO,20
+5245,Pacatuba,MUNICÍPIO,32
+4447,São Domingos,MUNICÍPIO,20
+5246,Caridade do Piauí,MUNICÍPIO,6
+5247,Caldeirão Grande do Piauí,MUNICÍPIO,6
+4448,São Miguel do Aleixo,MUNICÍPIO,20
+5248,Santa Cruz do Piauí,MUNICÍPIO,6
+4449,Simão Dias,MUNICÍPIO,20
+5254,Mãe d'Água,MUNICÍPIO,27
+4450,Arcoverde,MUNICÍPIO,28
+4451,Belém de Maria,MUNICÍPIO,28
+4452,Barreiros,MUNICÍPIO,28
+4453,Cachoeirinha,MUNICÍPIO,28
+4454,Bonito,MUNICÍPIO,28
+4455,Caetés,MUNICÍPIO,28
+4456,Canhotinho,MUNICÍPIO,28
+5255,Santana do Piauí,MUNICÍPIO,6
+4457,Capoeiras,MUNICÍPIO,28
+4458,Casinhas,MUNICÍPIO,28
+4459,Feira Nova,MUNICÍPIO,28
+4460,Catende,MUNICÍPIO,28
+5256,Água Branca,MUNICÍPIO,27
+5257,Salgueiro,MUNICÍPIO,28
+5258,Moreilândia,MUNICÍPIO,28
+4461,Chã Grande,MUNICÍPIO,28
+4462,Ferreiros,MUNICÍPIO,28
+4463,Condado,MUNICÍPIO,28
+4464,Cortês,MUNICÍPIO,28
+5364,Marcolândia,MUNICÍPIO,6
+4465,Cumaru,MUNICÍPIO,28
+4466,Cupira,MUNICÍPIO,28
+4467,Frei Miguelinho,MUNICÍPIO,28
+4468,Gameleira,MUNICÍPIO,28
+4469,Glória do Goitá,MUNICÍPIO,28
+4470,Goiana,MUNICÍPIO,28
+4471,Inajá,MUNICÍPIO,28
+4472,Ipojuca,MUNICÍPIO,28
+4473,Itacuruba,MUNICÍPIO,28
+4474,Joaquim Nabuco,MUNICÍPIO,28
+4475,Itambé,MUNICÍPIO,28
+4476,Itaquitinga,MUNICÍPIO,28
+4477,Jaboatão dos Guararapes,MUNICÍPIO,28
+4481,Jataúba,MUNICÍPIO,28
+5266,São Bento,MUNICÍPIO,27
+5267,Silvânia,MUNICÍPIO,30
+4482,Taquaritinga do Norte,MUNICÍPIO,28
+4483,Jucati,MUNICÍPIO,28
+4484,João Alfredo,MUNICÍPIO,28
+5268,Cedro,MUNICÍPIO,28
+5269,Aragoiânia,MUNICÍPIO,30
+5270,Biquinhas,MUNICÍPIO,24
+4485,Lagoa do Carro,MUNICÍPIO,28
+4486,Lagoa dos Gatos,MUNICÍPIO,28
+4487,Lajedo,MUNICÍPIO,28
+4488,Limoeiro,MUNICÍPIO,28
+4489,Nazaré da Mata,MUNICÍPIO,28
+4490,Manari,MUNICÍPIO,28
+4491,Olinda,MUNICÍPIO,28
+5271,Serra do Mel,MUNICÍPIO,25
+5272,São José do Piauí,MUNICÍPIO,6
+4492,Maraial,MUNICÍPIO,28
+4493,Palmares,MUNICÍPIO,28
+4494,Moreno,MUNICÍPIO,28
+4495,Vicência,MUNICÍPIO,28
+4496,Orobó,MUNICÍPIO,28
+5273,Juazeiro do Norte,MUNICÍPIO,32
+4497,Palmeirina,MUNICÍPIO,28
+4498,Pombos,MUNICÍPIO,28
+4499,Panelas,MUNICÍPIO,28
+4529,Vertente do Lério,MUNICÍPIO,28
+4500,Paranatama,MUNICÍPIO,28
+4501,Timbaúba,MUNICÍPIO,28
+4502,Passira,MUNICÍPIO,28
+4503,São Benedito do Sul,MUNICÍPIO,28
+4504,Paudalho,MUNICÍPIO,28
+4505,São Caitano,MUNICÍPIO,28
+4506,Pesqueira,MUNICÍPIO,28
+5274,Ipiranga do Piauí,MUNICÍPIO,6
+4507,Poção,MUNICÍPIO,28
+5275,Poço de José de Moura,MUNICÍPIO,27
+5276,Araripina,MUNICÍPIO,28
+4508,Primavera,MUNICÍPIO,28
+4509,Quipapá,MUNICÍPIO,28
+4510,Recife,MUNICÍPIO,28
+5277,Santana dos Garrotes,MUNICÍPIO,27
+4511,Riacho das Almas,MUNICÍPIO,28
+5278,Alagoinha do Piauí,MUNICÍPIO,6
+4512,Rio Formoso,MUNICÍPIO,28
+4513,Sairé,MUNICÍPIO,28
+4514,Salgadinho,MUNICÍPIO,28
+4515,Saloá,MUNICÍPIO,28
+4516,Santa Cruz do Capibaribe,MUNICÍPIO,28
+4517,Santa Maria do Cambucá,MUNICÍPIO,28
+4518,São Bento do Una,MUNICÍPIO,28
+5279,Malta,MUNICÍPIO,27
+4519,São João,MUNICÍPIO,28
+4520,Tacaimbó,MUNICÍPIO,28
+4521,São Joaquim do Monte,MUNICÍPIO,28
+4522,São José da Coroa Grande,MUNICÍPIO,28
+4523,São Lourenço da Mata,MUNICÍPIO,28
+4524,Sirinhaém,MUNICÍPIO,28
+4525,Tamandaré,MUNICÍPIO,28
+4526,Terra Nova,MUNICÍPIO,28
+4527,Tracunhaém,MUNICÍPIO,28
+4528,Venturosa,MUNICÍPIO,28
+4530,Vitória de Santo Antão,MUNICÍPIO,28
+4532,Xexéu,MUNICÍPIO,28
+4531,Vertentes,MUNICÍPIO,28
+4534,Alagoa Nova,MUNICÍPIO,27
+4535,Areia,MUNICÍPIO,27
+4536,Bayeux,MUNICÍPIO,27
+4537,Tibau do Sul,MUNICÍPIO,25
+4538,Cabaceiras,MUNICÍPIO,27
+4539,Cacimba de Dentro,MUNICÍPIO,27
+4540,Capim,MUNICÍPIO,27
+4541,Cuité de Mamanguape,MUNICÍPIO,27
+4543,Itueta,MUNICÍPIO,24
+4555,Itabaiana,MUNICÍPIO,27
+4544,Casserengue,MUNICÍPIO,27
+4545,Cruz do Espírito Santo,MUNICÍPIO,27
+4546,Cubati,MUNICÍPIO,27
+4547,Damião,MUNICÍPIO,27
+5365,Padre Marcos,MUNICÍPIO,6
+4548,Dona Inês,MUNICÍPIO,27
+5366,Cerro Corá,MUNICÍPIO,25
+4549,Esperança,MUNICÍPIO,27
+4550,Fagundes,MUNICÍPIO,27
+4551,Guarabira,MUNICÍPIO,27
+5367,Ruy Barbosa,MUNICÍPIO,25
+4552,Gurinhém,MUNICÍPIO,27
+4553,Jacaraú,MUNICÍPIO,27
+4554,Gurjão,MUNICÍPIO,27
+5280,Nova Veneza,MUNICÍPIO,30
+4556,Itapororoca,MUNICÍPIO,27
+5281,Carrapateira,MUNICÍPIO,27
+5282,Mulungu,MUNICÍPIO,32
+4557,Itatuba,MUNICÍPIO,27
+4558,Livramento,MUNICÍPIO,27
+4562,Juazeirinho,MUNICÍPIO,27
+4563,Lagoa de Dentro,MUNICÍPIO,27
+4564,Mamanguape,MUNICÍPIO,27
+4565,Marcação,MUNICÍPIO,27
+4566,Mogeiro,MUNICÍPIO,27
+4567,Pedras de Fogo,MUNICÍPIO,27
+4568,Mulungu,MUNICÍPIO,27
+4569,Nova Palmeira,MUNICÍPIO,27
+4570,Santa Luzia,MUNICÍPIO,27
+4571,Olivedos,MUNICÍPIO,27
+4572,Pilar,MUNICÍPIO,27
+4573,Mucuri,MUNICÍPIO,29
+4585,São José do Bonfim,MUNICÍPIO,27
+4574,Parari,MUNICÍPIO,27
+4575,Pilões,MUNICÍPIO,27
+4577,Picuí,MUNICÍPIO,27
+4586,São José do Sabugi,MUNICÍPIO,27
+4578,Rio Tinto,MUNICÍPIO,27
+4587,Sertãozinho,MUNICÍPIO,27
+4579,Salgado de São Félix,MUNICÍPIO,27
+4594,Serraria,MUNICÍPIO,27
+4595,Catalão,MUNICÍPIO,30
+4580,Santa Rita,MUNICÍPIO,27
+4581,Santo André,MUNICÍPIO,27
+4582,Davinópolis,MUNICÍPIO,30
+5368,Caiçara do Norte,MUNICÍPIO,25
+4588,São José dos Cordeiros,MUNICÍPIO,27
+4589,São Mamede,MUNICÍPIO,27
+4590,São Miguel de Taipu,MUNICÍPIO,27
+4591,Serra Branca,MUNICÍPIO,27
+4592,Serra da Raiz,MUNICÍPIO,27
+4593,Sossêgo,MUNICÍPIO,27
+4596,Sobrado,MUNICÍPIO,27
+4597,Soledade,MUNICÍPIO,27
+4599,Sumé,MUNICÍPIO,27
+4607,Visconde do Rio Branco,MUNICÍPIO,24
+4600,Tacima,MUNICÍPIO,27
+4601,Taperoá,MUNICÍPIO,27
+4602,Várzea,MUNICÍPIO,27
+4603,Carmo do Paranaíba,MUNICÍPIO,24
+4604,Campo Redondo,MUNICÍPIO,25
+4624,Várzea,MUNICÍPIO,25
+4605,Currais Novos,MUNICÍPIO,25
+5369,São Miguel,MUNICÍPIO,25
+4606,Florânia,MUNICÍPIO,25
+4608,Martins Soares,MUNICÍPIO,24
+4625,Goianá,MUNICÍPIO,24
+4609,Jardim de Piranhas,MUNICÍPIO,25
+4610,Maxaranguape,MUNICÍPIO,25
+4611,Monte Alegre,MUNICÍPIO,25
+4627,Serrinha,MUNICÍPIO,25
+4612,Nísia Floresta,MUNICÍPIO,25
+4613,Nova Cruz,MUNICÍPIO,25
+4614,Santa Cruz,MUNICÍPIO,25
+4615,Santa Cruz de Minas,MUNICÍPIO,24
+4616,Santa Cruz de Salinas,MUNICÍPIO,24
+4617,São Bento do Trairí,MUNICÍPIO,25
+4618,São Gonçalo do Amarante,MUNICÍPIO,25
+4619,São José de Mipibu,MUNICÍPIO,25
+4620,Dores do Turvo,MUNICÍPIO,24
+4621,São José do Campestre,MUNICÍPIO,25
+4622,Alto Caparaó,MUNICÍPIO,24
+4623,São José do Seridó,MUNICÍPIO,25
+4626,São Vicente,MUNICÍPIO,25
+4628,Sítio Novo,MUNICÍPIO,25
+4630,Touros,MUNICÍPIO,25
+4631,Dom Cavati,MUNICÍPIO,24
+4632,Dom Viçoso,MUNICÍPIO,24
+5370,Meruoca,MUNICÍPIO,32
+4633,Ervália,MUNICÍPIO,24
+4634,Ewbank da Câmara,MUNICÍPIO,24
+5371,Francisco Santos,MUNICÍPIO,6
+4635,Extrema,MUNICÍPIO,24
+4636,Fama,MUNICÍPIO,24
+5372,Simplício Mendes,MUNICÍPIO,6
+4637,Fernandes Tourinho,MUNICÍPIO,24
+4638,Frei Gaspar,MUNICÍPIO,24
+5373,Massapê do Piauí,MUNICÍPIO,6
+4639,Frei Lagonegro,MUNICÍPIO,24
+5374,Piracuruca,MUNICÍPIO,6
+4640,Gonçalves,MUNICÍPIO,24
+5283,Trindade,MUNICÍPIO,28
+5284,Anápolis,MUNICÍPIO,30
+4641,Guaranésia,MUNICÍPIO,24
+4642,Guarani,MUNICÍPIO,24
+4643,Guaxupé,MUNICÍPIO,24
+4644,Ibitiúra de Minas,MUNICÍPIO,24
+4645,Ijaci,MUNICÍPIO,24
+4646,Ilicínea,MUNICÍPIO,24
+4647,Ingaí,MUNICÍPIO,24
+4648,Guidoval,MUNICÍPIO,24
+4649,Heliodora,MUNICÍPIO,24
+4650,Ipatinga,MUNICÍPIO,24
+4651,Ipiaçu,MUNICÍPIO,24
+4652,Itamarati de Minas,MUNICÍPIO,24
+4653,Itamogi,MUNICÍPIO,24
+4654,Maripá de Minas,MUNICÍPIO,24
+4655,Itanhandu,MUNICÍPIO,24
+4656,Itapeva,MUNICÍPIO,24
+4657,São José do Divino,MUNICÍPIO,24
+4658,Jenipapo de Minas,MUNICÍPIO,24
+4659,Jequitibá,MUNICÍPIO,24
+4660,Jequitinhonha,MUNICÍPIO,24
+4661,Joanésia,MUNICÍPIO,24
+4662,Sericita,MUNICÍPIO,24
+4663,João Monlevade,MUNICÍPIO,24
+4664,José Gonçalves de Minas,MUNICÍPIO,24
+4665,Josenópolis,MUNICÍPIO,24
+4666,Juatuba,MUNICÍPIO,24
+4667,Juruaia,MUNICÍPIO,24
+4668,Laranjal,MUNICÍPIO,24
+4669,Leme do Prado,MUNICÍPIO,24
+4670,Luisburgo,MUNICÍPIO,24
+4671,Machacalis,MUNICÍPIO,24
+4672,Mamonas,MUNICÍPIO,24
+4673,Pedra Bonita,MUNICÍPIO,24
+4675,Marmelópolis,MUNICÍPIO,24
+4678,Mata Verde,MUNICÍPIO,24
+4679,Recreio,MUNICÍPIO,24
+4680,Teófilo Otoni,MUNICÍPIO,24
+4681,Timóteo,MUNICÍPIO,24
+4682,Tiradentes,MUNICÍPIO,24
+4683,Mateus Leme,MUNICÍPIO,24
+4684,Matias Barbosa,MUNICÍPIO,24
+4685,Rochedo de Minas,MUNICÍPIO,24
+4686,Tocantins,MUNICÍPIO,24
+4687,Matipó,MUNICÍPIO,24
+4688,Imbé,MUNICÍPIO,22
+4689,Mercês,MUNICÍPIO,24
+4690,Miradouro,MUNICÍPIO,24
+4691,Monte Formoso,MUNICÍPIO,24
+4692,Monte Sião,MUNICÍPIO,24
+4693,Munhoz,MUNICÍPIO,24
+4694,Muriaé,MUNICÍPIO,24
+4695,Muzambinho,MUNICÍPIO,24
+4696,Nanuque,MUNICÍPIO,24
+4697,Mutum,MUNICÍPIO,24
+5183,Itaú,MUNICÍPIO,25
+4698,Naque,MUNICÍPIO,24
+5184,Ererê,MUNICÍPIO,32
+5185,São João da Ponte,MUNICÍPIO,24
+5186,Jaguaretama,MUNICÍPIO,32
+5187,Ibiracatu,MUNICÍPIO,24
+4699,Nova Porteirinha,MUNICÍPIO,24
+5188,Severiano Melo,MUNICÍPIO,25
+5189,Varzelândia,MUNICÍPIO,24
+4700,Nova União,MUNICÍPIO,24
+4701,Novorizonte,MUNICÍPIO,24
+4702,Olaria,MUNICÍPIO,24
+5190,Ilha Grande,MUNICÍPIO,6
+5191,Matias Cardoso,MUNICÍPIO,24
+4703,Oliveira Fortes,MUNICÍPIO,24
+4704,Oratórios,MUNICÍPIO,24
+4705,Orizânia,MUNICÍPIO,24
+4706,Paiva,MUNICÍPIO,24
+4707,Santo Antônio do Aventureiro,MUNICÍPIO,24
+4708,Palma,MUNICÍPIO,24
+5192,Apodi,MUNICÍPIO,25
+5193,Gameleiras,MUNICÍPIO,24
+5194,Uruana de Minas,MUNICÍPIO,24
+4709,Palmópolis,MUNICÍPIO,24
+4710,Passabém,MUNICÍPIO,24
+5195,Nova Santa Rita,MUNICÍPIO,6
+4711,Passa Quatro,MUNICÍPIO,24
+4712,Patrocínio do Muriaé,MUNICÍPIO,24
+4713,São Domingos das Dores,MUNICÍPIO,24
+4714,Paula Cândido,MUNICÍPIO,24
+5196,Paraná,MUNICÍPIO,25
+5197,Capitão Enéas,MUNICÍPIO,24
+5198,Jaíba,MUNICÍPIO,24
+5199,Rafael Fernandes,MUNICÍPIO,25
+4715,Pedralva,MUNICÍPIO,24
+4716,São Félix de Minas,MUNICÍPIO,24
+5200,Coronel João Pessoa,MUNICÍPIO,25
+4717,Pequeri,MUNICÍPIO,24
+4718,Piau,MUNICÍPIO,24
+4719,São Francisco do Glória,MUNICÍPIO,24
+4720,Piedade de Caratinga,MUNICÍPIO,24
+4721,Santa Bárbara do Leste,MUNICÍPIO,24
+4722,Piedade dos Gerais,MUNICÍPIO,24
+4723,Piranga,MUNICÍPIO,24
+4724,Piranguçu,MUNICÍPIO,24
+4725,Pirapora,MUNICÍPIO,24
+4726,Santa Bárbara do Tugúrio,MUNICÍPIO,24
+4727,Piraúba,MUNICÍPIO,24
+5201,Aroeiras do Itaim,MUNICÍPIO,6
+5202,Poço Dantas,MUNICÍPIO,27
+4728,Presidente Bernardes,MUNICÍPIO,24
+4729,Iúna,MUNICÍPIO,8
+4730,Irupi,MUNICÍPIO,8
+4731,Durandé,MUNICÍPIO,24
+5203,Colônia do Piauí,MUNICÍPIO,6
+4732,Prudente de Morais,MUNICÍPIO,24
+5204,Pacoti,MUNICÍPIO,32
+4733,Queluzito,MUNICÍPIO,24
+4734,Raposos,MUNICÍPIO,24
+4735,Reduto,MUNICÍPIO,24
+4736,Itarana,MUNICÍPIO,8
+5285,Pedrinópolis,MUNICÍPIO,24
+5286,Leopoldo de Bulhões,MUNICÍPIO,30
+4737,Ribeirão Vermelho,MUNICÍPIO,24
+5205,Belém do Piauí,MUNICÍPIO,6
+4738,Rio Manso,MUNICÍPIO,24
+5206,Corumbaíba,MUNICÍPIO,30
+5207,Água Nova,MUNICÍPIO,25
+4739,Rio Novo,MUNICÍPIO,24
+4740,Rio Vermelho,MUNICÍPIO,24
+4741,Rodeiro,MUNICÍPIO,24
+4742,Rosário da Limeira,MUNICÍPIO,24
+4743,Salinas,MUNICÍPIO,24
+4744,Salto da Divisa,MUNICÍPIO,24
+4745,Santa Bárbara,MUNICÍPIO,24
+4746,Santa Margarida,MUNICÍPIO,24
+4747,Santa Helena de Minas,MUNICÍPIO,24
+5208,Paquetá,MUNICÍPIO,6
+5209,Patis,MUNICÍPIO,24
+4748,Santa Maria do Salto,MUNICÍPIO,24
+5210,Major Sales,MUNICÍPIO,25
+4749,Santana do Manhuaçu,MUNICÍPIO,24
+4750,Santa Rita de Minas,MUNICÍPIO,24
+4751,Santa Rita do Itueto,MUNICÍPIO,24
+4752,Santo Antônio do Rio Abaixo,MUNICÍPIO,24
+4753,São Bento Abade,MUNICÍPIO,24
+4754,São Brás do Suaçuí,MUNICÍPIO,24
+4755,São Gonçalo do Rio Preto,MUNICÍPIO,24
+4756,São João do Oriente,MUNICÍPIO,24
+4757,São Joaquim de Bicas,MUNICÍPIO,24
+4758,São José da Lapa,MUNICÍPIO,24
+5211,Marcelino Vieira,MUNICÍPIO,25
+5212,Aparecida de Goiânia,MUNICÍPIO,30
+5213,Encanto,MUNICÍPIO,25
+5214,Pirenópolis,MUNICÍPIO,30
+4759,Senhora de Oliveira,MUNICÍPIO,24
+4760,São Sebastião da Vargem Alegre,MUNICÍPIO,24
+4761,São Lourenço,MUNICÍPIO,24
+4762,São Pedro da União,MUNICÍPIO,24
+4763,Serranópolis de Minas,MUNICÍPIO,24
+4764,Sapucaí-Mirim,MUNICÍPIO,24
+4765,Senador Amaral,MUNICÍPIO,24
+4766,Senador Cortes,MUNICÍPIO,24
+4767,Senador Firmino,MUNICÍPIO,24
+4768,Senhora dos Remédios,MUNICÍPIO,24
+4769,Seritinga,MUNICÍPIO,24
+4770,Serranos,MUNICÍPIO,24
+4771,Silveirânia,MUNICÍPIO,24
+4772,Tabuleiro,MUNICÍPIO,24
+4773,Taparuba,MUNICÍPIO,24
+4774,Tocos do Moji,MUNICÍPIO,24
+4775,Toledo,MUNICÍPIO,24
+4776,Ubá,MUNICÍPIO,24
+5215,Mato Grosso,MUNICÍPIO,27
+4777,Vargem Alegre,MUNICÍPIO,24
+5216,Vianópolis,MUNICÍPIO,30
+5217,Tenente Ananias,MUNICÍPIO,25
+4778,Vargem Grande do Rio Pardo,MUNICÍPIO,24
+4779,Vermelho Novo,MUNICÍPIO,24
+4780,Vespasiano,MUNICÍPIO,24
+4781,Viçosa,MUNICÍPIO,24
+5218,Rodolfo Fernandes,MUNICÍPIO,25
+4782,Vieiras,MUNICÍPIO,24
+4783,Brasilândia do Sul,MUNICÍPIO,17
+5288,Nova Olinda,MUNICÍPIO,32
+4784,Cambará,MUNICÍPIO,17
+4785,Cambira,MUNICÍPIO,17
+4786,Entre Rios do Oeste,MUNICÍPIO,17
+5289,Graça,MUNICÍPIO,32
+5290,Cidade Ocidental,MUNICÍPIO,30
+4787,Esperança Nova,MUNICÍPIO,17
+5291,Jardim de Angicos,MUNICÍPIO,25
+5292,Gameleira de Goiás,MUNICÍPIO,30
+4788,Fazenda Rio Grande,MUNICÍPIO,17
+5293,Aratuba,MUNICÍPIO,32
+5294,Paineiras,MUNICÍPIO,24
+4789,Floraí,MUNICÍPIO,17
+4790,Floresta,MUNICÍPIO,17
+4791,Florestópolis,MUNICÍPIO,17
+4792,Flórida,MUNICÍPIO,17
+4793,Guaíra,MUNICÍPIO,17
+4794,Guairaçá,MUNICÍPIO,17
+4795,Iguaraçu,MUNICÍPIO,17
+4796,Imbaú,MUNICÍPIO,17
+4797,Imbituva,MUNICÍPIO,17
+4798,Inácio Martins,MUNICÍPIO,17
+4799,Indianópolis,MUNICÍPIO,17
+4800,Itaipulândia,MUNICÍPIO,17
+4801,Itambaracá,MUNICÍPIO,17
+5295,Abaiara,MUNICÍPIO,32
+4802,Ivatuba,MUNICÍPIO,17
+4803,Jaguapitã,MUNICÍPIO,17
+4804,Jaguariaíva,MUNICÍPIO,17
+4805,Jandaia do Sul,MUNICÍPIO,17
+4806,Japurá,MUNICÍPIO,17
+5296,Belágua,MUNICÍPIO,7
+5297,São Gonçalo do Abaeté,MUNICÍPIO,24
+5298,Vista Serrana,MUNICÍPIO,27
+4807,Jataizinho,MUNICÍPIO,17
+5299,Ipubi,MUNICÍPIO,28
+4808,Loanda,MUNICÍPIO,17
+5300,Dom Expedito Lopes,MUNICÍPIO,6
+4809,Maria Helena,MUNICÍPIO,17
+4810,Marialva,MUNICÍPIO,17
+4811,Marilândia do Sul,MUNICÍPIO,17
+4812,Mariluz,MUNICÍPIO,17
+4813,Maringá,MUNICÍPIO,17
+4814,Santa Teresa,MUNICÍPIO,8
+4815,Maripá,MUNICÍPIO,17
+5219,Martins,MUNICÍPIO,25
+4816,Matinhos,MUNICÍPIO,17
+5220,Miraíma,MUNICÍPIO,32
+5301,São João da Varjota,MUNICÍPIO,6
+4817,Mirador,MUNICÍPIO,17
+5302,Vila Nova do Piauí,MUNICÍPIO,6
+5303,Juazeiro do Piauí,MUNICÍPIO,6
+5304,Quixeramobim,MUNICÍPIO,32
+5305,Jaguaribe,MUNICÍPIO,32
+5306,Pedra Branca,MUNICÍPIO,32
+5307,Mombaça,MUNICÍPIO,32
+5308,Quixadá,MUNICÍPIO,32
+4818,Nova Londrina,MUNICÍPIO,17
+4819,Santa Terezinha de Itaipu,MUNICÍPIO,17
+4820,Santo Antônio da Platina,MUNICÍPIO,17
+4821,Nova Olímpia,MUNICÍPIO,17
+4822,Nova Prata do Iguaçu,MUNICÍPIO,17
+5221,Romaria,MUNICÍPIO,24
+5222,Piripiri,MUNICÍPIO,6
+4823,Nova Santa Bárbara,MUNICÍPIO,17
+4824,Nova Santa Rosa,MUNICÍPIO,17
+4825,Novo Itacolomi,MUNICÍPIO,17
+4826,Ourizona,MUNICÍPIO,17
+4827,Paiçandu,MUNICÍPIO,17
+4828,Paraíso do Norte,MUNICÍPIO,17
+4829,Pato Bragado,MUNICÍPIO,17
+5223,Santa Helena,MUNICÍPIO,27
+4830,Paula Freitas,MUNICÍPIO,17
+4831,Presidente Castelo Branco,MUNICÍPIO,17
+4832,Primeiro de Maio,MUNICÍPIO,17
+4833,Quarto Centenário,MUNICÍPIO,17
+4834,Quinta do Sol,MUNICÍPIO,17
+5224,Triunfo,MUNICÍPIO,27
+4835,Ramilândia,MUNICÍPIO,17
+4836,Salto do Itararé,MUNICÍPIO,17
+4837,Salto do Lontra,MUNICÍPIO,17
+4838,Santa Amélia,MUNICÍPIO,17
+4839,Santa Fé,MUNICÍPIO,17
+4840,Santa Mônica,MUNICÍPIO,17
+4841,Santana do Itararé,MUNICÍPIO,17
+4842,Santo Antônio do Caiuá,MUNICÍPIO,17
+4843,São Carlos do Ivaí,MUNICÍPIO,17
+5225,Paulista,MUNICÍPIO,27
+5226,Paulo de Faria,MUNICÍPIO,31
+4844,São Manoel do Paraná,MUNICÍPIO,17
+4845,São Pedro do Ivaí,MUNICÍPIO,17
+4846,São Pedro do Paraná,MUNICÍPIO,17
+4847,São Sebastião da Amoreira,MUNICÍPIO,17
+4848,São Tomé,MUNICÍPIO,17
+4849,Sarandi,MUNICÍPIO,17
+4850,Terra Boa,MUNICÍPIO,17
+5227,Uiraúna,MUNICÍPIO,27
+4851,Terra Rica,MUNICÍPIO,17
+4852,Turvo,MUNICÍPIO,17
+4853,Umuarama,MUNICÍPIO,17
+4854,Uniflor,MUNICÍPIO,17
+4855,Uraí,MUNICÍPIO,17
+4856,Tramandaí,MUNICÍPIO,22
+5228,Coremas,MUNICÍPIO,27
+5229,Flores de Goiás,MUNICÍPIO,30
+5230,Paracuru,MUNICÍPIO,32
+4857,Luiz Alves,MUNICÍPIO,18
+4858,Araquari,MUNICÍPIO,18
+5231,Aparecida,MUNICÍPIO,27
+4859,Canelinha,MUNICÍPIO,18
+4860,Canoas,MUNICÍPIO,22
+4861,Charqueadas,MUNICÍPIO,22
+4862,Mariana Pimentel,MUNICÍPIO,22
+4863,Governador Celso Ramos,MUNICÍPIO,18
+4864,Florianópolis,MUNICÍPIO,18
+4865,Gua?ba,MUNICÍPIO,22
+4866,Angelina,MUNICÍPIO,18
+5232,São Luis do Piauí,MUNICÍPIO,6
+5233,Bocaina,MUNICÍPIO,6
+4867,Nova Trento,MUNICÍPIO,18
+5234,Barbalha,MUNICÍPIO,32
+5235,Afonso Bezerra,MUNICÍPIO,25
+5236,Tauá,MUNICÍPIO,32
+4868,Itapoá,MUNICÍPIO,18
+4869,Porto Belo,MUNICÍPIO,18
+4870,Barra Velha,MUNICÍPIO,18
+4871,São Gabriel da Palha,MUNICÍPIO,8
+5237,São Bento do Norte,MUNICÍPIO,25
+5238,Senador Pompeu,MUNICÍPIO,32
+4872,Marechal Floriano,MUNICÍPIO,8
+4873,Mucurici,MUNICÍPIO,8
+4874,Ecoporanga,MUNICÍPIO,8
+4875,Itaguaçu,MUNICÍPIO,8
+4876,Santa Leopoldina,MUNICÍPIO,8
+4877,Santa Maria de Jetibá,MUNICÍPIO,8
+4878,Laranja da Terra,MUNICÍPIO,8
+4879,São José do Calçado,MUNICÍPIO,8
+4880,Alegre,MUNICÍPIO,8
+4881,Guaçuí,MUNICÍPIO,8
+4882,Aracruz,MUNICÍPIO,8
+4883,Itapemirim,MUNICÍPIO,8
+4884,Porciúncula,MUNICÍPIO,23
+4885,São Mateus,MUNICÍPIO,8
+4886,Batalha,MUNICÍPIO,6
+5106,Araporã,MUNICÍPIO,24
+5249,Santa Terezinha,MUNICÍPIO,28
+5250,Fronteiras,MUNICÍPIO,6
+5251,Alegrete do Piauí,MUNICÍPIO,6
+5252,Milagres,MUNICÍPIO,32
+5253,Inhuma,MUNICÍPIO,6
+5259,Picos,MUNICÍPIO,6
+5260,Parnamirim,MUNICÍPIO,28
+5261,Riacho de Santana,MUNICÍPIO,25
+5262,Exu,MUNICÍPIO,28
+5263,Pau dos Ferros,MUNICÍPIO,25
+5264,Santo Antônio do Descoberto,MUNICÍPIO,30
+5265,Serrita,MUNICÍPIO,28
+5309,Patos do Piauí,MUNICÍPIO,6
+5310,João Pinheiro,MUNICÍPIO,24
+5287,Águas Lindas de Goiás,MUNICÍPIO,30
+5392,Grossos,MUNICÍPIO,25
+5393,São José do Divino,MUNICÍPIO,6
+5394,Wall Ferraz,MUNICÍPIO,6
+5395,Lastro,MUNICÍPIO,27
+5403,Limoeiro do Norte,MUNICÍPIO,32
+5404,Varjota,MUNICÍPIO,32
+5405,Pires Ferreira,MUNICÍPIO,32
+5406,Capistrano,MUNICÍPIO,32
+5407,Catolé do Rocha,MUNICÍPIO,27
+5408,Pindoretama,MUNICÍPIO,32
+5409,Acarape,MUNICÍPIO,32
+5410,Altaneira,MUNICÍPIO,32
+5411,Antônio Martins,MUNICÍPIO,25
+5412,Solidão,MUNICÍPIO,28
+5413,Cruzeiro da Fortaleza,MUNICÍPIO,24
+5414,Manhumirim,MUNICÍPIO,24
+5415,Capinópolis,MUNICÍPIO,24
+5416,Tabuleiro do Norte,MUNICÍPIO,32
+5417,São Francisco do Oeste,MUNICÍPIO,25
+5418,Curral Novo do Piauí,MUNICÍPIO,6
+5419,Taboleiro Grande,MUNICÍPIO,25
+5420,São João do Jaguaribe,MUNICÍPIO,32
+5421,Pereiro,MUNICÍPIO,32
+5422,Riacho da Cruz,MUNICÍPIO,25
+5423,Jaguaribara,MUNICÍPIO,32
+5424,Francisco Dantas,MUNICÍPIO,25
+5425,Umarizal,MUNICÍPIO,25
+5426,Jacobina do Piauí,MUNICÍPIO,6
+5427,Salitre,MUNICÍPIO,32
+5428,Paulistana,MUNICÍPIO,6
+5429,Jijoca de Jericoacoara,MUNICÍPIO,32
+5430,Lontra,MUNICÍPIO,24
+5431,São José de Piranhas,MUNICÍPIO,27
+5432,Baixio,MUNICÍPIO,32
+5433,Aguiar,MUNICÍPIO,27
+5434,Riacho dos Cavalos,MUNICÍPIO,27
+5435,São José de Princesa,MUNICÍPIO,27
+5436,Sousa,MUNICÍPIO,27
+5437,Cajazeiras,MUNICÍPIO,27
+5438,José da Penha,MUNICÍPIO,25
+5439,Ipaumirim,MUNICÍPIO,32
+5442,São Domingos,MUNICÍPIO,27
+5440,Almino Afonso,MUNICÍPIO,25
+5441,Patos,MUNICÍPIO,27
+5443,Bom Jesus,MUNICÍPIO,27
+5444,Vieirópolis,MUNICÍPIO,27
+5445,Upanema,MUNICÍPIO,25
+5447,Umari,MUNICÍPIO,32
+5446,Catingueira,MUNICÍPIO,27
+5448,João Câmara,MUNICÍPIO,25
+5495,Goianápolis,MUNICÍPIO,30
+5449,Cajazeirinhas,MUNICÍPIO,27
+5450,Condado,MUNICÍPIO,27
+5496,Anhanguera,MUNICÍPIO,30
+5451,São Bentinho,MUNICÍPIO,27
+5452,São João do Rio do Peixe,MUNICÍPIO,27
+5453,Barro,MUNICÍPIO,32
+5454,Lagoa do Sítio,MUNICÍPIO,6
+5455,Novo Oriente do Piauí,MUNICÍPIO,6
+5456,Rianápolis,MUNICÍPIO,30
+5457,Angicos,MUNICÍPIO,25
+5458,Pendências,MUNICÍPIO,25
+5459,Guamaré,MUNICÍPIO,25
+5460,Penaforte,MUNICÍPIO,32
+5461,Ipanguaçu,MUNICÍPIO,25
+5462,Itajá,MUNICÍPIO,25
+5463,São Tomé,MUNICÍPIO,25
+5464,Emas,MUNICÍPIO,27
+5465,Carnaubais,MUNICÍPIO,25
+5466,Galinhos,MUNICÍPIO,25
+5467,Santana do Matos,MUNICÍPIO,25
+5468,São Rafael,MUNICÍPIO,25
+5469,Calumbi,MUNICÍPIO,28
+5470,Serra Grande,MUNICÍPIO,27
+5471,Mauriti,MUNICÍPIO,32
+5472,Imaculada,MUNICÍPIO,27
+5473,Santa Inês,MUNICÍPIO,27
+5474,Monte Horebe,MUNICÍPIO,27
+5475,Ibiara,MUNICÍPIO,27
+5476,Tavares,MUNICÍPIO,27
+5477,Bonito de Santa Fé,MUNICÍPIO,27
+5478,Carnaíba,MUNICÍPIO,28
+5479,São José do Belmonte,MUNICÍPIO,28
+5480,Itaporanga,MUNICÍPIO,27
+5520,Joaquim Pires,MUNICÍPIO,6
+5481,Triunfo,MUNICÍPIO,28
+5482,Nova Olinda,MUNICÍPIO,27
+5483,São José de Caiana,MUNICÍPIO,27
+5484,Água Doce do Maranhão,MUNICÍPIO,7
+5485,Granito,MUNICÍPIO,28
+5486,Bodocó,MUNICÍPIO,28
+5487,Araripe,MUNICÍPIO,32
+5488,Santana do Cariri,MUNICÍPIO,32
+5489,Missão Velha,MUNICÍPIO,32
+5490,Jesúpolis,MUNICÍPIO,30
+5491,Santa Rosa de Goiás,MUNICÍPIO,30
+5492,Santo Antônio de Goiás,MUNICÍPIO,30
+5493,Nerópolis,MUNICÍPIO,30
+5494,Damolândia,MUNICÍPIO,30
+5497,Abadia de Goiás,MUNICÍPIO,30
+5498,Novo Gama,MUNICÍPIO,30
+5499,Bonfinópolis,MUNICÍPIO,30
+5500,Brazabrantes,MUNICÍPIO,30
+5501,Itauçu,MUNICÍPIO,30
+5502,Ouro Verde de Goiás,MUNICÍPIO,30
+5503,Terezópolis de Goiás,MUNICÍPIO,30
+5504,Catunda,MUNICÍPIO,32
+5505,Independência,MUNICÍPIO,32
+5506,Novo Santo Antônio,MUNICÍPIO,6
+5507,Quiterianópolis,MUNICÍPIO,32
+5508,São Félix do Piauí,MUNICÍPIO,6
+5509,Cocal,MUNICÍPIO,6
+5510,Murici dos Portelas,MUNICÍPIO,6
+5511,Chaval,MUNICÍPIO,32
+5512,Parnaíba,MUNICÍPIO,6
+5513,Martinópole,MUNICÍPIO,32
+5514,Barroquinha,MUNICÍPIO,32
+5515,Caxingó,MUNICÍPIO,6
+5516,Cajueiro da Praia,MUNICÍPIO,6
+5517,Moraújo,MUNICÍPIO,32
+5518,Viçosa do Ceará,MUNICÍPIO,32
+5519,Tianguá,MUNICÍPIO,32
+5521,Caraúbas do Piauí,MUNICÍPIO,6
+5530,Alcântaras,MUNICÍPIO,32
+5522,Ubajara,MUNICÍPIO,32
+5523,Mucambo,MUNICÍPIO,32
+5524,General Sampaio,MUNICÍPIO,32
+5525,Coreaú,MUNICÍPIO,32
+5526,Granja,MUNICÍPIO,32
+5527,Groaíras,MUNICÍPIO,32
+5547,Nova Russas,MUNICÍPIO,32
+5528,São Luís do Curu,MUNICÍPIO,32
+5584,Alto Rio Novo,MUNICÍPIO,8
+5585,Serra,MUNICÍPIO,8
+5529,Morrinhos,MUNICÍPIO,32
+5531,Guaraciaba do Norte,MUNICÍPIO,32
+5586,Brejetuba,MUNICÍPIO,8
+5532,Paraipaba,MUNICÍPIO,32
+5533,Massapê,MUNICÍPIO,32
+5534,Itapajé,MUNICÍPIO,32
+5535,Carnaubal,MUNICÍPIO,32
+5536,Cariré,MUNICÍPIO,32
+5537,Ipaporanga,MUNICÍPIO,32
+5538,Campo Maior,MUNICÍPIO,6
+5539,Ararendá,MUNICÍPIO,32
+5540,Crateús,MUNICÍPIO,32
+5541,Hidrolândia,MUNICÍPIO,32
+5542,Pedro II,MUNICÍPIO,6
+5543,Lagoa de São Francisco,MUNICÍPIO,6
+5544,Tamboril,MUNICÍPIO,32
+5545,Sigefredo Pacheco,MUNICÍPIO,6
+5546,Jatobá do Piauí,MUNICÍPIO,6
+5548,Barreira,MUNICÍPIO,32
+5549,Guaiúba,MUNICÍPIO,32
+5550,Pacajus,MUNICÍPIO,32
+5551,Palhano,MUNICÍPIO,32
+5552,Russas,MUNICÍPIO,32
+5553,Caridade,MUNICÍPIO,32
+5554,Itaiçaba,MUNICÍPIO,32
+5555,Palmácia,MUNICÍPIO,32
+5556,Baraúna,MUNICÍPIO,25
+5557,Icapuí,MUNICÍPIO,32
+5558,Farias Brito,MUNICÍPIO,32
+5559,Potengi,MUNICÍPIO,32
+5560,Aurora,MUNICÍPIO,32
+5561,Piquet Carneiro,MUNICÍPIO,32
+5562,Caririaçu,MUNICÍPIO,32
+5563,Catarina,MUNICÍPIO,32
+5564,Várzea Alegre,MUNICÍPIO,32
+5565,Lavras da Mangabeira,MUNICÍPIO,32
+5566,Iguatu,MUNICÍPIO,32
+5567,Crato,MUNICÍPIO,32
+5568,Cariús,MUNICÍPIO,32
+5569,Orós,MUNICÍPIO,32
+5570,Douradoquara,MUNICÍPIO,24
+5571,Estrela do Sul,MUNICÍPIO,24
+5572,Guimarânia,MUNICÍPIO,24
+5573,Ouvidor,MUNICÍPIO,30
+5574,Maranguape,MUNICÍPIO,32
+5575,Eusébio,MUNICÍPIO,32
+5576,Santa Juliana,MUNICÍPIO,24
+5577,Indianópolis,MUNICÍPIO,24
+5578,Conceição da Barra,MUNICÍPIO,8
+5579,Pinheiros,MUNICÍPIO,8
+5580,Boa Esperança,MUNICÍPIO,8
+5581,Ponto Belo,MUNICÍPIO,8
+5582,Nova Venécia,MUNICÍPIO,8
+5583,Alfredo Chaves,MUNICÍPIO,8
+5587,Conceição do Castelo,MUNICÍPIO,8
+5588,Atílio Vivacqua,MUNICÍPIO,8
+5589,Jaguaré,MUNICÍPIO,8
+5590,Divino de São Lourenço,MUNICÍPIO,8
+5591,Central de Minas,MUNICÍPIO,24
+5592,Varre-Sai,MUNICÍPIO,23
+5593,Mimoso do Sul,MUNICÍPIO,8
+5594,Vitória,MUNICÍPIO,8
+5595,Muqui,MUNICÍPIO,8
+5596,Baixo Guandu,MUNICÍPIO,8
+5597,Caiana,MUNICÍPIO,24
+5598,Anchieta,MUNICÍPIO,8
+5599,Bom Jesus do Norte,MUNICÍPIO,8
+5600,Ibitirama,MUNICÍPIO,8
+5601,Marataízes,MUNICÍPIO,8
+5602,Buriti dos Lopes,MUNICÍPIO,6
+(5595 rows)
