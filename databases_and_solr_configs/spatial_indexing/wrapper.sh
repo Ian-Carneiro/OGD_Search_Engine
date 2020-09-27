@@ -8,7 +8,7 @@ set -m
 
 # Start the helper process
 ./init_db.sh
-echo "echo 'Grafo de lugares já foi persistido.'" > ./init_db.sh
+echo "echo 'Grafo de lugares persistido.'" > init_db.sh
 # the my_helper_process might need to know how to wait on the
 # primary process to start before it does its work and returns
 
