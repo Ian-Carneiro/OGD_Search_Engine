@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <schema name="default-config" version="1.6">
 
-    <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
-     <!-- large="true" -->
-    <field name="metadata" type="text_general" indexed="true" stored="true" required="true" multiValued="false" termVectors="true" termPositions="true"/>
+    <field name="id" type="string" indexed="true" stored="true" required="true" 
+            multiValued="false" />
+
+    <field name="metadata" type="text_general" indexed="true" stored="true" 
+            required="true" multiValued="false"/>
+
     <field name="_version_" type="plong" indexed="true" stored="true" multiValued="false"/>
 
     <uniqueKey>id</uniqueKey>
     <!-- The StrField type is not analyzed, but indexed/stored verbatim. -->
-    <fieldType name="string" class="solr.StrField" sortMissingLast="true" docValues="true" />
+    <!-- <fieldType name="string" class="solr.StrField" sortMissingLast="true" docValues="true" /> -->
     <fieldType name="strings" class="solr.StrField" sortMissingLast="true" multiValued="true" docValues="true" />
 
     <!-- boolean type: "true" or "false" -->
@@ -21,7 +24,7 @@
     -->
     <fieldType name="pint" class="solr.IntPointField" docValues="true"/>
     <fieldType name="pfloat" class="solr.FloatPointField" docValues="true"/>
-    <fieldType name="plong" class="solr.LongPointField" docValues="true"/>
+    <!-- <fieldType name="plong" class="solr.LongPointField" docValues="true"/> -->
     <fieldType name="pdouble" class="solr.DoublePointField" docValues="true"/>
 
     <fieldType name="pints" class="solr.IntPointField" docValues="true" multiValued="true"/>
@@ -87,14 +90,18 @@
         <tokenizer class="solr.WhitespaceTokenizerFactory"/>
       </analyzer>
     </fieldType>
+     <!-- sortMissingLast="true" -->
+    <fieldType name="string" class="solr.StrField"/>
 
-     <!-- multiValued="true" -->
-    <fieldType name="text_general" class="solr.TextField" multiValued="true" positionIncrementGap="100">
+    <fieldType name="plong" class="solr.LongPointField"/>
+
+    <fieldType name="text_general" class="solr.TextField">
       <analyzer type="index">
         <tokenizer class="solr.OpenNLPTokenizerFactory"
              sentenceModel="./lang/pt-sent.bin"
              tokenizerModel="./lang/pt-token.bin"/>
-        <filter class="solr.WordDelimiterGraphFilterFactory" generateNumberParts="0" splitOnCaseChange="0" splitOnNumerics="0"/>
+        <filter class="solr.WordDelimiterGraphFilterFactory" generateNumberParts="0"/>
+        <filter class="solr.FlattenGraphFilterFactory"/>
         <filter class="solr.LowerCaseFilterFactory"/>
         <filter class="solr.StopFilterFactory" words="./lang/stopwords.txt" />
         <filter class="solr.OpenNLPPOSFilterFactory" posTaggerModel="./lang/pt-pos-maxent.bin"/>
@@ -105,12 +112,13 @@
         <tokenizer class="solr.OpenNLPTokenizerFactory"
              sentenceModel="./lang/pt-sent.bin"
              tokenizerModel="./lang/pt-token.bin"/>
+        <filter class="solr.WordDelimiterGraphFilterFactory" generateNumberParts="0"/>
         <filter class="solr.LowerCaseFilterFactory"/>
         <filter class="solr.StopFilterFactory" ignoreCase="true" words="./lang/stopwords.txt" />
         <filter class="solr.OpenNLPPOSFilterFactory" posTaggerModel="./lang/pt-pos-maxent.bin"/>
-        <!-- <filter class="solr.TypeTokenFilterFactory" types="./lang/stop.pos.txt" useWhitelist="true"/> -->
         <filter class="solr.OpenNLPLemmatizerFilterFactory" dictionary="./lang/pt-br-lemmatizer.dict"/>
-        <filter class="solr.SynonymGraphFilterFactory" synonyms="./lang/synonyms.txt" ignoreCase="true" expand="true"/>         
+        <filter class="solr.SynonymGraphFilterFactory" synonyms="./lang/synonyms.txt" 
+                                                  ignoreCase="true" expand="true"/>
         <filter class="solr.ASCIIFoldingFilterFactory"/>
       </analyzer>
     </fieldType>

@@ -32,17 +32,17 @@ def index(update_hour, current_date, num=0):
     while True:
         packages = get_dataset(num)
         now = datetime.datetime.now()
-        if now.hour == update_hour and now.date() > current_date:
+        if now.hour >= update_hour and now.date() > current_date:
             log.info("Parando indexação para atualizar metadados.")
             return False
         if not packages:
             log.info("Todos os recursos foram atualizados hoje.")
             return True
         for package in packages:
-            log.info('#----------------------------------------------------------------------------------------------#')
-            log.info(str(num) + ' - ' + package.id)
             resources = package.resources
             if resources:
+                log.info('#------------------------------------------------------------------------------------------#')
+                log.info(str(num) + ' - ' + package.id)
                 log.info('')
                 log.info('#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>indexação espacial<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<#')
                 package.resources = [resource for resource in resources if not resource.spatial_indexing]
@@ -75,7 +75,7 @@ def index(update_hour, current_date, num=0):
             num += 1
 
 
-def task(task_hour=config.scheduled_hour):
+def run(task_hour=config.scheduled_hour):
     while True:
         day = datetime.datetime.now()
         download_and_persist_metadata()
@@ -88,4 +88,4 @@ def task(task_hour=config.scheduled_hour):
                 sleep(1)
 
 
-task()
+run()

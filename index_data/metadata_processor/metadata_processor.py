@@ -1,19 +1,33 @@
 from ckanapi import RemoteCKAN
+from ckanapi.errors import CKANAPIError
 import pandas as pd
 from sqlalchemy import create_engine
 from index_log import log
-from time import time
+from time import time, sleep
 from metadata_processor.config import config
 
 engine = create_engine(config.db_connection)
 
+data_portal = None
+with engine.connect() as conn:
+    data_portal = conn.execute("select id, url from portal;").fetchall()
+
+id_portal = data_portal[0][0]
+url_portal = data_portal[0][1]
+
+dados_gov = RemoteCKAN(url_portal)
 
 def download_and_persist_metadata():
     log.info('#----------------------------------------------------------------------------------------------#')
     log.info("Baixando e persistindo metadados.")
-    log.info(f'Estabelecento conexão com {config.data_portal}...')
-    dados_gov = RemoteCKAN(config.data_portal)
-    assert dados_gov.action.site_read()
+    log.info(f'Verificando conexão com {url_portal}...')
+    while True:
+        try:
+            assert dados_gov.action.site_read()
+            break
+        except CKANAPIError as err:
+            log.info(err)
+            sleep(10)
     log.info('conexão estabelecida.')
     with engine.connect() as conn:
         conn.execute("UPDATE metadata_resources SET excluded=TRUE;")
@@ -23,8 +37,14 @@ def download_and_persist_metadata():
     offset = config.metadata['offset']
     while True:
         log.info(f"Página(até {limit} metadados de recursos): " + str(page))
-        metadata = dados_gov.action.current_package_list_with_resources(limit=limit,
+        while True:
+            try:
+                metadata = dados_gov.action.current_package_list_with_resources(limit=limit,
                                                                         offset=offset * page)
+                break
+            except CKANAPIError:
+                log.info(f"Não foi possível recuperar a página {page}. Tentando novamente...")
+                sleep(10)
 
         page += 1
 
@@ -59,14 +79,17 @@ def download_and_persist_metadata():
         dataset['organization_id'] = organization_id
         dataset['temporal_indexing'] = False
         dataset['thematic_indexing'] = False
+        dataset['portal_id'] = id_portal
 
         dataset.to_sql(name='metadata_dataset', con=engine, if_exists='append', index=False)
         resources.to_sql(name='metadata_resources', con=engine, if_exists='append', index=False)
 
         if len(metadata) < limit:
             break
+
     time1 = time()
     log.info("Tempo para baixar e persistir os metadados: " + str(time1-time0) + 's')
+
     with engine.connect() as conn:
         num_dataset = conn.execute("SELECT count(*) FROM metadata_dataset;").fetchone()
         num_resources = conn.execute("SELECT count(*) FROM metadata_resources;").fetchone()

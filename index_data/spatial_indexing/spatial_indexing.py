@@ -130,9 +130,14 @@ def analyze_csv(file):
     except _csv.Error:
         log.info("Não foi possível determinar o delimitador.")
         return ()
-    file.seek(0)
-    csv_file = reader(read_lines_file(file, config.num_lines_to_check_type_of_place), dialect, quoting=QUOTE_ALL)
-    csv_file = list(csv_file)
+    try:
+        file.seek(0)
+        csv_file = reader(read_lines_file(file, config.num_lines_to_check_type_of_place), dialect, quoting=QUOTE_ALL)
+        csv_file = list(csv_file)
+    except _csv.Error as err:
+        log.info("<><><><><><><><><><><><><><><>")
+        log.info(err)
+        return ()
     # Verifica qual o provável tamanho de cada linha do csv
     try:
         len_row = mode([len(x) for x in csv_file[0:]])
@@ -206,9 +211,10 @@ def index(resource: MetadataResources, num_package_resources, encoding, quant_pr
                 if resource.updated or resource.spatial_indexing:
                     log.info(f"recurso {resource.id} marcado para atualização")
                     delete_spatial_index(resource.id, driver)
+                total_places_references = sum(places_id_dict.values())
                 for key in places_id_dict:
                     try:
-                        insert_into_resource_place(key, resource, num_package_resources, quant_indexed_rows.value,
+                        insert_into_resource_place(key, resource, num_package_resources, total_places_references,
                                                    places_id_dict[key], driver)
                     except CypherSyntaxError:
                         log.info(f"CypherSyntaxError. key:{key} quant_places: {places_id_dict[key]} "

@@ -32,7 +32,7 @@ def get_resources(gid_place):
         result = session.run(f"""
             match (:Place {{gid:"{gid_place}"}})-[:`_CONTAINS`*0..]->(p:Place)<-[ht: HAS_TERM]-(r:Resource)
             with case p.gid when "{gid_place}" 
-            then {{id: r.id, freq: ht.freq+1}} else {{id: r.id, freq: ht.freq}} end as rows
+            then {{id: r.id, freq: ht.freq}} else {{id: r.id, freq: ht.freq*0.1}} end as rows
             return rows.id, sum(rows.freq)
         """).values()
         resources = result
@@ -45,13 +45,8 @@ def get_resources(gid_place):
 def get_dataset(gid_place):
     with driver.session() as session:
         dataset_ids = session.run(f"""
-        match (:Place {{gid:"{gid_place}"}})-[:`_CONTAINS`*0..]->(p:Place)<-[:HAS_TERM]-(r:Resource)
-        with case p.gid when "{gid_place}" 
-        then {{id: r.id, package_id:r.package_id, num_package_resources:r.num_package_resources, plus:1}}
-        else {{id: r.id, package_id:r.package_id, num_package_resources:r.num_package_resources, plus:0}} end as r
-        with r.id as id, max(r.plus) as plus, r.package_id as package_id, 
-        r.num_package_resources as num_package_resources
-        return package_id, (count(package_id)/num_package_resources)+max(plus) as freq
+        match (:Place {{gid:"{gid_place}"}})-[:`_CONTAINS`*0..]->(:Place)<-[:HAS_TERM]-(r:Resource)
+        return r.package_id, count(distinct r.package_id)/r.num_package_resources as freq
         """).values()
     if not dataset_ids:
         return {}
@@ -60,3 +55,10 @@ def get_dataset(gid_place):
         dataset_ids_dict[id_[0]] = id_[1]
     return dataset_ids_dict
 
+# match (:Place {{gid:"{gid_place}"}})-[:`_CONTAINS`*0..]->(p:Place)<-[:HAS_TERM]-(r:Resource)
+# with case p.gid when "{gid_place}"
+# then {{id: r.id, package_id:r.package_id, num_package_resources:r.num_package_resources, mult:1}}
+# else {{id: r.id, package_id:r.package_id, num_package_resources:r.num_package_resources, mult:0.1}} end as r
+# with r.id as id, max(r.mult) as mult, r.package_id as package_id,
+# r.num_package_resources as num_package_resources
+# return package_id, (count(package_id)/num_package_resources)*max(mult) as freq

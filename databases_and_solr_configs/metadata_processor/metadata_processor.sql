@@ -1,5 +1,13 @@
+CREATE TABLE public.portal (
+	id SERIAL,
+	maintainer text NULL,
+	url text NULL
+);
+
+
 CREATE TABLE public.metadata_dataset (
 	id text NULL,
+	portal_id text NULL,
 	maintainer text NULL,
 	author text NULL,
 	"name" text NULL,
@@ -133,4 +141,6 @@ execute procedure check_resource_last_modified();
 
 create trigger update_dataset before insert on metadata_dataset for each row 
 execute procedure check_dataset_last_modified();
+
+insert into public.portal(id, maintainer, url) values(DEFAULT, 'Governo federal', 'https://dados.gov.br');
 

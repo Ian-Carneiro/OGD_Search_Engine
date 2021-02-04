@@ -1,4 +1,4 @@
-FROM neo4j
+FROM neo4j:4.2
 
 ENV NEO4J_AUTH=neo4j/j4oen
 COPY csv/place_neo4j.csv /var/lib/neo4j/import/place_neo4j.csv
